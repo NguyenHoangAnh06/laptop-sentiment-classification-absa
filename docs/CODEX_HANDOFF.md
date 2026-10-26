@@ -6,7 +6,7 @@ AGENTS/PLAN xác định yêu cầu, artifacts xác định kết quả. Laptop-
 
 ## B. Trạng thái
 
-**VERIFIED: chuẩn bị GitHub PASS; commit/push PENDING.** Origin `https://github.com/NguyenHoangAnh06/laptop-sentiment-classification-absa.git`, nhánh main; ban đầu Git đã init/chưa HEAD/không remote, remote HEAD rỗng. Ignore bổ sung binary/corpus trong reports/notebook outputs/credentials; hướng dẫn `docs/GITHUB_REPRODUCTION.md`. Audit sau ignore không candidate blockers/secret scan PASS trong phạm vi công bố; inventory local không publish. Targeted6tests PASS/compile PASS, full suite NOT_RERUN. Full before/after SHA2561326files/37037489019bytes không mismatch;5tài liệu được phép đổi. Xem `reports/github_publication_20261026/` và execution log mục15/DEC-014. Không push Codex refs kiểu tree.
+**VERIFIED: chuẩn bị GitHub/commit PASS; push BLOCKED authentication.** Origin `https://github.com/NguyenHoangAnh06/laptop-sentiment-classification-absa.git`, nhánh main; snapshot `02d75846d191615aa764d990c19ef40cd15fbd52`,849files/40307269bytes,max blob5708731bytes. Log kết quả được commit local tiếp theo. Index blobs khớp byte worktree, secret/corpus/binary checks PASS trong phạm vi công bố. Ignore corpus/weights/trích đoạn/notebook outputs/credentials; `.gitattributes` giữ CRLF/LF bytes; `docs/GITHUB_REPRODUCTION.md` giải thích đầu vào local thiếu sau clone. Targeted6tests/compile PASS, full suite NOT_RERUN; whitespace checks báo formatting lịch sử, giữ nguyên hashes. Full SHA2561326files/37037489019bytes không mismatch;5tài liệu được phép đổi. Xem execution log mục15/DEC-014/ISSUE-013 và `reports/github_publication_20261026/`. Không push Codex refs kiểu tree.
 
 **VERIFIED: P3-REFINE-01 DONE.** Canonical trình bày P3 mới `reports/p3_refinement_20261026/report.md` và HTML tự chứa cùng namespace. Audit22items, từ15bảng/7hình generated xuống8bảng core/3hình/9appendix items;13core sections. Không xóa/sửa P3 gốc. README/PLAN_AI/PLAN_HUMAN/PROJECT_INDEX đã dẫn bản mới.
 
@@ -28,7 +28,7 @@ Original P3 observations khác later P7 confirmation; Neutral mixed-language/fac
 
 ## E. Kết quả và thay đổi gần đây
 
-- 2026-10-26 GITHUB-PUBLISH-01: chuẩn bị snapshot chọn lọc, `.gitignore`, audit CLI/6fixture tests, README/reproduction guide, audit/preservation/log; scientific artifacts không đổi. Git main/origin đã cấu hình; commit/push đang chờ kiểm index.
+- 2026-10-26 GITHUB-PUBLISH-01: snapshot chọn lọc đã commit; audit6tests/full preservation PASS; push FAILED `Invalid username or token`. GCM không liệt kê account, gh CLI chưa cài; ISSUE-013 OPEN. Scientific artifacts không đổi; log đồng bộ, không claim remote publication.
 - 2026-10-26 P3-REFINE-01:8core tables/3figures; length median negative/neutral/positive50/56/37words,IQR76/93/72; data-driven phrase rates, concentration, verified-group caveat, Neutral và ABSA motivation;386tests/full preservation PASS. DEC-013 và task entry mới trong execution log; không đổi experiment registry/model history.
 - 2026-10-26: cài persistent Mandatory Execution Logging trong AGENTS mục11; áp dụng từ task sau cài đặt, tức task refinement này đã phải log.
 - 2026-10-26: tái dựng canonical execution log P0–P9-EXP01/27experiment rows/12decisions tại thời điểm audit; chronology PARTIAL,0conversation-derived entries. Snapshot JSON cũ giữ provenance; task mới mở rộng tối thiểu.
@@ -36,7 +36,7 @@ Original P3 observations khác later P7 confirmation; Neutral mixed-language/fac
 
 ## F. Nhiệm vụ hiện tại và bước tiếp
 
-**NEXT_ACTION: kiểm index/commit object graph, tạo snapshot commit và push main; xác minh hash local/remote rồi hoàn tất log.** Người dùng đã cho phép commit/push sau audit PASS; không cần xin lại. P10 chỉ mở theo yêu cầu riêng; không annotate/pseudo-label Amazon, làm app hoặc retrain. Giữ canonical P3 report mới cho viết EDA/methodology khi được yêu cầu. Clone GitHub không có corpus/checkpoints/CSV chứa text; không gọi thiếu đầu vào là lỗi khoa học hoặc sửa frozen checks để chạy được.
+**BLOCKED: HTTPS authentication. NEXT_ACTION:** người dùng đăng nhập trên máy qua `git credential-manager github login`, rồi `git push -u origin main`; đối chiếu local HEAD với remote main, đóng ISSUE-013 và cập nhật log/handoff khi thực sự thành công. Người dùng đã cho phép commit/push, không cần xin lại; không yêu cầu token trong chat. Remote main chưa tồn tại khi kiểm. P10 chỉ mở theo yêu cầu riêng, không annotate/train/app. Clone không có corpus/checkpoints/CSV chứa text; không sửa frozen checks để chạy với đầu vào thiếu.
 
 ## G. Failures và giới hạn
 

@@ -3,7 +3,7 @@
   "audit_date": "2026-10-26",
   "timezone": "Asia/Saigon",
   "canonical_log": "docs/PROJECT_EXECUTION_LOG.md",
-  "canonical_log_sha256": "bb64e8f82d1d74fae68b6b66bc5d20c650d64ff00256f28fbb63fbb7284f13bf",
+  "canonical_log_sha256": "65dec608fca493a335c9ae37861705912c8c55dd84d9a021411486561dd474f1",
   "existing_logging_status": "PARTIAL",
   "reconstruction_feasibility": "PARTIAL",
   "final_assessment": "PARTIAL",
@@ -28,7 +28,7 @@
     "P13"
   ],
   "decision_entries": 14,
-  "issue_entries": 12,
+  "issue_entries": 13,
   "experiment_registry": [
     {
       "experiment": "P5-E00 LEGACY",
@@ -7071,8 +7071,8 @@
     "PLAN_AI.md": "fc284fcd9215bda620cde49674a96b560edbac9717eebfd326060b6dbce08780",
     "PLAN_HUMAN.md": "ea487792111bca50e492767f053c5abf9efb07a63ccf4052d4c53adf710fe2a2",
     "docs/PROJECT_INDEX.md": "deca71efa47394cfcfc3215313dd22dbaf412320a83a605dc7a773f9d83cb060",
-    "docs/PROJECT_EXECUTION_LOG.md": "bb64e8f82d1d74fae68b6b66bc5d20c650d64ff00256f28fbb63fbb7284f13bf",
-    "docs/CODEX_HANDOFF.md": "bcdd8189a369e5908493320fb3523f345d1b43baa02907538a0a3c88b71ce0bd"
+    "docs/PROJECT_EXECUTION_LOG.md": "65dec608fca493a335c9ae37861705912c8c55dd84d9a021411486561dd474f1",
+    "docs/CODEX_HANDOFF.md": "245105b48bab6708782dfaca0722a8b9e3d4c3ba6d8f9c5dfa3fa29d311986a3"
   },
   "historical_reconstruction_snapshot": {
     "scope": "Original log reconstruction audit before logging policy and P3 refinement",
@@ -7355,7 +7355,11 @@
       "files": 1326,
       "bytes": 37037489019,
       "mismatches": 0
-    }
+    },
+    "index_blobs": "PASS",
+    "max_blob_bytes": 5708731,
+    "whitespace_check": "FAILED_HISTORICAL_FORMATTING_PRESERVED",
+    "remote_hash_match": "NOT_AVAILABLE_REMOTE_MAIN_ABSENT"
   },
   "logging_policy": {
     "persistent_rule_installed": true,
@@ -7462,7 +7466,7 @@
       "timezone": "Asia/Saigon",
       "task_id": "GITHUB-PUBLISH-01",
       "phase": "P0-P9 (vận hành Git; không mở P10/P13)",
-      "status": "PARTIAL",
+      "status": "BLOCKED",
       "type": "github_publication",
       "objective": "Xuất bản snapshot chọn lọc qua P9; giữ scientific artifacts local",
       "inputs": {
@@ -7477,13 +7481,19 @@
         "Audit toàn workspace ngoài Git internals",
         "Loại corpus/weights/binary/caches/credentials và notebook outputs",
         "Cấu hình main/origin theo URL người dùng",
-        "Kiểm targeted tests và full SHA256 preservation"
+        "Kiểm targeted tests và full SHA256 preservation",
+        "Kiểm index blobs bằng byte/secret/corpus/binary",
+        "Commit snapshot 849files",
+        "Push thất bại authentication; kiểm GCM/gh không có account sẵn"
       ],
       "results": {
         "preparation": "PASS",
-        "commit": "PENDING",
-        "push": "PENDING",
-        "audit_summary": "reports/github_publication_20261026/audit_summary.json"
+        "commit": "02d75846d191615aa764d990c19ef40cd15fbd52",
+        "push": "FAILED_AUTHENTICATION",
+        "audit_summary": "reports/github_publication_20261026/audit_summary.json",
+        "publication": "reports/github_publication_20261026/publication.json",
+        "snapshot_files": 849,
+        "snapshot_bytes": 40307269
       },
       "decision": "DEC-014",
       "reason": "Bảo vệ dữ liệu/quyền sử dụng, giữ methodology và metrics tổng hợp",
@@ -7493,7 +7503,8 @@
         "docs/GITHUB_REPRODUCTION.md",
         "reports/github_publication_20261026/audit_summary.json",
         "reports/github_publication_20261026/large_files.csv",
-        "reports/github_publication_20261026/preservation.json"
+        "reports/github_publication_20261026/preservation.json",
+        "reports/github_publication_20261026/publication.json"
       ],
       "validation": {
         "targeted_command": ".venv/Scripts/python.exe -X utf8 -B -m pytest -q tests/test_public_snapshot.py",
@@ -7506,7 +7517,11 @@
           "files": 1326,
           "bytes": 37037489019,
           "mismatches": 0
-        }
+        },
+        "index_blobs": "PASS",
+        "max_blob_bytes": 5708731,
+        "whitespace_check": "FAILED_HISTORICAL_FORMATTING_PRESERVED",
+        "remote_hash_match": "NOT_AVAILABLE_REMOTE_MAIN_ABSENT"
       },
       "impact": {
         "dataset_changed": false,
@@ -7516,7 +7531,7 @@
         "statement": "No canonical scientific artifacts changed."
       },
       "experiment_registry": "NO CHANGE",
-      "issue_registry": "NO CHANGE",
+      "issue_registry": "UPDATED: ISSUE-013 OPEN",
       "known_limitations": [
         "Chỉ laptop; star-proxy có nhiễu",
         "SemEval-to-Amazon shift chưa đo độc lập; human-gold nhỏ P10 PENDING",
@@ -7526,7 +7541,9 @@
       "evidence": {
         "class": "VERIFIED",
         "confidence": "HIGH"
-      }
+      },
+      "blocker": "GitHub HTTPS authentication không hợp lệ; GCM không có account, gh CLI chưa cài",
+      "next_action": "Đăng nhập trên máy bằng git credential-manager github login; git push -u origin main; xác minh hash HEAD/remote main; đóng issue và cập nhật log. Không paste token vào chat."
     }
   ],
   "decision_updates": [
@@ -7567,5 +7584,18 @@
     "src/data/eda_refinement.py": "07728b96066d8d1e0351a65bf2da07ad39c37f8020b27ffc2ea0efc9ccd8a700",
     "scripts/refine_p3.py": "4bc4091d92d1239af325dc54ae999b4c03e679c37ea6e4c1c70f39b0f728c4c9",
     "tests/test_eda_refinement.py": "c3c03a2c6a009761ee5882ba28aa67d70390a9308a2c311fb122eaf925216d25"
-  }
+  },
+  "issue_updates": [
+    {
+      "id": "ISSUE-013",
+      "date": "2026-10-26",
+      "task_id": "GITHUB-PUBLISH-01",
+      "problem": "GitHub HTTPS authentication không hợp lệ; GCM không có account, gh CLI chưa cài",
+      "detected_in": "git push -u origin main",
+      "impact": "Không xuất bản được lên GitHub; snapshot và log vẫn local",
+      "resolution": "Đăng nhập trên máy bằng git credential-manager github login; git push -u origin main; xác minh hash HEAD/remote main; đóng issue và cập nhật log. Không paste token vào chat.",
+      "status": "OPEN",
+      "evidence": "reports/github_publication_20261026/publication.json"
+    }
+  ]
 }

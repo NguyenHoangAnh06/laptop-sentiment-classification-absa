@@ -334,6 +334,7 @@ ISSUE IDs là ID mới của log. Candidate không thắng validation không ph�
 | ISSUE-010 | Seed43interruption/resume vocab mismatch | Fresh restart COMPLETE; **OPEN: resume NOT_SUPPORTED**,total attempts cost NOT_MEASURED | V2resume_event/log/stability |
 | ISSUE-011 | Latency contention/batch khác | Controlled validation314IDs/batch16 riêng; RESOLVED comparison,giữ initial timings | V2latency JSONs/logs |
 | ISSUE-012 | SemEval→Amazon shift/P10gold chưa đo | OPEN/PENDINGP10,không suy production/tiếng Việt/khác thiết bị | PLAN/acceptance artifacts |
+| ISSUE-013 | GITHUB-PUBLISH-01: HTTPS push bị GitHub từ chối `Invalid username or token`; gh CLI chưa cài, GCM không liệt kê account | OPEN; đăng nhập lại bằng `git credential-manager github login`, rồi push main/đối chiếu hash. Không gửi token trong chat | `reports/github_publication_20261026/publication.json`; commit snapshot local |
 
 ## 11. Discrepancies và chronology gaps
 
@@ -401,7 +402,7 @@ Giới hạn: **các phát hiện chỉ dành cho laptop**;**nhãn đại diện
 
 ## 15. 2026-10-26 — GITHUB-PUBLISH-01: snapshot công khai qua P9
 
-**Status: PARTIAL — chuẩn bị đã kiểm, commit/push PENDING.** Ngày Asia/Saigon; tác vụ vận hành theo yêu cầu chủ sở hữu, không mở P10/P13 hoặc nghiệm thu toàn dự án.
+**Status: BLOCKED — chuẩn bị/commit hoàn tất, push thất bại do authentication.** Ngày Asia/Saigon; tác vụ vận hành theo yêu cầu chủ sở hữu, không mở P10/P13 hoặc nghiệm thu toàn dự án.
 
 **Objective/Inputs:** xuất bản source/config/tests/docs, báo cáo và metrics tổng hợp vào repository do người dùng cung cấp: `https://github.com/NguyenHoangAnh06/laptop-sentiment-classification-absa.git`. Đầu vào là project local hiện hành qua P9/P3-REFINE-01; dataset/split/version/model giữ nguyên. Git ban đầu đã init, nhánh master chưa có HEAD, index rỗng, không remote; `git ls-remote --symref <URL> HEAD` thành công và không có HEAD. Giữ nguyên các refs Codex kiểu tree, không push chúng.
 
@@ -411,8 +412,12 @@ Giới hạn: **các phát hiện chỉ dành cho laptop**;**nhãn đại diện
 
 **Validation — VERIFIED:** `.venv/Scripts/python.exe -X utf8 -B -m pytest -q tests/test_public_snapshot.py`: **6 passed**, 0 fail; fixture tổng hợp kiểm token redaction, env access, corpus-vs-counts, notebook outputs, ignore/binary blockers và UTF-16 secret. `compileall` cho hai tệp mới PASS. Full scientific suite **NOT_RERUN**; 386PASS trước đó vẫn là evidence P3-REFINE-01. Audit sau ignore: 0 candidate blockers, secret scan PASS trong phạm vi UTF-8/UTF-16-BOM text ≤10MB; data/, inventory local, venv/cache/model/dataset binary chỉ kiểm kê metadata. Đây là heuristic scan, không phải chứng nhận không thể có secret. Corpus Amazon/SemEval/trích đoạn đã phát hiện EXCLUDED vì quyền redistribution chưa rõ; không thay đổi trạng thái license SemEval. Các absolute path bằng chứng lịch sử giữ nguyên, README/setup dùng relative paths. Kiểm full SHA256 trước/sau có báo cáo riêng; không suy preservation từ Git ignore.
 
-**DEC-014:** chọn snapshot công khai có chọn lọc + hướng dẫn tự lấy/tái tạo artifacts. Alternatives: push mọi file; dùng LFS cho corpus/weights; chỉ source không báo cáo. Lý do: bảo vệ dữ liệu/quyền sử dụng và giữ bằng chứng methodology/metrics, không phá preservation. Canonical models/experiment registry **NO CHANGE**; Issue Registry **NO CHANGE**. Không thêm giấy phép phân phối khi chưa có quyết định của chủ sở hữu.
+**DEC-014:** chọn snapshot công khai có chọn lọc + hướng dẫn tự lấy/tái tạo artifacts. Alternatives: push mọi file; dùng LFS cho corpus/weights; chỉ source không báo cáo. Lý do: bảo vệ dữ liệu/quyền sử dụng và giữ bằng chứng methodology/metrics, không phá preservation. Canonical models/experiment registry **NO CHANGE**; Issue Registry **UPDATED: ISSUE-013 OPEN** cho authentication. Không thêm giấy phép phân phối khi chưa có quyết định của chủ sở hữu.
 
 **Impact:** dataset/split/model/canonical metrics/historical scientific artifacts unchanged. **No canonical scientific artifacts changed.** Chỉ thay chính sách Git, hướng dẫn, công cụ audit, tests và log/handoff. Local corpus/checkpoints vẫn tồn tại; clone công khai không có đủ đầu vào để kiểm toàn bộ acceptance/inference. Setup máy sạch và tái huấn luyện NOT_MEASURED. Giới hạn: chỉ laptop, star-proxy có nhiễu, SemEval-to-Amazon platform/style shift chưa đánh giá độc lập, bộ human-gold nhỏ P10 vẫn PENDING.
 
-**NEXT_ACTION:** kiểm index và object graph của commit, commit snapshot, push main bằng credentials đã cấu hình; đối chiếu hash local/remote rồi ghi kết quả. Không push Codex refs hoặc pha P10.
+**Commit/Validate/Push — VERIFIED:** first public snapshot `02d75846d191615aa764d990c19ef40cd15fbd52`, message `Initial public project snapshot through P9`: **849files/40.307.269bytes**; từng index blob khớp byte worktree, secret/corpus/binary checks PASS; max blob5.708.731bytes. Reachable history chỉ1commit ở mốc snapshot, không chứa Codex trees. Máy bật `core.autocrlf=true`; thêm `.gitattributes` `* -text` giữ bytes/hash. Full preservation: **1326files/37.037.489.019bytes,0mismatch**, dataset/weights/raw gồm trong kiểm SHA256. `git diff --cached --check` và kiểm lại với `core.whitespace=cr-at-eol` báo whitespace lịch sử (lần sau37.079diagnostic lines); giữ nguyên formatting của scientific/source snapshots thay vì sửa checksum hàng loạt. Đây không phải test logic thất bại; targeted6tests vẫn PASS. Không tuyên bố whitespace-clean hoặc full-suite rerun.
+
+`git push -u origin main` **FAILED**, GitHub trả `Invalid username or token. Password authentication is not supported for Git operations.` Không có branch remote để đối chiếu commit; `git ls-remote --heads origin` trả rỗng. Credential helper manager2.6.1 đã có nhưng `git credential-manager github list` rỗng; gh CLI NOT_INSTALLED. Không lấy/in secret, không xóa credentials hoặc tự cài công cụ. Commit ghi kết quả/log tiếp theo chỉ local; không gọi là push thành công.
+
+**BLOCKED: GitHub HTTPS authentication không hợp lệ/chưa có account GCM. NEXT_ACTION:** người dùng đăng nhập trên máy bằng `git credential-manager github login` (không paste token vào chat), sau đó `git push -u origin main`; xác minh `git rev-parse HEAD` khớp `git ls-remote origin refs/heads/main`. Cập nhật ISSUE-013 thành RESOLVED và log/handoff sau khi quan sát push thành công. Không push Codex refs hoặc pha P10.

@@ -1,0 +1,64 @@
+{
+  "task_id": "GITHUB-PUBLISH-01",
+  "date": "2026-10-26",
+  "timezone": "Asia/Saigon",
+  "status": "BLOCKED",
+  "preparation": "PASS",
+  "branch": "main",
+  "remote": "https://github.com/NguyenHoangAnh06/laptop-sentiment-classification-absa.git",
+  "first_snapshot_commit": "02d75846d191615aa764d990c19ef40cd15fbd52",
+  "snapshot_files": 849,
+  "snapshot_bytes": 40307269,
+  "max_blob_bytes": 5708731,
+  "log_followup": "Commit local tiếp theo ghi kết quả; chưa push",
+  "push": {
+    "command": "git push -u origin main",
+    "status": "FAILED",
+    "server_reason": "Invalid username or token. Password authentication is not supported for Git operations.",
+    "remote_branch_exists": false,
+    "gh_cli": "NOT_INSTALLED",
+    "credential_manager_version": "2.6.1",
+    "credential_manager_accounts_listed": 0,
+    "observed_shell_exit_code": 1
+  },
+  "security": {
+    "index_secret_scan": "PASS",
+    "index_corpus_scan": "PASS",
+    "index_forbidden_binary_scan": "PASS",
+    "index_large_file_scan": "PASS",
+    "index_worktree_bytes": "IDENTICAL",
+    "large_files_excluded": true,
+    "scan_scope": "UTF-8/UTF-16-BOM text <=10MB; data/venv/cache/binary/local inventory metadata-only; heuristic không bảo đảm tuyệt đối",
+    "dataset_redistribution": "EXCLUDED",
+    "codex_refs_pushed": false
+  },
+  "validation": {
+    "targeted_tests_passed": 6,
+    "targeted_tests_failed": 0,
+    "compileall": "PASS",
+    "full_suite": "NOT_RERUN",
+    "whitespace_check": "FAILED — formatting lịch sử được giữ nguyên",
+    "whitespace_recheck_exit_code": 2,
+    "whitespace_recheck_diagnostic_lines": 37079,
+    "preservation": "PASS",
+    "preserved_files": 1326,
+    "preserved_bytes": 37037489019,
+    "mismatches": 0
+  },
+  "impact": {
+    "dataset_changed": false,
+    "split_changed": false,
+    "model_changed": false,
+    "metrics_changed": false,
+    "statement": "No canonical scientific artifacts changed."
+  },
+  "issue": "ISSUE-013 OPEN",
+  "next_action": "Đăng nhập trên máy bằng git credential-manager github login; git push -u origin main; xác minh hash HEAD/remote main; đóng issue và cập nhật log. Không paste token vào chat.",
+  "limitations": [
+    "Chỉ laptop",
+    "Star-proxy có nhiễu",
+    "SemEval-to-Amazon platform/style shift chưa đánh giá độc lập",
+    "Human-gold nhỏ P10 PENDING",
+    "Clean-machine setup NOT_MEASURED"
+  ]
+}

@@ -1,0 +1,8 @@
+# P0 only; add data/model/UI dependencies in the phases that use them.
+PyYAML==6.0.2
+pytest==8.3.5
+# Locked transitive test dependencies from the verified P0 environment.
+colorama==0.4.6; sys_platform == "win32"
+iniconfig==2.3.1
+packaging==26.3
+pluggy==1.6.0

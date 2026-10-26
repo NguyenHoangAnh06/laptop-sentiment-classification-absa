@@ -1,0 +1,17 @@
+split,group,examples,sentences,errors,accuracy
+validation,all,314,202,79,0.7484076433121019
+validation,negation_cue,84,50,29,0.6547619047619048
+validation,contrast_cue,32,23,7,0.78125
+validation,comparison_cue,15,12,1,0.9333333333333333
+validation,long_context_gt30_words,42,18,18,0.5714285714285714
+validation,multi_aspect_sentence,183,71,57,0.6885245901639344
+validation,mixed_polarity_sentence,50,19,22,0.56
+validation,rare_aspect_train_frequency_le1,136,103,32,0.7647058823529411
+test,all,638,411,134,0.7899686520376176
+test,negation_cue,134,89,51,0.6194029850746269
+test,contrast_cue,70,46,23,0.6714285714285714
+test,comparison_cue,33,15,15,0.5454545454545454
+test,long_context_gt30_words,57,21,20,0.6491228070175439
+test,multi_aspect_sentence,379,152,80,0.7889182058047494
+test,mixed_polarity_sentence,103,38,42,0.5922330097087378
+test,rare_aspect_train_frequency_le1,342,256,86,0.7485380116959064

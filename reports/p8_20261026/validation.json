@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "total_passed": 350,
+  "failed": 0,
+  "groups": [
+    325,
+    17,
+    8
+  ],
+  "previous_tests": 321,
+  "new_tests": 29,
+  "commands": [
+    {
+      "command": ".venv/Scripts/python.exe -B -m scripts.test_all",
+      "exit_code": 0
+    },
+    {
+      "command": ".venv/Scripts/python.exe -m pip check",
+      "exit_code": 0
+    },
+    {
+      "command": ".venv/Scripts/python.exe -m compileall -q src scripts tests",
+      "exit_code": 0
+    }
+  ],
+  "pip_check": "PASS",
+  "compileall": "PASS",
+  "source_sha256": {
+    "src/absa/extraction.py": "62fc1af057392ceb0d1e348d43497639beaec55054c1620af971ce415637916c",
+    "src/absa/extraction_data.py": "1bf8172dfcf1b58c175b99efa077df99e02b4d91e385069a60aae68d067c2540",
+    "src/evaluation/aspect_extraction.py": "5da71a11c3ae820f6f430365e0a4d2f8053a3a4ed6a4454c400c4cc8162658e4",
+    "scripts/prepare_p8.py": "9caad231bfa51ef949e3a1133d1c2928eb89792d531312b9dd3335ac291f7a40",
+    "scripts/train_p8.py": "b06a52fcb69c5ed95f6c81ab0533790d5e78b58919b49c6043a535dc75638f24",
+    "scripts/finalize_p8.py": "9cfd3939e64daa356fa7c6269bce59d29ab12038142698ae917a1c5b8995b04e",
+    "scripts/test_all.py": "2f0817254081208cc5ab66bbc17e3f9fa2df9ffd556da838f04ac8bac380e678",
+    "tests/test_p8_data.py": "4ba57228b1a557ee07fdd6535a7a0a61d2510e6e1791e6d70b786c4d6d3e83b5",
+    "tests/test_p8_model.py": "7379ee6c7517c301264029ec1206570b078b9d3bdb3ef71c2b7ada479bff6283"
+  },
+  "console_log": "reports/p8_20261026/test_console.log"
+}

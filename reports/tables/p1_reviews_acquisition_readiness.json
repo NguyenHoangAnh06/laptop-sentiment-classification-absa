@@ -1,0 +1,39 @@
+{
+  "checked_utc": "2026-10-08T06:51:00.001753+00:00",
+  "target_clean_reviews": 30000,
+  "download_time_ceilings_seconds": {
+    "metadata": 3600,
+    "reviews": 10800
+  },
+  "reviews_byte_ceiling": 6600000000,
+  "scan_limits_unchanged": {
+    "probe_metadata_records": 20000,
+    "probe_review_records": 100000,
+    "scan_metadata_records": 2000000,
+    "scan_review_records": 50000000,
+    "max_index_products": 100000,
+    "max_index_estimated_bytes": 128000000,
+    "max_record_bytes": 1000000,
+    "max_process_working_set_bytes": 512000000,
+    "max_probe_read_bytes": 320000000,
+    "max_scan_read_bytes": 60000000000,
+    "max_probe_seconds": 90,
+    "max_scan_seconds": 14400,
+    "max_probe_output_bytes": 16000000,
+    "max_scan_output_bytes": 2000000000,
+    "max_unique_text_hashes_per_group": 100000,
+    "max_sample_rows_per_group": 5000,
+    "max_sample_estimated_bytes_per_group": 16000000,
+    "max_reviews_per_product_in_sample": 100
+  },
+  "disk_free_bytes": 86874882048,
+  "reviews_related_existing_files": [],
+  "metadata_exists": true,
+  "metadata_bytes": 1312900427,
+  "metadata_preflight_reused_as_evidence_only": true,
+  "metadata_coverage_complete": true,
+  "candidate_laptop_products": 28172,
+  "checksum_confirmation_basis": "Previously verified full metadata SHA256; current size/manifest/preflight SHA256 references agree. No repeat full hash or preflight.",
+  "reviews_download_status": "PENDING_USER_APPROVAL",
+  "network_activity_this_check": "NONE"
+}

@@ -1,0 +1,20 @@
+labels: [negative, neutral, positive]
+label_to_id:
+  negative: 0
+  neutral: 1
+  positive: 2
+overall_models:
+  - majority
+  - xgboost_embedding
+  - tabm_embedding
+  - tabpfn_v3_embedding
+  - tabpfn_v35_embedding
+  - transformer
+majority_role: sanity
+active_benchmark_config: configs/semantic_benchmark.yaml
+legacy_config: configs/model_legacy_20261024.yaml
+legacy_models: [tfidf_logistic_regression, tfidf_linear_svm, tfidf_decision_tree, bert_body_only]
+absa_models: [bert_aspect_extraction, bert_aspect_sentiment]
+primary_metric: macro_f1
+secondary_metrics: [accuracy, precision_per_class, recall_per_class, f1_per_class, weighted_f1, balanced_accuracy, confusion_matrix]
+cost_metrics: [training_seconds, inference_latency_ms, artifact_bytes, ram_bytes, gpu_vram_bytes]

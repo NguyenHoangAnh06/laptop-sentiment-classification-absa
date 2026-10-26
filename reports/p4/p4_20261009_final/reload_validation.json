@@ -1,0 +1,144 @@
+{
+  "status": "PASS",
+  "schema_and_membership": {
+    "status": "PASS",
+    "source_rows": 30000,
+    "assigned_rows": 30000,
+    "excluded_rows": 0,
+    "cross_split_overlaps": {
+      "review_id": {
+        "train__validation": 0,
+        "train__test": 0,
+        "validation__test": 0
+      },
+      "parent_asin": {
+        "train__validation": 0,
+        "train__test": 0,
+        "validation__test": 0
+      },
+      "asin": {
+        "train__validation": 0,
+        "train__test": 0,
+        "validation__test": 0
+      },
+      "split_group_id": {
+        "train__validation": 0,
+        "train__test": 0,
+        "validation__test": 0
+      },
+      "text": {
+        "train__validation": 0,
+        "train__test": 0,
+        "validation__test": 0
+      },
+      "clean_text_sha256": {
+        "train__validation": 0,
+        "train__test": 0,
+        "validation__test": 0
+      },
+      "normalized_text": {
+        "train__validation": 0,
+        "train__test": 0,
+        "validation__test": 0
+      },
+      "classical_text": {
+        "train__validation": 0,
+        "train__test": 0,
+        "validation__test": 0
+      }
+    },
+    "near_cross_split_pairs": 0,
+    "near_holdout_pairs": 0,
+    "qa_id_overlap": 0,
+    "qa_text_overlap": 0,
+    "diagnostic_id_overlap": 0,
+    "diagnostic_text_overlap": 0,
+    "counts": {
+      "train": {
+        "rows": 21000,
+        "products": 6357,
+        "labels": {
+          "negative": 5781,
+          "neutral": 1842,
+          "positive": 13377
+        }
+      },
+      "validation": {
+        "rows": 4500,
+        "products": 1361,
+        "labels": {
+          "negative": 1239,
+          "neutral": 395,
+          "positive": 2866
+        }
+      },
+      "test": {
+        "rows": 4500,
+        "products": 1362,
+        "labels": {
+          "negative": 1239,
+          "neutral": 394,
+          "positive": 2867
+        }
+      }
+    },
+    "user_overlap_diagnostic": {
+      "train__validation": 35,
+      "train__test": 37,
+      "validation__test": 6
+    },
+    "user_isolation_required": false,
+    "features": [
+      "text"
+    ],
+    "rating_metadata_features": false,
+    "p10_gold_status": "NOT_CREATED; future independent gold must exclude training IDs/text groups"
+  },
+  "split_byte_replay": {
+    "train": true,
+    "validation": true,
+    "test": true
+  },
+  "full_tfidf_retransform": {
+    "train": {
+      "rows": 21000,
+      "features": 30000,
+      "nnz": 2523532,
+      "reload": "PASS"
+    },
+    "validation": {
+      "rows": 4500,
+      "features": 30000,
+      "nnz": 533343,
+      "reload": "PASS"
+    },
+    "test": {
+      "rows": 4500,
+      "features": 30000,
+      "nnz": 529003,
+      "reload": "PASS"
+    }
+  },
+  "idf_train_document_frequency": "PASS",
+  "full_bert_reencode": {
+    "train": {
+      "rows": 21000,
+      "all_records_reencoded": "PASS"
+    },
+    "validation": {
+      "rows": 4500,
+      "all_records_reencoded": "PASS"
+    },
+    "test": {
+      "rows": 4500,
+      "all_records_reencoded": "PASS"
+    }
+  },
+  "completed_input_checksums": 121,
+  "protected41": "PASS",
+  "features": [
+    "text"
+  ],
+  "classifiers_trained": false,
+  "no_test_parameter_selection": true
+}

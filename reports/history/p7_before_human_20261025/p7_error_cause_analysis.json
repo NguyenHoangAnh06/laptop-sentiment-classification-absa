@@ -1,0 +1,145 @@
+{
+  "status": "DESCRIPTIVE_ANALYSIS_COMPLETE_HUMAN_ATTRIBUTION_PENDING",
+  "inputs": {
+    "split_sha256": {
+      "train": "3b3a1a92d6019659510c6282a92e1ce47b15f24e4857770d3b65deff964fe41b",
+      "validation": "80e706247adb3daca99580d31ba618bb10b784fa4af9aa5fd15123320d6ce7a0",
+      "test": "f2a621178b8d7e76c385d3e336f66fdb8041a2c2c9ee07e89ca281cc82a1e097"
+    },
+    "prediction_sources": {
+      "E00_majority": {
+        "path": "reports/semantic_20261024/E00_majority/test_predictions.parquet",
+        "sha256": "c84017653e3efc2423337fdcd0a02ba8abba53eb996c0e06d2c124f0bad6e9b7",
+        "train_samples": 21000,
+        "regime": "FULL"
+      },
+      "E01_xgboost_embedding": {
+        "path": "reports/semantic_20261024/E01_xgboost_embedding/test_predictions.parquet",
+        "sha256": "96ef150f5509d5175a8ac0f7c14ad77a970c38ccf4921b8095187db7f6676814",
+        "train_samples": 21000,
+        "regime": "FULL"
+      },
+      "E02_tabm_embedding": {
+        "path": "reports/semantic_20261024/E02_tabm_embedding/test_predictions.parquet",
+        "sha256": "54b6ef6ef652473be87aa974431a459ea0bb4429865c4aff7d0fb882d3d5659b",
+        "train_samples": 21000,
+        "regime": "FULL"
+      },
+      "E03_tabpfn_v3_embedding": {
+        "path": "artifacts/cloud_runs/tabpfn_full21k_20261024/tabpfn_v3_full21k/test_predictions.csv",
+        "sha256": "e171d2f17531ec946989ad403b461443d8a1534bf5004044a69bef2133d2bfd9",
+        "train_samples": 21000,
+        "regime": "FULL"
+      },
+      "E04_tabpfn_v35_embedding": {
+        "path": "artifacts/cloud_runs/tabpfn_full21k_20261024/tabpfn_v35_full21k/test_predictions.csv",
+        "sha256": "cea64d7db361df74e72db9f95b9a4656c6aab2d37be6e7783315e64dfab3d55a",
+        "train_samples": 21000,
+        "regime": "FULL"
+      },
+      "E05_transformer": {
+        "path": "reports/semantic_20261024/E05_transformer/test_predictions.parquet",
+        "sha256": "dc0e6df63e9b10b596ceeea06d64da61a2245327ccf2ebdc06990ca2a14e9774",
+        "train_samples": 21000,
+        "regime": "FULL"
+      }
+    },
+    "bert_history_sha256": "a1578d3ee4a9cf14e92bca8e5999442a14be769dd084b36f2e4d79e4d2497c56"
+  },
+  "model_count": 6,
+  "test_count": 4500,
+  "train_count": 21000,
+  "neutral_train_count": 1842,
+  "neutral_train_share": 0.08771428571428572,
+  "weighting_validation_macro_f1_delta": -0.0019936401428826134,
+  "weighting_validation_neutral_recall_delta": 0.13924050632911394,
+  "weighting_validation_neutral_precision_delta": -0.05942917991481195,
+  "weighting_validation_neutral_f1_delta": 0.014003782809075382,
+  "weighting_pair_sources": {
+    "unweighted": "a50977b06390f39dade087df8d144b94656b6410b2cf95e9b2dd9472b4f4a0fd",
+    "balanced": "bc49333e9110c4c2ae2da45bf235f4ae6229cd8146899aaec9ad36594023b1ad"
+  },
+  "audit": {
+    "status": "PENDING_HUMAN_ANNOTATION",
+    "scope": "diagnostic_audit_of_reused_test_not_independent_gold",
+    "seed": 42,
+    "population_n": 4500,
+    "representative_n": 300,
+    "diagnostic_n": 60,
+    "row_count": 360,
+    "inputs": {
+      "split_sha256": {
+        "train": "3b3a1a92d6019659510c6282a92e1ce47b15f24e4857770d3b65deff964fe41b",
+        "validation": "80e706247adb3daca99580d31ba618bb10b784fa4af9aa5fd15123320d6ce7a0",
+        "test": "f2a621178b8d7e76c385d3e336f66fdb8041a2c2c9ee07e89ca281cc82a1e097"
+      },
+      "prediction_sources": {
+        "E00_majority": {
+          "path": "reports/semantic_20261024/E00_majority/test_predictions.parquet",
+          "sha256": "c84017653e3efc2423337fdcd0a02ba8abba53eb996c0e06d2c124f0bad6e9b7",
+          "train_samples": 21000,
+          "regime": "FULL"
+        },
+        "E01_xgboost_embedding": {
+          "path": "reports/semantic_20261024/E01_xgboost_embedding/test_predictions.parquet",
+          "sha256": "96ef150f5509d5175a8ac0f7c14ad77a970c38ccf4921b8095187db7f6676814",
+          "train_samples": 21000,
+          "regime": "FULL"
+        },
+        "E02_tabm_embedding": {
+          "path": "reports/semantic_20261024/E02_tabm_embedding/test_predictions.parquet",
+          "sha256": "54b6ef6ef652473be87aa974431a459ea0bb4429865c4aff7d0fb882d3d5659b",
+          "train_samples": 21000,
+          "regime": "FULL"
+        },
+        "E03_tabpfn_v3_embedding": {
+          "path": "artifacts/cloud_runs/tabpfn_full21k_20261024/tabpfn_v3_full21k/test_predictions.csv",
+          "sha256": "e171d2f17531ec946989ad403b461443d8a1534bf5004044a69bef2133d2bfd9",
+          "train_samples": 21000,
+          "regime": "FULL"
+        },
+        "E04_tabpfn_v35_embedding": {
+          "path": "artifacts/cloud_runs/tabpfn_full21k_20261024/tabpfn_v35_full21k/test_predictions.csv",
+          "sha256": "cea64d7db361df74e72db9f95b9a4656c6aab2d37be6e7783315e64dfab3d55a",
+          "train_samples": 21000,
+          "regime": "FULL"
+        },
+        "E05_transformer": {
+          "path": "reports/semantic_20261024/E05_transformer/test_predictions.parquet",
+          "sha256": "dc0e6df63e9b10b596ceeea06d64da61a2245327ccf2ebdc06990ca2a14e9774",
+          "train_samples": 21000,
+          "regime": "FULL"
+        }
+      },
+      "bert_history_sha256": "a1578d3ee4a9cf14e92bca8e5999442a14be769dd084b36f2e4d79e4d2497c56"
+    },
+    "private_reference_sha256": "157f4f43a0b2e53d7729ba05a2ca95d1947cdd936511692fbcb9a5cdc345498d",
+    "blinded_fields": [
+      "annotation_id",
+      "review_title",
+      "review_text",
+      "human_sentiment",
+      "ambiguity",
+      "evidence",
+      "reviewer_id",
+      "reviewed_at"
+    ],
+    "human_labels_created_by_codex": false,
+    "annotation_path": "data/manual/sentiment_diagnosis_20261024/review_annotation.csv",
+    "nonempty_human_sentiments": 0
+  },
+  "causes": {
+    "class_imbalance_presence": "MEASURED",
+    "class_imbalance_error_fraction": "NOT_IDENTIFIABLE",
+    "proxy_human_mismatch_rate": "NOT_MEASURED",
+    "model_vs_proxy_disagreement": "MEASURED",
+    "gold_evaluation": "PENDING_NOT_CREATED"
+  },
+  "benchmark_csv_sha256": "260068014d210a8549d09156e79eadd4ae0b8546f0dda64b51e361b664753f54",
+  "tests_evidence": "reports/p7_error_diagnosis_validation.json",
+  "BLOCKED": "Chưa có human sentiment annotations; không định lượng nhiễu proxy hoặc phần lỗi causal.",
+  "NEXT_ACTION": "Người đọc gán nhãn bộ audit; đánh giá riêng representative/enriched, không dùng để tuning.",
+  "no_training_or_inference": true,
+  "test_tuning": false,
+  "benchmark_metrics_unchanged": true
+}

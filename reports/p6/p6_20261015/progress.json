@@ -1,0 +1,9 @@
+{
+  "mode": "balanced",
+  "epoch": 3,
+  "microbatch": 2600,
+  "batches": 2625,
+  "seen": 20800,
+  "loss": 0.34689266279841274,
+  "epoch_seconds": 319.21854879986495
+}

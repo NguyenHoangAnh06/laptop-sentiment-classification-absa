@@ -1,0 +1,140 @@
+{
+  "baseline": {
+    "path": "data/manual/laptop_filter_qa.csv",
+    "sha256": "fcfca66e58b411e3ba3b011ef3a69bb2cf86ce8e279a8304a4717b384972b5fc",
+    "rows": 100,
+    "blank_labels": 100,
+    "role": "Legacy seeded metadata-prefix product QA template from scripts.audit_p1.audit_legacy_prefix",
+    "prefix_path": "data/raw/amazon/metadata_prefix_20000.jsonl",
+    "prefix_sha256": "fd842cd280741053ef4ea0cfe88321b9d28dd5080ab848fd1eec74bd45ef9978",
+    "source_fields_match": true,
+    "seeded_membership_and_order_reproduced": true,
+    "random_included": 50,
+    "independent_qa_sampling_unit": false,
+    "blocks_current_v1_v2_evaluation": false,
+    "reference_id_matches": 1,
+    "reference_product_fingerprint_matches": 1
+  },
+  "inventory": [
+    {
+      "path": "data/manual/feasibility/Electronics_laptop_3aeb96dfe815.csv",
+      "sha256": "9c0b1594b6207fb1d29066e4baa483ebc9b2ea9f3b82051c9399a505e6206f83",
+      "rows": 100,
+      "label_column": "human_is_target_product",
+      "label_counts": {
+        "True": 54,
+        "False": 46
+      },
+      "invalid_labels": 0,
+      "duplicate_ids": 0,
+      "missing_ids": 0,
+      "reviewer": "human_reviewer_01",
+      "review_declaration": "Global final human review already confirmed",
+      "human_review_status": "COMPLETED",
+      "missing_final_labels": 0
+    },
+    {
+      "path": "data/manual/feasibility/Electronics_laptop_8a3c1eaf1583.csv",
+      "sha256": "e22f0bdd15644a074a44f9ccc8c9e75a81983f668695a16edb2277d339637e5f",
+      "rows": 100,
+      "label_column": "human_is_target_product",
+      "label_counts": {
+        "": 100
+      },
+      "invalid_labels": 0,
+      "duplicate_ids": 0,
+      "missing_ids": 0,
+      "reviewer": "human_reviewer_01",
+      "review_declaration": "Global final human review already confirmed",
+      "human_review_status": "COMPLETED",
+      "missing_final_labels": 100
+    },
+    {
+      "path": "data/manual/independent_qa/p1_v1/product_annotation.csv",
+      "sha256": "134a1e746202337ebb4d5fab1927c791b037fc2feb08e9875d55002433e0c721",
+      "rows": 200,
+      "label_column": "human_label",
+      "label_counts": {
+        "laptop": 153,
+        "non_laptop": 47
+      },
+      "invalid_labels": 0,
+      "duplicate_ids": 0,
+      "missing_ids": 0,
+      "reviewer": "human_reviewer_01",
+      "review_declaration": "Global final human review already confirmed",
+      "human_review_status": "COMPLETED",
+      "missing_final_labels": 0
+    },
+    {
+      "path": "data/manual/independent_qa/p1_v1/review_annotation.csv",
+      "sha256": "ee3da05db04aeb0ef67a4ad71d428d5c72b419a7bb690acedb6bbc9048999f15",
+      "rows": 400,
+      "label_column": "human_label",
+      "label_counts": {
+        "laptop": 251,
+        "non_laptop": 149
+      },
+      "invalid_labels": 0,
+      "duplicate_ids": 0,
+      "missing_ids": 0,
+      "reviewer": "human_reviewer_01",
+      "review_declaration": "Global final human review already confirmed",
+      "human_review_status": "COMPLETED",
+      "missing_final_labels": 0
+    },
+    {
+      "path": "data/manual/independent_qa/p1_v2/review_annotation.csv",
+      "sha256": "0b972c4337e552dd322a201b1f8746bc5ac17e680c88a36a7e21b846f92a4d22",
+      "rows": 868,
+      "label_column": "human_label",
+      "label_counts": {
+        "REJECT": 867,
+        "ACCEPT": 1
+      },
+      "invalid_labels": 0,
+      "duplicate_ids": 0,
+      "missing_ids": 0,
+      "reviewer": "human_reviewer_01",
+      "review_declaration": "Global final human review already confirmed",
+      "human_review_status": "COMPLETED",
+      "missing_final_labels": 0
+    },
+    {
+      "path": "data/manual/laptop_filter_qa.csv",
+      "sha256": "fcfca66e58b411e3ba3b011ef3a69bb2cf86ce8e279a8304a4717b384972b5fc",
+      "rows": 100,
+      "label_column": "human_is_laptop",
+      "label_counts": {
+        "": 100
+      },
+      "invalid_labels": 0,
+      "duplicate_ids": 0,
+      "missing_ids": 0,
+      "reviewer": "human_reviewer_01",
+      "review_declaration": "Global final human review already confirmed",
+      "human_review_status": "COMPLETED",
+      "missing_final_labels": 100
+    },
+    {
+      "path": "data/interim/annotation_normalization/20261009/v2_review_annotation_canonical.csv",
+      "sha256": "c470ee26d8e004d9c47b8d493496bed0f98d5cd96381a8fb18e8e288433cb974",
+      "rows": 868,
+      "label_column": "human_label",
+      "label_counts": {
+        "non_laptop": 867,
+        "laptop": 1
+      },
+      "invalid_labels": 0,
+      "duplicate_ids": 0,
+      "missing_ids": 0,
+      "reviewer": "human_reviewer_01",
+      "review_declaration": "Global final human review already confirmed",
+      "human_review_status": "COMPLETED",
+      "missing_final_labels": 0
+    }
+  ],
+  "pending_output": "data/interim/annotation_validation/20261009/legacy_baseline_pending.csv",
+  "historical_correction": "Full-survey labeled100 file exists now and was omitted by previous inventory; human_is_target_product is a supported historical schema. Earlier absent-path statement superseded.",
+  "label_transfer": "NOT_PERFORMED; no predictions or other sampling units substituted as labels"
+}

@@ -1,0 +1,51 @@
+{
+  "status": "DONE",
+  "task_id": "P3-REFINE-01",
+  "date": "2026-10-26",
+  "scope": "documentation_analysis_refinement_only",
+  "canonical_p3_report": "reports/p3_refinement_20261026/report.md",
+  "canonical_html": "reports/p3_refinement_20261026/report.html",
+  "before": {
+    "generated_tables": 15,
+    "generated_figures": 7,
+    "markdown_sections": 9,
+    "markdown_tables": 3,
+    "markdown_figures": 0
+  },
+  "after": {
+    "core_tables": 8,
+    "core_figures": 3,
+    "appendix_items": 9
+  },
+  "decision": "ACCEPT_REFINED_PRESENTATION_KEEP_SCIENTIFIC_PROTOCOL",
+  "reason": "KEEP/APPENDIX/REMOVE decisions documented for all original tables/figures; per-core observation/evidence/interpretation/impact; later confirmation separated from original P3",
+  "tests_passed": 386,
+  "tests_failed": 0,
+  "independent_reproduction_outputs_byte_identical": 19,
+  "frozen_files_sha256_unchanged": 1302,
+  "historical_p3_artifacts_changed": false,
+  "dataset_changed": false,
+  "split_changed": false,
+  "model_changed": false,
+  "canonical_metrics_changed": false,
+  "model_promotion": false,
+  "new_phase_implemented": false,
+  "final_assessment": "YES_FOR_REPORTING_WITH_EXPLICIT_LIMITATIONS",
+  "limitations": [
+    "Laptop-only/noisy star proxy",
+    "Keyword/phrase mention is not aspect sentiment or causal value driver",
+    "Mixed language, weak/factual/mixed sentiment and complaint specificity not measured",
+    "Later P7 confirmation not original P3 knowledge",
+    "SemEval-to-Amazon shift and small independent P10 human gold remain pending"
+  ],
+  "evidence_sha256": {
+    "report.md": "445186c30e31cfb0197815f57150601e489a9ab610a067207feeded844878038",
+    "report.html": "71dfccc30f2f5d264f9fbef4c57fe6a4ddd20ee21f9a6218c957d44eb331525a",
+    "audit.md": "4bef7cd8f46142633865d819423204502f0c1155550d81a338e7704fc7f2ac7a",
+    "summary.json": "90157b580c3bdf9763517a95640ce6b16400b568ffb15e158f840f4901921826",
+    "validation.json": "6f1a75f8d41f496e3a7404ab6323f7ddbb916b94646e6c04f2f1ce0777788697",
+    "preservation.json": "c699495a6709d55a2df35e732324abc55e1d8a0982f719f1de48a765f1edb785",
+    "test_console.log": "5a48724b0fbc4fc526be9682604281b87e2ac2822ee3b5d8e78c43c831411e69"
+  },
+  "NEXT_ACTION": "Dừng sau refinement; dùng report mới viết phần EDA/methodology, không tự mở P10."
+}

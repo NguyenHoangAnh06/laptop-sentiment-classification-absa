@@ -1,0 +1,293 @@
+{
+  "scope": "bounded_source_prefix_not_full_electronics_pool",
+  "seed": 42,
+  "filter_version": "laptop_metadata_v1",
+  "filter_validation": "unvalidated",
+  "source_manifests": {
+    "metadata": {
+      "source_url": "https://mcauleylab.ucsd.edu/public_datasets/data/amazon_2023/raw/meta_categories/meta_Electronics.jsonl.gz",
+      "resolved_url": "https://mcauleylab.ucsd.edu/public_datasets/data/amazon_2023/raw/meta_categories/meta_Electronics.jsonl.gz",
+      "retrieved_utc": "2026-10-08T04:00:42.449401+00:00",
+      "etag": "\"4e41454b-62bda3bbc47f3\"",
+      "last_modified": "Thu, 16 Jan 2025 22:22:45 GMT",
+      "requested_limit": 20000,
+      "rows": 20000,
+      "bytes": 73240352,
+      "stop_reason": "record_limit",
+      "complete_source": false,
+      "format": "unchanged_source_jsonl_lines",
+      "sha256": "fd842cd280741053ef4ea0cfe88321b9d28dd5080ab848fd1eec74bd45ef9978",
+      "supersedes_manifest": "metadata_prefix_20000.jsonl.manifest.json",
+      "original_recorded_sha256": "9a36a011d6a0d611592a0d043fcd04f61b0c31a15fb7d6100404c42862bbc5ac",
+      "correction_reason": "Original downloader hashed before output buffer was closed. Source file unchanged; verified by rereading finalized bytes."
+    },
+    "reviews": {
+      "source_url": "https://mcauleylab.ucsd.edu/public_datasets/data/amazon_2023/raw/review_categories/Electronics.jsonl.gz",
+      "resolved_url": "https://mcauleylab.ucsd.edu/public_datasets/data/amazon_2023/raw/review_categories/Electronics.jsonl.gz",
+      "retrieved_utc": "2026-10-08T04:01:37.841729+00:00",
+      "etag": "\"181e817db-62bdb26aa07c6\"",
+      "last_modified": "Thu, 16 Jan 2025 23:28:26 GMT",
+      "requested_limit": 100000,
+      "rows": 100000,
+      "bytes": 67212341,
+      "stop_reason": "record_limit",
+      "complete_source": false,
+      "format": "unchanged_source_jsonl_lines",
+      "sha256": "89d2b890fe6f0b53df1e37bc888d55191995f4e839d210b31f2d4cc569708e67",
+      "supersedes_manifest": "reviews_prefix_100000.jsonl.manifest.json",
+      "original_recorded_sha256": "d10cc85acb25c3c0e94d1f9de90c2f2b523a7d71a21ad67ff48013d3361f1ce6",
+      "correction_reason": "Original downloader hashed before output buffer was closed. Source file unchanged; verified by rereading finalized bytes."
+    }
+  },
+  "metadata_schema": {
+    "rows": 20000,
+    "fields": {
+      "author": {
+        "types": {
+          "NoneType": 4,
+          "dict": 6
+        },
+        "absent": 19990,
+        "null": 4
+      },
+      "average_rating": {
+        "types": {
+          "float": 20000
+        },
+        "absent": 0,
+        "null": 0
+      },
+      "bought_together": {
+        "types": {
+          "NoneType": 20000
+        },
+        "absent": 0,
+        "null": 20000
+      },
+      "categories": {
+        "types": {
+          "list": 20000
+        },
+        "absent": 0,
+        "null": 0
+      },
+      "description": {
+        "types": {
+          "list": 20000
+        },
+        "absent": 0,
+        "null": 0
+      },
+      "details": {
+        "types": {
+          "dict": 20000
+        },
+        "absent": 0,
+        "null": 0
+      },
+      "features": {
+        "types": {
+          "list": 20000
+        },
+        "absent": 0,
+        "null": 0
+      },
+      "images": {
+        "types": {
+          "list": 20000
+        },
+        "absent": 0,
+        "null": 0
+      },
+      "main_category": {
+        "types": {
+          "str": 19778,
+          "NoneType": 222
+        },
+        "absent": 0,
+        "null": 222
+      },
+      "parent_asin": {
+        "types": {
+          "str": 20000
+        },
+        "absent": 0,
+        "null": 0
+      },
+      "price": {
+        "types": {
+          "NoneType": 11363,
+          "float": 8637
+        },
+        "absent": 0,
+        "null": 11363
+      },
+      "rating_number": {
+        "types": {
+          "int": 20000
+        },
+        "absent": 0,
+        "null": 0
+      },
+      "store": {
+        "types": {
+          "str": 19892,
+          "NoneType": 108
+        },
+        "absent": 0,
+        "null": 108
+      },
+      "subtitle": {
+        "types": {
+          "str": 7,
+          "NoneType": 3
+        },
+        "absent": 19990,
+        "null": 3
+      },
+      "title": {
+        "types": {
+          "str": 20000
+        },
+        "absent": 0,
+        "null": 0
+      },
+      "videos": {
+        "types": {
+          "list": 20000
+        },
+        "absent": 0,
+        "null": 0
+      }
+    }
+  },
+  "review_schema": {
+    "rows": 100000,
+    "fields": {
+      "asin": {
+        "types": {
+          "str": 100000
+        },
+        "absent": 0,
+        "null": 0
+      },
+      "helpful_vote": {
+        "types": {
+          "int": 100000
+        },
+        "absent": 0,
+        "null": 0
+      },
+      "images": {
+        "types": {
+          "list": 100000
+        },
+        "absent": 0,
+        "null": 0
+      },
+      "parent_asin": {
+        "types": {
+          "str": 100000
+        },
+        "absent": 0,
+        "null": 0
+      },
+      "rating": {
+        "types": {
+          "float": 100000
+        },
+        "absent": 0,
+        "null": 0
+      },
+      "text": {
+        "types": {
+          "str": 100000
+        },
+        "absent": 0,
+        "null": 0
+      },
+      "timestamp": {
+        "types": {
+          "int": 100000
+        },
+        "absent": 0,
+        "null": 0
+      },
+      "title": {
+        "types": {
+          "str": 100000
+        },
+        "absent": 0,
+        "null": 0
+      },
+      "user_id": {
+        "types": {
+          "str": 100000
+        },
+        "absent": 0,
+        "null": 0
+      },
+      "verified_purchase": {
+        "types": {
+          "bool": 100000
+        },
+        "absent": 0,
+        "null": 0
+      }
+    }
+  },
+  "join_key": "parent_asin",
+  "filter_decisions": {
+    "insufficient_laptop_evidence": 9984,
+    "excluded_category": 4469,
+    "accessory_or_ambiguous_title": 5228,
+    "laptop_category_and_title": 319
+  },
+  "join_counts": {
+    "unmatched_metadata": 96274,
+    "joined_reviews": 3726,
+    "matched_non_laptop": 3709
+  },
+  "candidate_products": 319,
+  "candidate_reviews": 17,
+  "products_with_candidate_reviews": 11,
+  "rating_counts": {
+    "1": 1,
+    "2": 0,
+    "3": 1,
+    "4": 3,
+    "5": 12
+  },
+  "rating_percentages": {
+    "1": 5.882352941176471,
+    "2": 0.0,
+    "3": 5.882352941176471,
+    "4": 17.647058823529413,
+    "5": 70.58823529411765
+  },
+  "sample_reviews": 17,
+  "sample_products": 11,
+  "sample_known_brands": 6,
+  "clean_size_estimate": null,
+  "clean_size_estimate_reason": "P2 cleaning and human filter QA not performed; prefix cannot estimate full pool",
+  "human_qa_rows": 100,
+  "semeval": {
+    "trial": {
+      "status": "audited",
+      "sentences": 100,
+      "aspects": 49,
+      "polarities": {
+        "positive": 29,
+        "negative": 16,
+        "neutral": 4
+      },
+      "sha256": "0971a30e6add454d344ac011385fb8407db4193db048c8cd8e7a82908ac5172d"
+    },
+    "train": {
+      "status": "missing"
+    },
+    "test": {
+      "status": "missing"
+    }
+  }
+}

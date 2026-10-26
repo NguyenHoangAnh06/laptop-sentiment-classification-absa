@@ -1,0 +1,18 @@
+﻿seed: 42
+experiment_ids: {v3: C-E03, v3_5: C-E04}
+train_count: 21000
+validation_count: 4500
+test_count: 4500
+prediction_batch_size: 16
+model:
+  n_estimators: 1
+  fit_mode: fit_with_cache
+  memory_saving_mode: true
+  keep_cache_on_device: false
+  inference_precision: autocast
+protocol:
+  primary_metric: macro_f1
+  selection: single_predeclared_configuration
+  resource_probe: train_only
+  test_reused: true
+  final_subsample_allowed: false

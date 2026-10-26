@@ -1,0 +1,4 @@
+split,sentences,aspect_entities,unique_aspect_terms,aspects_per_sentence,sentences_without_aspects,no_aspect_share,multiple_aspect_sentences,multiple_aspect_share,max_sequence_length,unigram_entities,multiword_entities
+train,2587,2039,855,0.7881716273676073,1303,0.5036722071897951,485,0.1874758407421724,91,1308,731
+validation,458,319,207,0.6965065502183406,254,0.5545851528384279,73,0.15938864628820962,60,185,134
+test,800,654,393,0.8175,378,0.4725,156,0.195,90,364,290

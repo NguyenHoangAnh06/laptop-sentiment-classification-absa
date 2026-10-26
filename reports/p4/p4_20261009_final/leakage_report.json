@@ -1,0 +1,84 @@
+{
+  "status": "PASS",
+  "cross_split_overlaps": {
+    "review_id": {
+      "train__validation": 0,
+      "train__test": 0,
+      "validation__test": 0
+    },
+    "parent_asin": {
+      "train__validation": 0,
+      "train__test": 0,
+      "validation__test": 0
+    },
+    "asin": {
+      "train__validation": 0,
+      "train__test": 0,
+      "validation__test": 0
+    },
+    "split_group_id": {
+      "train__validation": 0,
+      "train__test": 0,
+      "validation__test": 0
+    },
+    "text": {
+      "train__validation": 0,
+      "train__test": 0,
+      "validation__test": 0
+    },
+    "clean_text_sha256": {
+      "train__validation": 0,
+      "train__test": 0,
+      "validation__test": 0
+    },
+    "normalized_text": {
+      "train__validation": 0,
+      "train__test": 0,
+      "validation__test": 0
+    },
+    "classical_text": {
+      "train__validation": 0,
+      "train__test": 0,
+      "validation__test": 0
+    }
+  },
+  "near_cross_split_pairs": 0,
+  "near_holdout_pairs": 0,
+  "qa_id_overlap": 0,
+  "qa_text_overlap": 0,
+  "diagnostic_id_overlap": 0,
+  "diagnostic_text_overlap": 0,
+  "near_audit": {
+    "method": "32 stable uint64 MinHash components,8 bands x4; exact hashed word-triple Jaccard>=threshold",
+    "threshold": 0.9,
+    "comparisons": 36,
+    "pairs": 0,
+    "groups": 0,
+    "comparison_cap_reached": false,
+    "limits": "Lexical approximate candidate search, not exhaustive semantic detection. Short<10word texts skipped. Pairs retained with group IDs for P4 leakage control; no sentiment-changing near-dedup deletion.",
+    "source_rows": 30000,
+    "holdout_texts": 1518,
+    "reused_p2_near_pairs": 0,
+    "new_scope": "cross-split and QA/noise holdout control"
+  },
+  "qa_product_overlap_diagnostic": {
+    "train": 177,
+    "validation": 40,
+    "test": 39
+  },
+  "qa_products_policy": "P1 domain QA products may overlap; no QA labels used as sentiment labels",
+  "user_overlap_diagnostic": {
+    "train__validation": 35,
+    "train__test": 37,
+    "validation__test": 6
+  },
+  "user_isolation_required": false,
+  "p10_gold_status": "NOT_CREATED; future independent gold must exclude training IDs/text groups",
+  "features": [
+    "text"
+  ],
+  "rating_metadata_features": false,
+  "preprocessing_fit": "TF-IDF vocabulary/IDF and max length selected on train only",
+  "idf_train_document_frequency": "PASS",
+  "limits": "Product-disjoint, not user/brand/temporal-disjoint; lexical approximate near search; human gold absent"
+}

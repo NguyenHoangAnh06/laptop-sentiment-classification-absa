@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "total_passed": 249,
+  "groups": [
+    229,
+    12,
+    8
+  ],
+  "failed": 0,
+  "commands": [
+    "-m scripts.validate_modern E00_majority",
+    "-m scripts.validate_modern E01_xgboost_embedding",
+    "-m scripts.validate_modern E02_tabm_embedding",
+    "-m scripts.validate_modern E03_tabpfn_v3_embedding",
+    "-m scripts.validate_modern E04_tabpfn_v35_embedding",
+    "-m scripts.validate_transformer",
+    "-m scripts.test_all",
+    "-m pip check",
+    "-m compileall -q src scripts tests"
+  ],
+  "legacy_preservation": {
+    "p5": {
+      "files": 27,
+      "mismatches": []
+    },
+    "p6": {
+      "files": 26,
+      "mismatches": []
+    }
+  },
+  "independent_metrics_alignment_selection": "PASS",
+  "pip_check": "PASS",
+  "compileall": "PASS",
+  "test_predictions_rerun": false,
+  "gold_created": false
+}

@@ -1,0 +1,195 @@
+{
+  "purpose": "Evidence snapshot subordinate to PLAN_HUMAN and PLAN_AI; no independent roadmap",
+  "phase_sequence": {
+    "PLAN_HUMAN.md": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "PLAN_AI.md": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ]
+  },
+  "protected_files": 41,
+  "protected_checksums": {
+    "data/interim/feasibility/electronics_full_laptop_30k/laptop_sample.jsonl": true,
+    "data/interim/feasibility/electronics_full_laptop_30k/laptop_valid.jsonl": true,
+    "data/interim/feasibility/electronics_full_laptop_30k/products.jsonl": true,
+    "data/interim/feasibility/electronics_full_laptop_30k/report.json": true,
+    "data/interim/semeval/test_sentences.jsonl": true,
+    "data/interim/semeval/train_sentences.jsonl": true,
+    "data/manual/independent_qa/p1_v1/manifest.json": true,
+    "data/manual/independent_qa/p1_v1/private_predictions.json": true,
+    "data/manual/independent_qa/p1_v1/product_annotation.csv": true,
+    "data/manual/independent_qa/p1_v1/review_annotation.csv": true,
+    "data/raw/amazon/.gitkeep": true,
+    "data/raw/amazon/Cell_Phones_and_Accessories_metadata_probe_5000.jsonl": true,
+    "data/raw/amazon/Cell_Phones_and_Accessories_metadata_probe_5000.jsonl.manifest.json": true,
+    "data/raw/amazon/Cell_Phones_and_Accessories_reviews_probe_20000.jsonl": true,
+    "data/raw/amazon/Cell_Phones_and_Accessories_reviews_probe_20000.jsonl.manifest.json": true,
+    "data/raw/amazon/Electronics.jsonl.gz": true,
+    "data/raw/amazon/Electronics.jsonl.gz.manifest.json": true,
+    "data/raw/amazon/meta_Electronics.jsonl.gz": true,
+    "data/raw/amazon/meta_Electronics.jsonl.gz.manifest.json": true,
+    "data/raw/amazon/metadata_prefix_20000.jsonl": true,
+    "data/raw/amazon/metadata_prefix_20000.jsonl.manifest.json": true,
+    "data/raw/amazon/metadata_prefix_20000.jsonl.verified.manifest.json": true,
+    "data/raw/amazon/reviews_prefix_100000.jsonl": true,
+    "data/raw/amazon/reviews_prefix_100000.jsonl.manifest.json": true,
+    "data/raw/amazon/reviews_prefix_100000.jsonl.verified.manifest.json": true,
+    "data/raw/semeval/.gitkeep": true,
+    "data/raw/semeval/Laptop_Train_v2.xml": true,
+    "data/raw/semeval/laptops-trial.xml": true,
+    "data/raw/semeval/laptops-trial.xml.manifest.json": true,
+    "data/raw/semeval/Laptops_Test_Gold.xml": true,
+    "reports/independent_qa/p1_v1_evaluation/assessment.md": true,
+    "reports/independent_qa/p1_v1_evaluation/comparisons.csv": true,
+    "reports/independent_qa/p1_v1_evaluation/errors.csv": true,
+    "reports/independent_qa/p1_v1_evaluation/evaluation.json": true,
+    "reports/independent_qa/p1_v1_evaluation/integrity.json": true,
+    "reports/independent_qa/p1_v1_evaluation/report.md": true,
+    "reports/independent_qa/p1_v1_evaluation/statistical_summary.json": true,
+    "reports/independent_qa/p1_v1_evaluation/strata.csv": true,
+    "configs/acquisition.yaml": true,
+    "configs/feasibility.yaml": true,
+    "reports/tables/p1_semeval_normalization.json": true
+  },
+  "evidence_bindings": "PASS",
+  "candidate_rows": 408480,
+  "missing_by_field": {
+    "review_id": 0,
+    "parent_asin": 0,
+    "text": 0,
+    "rating": 0,
+    "asin": 0,
+    "user_id": 0,
+    "review_title": 0,
+    "timestamp": 0,
+    "helpful_vote": 0,
+    "verified_purchase": 0
+  },
+  "duplicate_excess": {
+    "exact": 25747,
+    "normalized": 27807
+  },
+  "proxy_counts": {
+    "negative": 103817,
+    "positive": 271978,
+    "neutral": 32685
+  },
+  "qa_counts": {
+    "TN": 867,
+    "FN": 1
+  },
+  "combined_estimates": {
+    "confusion_matrix": {
+      "TP": 408480.0,
+      "FP": 0.0,
+      "FN": 50090.92396313364,
+      "TN": 43428113.07603686
+    },
+    "precision": 1.0,
+    "recall": 0.8907673353333656,
+    "f1": 0.9422283944590278,
+    "confidence_level": 0.95,
+    "intervals": {
+      "precision": [
+        0.9712152369761066,
+        1.0
+      ],
+      "recall": [
+        0.5545836938789489,
+        0.99845519075461
+      ],
+      "f1": [
+        0.706017185858016,
+        0.9992269983072242
+      ]
+    },
+    "success_total_bounds": {
+      "KEEP": [
+        396722,
+        408480
+      ],
+      "REJECT": [
+        632,
+        318629
+      ]
+    },
+    "sampling_weights": {
+      "KEEP": 2723.2,
+      "REJECT_remaining": 50089.92396313364,
+      "certainty": 1
+    },
+    "kish_effective_sample_size": 883.9410335567492,
+    "method": "Equal-tail exact hypergeometric inversion per random stratum at alpha/2; Bonferroni joint bounds transformed monotonically to ratios. Conditional on fixed labels and valid SRS. Kish ESS is descriptive, not ratio-specific precision."
+  },
+  "clean_dataset_exists": false,
+  "gold_dataset_exists": false,
+  "streamlit_entrypoint_exists": false,
+  "document_sha256": {
+    "AGENTS.md": "3c3710722120d5eed479243a7c1dd84c061413db1f79414f68ebff63cc2c6ef5",
+    "customer_sentiment_analysis_plan.docx": "a245f04d30c3a4e035665586484288642efa3b606a1df73cf9d4ccafa4f5e46d",
+    "data_dictionary.md": "df4d99fbb9fc2cf294112498a30c8a01d8b001c4118a528733109052d3d4e399",
+    "docs/CODEX_HANDOFF.md": "47d27ed44f137d787260569c738eca1428a3b39fd23f60d33fa1ba8c89784da6",
+    "docs/INDEPENDENT_HUMAN_QA.md": "e22d50688d61e9088b4d5611afd5ed8a232add5e53af787674c5252f47bc9a01",
+    "docs/SUPPLEMENTAL_REJECT_QA.md": "5dd216d64db3b6b42e6c0f26da9ca813e23fd8e7d9e16011dc5b431b1fccce01",
+    "PLAN_AI.md": "14448752c2c538169325c70d2088f78bfd1df733fc3199c4419c25acd35acab8",
+    "PLAN_HUMAN.md": "a0d02cf1686a7c313ff3f77aefd35c736f7afdc14b6b7409db3f44c1e8f3fa39",
+    "README.md": "e7e58fc2184e9d4cd0c15caf9fbe7bddc7ecfcb984adfff72f046a9b8264ab3c",
+    "reports/annotation_human_review_20261009.md": "387d4370fe40be372976d1f05a5b4803ddcb21841d971e3edd4dd5f4720e78ab",
+    "reports/archive/p1_legacy_workflow/data_dictionary.md": "2fb57ff5e651b876c8952fbb088e8999b45f62af50a29253542a19d0e238336e",
+    "reports/archive/p1_legacy_workflow/PLAN_AI.md": "a3830b628992a196a685080c344bffda3535a874bb9e2d458c2e0e27f62b188e",
+    "reports/archive/p1_legacy_workflow/PLAN_HUMAN.md": "4a9cdcc7ff247b1184dd68868f38987a0d42a0a20d28db4c0beb95b460492a8f",
+    "reports/archive/p1_legacy_workflow/README.md": "73f63dce10260590ad65680661e05ef942a2978a11e62c39a0e9d06e5497bf70",
+    "reports/archive/p1_legacy_workflow/README_ARCHIVE.md": "424266232030655d3072afe2faf969495101d16381ed94722910e5eabcbe89e2",
+    "reports/candidate_quality_preflight_20261009.md": "ba3c67cff521695de090405466a4bc3d25a33382e3a06af8da36282804baaf65",
+    "reports/data_quality/candidate_pool_20261009/audit.json": "096e71d4ac38f0d1e6ebbe43642eb6c740924b4bd8fb4d6b1feac464cb5ff52d",
+    "reports/independent_qa/p1_v2_evaluation_20261009/evaluation.json": "35a857120f80e1ecefbe6e0bbe3526ec09eecf093830a50810804dc3c6f13477",
+    "reports/independent_qa/p1_v2_summary_20261009/summary.json": "1ca0046dc2d1f9ca3fe86c2c09b0c792b9138b5432818cf0e63e52139ffd9f18",
+    "reports/p0_initialization.md": "10d8db92d68be97d786d648df60d17a06330a0cd4fd1a2b1380151c1a417ef2b",
+    "reports/p1_brand_diversity.md": "3a8cf0e6249db847c38da18cf78f77f9572d3e5d17be44bf4a33d4db265e6a16",
+    "reports/p1_data_acquisition.md": "6da8d3aa3cf2fa4b715ceebdeef5b46d36df18d683d4f40c7777c838ceba67e4",
+    "reports/p1_data_feasibility.md": "3de53660ea8b47daa5f0be1a1c9a20d78cd882ca09b364cf463aada51a9d28d5",
+    "reports/p1_full_laptop_survey.md": "79bd963d36c71f0a8e970bf841de520f5832424a08ce75e3d793c653f85b61c9",
+    "reports/p1_full_scan_readiness.md": "799b3028334215b78f91b608e5169bd20514b9e682a033572c02adbb29ca9840",
+    "reports/p1_independent_human_qa.md": "f0dee308d4d848fd1ae50652c317f62134c92a6734008df85da46b769381fcc9",
+    "reports/p1_laptop_filter_qa.md": "b43d5643e5f2b2513021a56054c1ba7450448b514354e5141c450f1fc5904bc1",
+    "reports/p1_metadata_full_preflight.md": "99724a51a1db0a850f6e52b6bbad36f7dd42c326cce892d81f1490e213f2c8c6",
+    "reports/p1_pipeline_changes.md": "e79dfce3bcf05ad18d133e2c7ec3a3adf0a833d46fc97d51dc38c350dffd2799",
+    "reports/p1_qa_v2_annotation_validation.md": "70fbe6bcbfbb807b97ce95e399d2de9adc23ba673dd0659d60f8f31a50e7bc31",
+    "reports/p1_qa_v2_completion_20261009.md": "763b46d3f9b128d81da41a8c605a7b7e3c9235cbf6a4b55e6ae00bc905eb90ea",
+    "reports/p1_recall_reliability.md": "93c8e0e78177d759b14623ea5e3872d3a8575c83cd23a625fd1650b64f1e370e",
+    "reports/p1_remaining_gates.md": "634e72783b67105bdebc994eb106411538da3a713b0e9885220fa7ed07c63825",
+    "reports/p1_reviews_full_acquisition.md": "d38e1ad105b17d398929de681aac4bed7b3547b43cb64c425eaf84ec1fd92ccb",
+    "reports/p1_semeval_laptop.md": "2d7e96274baf4b7bd934ce51cd44a3069baa84be4c329acf2c50e883d680feb6",
+    "reports/plan_progress_audit_20261009.md": "19b591f9db0c43bd01e74a6424781ae4786bf8a1380da198281ed94d719bd419",
+    "reports/project_laptop_only_cleanup.md": "e81dd2b50ed999326e1d12b80f0500a651d67d4b7135cefae098941fe3f59f32",
+    "scripts/audit_plan_progress.py": "a47eda54e561173530731e8a438c91b1f6136247c88b789cf257625bbaf4dc94"
+  },
+  "limits": "Saved statistics verified against source hashes; no reannotation, cleaning, full-survey rerun, new independence acceptance or licence verification."
+}

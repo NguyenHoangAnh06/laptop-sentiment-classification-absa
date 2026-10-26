@@ -1,0 +1,76 @@
+{
+  "status": "PASS",
+  "counts": {
+    "train": {
+      "rows": 21000,
+      "products": 6357,
+      "classes": [
+        5781,
+        1842,
+        13377
+      ]
+    },
+    "validation": {
+      "rows": 4500,
+      "products": 1361,
+      "classes": [
+        1239,
+        395,
+        2866
+      ]
+    },
+    "test": {
+      "rows": 4500,
+      "products": 1362,
+      "classes": [
+        1239,
+        394,
+        2867
+      ]
+    }
+  },
+  "overlaps": {
+    "train__validation": {
+      "review_id": 0,
+      "parent_asin": 0,
+      "asin": 0,
+      "split_group_id": 0,
+      "clean_text_sha256": 0,
+      "text": 0,
+      "near_duplicate_group_id": 0,
+      "canonical_text": 0
+    },
+    "train__test": {
+      "review_id": 0,
+      "parent_asin": 0,
+      "asin": 0,
+      "split_group_id": 0,
+      "clean_text_sha256": 0,
+      "text": 0,
+      "near_duplicate_group_id": 0,
+      "canonical_text": 0
+    },
+    "validation__test": {
+      "review_id": 0,
+      "parent_asin": 0,
+      "asin": 0,
+      "split_group_id": 0,
+      "clean_text_sha256": 0,
+      "text": 0,
+      "near_duplicate_group_id": 0,
+      "canonical_text": 0
+    }
+  },
+  "near_audit": {
+    "method": "32 stable uint64 MinHash components,8 bands x4; exact hashed word-triple Jaccard>=threshold",
+    "threshold": 0.9,
+    "comparisons": 55,
+    "pairs": 0,
+    "groups": 0,
+    "comparison_cap_reached": false,
+    "limits": "Lexical approximate candidate search, not exhaustive semantic detection. Short<10word texts skipped. Pairs retained with group IDs for P4 leakage control; no sentiment-changing near-dedup deletion."
+  },
+  "cross_split_near_pairs": 0,
+  "resplit": false,
+  "limits": "Kiểm tra gần trùng từ vựng xấp xỉ; không chứng minh cách ly mọi paraphrase"
+}

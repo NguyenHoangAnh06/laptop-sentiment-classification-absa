@@ -1,0 +1,17 @@
+version: p2_amazon_only_v1
+quality_audit: reports/data_quality/candidate_pool_20261009/audit.json
+brand_products: reports/tables/p1_brand_diversity_v1/products.csv
+output_dir: data/interim/p2/20261009_final
+max_memory_bytes: 512000000
+max_seconds: 14400
+max_output_bytes: 2000000000
+max_reviews_per_product: 100
+noise_reserve: 300
+selection_buffer: 3000
+max_language_candidates: 60000
+language_batch_size: 500
+english_min_score: 0.9
+language_min_margin: 0.2
+ascii_letter_min_share: 0.98
+near_jaccard: 0.9
+max_near_comparisons: 100000

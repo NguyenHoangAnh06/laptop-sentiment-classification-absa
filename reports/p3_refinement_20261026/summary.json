@@ -1,0 +1,288 @@
+{
+  "status": "REPORT_BUILD_COMPLETE",
+  "task_id": "P3-REFINE-01",
+  "date": "2026-10-26",
+  "before": {
+    "generated_tables": 15,
+    "generated_figures": 7,
+    "markdown_sections": 9,
+    "markdown_tables": 3,
+    "markdown_figures": 0
+  },
+  "after": {
+    "core_tables": 8,
+    "core_figures": 3,
+    "appendix_items": 9
+  },
+  "audit": [
+    {
+      "path": "sentiment.csv",
+      "type": "table",
+      "recommendation": "KEEP",
+      "insight": "Neutral8,77%; macro/per-class F1",
+      "later_phase": "P5–P7"
+    },
+    {
+      "path": "length_by_sentiment.csv",
+      "type": "table",
+      "recommendation": "KEEP",
+      "insight": "Median/IQR theo lớp; giữ đuôi dài",
+      "later_phase": "P4/P6"
+    },
+    {
+      "path": "lexical_by_class.csv",
+      "type": "table",
+      "recommendation": "KEEP",
+      "insight": "Tỷ lệ trong/ngoài lớp; hỗ trợ và effect size",
+      "later_phase": "P7/P8/P9"
+    },
+    {
+      "path": "themes.csv",
+      "type": "table",
+      "recommendation": "KEEP",
+      "insight": "Mention rates có từ điển, không polarity",
+      "later_phase": "P8/P9"
+    },
+    {
+      "path": "brands.csv",
+      "type": "table",
+      "recommendation": "KEEP",
+      "insight": "Chỉ giữ concentration, không xếp hạng hãng",
+      "later_phase": "P4/P7"
+    },
+    {
+      "path": "products.csv",
+      "type": "table",
+      "recommendation": "KEEP",
+      "insight": "Nhóm sản phẩm lặp và singleton; split",
+      "later_phase": "P4"
+    },
+    {
+      "path": "verified.csv",
+      "type": "table",
+      "recommendation": "KEEP",
+      "insight": "Chênh negative10,30điểm%; confounded bởi độ dài",
+      "later_phase": "P7"
+    },
+    {
+      "path": "rating.csv",
+      "type": "table",
+      "recommendation": "APPENDIX",
+      "insight": "Tra mapping sao; trùng class snapshot",
+      "later_phase": "P2/P7"
+    },
+    {
+      "path": "years.csv",
+      "type": "table",
+      "recommendation": "APPENDIX",
+      "insight": "Audit thời gian, chưa quyết định model",
+      "later_phase": "Tham khảo"
+    },
+    {
+      "path": "months.csv",
+      "type": "table",
+      "recommendation": "APPENDIX",
+      "insight": "Audit coverage, không doanh số",
+      "later_phase": "Tham khảo"
+    },
+    {
+      "path": "missing.csv",
+      "type": "table",
+      "recommendation": "APPENDIX",
+      "insight": "Null/empty audit; P2 có báo cáo riêng",
+      "later_phase": "P2"
+    },
+    {
+      "path": "theme_contexts.csv",
+      "type": "table",
+      "recommendation": "APPENDIX",
+      "insight": "Ngữ cảnh chưa human-verified; giữ local",
+      "later_phase": "P8/P9"
+    },
+    {
+      "path": "noise_examples.csv",
+      "type": "table",
+      "recommendation": "APPENDIX",
+      "insight": "Worklist riêng, không noise prevalence",
+      "later_phase": "P7"
+    },
+    {
+      "path": "frequent_terms.csv",
+      "type": "table",
+      "recommendation": "REMOVE FROM REPORT",
+      "insight": "Tần suất chung không phân biệt lớp",
+      "later_phase": "Không thêm quyết định"
+    },
+    {
+      "path": "length_histogram.csv",
+      "type": "table",
+      "recommendation": "REMOVE FROM REPORT",
+      "insight": "Trùng độ dài; thiếu class conditioning",
+      "later_phase": "Không thêm quyết định"
+    },
+    {
+      "path": "figures/rating_proxy.png",
+      "type": "figure",
+      "recommendation": "KEEP",
+      "insight": "Chỉ giữ panel class; bỏ panel sao lặp",
+      "later_phase": "P5–P7"
+    },
+    {
+      "path": "figures/length.png",
+      "type": "figure",
+      "recommendation": "KEEP",
+      "insight": "Thay median bars bằng median/IQR",
+      "later_phase": "P4/P6"
+    },
+    {
+      "path": "figures/distinctive_bigrams.png",
+      "type": "figure",
+      "recommendation": "KEEP",
+      "insight": "Top5/lớp; within vs outside rates",
+      "later_phase": "P7"
+    },
+    {
+      "path": "figures/brands.png",
+      "type": "figure",
+      "recommendation": "APPENDIX",
+      "insight": "Concentration table đủ cho core",
+      "later_phase": "P4/P7"
+    },
+    {
+      "path": "figures/time.png",
+      "type": "figure",
+      "recommendation": "APPENDIX",
+      "insight": "Coverage tham khảo",
+      "later_phase": "Tham khảo"
+    },
+    {
+      "path": "figures/themes.png",
+      "type": "figure",
+      "recommendation": "REMOVE FROM REPORT",
+      "insight": "Lặp bảng mention rates",
+      "later_phase": "P8/P9 dùng bảng"
+    },
+    {
+      "path": "figures/verified_purchase.png",
+      "type": "figure",
+      "recommendation": "REMOVE FROM REPORT",
+      "insight": "Bảng ngắn đủ và nêu confounders",
+      "later_phase": "P7 dùng bảng"
+    }
+  ],
+  "configuration": {
+    "version": "p3_refinement_v1",
+    "task_id": "P3-REFINE-01",
+    "date": "2026-10-26",
+    "source_directory": "reports/p3/20261009_verified",
+    "output_directory": "reports/p3_refinement_20261026",
+    "lexical": {
+      "minimum_class_documents": 30,
+      "phrase_length": 2,
+      "top_per_class": 5,
+      "failure_top": 5,
+      "failure_pattern": "\\b(?:stopped|broke|broken|dead|defect\\w*|fail\\w*|return\\w*|refund\\w*)\\b"
+    },
+    "selection_order": [
+      "prevalence_difference_desc",
+      "documents_desc",
+      "term_asc"
+    ],
+    "policy": {
+      "dataset_changed": false,
+      "split_changed": false,
+      "model_changed": false,
+      "canonical_metrics_changed": false,
+      "human_labels_created": false,
+      "historical_artifacts_preserved": true
+    }
+  },
+  "source_sha256": {
+    "reports/p3/20261009_verified/03_laptop_eda.executed.ipynb": "66e1993648cc561c70cbbf1ecc8eaacc524c29968920c83e9e20aa733f4cd557",
+    "reports/p3/20261009_verified/03_laptop_eda.final.ipynb": "05e89601f7112fa834880ddf7552e33e5ed8d092b6274c12fa69f61d07b3214b",
+    "reports/p3/20261009_verified/brands.csv": "78cdded106f93e2fe063c3872d1f9db400089de1e363eefd8ab6644e16990f21",
+    "reports/p3/20261009_verified/frequent_terms.csv": "0a4dd497242b0bf413befb3147f78e155afed9c546586be0598313ecd6f9411f",
+    "reports/p3/20261009_verified/length_by_sentiment.csv": "54af2211374300a4ee4524c92484d2aed060e91843b8c4fd6b4601b3292ff333",
+    "reports/p3/20261009_verified/length_histogram.csv": "388983808c0d18be601648fa22056d819a0671e425d2f00a51569ec2b9dfdb82",
+    "reports/p3/20261009_verified/lexical_by_class.csv": "4c98436c5a3ec5e6abbfcbcde797e14f357c5a261b633d0106989bbdab4cc2e2",
+    "reports/p3/20261009_verified/missing.csv": "cbf12b4bd5f70f29dd769105247c17a7a0a6f22a2b72d0d2cca39d90d119edfa",
+    "reports/p3/20261009_verified/months.csv": "26d7151643ab9d27daff9bb0b7094f1d190cdcbfda9fa6b727bb9bc720d682d1",
+    "reports/p3/20261009_verified/noise_examples.csv": "aad8b0da265e9a3da494f80ae1516933d33f869d24a4ec8c5ccdc490fe0d61d3",
+    "reports/p3/20261009_verified/notebook_validation.json": "30938eb250c0fe7e772c9e604596cdb57fbf13034750ebd5db3961f2bfccc9a9",
+    "reports/p3/20261009_verified/products.csv": "a53cb2e067561f89120289443f1773ab7ddd7f68369caaa65b7d74e7be8e9245",
+    "reports/p3/20261009_verified/rating.csv": "b46630cf4e719ac3d3a5d642efa4f4c3b45aef9eb9c2e83dcf442a76a701528c",
+    "reports/p3/20261009_verified/sentiment.csv": "804d3f3784b319579234ba3c24308530c48a852bc48e1969435da902d8036a37",
+    "reports/p3/20261009_verified/summary.json": "ea68a49c4a27ec4510f7113a4f980c394587c398565268751ee05d4e5cc23c6b",
+    "reports/p3/20261009_verified/task_validation.json": "3f060b9caeeca3c58ac86156854d0264924bd4dc2dddd6fae0a781768a0cdec6",
+    "reports/p3/20261009_verified/themes.csv": "c369ed34fadb1df81b481cca8a2dfa047a6caba5367c18daf2e92205f7acd93d",
+    "reports/p3/20261009_verified/theme_contexts.csv": "11f0f752cf4ba0a4abffc4b38e81e7d1e3aced53b3fa54dccf692e561e9c1cd3",
+    "reports/p3/20261009_verified/verified.csv": "365a8561d9d4856d033d77f24759cfb540f640b5cfbda46231e9f82632d5c604",
+    "reports/p3/20261009_verified/years.csv": "4821b7e65e60f32d3cb46187ab1e293255bc96b0017e5d80abf117475580aa4c",
+    "reports/p3/20261009_verified/figures/brands.png": "4894fbffd27a6d67fa4a1138940a5f125ff637267b2ba126553a3c76331544cb",
+    "reports/p3/20261009_verified/figures/brands.svg": "85149795617fef07209cbb27dca6f9932c19364f2c85eb1a3232f6ed6ebf95d6",
+    "reports/p3/20261009_verified/figures/distinctive_bigrams.png": "06c72cfe396e093b7e15ebffcb332e97a3c57472c6486cba5fb5438ecb2ab02e",
+    "reports/p3/20261009_verified/figures/distinctive_bigrams.svg": "a8e766dc3dd00521d9ab3f1210b46d2f61132d6e33bc6f07ed3c7c5ad2485034",
+    "reports/p3/20261009_verified/figures/length.png": "42e6226e2acec22ebe86a5ce45efa03f2e1be3ca1b3b81d5b7a13eeb850e7893",
+    "reports/p3/20261009_verified/figures/length.svg": "f0a4ae0ab7543e64c90190c9aad05272a7750dc0cbdfb1aeff2412877c5913bd",
+    "reports/p3/20261009_verified/figures/rating_proxy.png": "ec0b8c9dfe4ae23728648cab175340647fae9b57ddecea1b0c3b9cad2551589f",
+    "reports/p3/20261009_verified/figures/rating_proxy.svg": "c44154b7d4675e6445e3cc53128036878b05ba0ba226ef6220fc1810413f56a8",
+    "reports/p3/20261009_verified/figures/themes.png": "86d5f9b01ded9bf3d1fde724297cb2cc1307e4c1c7c3a2c66f3d241b90a5db85",
+    "reports/p3/20261009_verified/figures/themes.svg": "031412fc7084834788325cb44b4f6feb42912df28558ea83b92897c876b481cd",
+    "reports/p3/20261009_verified/figures/time.png": "8be2269827154bf3e35663affacf647f83fe547c45906aab47c0bf74f331e63c",
+    "reports/p3/20261009_verified/figures/time.svg": "ada5d1585603cf58543c13ac49b7c0baddb9d723b273db71b2792b5646929194",
+    "reports/p3/20261009_verified/figures/verified_purchase.png": "2637c4f41852f69022dbff35a3e7a43aaf7af3d4789eca64c42c27a150ea5c22",
+    "reports/p3/20261009_verified/figures/verified_purchase.svg": "bee99ccea093947df8e63acbe394a2efbedc8ab107a977908461c79f903542d4",
+    "configs/p3_refinement.yaml": "e408a86789ed98ef6e22cce0836f5b2ded9019aa3f2e9e73e60d671da0b8da68",
+    "data/processed/laptop_reviews.parquet": "611b73584a933645336784b13b7f004a17e8803758d1be8ac64708563eabb5ba",
+    "reports/p3_model_readiness.json": "bda000d03773ea62aeebc5f7c1bfd8dcbfc14da9f8b5789b07ac4717ecd8508d",
+    "reports/p7_human_audit_results.json": "60765578edf72e63533389bfa5ba54945aafa61a1914a48c8fe338483d52cc5f",
+    "reports/p3_data_analysis_20261009.md": "1754b32496aa6f3e5a03965b2c9565f575ca52be87115a485ade847049adcde9",
+    "reports/p3_insight_summary_20261009.md": "4950385c704fe46db5d7907107b5587cd7319842e76ad13a7c39e46a57023967",
+    "notebooks/03_laptop_eda.ipynb": "b9d6a6b86ccfdaeb12392dcf4cdd18a8dae7b84d4a789143542f2aceaee313d4",
+    "scripts/refine_p3.py": "4bc4091d92d1239af325dc54ae999b4c03e679c37ea6e4c1c70f39b0f728c4c9",
+    "src/data/eda_refinement.py": "07728b96066d8d1e0351a65bf2da07ad39c37f8020b27ffc2ea0efc9ccd8a700"
+  },
+  "source_preservation": "PASS",
+  "integrity": {
+    "dataset_changed": false,
+    "split_changed": false,
+    "model_changed": false,
+    "canonical_metrics_changed": false,
+    "human_labels_created": false,
+    "historical_artifacts_preserved": true
+  },
+  "dataset_sha256": "611b73584a933645336784b13b7f004a17e8803758d1be8ac64708563eabb5ba",
+  "core_table_files": [
+    "tables/snapshot.csv",
+    "tables/length.csv",
+    "tables/phrases.csv",
+    "tables/failure_phrases.csv",
+    "tables/theme_rates.csv",
+    "tables/concentration.csv",
+    "tables/verified.csv",
+    "tables/traceability.csv"
+  ],
+  "appendix_table_files": [
+    "tables/helpfulness.csv"
+  ],
+  "output_sha256": {
+    "audit.md": "4bef7cd8f46142633865d819423204502f0c1155550d81a338e7704fc7f2ac7a",
+    "figures/class_distribution.png": "2c876f37c406e1728e6ddac2ff3b51ddba65eeb4e84a1ae8259ccb3374509a31",
+    "figures/class_distribution.svg": "46b7edbe7833e6f595c7b11d07644f4aa1b6b75f0e6872547db18628bae099bd",
+    "figures/length_iqr.png": "ca7e6ffa4acd79175064f552854ef335fb7e86e3f38948b0f75c0b192df6501d",
+    "figures/length_iqr.svg": "91fbe8f82d4de3e4d1d88e9a63953a4b36c572921fae68112aa9197b638d4db0",
+    "figures/phrase_comparison.png": "6bfa4764b879a815bf9590d2f0f30b7fef5b6dfc2cef69930ad9c068943ca73f",
+    "figures/phrase_comparison.svg": "2384dcaeb5df60185bc6031ec5300b114431ffc0db561a731cadd7a84f1813fa",
+    "report.html": "71dfccc30f2f5d264f9fbef4c57fe6a4ddd20ee21f9a6218c957d44eb331525a",
+    "report.md": "445186c30e31cfb0197815f57150601e489a9ab610a067207feeded844878038",
+    "tables/concentration.csv": "8fa8699c0087e43ea0d1357e300cf45d30aad1f749b4c3de71f41ca6e6e997d3",
+    "tables/failure_phrases.csv": "d9361c1c2107b65fa13c1c573f729dffb23733e04d1589ddf89816c22412d5f1",
+    "tables/helpfulness.csv": "1f2df8319bc9be171335c1529cd9b44c91ae43eda1cdf7eea607423efb27a0be",
+    "tables/length.csv": "a57965276705240257aff1d70273dc33ca76207549aae3353fa9c59b5d0241d5",
+    "tables/phrases.csv": "38eb71c5eb09d3297abbbb931a437cd396adcae8c0a22a78eb78933f9c327373",
+    "tables/snapshot.csv": "43e6a8b3d84f66d9d3f6965064e29b7a5385b6c05673285016589a847b889c9c",
+    "tables/theme_rates.csv": "3f461e7cffee30e4373d6c2fc622960f4bd5e089399ddaa84ec856e559a8a2a5",
+    "tables/traceability.csv": "49eea253bac0579daf2b6052a8269578d9254a3367e4e34d43892666e01d186d",
+    "tables/verified.csv": "c4b8d12fc0ef0fe01ed66f2fb44bd310645a967846e4b39b6cc870db7f08ddc5"
+  }
+}

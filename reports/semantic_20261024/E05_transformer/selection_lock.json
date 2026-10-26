@@ -1,0 +1,34 @@
+{
+  "selected": {
+    "spec": {
+      "mode": "unweighted"
+    },
+    "validation_macro_f1": 0.7603380514273251
+  },
+  "candidates": [
+    {
+      "spec": {
+        "mode": "unweighted"
+      },
+      "validation_macro_f1": 0.7603380514273251
+    },
+    {
+      "spec": {
+        "mode": "balanced"
+      },
+      "validation_macro_f1": 0.7583444112844425
+    }
+  ],
+  "selection_complete_before_test": true,
+  "cache_identity": {
+    "dataset_hash": "611b73584a933645336784b13b7f004a17e8803758d1be8ac64708563eabb5ba",
+    "split_hash": {
+      "train": "3b3a1a92d6019659510c6282a92e1ce47b15f24e4857770d3b65deff964fe41b",
+      "validation": "80e706247adb3daca99580d31ba618bb10b784fa4af9aa5fd15123320d6ce7a0",
+      "test": "f2a621178b8d7e76c385d3e336f66fdb8041a2c2c9ee07e89ca281cc82a1e097"
+    },
+    "configuration_hash": "a63e6653e6644293e9d3bba48b45e49ecd44756937798015d15ff27ae296725b",
+    "tokenizer_hash": "435667fab0c06c165b1283ecb422497c37124f2d6a35b2ac73dc876332fc9518"
+  },
+  "checkpoint_sha256": "19bd33a9ddd554bfd3ba5f4b18a1aa95a58535d91ea7c688c2113159bc79ebfe"
+}

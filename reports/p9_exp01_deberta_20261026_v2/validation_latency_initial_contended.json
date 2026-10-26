@@ -1,0 +1,41 @@
+{
+  "status": "COMPLETE",
+  "dataset": "validation_only_same314IDs",
+  "test_opened": false,
+  "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "torch": "2.8.0+cu128",
+  "fp16_autocast": true,
+  "threads": 2,
+  "note": "Batched từ cached tokens, gồm collate/transfer/forward; không raw-text hoặc single-request latency",
+  "results": {
+    "bert": {
+      "examples": 314,
+      "batch_size": 16,
+      "warmup_full_passes": 1,
+      "measured_full_passes": 3,
+      "seconds": [
+        0.34881490003317595,
+        0.40651779994368553,
+        0.3220737003721297
+      ],
+      "median_ms_per_aspect_from_tokens": 1.1108754778126622,
+      "predictions_identical_to_saved": true,
+      "model_sha256": "bc1268bda1a37996b6899588b5c5b20f87cd89d17c754c091232e0e9e81d6713"
+    },
+    "deberta": {
+      "examples": 314,
+      "batch_size": 16,
+      "warmup_full_passes": 1,
+      "measured_full_passes": 3,
+      "seconds": [
+        0.6071224003098905,
+        0.657623799983412,
+        0.6047434001229703
+      ],
+      "median_ms_per_aspect_from_tokens": 1.9335108290123904,
+      "predictions_identical_to_saved": true,
+      "model_sha256": "3ea6a9e1f5918722532c88906ea5c461b46419886f5d861a58ae1964e460967a"
+    }
+  },
+  "source_sha256": "7c0532a82610fc11b880eebcecea4a372380c41868c775bc73a3ec4e12bfd0d3"
+}

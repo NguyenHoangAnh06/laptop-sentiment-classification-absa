@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "command": ".venv/Scripts/python.exe -m scripts.test_all",
+  "groups": [
+    {
+      "tests": 220,
+      "seconds": 8.71
+    },
+    {
+      "tests": 12,
+      "seconds": 9.16
+    },
+    {
+      "tests": 8,
+      "seconds": 9.22
+    }
+  ],
+  "total_passed": 240,
+  "failed": 0,
+  "warnings": 10,
+  "warning_detail": "upstream TabPFN deprecation during pytest introspection; no failed tests",
+  "tabpfn_inference_smoke": "BLOCKED: TabPFNLicenseError",
+  "new_transformer_smoke": "NOT STARTED",
+  "independent_validation": [
+    "semantic cache and all 30000 canonical BERT token rows PASS",
+    "E00/E01/E02 saved metrics and artifact hashes PASS; no test re-prediction"
+  ]
+}

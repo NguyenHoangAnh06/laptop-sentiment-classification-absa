@@ -1,0 +1,76 @@
+{
+  "status": "PASS",
+  "rows": 30000,
+  "products": 9080,
+  "class_counts": {
+    "positive": 19110,
+    "negative": 8259,
+    "neutral": 2631
+  },
+  "class_shares": {
+    "positive": 0.637,
+    "negative": 0.2753,
+    "neutral": 0.0877
+  },
+  "product_review_count_percentiles": {
+    "0.5": 1.0,
+    "0.75": 3.0,
+    "0.9": 6.0,
+    "0.95": 11.0,
+    "0.99": 35.0,
+    "1.0": 100.0
+  },
+  "missing_or_blank": {
+    "review_title": 0,
+    "text": 0
+  },
+  "length_percentiles": {
+    "characters": {
+      "p50": 256.0,
+      "p75": 543.0,
+      "p90": 1116.0,
+      "p95": 1723.0499999999993,
+      "p99": 3696.049999999992,
+      "max": 17400,
+      "min": 19
+    },
+    "words": {
+      "p50": 48.0,
+      "p75": 101.0,
+      "p90": 207.0,
+      "p95": 318.0,
+      "p99": 679.0,
+      "max": 3167,
+      "min": 3
+    },
+    "bert_wordpiece_including_special_tokens": {
+      "p50": 61.0,
+      "p75": 127.0,
+      "p90": 262.0,
+      "p95": 403.0,
+      "p99": 863.0099999999984,
+      "max": 4159,
+      "min": 5
+    }
+  },
+  "above_token_limit_share": {
+    "128": 0.2463,
+    "256": 0.10286666666666666,
+    "512": 0.03206666666666667
+  },
+  "token_measurement": "BERT WordPiece thực trên canonical text; chỉ xấp xỉ đối với encoder khác",
+  "storage_estimate_bytes": {
+    "384": {
+      "float32": 46080000,
+      "float16": 23040000
+    },
+    "768": {
+      "float32": 92160000,
+      "float16": 46080000
+    }
+  },
+  "train_rows": 21000,
+  "neutral_train_rows": 1842,
+  "dataset_sha256": "611b73584a933645336784b13b7f004a17e8803758d1be8ac64708563eabb5ba",
+  "resource_measurements": "NOT_MEASURED: benchmark encoder P4 và smoke từng model P5/P6 còn chờ"
+}

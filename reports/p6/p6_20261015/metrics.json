@@ -1,0 +1,102 @@
+{
+  "validation": {
+    "accuracy": 0.848,
+    "macro_f1": 0.7346463550090223,
+    "weighted_f1": 0.8605519601055402,
+    "per_class": {
+      "negative": {
+        "precision": 0.8585445625511039,
+        "recall": 0.847457627118644,
+        "f1": 0.8529650690495532,
+        "support": 1239
+      },
+      "neutral": {
+        "precision": 0.3488,
+        "recall": 0.5518987341772152,
+        "f1": 0.42745098039215684,
+        "support": 395
+      },
+      "positive": {
+        "precision": 0.9607843137254902,
+        "recall": 0.8890439637124913,
+        "f1": 0.923523015585357,
+        "support": 2866
+      }
+    },
+    "confusion_matrix": [
+      [
+        1050,
+        160,
+        29
+      ],
+      [
+        102,
+        218,
+        75
+      ],
+      [
+        71,
+        247,
+        2548
+      ]
+    ],
+    "confusion_matrix_order": [
+      "negative",
+      "neutral",
+      "positive"
+    ],
+    "macro_precision": 0.7227096254255314,
+    "macro_recall": 0.7628001083361169,
+    "loss": 0.4508903011050489
+  },
+  "test": {
+    "accuracy": 0.8528888888888889,
+    "macro_f1": 0.7302042741506062,
+    "weighted_f1": 0.864154855614542,
+    "per_class": {
+      "negative": {
+        "precision": 0.8600654664484452,
+        "recall": 0.8482647296206618,
+        "f1": 0.8541243396993092,
+        "support": 1239
+      },
+      "neutral": {
+        "precision": 0.3378607809847199,
+        "recall": 0.5050761421319797,
+        "f1": 0.40488301119023395,
+        "support": 394
+      },
+      "positive": {
+        "precision": 0.9624395686128673,
+        "recall": 0.9026857342169515,
+        "f1": 0.931605471562275,
+        "support": 2867
+      }
+    },
+    "confusion_matrix": [
+      [
+        1051,
+        159,
+        29
+      ],
+      [
+        123,
+        199,
+        72
+      ],
+      [
+        48,
+        231,
+        2588
+      ]
+    ],
+    "confusion_matrix_order": [
+      "negative",
+      "neutral",
+      "positive"
+    ],
+    "macro_precision": 0.7201219386820107,
+    "macro_recall": 0.752008868656531,
+    "loss": 0.42642542351202833
+  }
+}

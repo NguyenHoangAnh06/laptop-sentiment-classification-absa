@@ -1,0 +1,20 @@
+version: p4_product_disjoint_v1
+source: data/processed/laptop_reviews.parquet
+source_sha256: 611b73584a933645336784b13b7f004a17e8803758d1be8ac64708563eabb5ba
+output_suffix: p4_20261009_final
+p2_manifest: data/interim/p2/20261009_final/manifest.json
+p3_summary: reports/p3/20261009_verified/summary.json
+near_jaccard: 0.90
+max_near_comparisons: 100000
+tfidf_min_df: 2
+tfidf_max_features: 30000
+bert_repo: google-bert/bert-base-uncased
+bert_revision: 86b5e0934494bd15c9632b12f734a8a67f723594
+bert_model_card: https://huggingface.co/google-bert/bert-base-uncased
+bert_declared_license: apache-2.0
+length_quantile: 0.95
+length_candidates: [128, 256, 384, 512]
+batch_size: 256
+max_memory_bytes: 512000000
+max_seconds: 900
+max_output_bytes: 512000000

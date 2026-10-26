@@ -1,0 +1,8 @@
+{
+  "checkpoint": "google-bert/bert-base-uncased",
+  "revision": "86b5e0934494bd15c9632b12f734a8a67f723594",
+  "tokenizer": "artifacts/preprocessing/p4_20261009_final/bert/tokenizer.json",
+  "max_length": 512,
+  "sha256": "68d45e234eb4a928074dfd868cead0219ab85354cc53d20e772753c6bb9169d3",
+  "license": "Apache-2.0; reuse checkpoint đã tải ở experiment legacy, không reuse trọng số fine-tune"
+}

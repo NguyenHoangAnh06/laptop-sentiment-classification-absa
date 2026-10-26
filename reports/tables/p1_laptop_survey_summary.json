@@ -1,0 +1,70 @@
+{
+  "scope": "Laptop-only measured survey; coverage recorded per run; no clean-English claim",
+  "observations": [
+    {
+      "source": "Electronics",
+      "group": "laptop",
+      "coverage_complete": true,
+      "candidate_products": 28172,
+      "matched_reviews": 408740,
+      "valid_reviews": 408480,
+      "unique_products_with_reviews": 28161,
+      "average_review_length_words": 78.79227379553467,
+      "average_review_length_chars": 424.51709753231495,
+      "duplicate_percentage": "NOT_MEASURED",
+      "duplicate_definition": "repeat normalized casefolded text, additional occurrences / valid reviews",
+      "rating_distribution": {
+        "1": 75626,
+        "2": 28191,
+        "3": 32685,
+        "4": 64764,
+        "5": 207214
+      },
+      "language_distribution": "NOT_MEASURED",
+      "aspect_coverage_estimate": 42.10683509596553,
+      "aspect_method": "keyword hit AND >= min_absa_proxy_words; survey proxy, not ABSA ground truth",
+      "short_review_percentage": 9.406580493537016,
+      "word_length_bins": {
+        "5-19": 97915,
+        "20-99": 183922,
+        "100+": 88219,
+        "0-4": 38424
+      },
+      "known_brands": 369,
+      "brand_missing_reviews": 1156,
+      "largest_product_share_percentage": 1.252692910301606,
+      "proxy_class_distribution": {
+        "negative": 103817,
+        "neutral": 32685,
+        "positive": 271978
+      },
+      "clean_english_reviews": "NOT_MEASURED",
+      "near_duplicate_percentage": "NOT_MEASURED",
+      "invalid_reviews": {
+        "empty_or_invalid_text": 260
+      },
+      "missing_fields_on_matched": {},
+      "filter_decisions": {
+        "insufficient_laptop_evidence": 830326,
+        "excluded_category": 328872,
+        "accessory_or_ambiguous_title": 422642,
+        "laptop_category_and_title": 28172
+      },
+      "filter_validation": "unvalidated",
+      "sample_reviews": 5000,
+      "sample_rating_distribution": {
+        "5": 2529,
+        "2": 340,
+        "3": 405,
+        "1": 917,
+        "4": 809
+      },
+      "sample_unique_products": 2805,
+      "sample_max_reviews_per_product": 68,
+      "sample_budget_rejections": 0,
+      "sample_estimated_bytes": 12852423
+    }
+  ],
+  "target_clean_reviews": 30000,
+  "capacity_clean_english": "NOT_MEASURED"
+}

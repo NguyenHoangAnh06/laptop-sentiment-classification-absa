@@ -1,0 +1,228 @@
+{
+  "validation": {
+    "metrics": {
+      "accuracy": 0.7484076433121019,
+      "macro_f1": 0.7141454682092473,
+      "weighted_f1": 0.7539211565219219,
+      "per_class": {
+        "negative": {
+          "precision": 0.8203125,
+          "recall": 0.7894736842105263,
+          "f1": 0.8045977011494253,
+          "support": 133
+        },
+        "neutral": {
+          "precision": 0.4794520547945205,
+          "recall": 0.5737704918032787,
+          "f1": 0.5223880597014925,
+          "support": 61
+        },
+        "positive": {
+          "precision": 0.8407079646017699,
+          "recall": 0.7916666666666666,
+          "f1": 0.8154506437768241,
+          "support": 120
+        }
+      },
+      "confusion_matrix": [
+        [
+          105,
+          21,
+          7
+        ],
+        [
+          15,
+          35,
+          11
+        ],
+        [
+          8,
+          17,
+          95
+        ]
+      ],
+      "confusion_matrix_order": [
+        "negative",
+        "neutral",
+        "positive"
+      ]
+    },
+    "groups": [
+      {
+        "group": "all",
+        "examples": 314,
+        "sentences": 202,
+        "errors": 79,
+        "accuracy": 0.7484076433121019
+      },
+      {
+        "group": "negation_cue",
+        "examples": 84,
+        "sentences": 50,
+        "errors": 29,
+        "accuracy": 0.6547619047619048
+      },
+      {
+        "group": "contrast_cue",
+        "examples": 32,
+        "sentences": 23,
+        "errors": 7,
+        "accuracy": 0.78125
+      },
+      {
+        "group": "comparison_cue",
+        "examples": 15,
+        "sentences": 12,
+        "errors": 1,
+        "accuracy": 0.9333333333333333
+      },
+      {
+        "group": "long_context_gt30_words",
+        "examples": 42,
+        "sentences": 18,
+        "errors": 18,
+        "accuracy": 0.5714285714285714
+      },
+      {
+        "group": "multi_aspect_sentence",
+        "examples": 183,
+        "sentences": 71,
+        "errors": 57,
+        "accuracy": 0.6885245901639344
+      },
+      {
+        "group": "mixed_polarity_sentence",
+        "examples": 50,
+        "sentences": 19,
+        "errors": 22,
+        "accuracy": 0.56
+      },
+      {
+        "group": "rare_aspect_train_frequency_le1",
+        "examples": 136,
+        "sentences": 103,
+        "errors": 32,
+        "accuracy": 0.7647058823529411
+      }
+    ],
+    "semantic_taxonomy": {
+      "implicit_sentiment": "NOT_MEASURED: no opinion-span/human cause tags",
+      "long_distance_sentiment": "NOT_MEASURED: sentence length is only structural proxy",
+      "mixed_same_aspect": "conflict excluded with provenance; not mapped to a three-class target"
+    },
+    "note": "Groups overlap; lexical cues are descriptive, not verified causal labels; examples use gold annotations, not new human labels."
+  },
+  "test": {
+    "metrics": {
+      "accuracy": 0.7899686520376176,
+      "macro_f1": 0.7481182549127153,
+      "weighted_f1": 0.7859883746767756,
+      "per_class": {
+        "negative": {
+          "precision": 0.6306818181818182,
+          "recall": 0.8671875,
+          "f1": 0.7302631578947368,
+          "support": 128
+        },
+        "neutral": {
+          "precision": 0.7583333333333333,
+          "recall": 0.5384615384615384,
+          "f1": 0.629757785467128,
+          "support": 169
+        },
+        "positive": {
+          "precision": 0.8830409356725146,
+          "recall": 0.8856304985337243,
+          "f1": 0.8843338213762811,
+          "support": 341
+        }
+      },
+      "confusion_matrix": [
+        [
+          111,
+          10,
+          7
+        ],
+        [
+          45,
+          91,
+          33
+        ],
+        [
+          20,
+          19,
+          302
+        ]
+      ],
+      "confusion_matrix_order": [
+        "negative",
+        "neutral",
+        "positive"
+      ]
+    },
+    "groups": [
+      {
+        "group": "all",
+        "examples": 638,
+        "sentences": 411,
+        "errors": 134,
+        "accuracy": 0.7899686520376176
+      },
+      {
+        "group": "negation_cue",
+        "examples": 134,
+        "sentences": 89,
+        "errors": 51,
+        "accuracy": 0.6194029850746269
+      },
+      {
+        "group": "contrast_cue",
+        "examples": 70,
+        "sentences": 46,
+        "errors": 23,
+        "accuracy": 0.6714285714285714
+      },
+      {
+        "group": "comparison_cue",
+        "examples": 33,
+        "sentences": 15,
+        "errors": 15,
+        "accuracy": 0.5454545454545454
+      },
+      {
+        "group": "long_context_gt30_words",
+        "examples": 57,
+        "sentences": 21,
+        "errors": 20,
+        "accuracy": 0.6491228070175439
+      },
+      {
+        "group": "multi_aspect_sentence",
+        "examples": 379,
+        "sentences": 152,
+        "errors": 80,
+        "accuracy": 0.7889182058047494
+      },
+      {
+        "group": "mixed_polarity_sentence",
+        "examples": 103,
+        "sentences": 38,
+        "errors": 42,
+        "accuracy": 0.5922330097087378
+      },
+      {
+        "group": "rare_aspect_train_frequency_le1",
+        "examples": 342,
+        "sentences": 256,
+        "errors": 86,
+        "accuracy": 0.7485380116959064
+      }
+    ],
+    "semantic_taxonomy": {
+      "implicit_sentiment": "NOT_MEASURED: no opinion-span/human cause tags",
+      "long_distance_sentiment": "NOT_MEASURED: sentence length is only structural proxy",
+      "mixed_same_aspect": "conflict excluded with provenance; not mapped to a three-class target"
+    },
+    "note": "Groups overlap; lexical cues are descriptive, not verified causal labels; examples use gold annotations, not new human labels."
+  }
+}

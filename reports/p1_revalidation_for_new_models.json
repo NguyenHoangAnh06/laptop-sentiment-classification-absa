@@ -1,0 +1,55 @@
+{
+  "status": "PASS",
+  "phase": "P1 REUSED AS-IS",
+  "raw_sources": {
+    "Electronics.jsonl.gz": {
+      "bytes": 6474438619,
+      "sha256": "17b2c5f3736d4c0cb874859076436ebd4513f4c2396c528440a63204084e6a28",
+      "manifest": {
+        "source_url": "https://mcauleylab.ucsd.edu/public_datasets/data/amazon_2023/raw/review_categories/Electronics.jsonl.gz",
+        "resolved_url": "https://mcauleylab.ucsd.edu/public_datasets/data/amazon_2023/raw/review_categories/Electronics.jsonl.gz",
+        "retrieved_utc": "2026-10-08T08:22:16.334136+00:00",
+        "etag": "\"181e817db-62bdb26aa07c6\"",
+        "last_modified": "Thu, 16 Jan 2025 23:28:26 GMT",
+        "requested_limit": null,
+        "rows": null,
+        "bytes": 6474438619,
+        "stop_reason": "source_eof",
+        "complete_source": true,
+        "format": "original_file_bytes",
+        "http_resume_implemented": false,
+        "sha256": "17b2c5f3736d4c0cb874859076436ebd4513f4c2396c528440a63204084e6a28"
+      }
+    },
+    "meta_Electronics.jsonl.gz": {
+      "bytes": 1312900427,
+      "sha256": "a4a196a1c8e443e0942d8a5c79b5a5d2d68e29d483f2badec1126690b4b2790d",
+      "manifest": {
+        "source_url": "https://mcauleylab.ucsd.edu/public_datasets/data/amazon_2023/raw/meta_categories/meta_Electronics.jsonl.gz",
+        "resolved_url": "https://mcauleylab.ucsd.edu/public_datasets/data/amazon_2023/raw/meta_categories/meta_Electronics.jsonl.gz",
+        "retrieved_utc": "2026-10-08T06:27:38.891086+00:00",
+        "etag": "\"4e41454b-62bda3bbc47f3\"",
+        "last_modified": "Thu, 16 Jan 2025 22:22:45 GMT",
+        "requested_limit": null,
+        "rows": null,
+        "bytes": 1312900427,
+        "stop_reason": "source_eof",
+        "complete_source": true,
+        "format": "original_file_bytes",
+        "http_resume_implemented": false,
+        "sha256": "a4a196a1c8e443e0942d8a5c79b5a5d2d68e29d483f2badec1126690b4b2790d"
+      }
+    }
+  },
+  "dataset_sha256": "611b73584a933645336784b13b7f004a17e8803758d1be8ac64708563eabb5ba",
+  "rows": 30000,
+  "products": 9080,
+  "product_metadata_coverage": "PASS",
+  "qa_artifacts": [
+    "reports\\tables\\p1_owner_approval_20261009.json",
+    "reports\\p1_qa_v2_completion_20261009.md",
+    "reports\\tables\\p1_semeval_owner_exception_20261009.json"
+  ],
+  "laptop_scope": "REPORTED: QA được chủ dự án chấp nhận; không gán nhãn thủ công mới",
+  "limitations": "Giữ giới hạn QA hỗ trợ/thiên lệch chọn mẫu; SemEval license NOT_VERIFIED theo ngoại lệ cũ"
+}

@@ -1,0 +1,61 @@
+split,term,count
+train,price,53
+train,screen,51
+train,battery life,45
+train,keyboard,43
+train,battery,43
+train,use,42
+train,programs,33
+train,software,32
+train,features,30
+train,warranty,26
+train,hard drive,24
+train,windows,24
+train,size,21
+train,quality,20
+train,speed,19
+train,applications,18
+train,performance,18
+train,runs,17
+train,graphics,17
+train,memory,16
+validation,screen,13
+validation,use,11
+validation,battery life,10
+validation,keyboard,9
+validation,windows,6
+validation,hard drive,6
+validation,performance,5
+validation,price,5
+validation,warranty,5
+validation,battery,5
+validation,quality,5
+validation,features,5
+validation,programs,4
+validation,size,3
+validation,works,3
+validation,screen size,3
+validation,touch pad,3
+validation,cords,3
+validation,drivers/applications dvd,2
+validation,weight,2
+test,price,19
+test,performance,15
+test,works,14
+test,os,13
+test,features,12
+test,windows 8,11
+test,screen,10
+test,use,9
+test,size,9
+test,keyboard,7
+test,set up,6
+test,battery life,6
+test,speed,6
+test,battery,6
+test,mac os,6
+test,runs,6
+test,usb ports,5
+test,operating system,5
+test,windows,5
+test,design,5

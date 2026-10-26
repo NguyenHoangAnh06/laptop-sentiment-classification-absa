@@ -1,0 +1,8 @@
+{
+  "mode": "balanced",
+  "epoch": 5,
+  "batch": 200,
+  "batches": 250,
+  "seen": 1600,
+  "seconds": 24.13660450000316
+}

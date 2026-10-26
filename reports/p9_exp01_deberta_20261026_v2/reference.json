@@ -1,0 +1,21 @@
+{
+  "repository": "https://github.com/ParhamVaryn/transformer-absa-semeval",
+  "commit": "5ff6751ca252ef2690a91af690328d758c70af32",
+  "scope": "Chỉ tham khảo model/hyperparameter; không nhập code, dữ liệu hoặc protocol",
+  "observed_model": "microsoft/deberta-v3-base",
+  "observed_lr_range": [
+    1e-05,
+    2e-05,
+    3e-05
+  ],
+  "adopted": "Lựa chọn backbone; LR3e-5 primary đã trùng cấu hình P9",
+  "not_adopted": [
+    "split",
+    "normalization",
+    "sentence-pair",
+    "TGT markers",
+    "focal loss",
+    "early stopping",
+    "best-of-seeds selection"
+  ]
+}

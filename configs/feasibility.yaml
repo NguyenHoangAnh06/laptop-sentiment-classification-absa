@@ -1,0 +1,35 @@
+purpose: laptop_only_data_survey
+version: p1_laptop_only_v5
+groups: [laptop]
+sources:
+  Electronics:
+    metadata_url: https://mcauleylab.ucsd.edu/public_datasets/data/amazon_2023/raw/meta_categories/meta_Electronics.jsonl.gz
+    reviews_url: https://mcauleylab.ucsd.edu/public_datasets/data/amazon_2023/raw/review_categories/Electronics.jsonl.gz
+limits:
+  probe_metadata_records: 20000
+  probe_review_records: 100000
+  scan_metadata_records: 2000000
+  scan_review_records: 50000000
+  max_index_products: 100000
+  max_index_estimated_bytes: 128000000
+  max_record_bytes: 1000000
+  max_process_working_set_bytes: 512000000
+  max_probe_read_bytes: 320000000
+  max_scan_read_bytes: 60000000000
+  max_probe_seconds: 90
+  max_scan_seconds: 14400
+  max_probe_output_bytes: 16000000
+  max_scan_output_bytes: 2000000000
+  max_unique_text_hashes_per_group: 100000
+  max_sample_rows_per_group: 5000
+  max_sample_estimated_bytes_per_group: 16000000
+  max_reviews_per_product_in_sample: 100
+qa:
+  included: 50
+  excluded_near_boundary: 25
+  excluded_other: 25
+survey:
+  short_review_words: 5
+  min_absa_proxy_words: 10
+  aspect_keywords:
+    laptop: [battery, screen, display, keyboard, performance, price, fan, touchpad, storage]

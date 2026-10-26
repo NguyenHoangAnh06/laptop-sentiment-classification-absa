@@ -1,0 +1,72 @@
+{
+  "status": "PENDING",
+  "mode": "probe",
+  "metadata_only": true,
+  "source": "Electronics",
+  "inputs": {
+    "metadata": {
+      "name": "metadata_prefix_20000.jsonl",
+      "sha256": "fd842cd280741053ef4ea0cfe88321b9d28dd5080ab848fd1eec74bd45ef9978",
+      "manifest": {
+        "source_url": "https://mcauleylab.ucsd.edu/public_datasets/data/amazon_2023/raw/meta_categories/meta_Electronics.jsonl.gz",
+        "resolved_url": "https://mcauleylab.ucsd.edu/public_datasets/data/amazon_2023/raw/meta_categories/meta_Electronics.jsonl.gz",
+        "retrieved_utc": "2026-10-08T04:00:42.449401+00:00",
+        "etag": "\"4e41454b-62bda3bbc47f3\"",
+        "last_modified": "Thu, 16 Jan 2025 22:22:45 GMT",
+        "requested_limit": 20000,
+        "rows": 20000,
+        "bytes": 73240352,
+        "stop_reason": "record_limit",
+        "complete_source": false,
+        "format": "unchanged_source_jsonl_lines",
+        "sha256": "fd842cd280741053ef4ea0cfe88321b9d28dd5080ab848fd1eec74bd45ef9978",
+        "supersedes_manifest": "metadata_prefix_20000.jsonl.manifest.json",
+        "original_recorded_sha256": "9a36a011d6a0d611592a0d043fcd04f61b0c31a15fb7d6100404c42862bbc5ac",
+        "correction_reason": "Original downloader hashed before output buffer was closed. Source file unchanged; verified by rereading finalized bytes."
+      },
+      "complete_source": false
+    }
+  },
+  "settings_sha256": "1059e9de83343bc41fbefb9d74bf3caaa4cba4ca8de0365e45d201bbd7827ec5",
+  "source_coverage_complete": false,
+  "metadata_coverage_complete": false,
+  "metadata_scan": {
+    "rows": 20000,
+    "decoded_bytes": 73240352,
+    "invalid_records": 0,
+    "oversized_records": 0,
+    "malformed_records": 0,
+    "truncated_records": 0,
+    "eof_observed": false,
+    "stop_reason": "record_limit",
+    "error_lines": []
+  },
+  "review_scan": {
+    "rows": 0,
+    "decoded_bytes": 0,
+    "invalid_records": 0,
+    "oversized_records": 0,
+    "malformed_records": 0,
+    "truncated_records": 0,
+    "eof_observed": false,
+    "stop_reason": "not_started",
+    "error_lines": []
+  },
+  "candidate_products": {
+    "laptop": 319
+  },
+  "resources": {
+    "elapsed_seconds": 2.5453289998695254,
+    "estimated_index_bytes": 432728,
+    "checksum_read_bytes": 73240352,
+    "decoded_read_bytes": 73240352,
+    "working_set_bytes": 28942336,
+    "peak_working_set_bytes": 28979200
+  },
+  "output_sha256": {
+    "products.jsonl": "e3be56cd31c23d42caac5c384fa5211e52234fb4f1c78fb652f71c65980375c0"
+  },
+  "qa_rule_sha256": {
+    "Electronics_laptop_1059e9de8334.csv": "0f6d5f7dffd7d804b3e1490739520e0b95730b3650f8b3c04e93ac8aa1b867bb"
+  }
+}

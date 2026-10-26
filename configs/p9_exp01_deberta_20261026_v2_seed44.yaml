@@ -1,0 +1,54 @@
+version: p9_exp01_v1
+seed: 44
+p8_manifest: data/processed/p8_20261026/manifest.json
+p8_result: reports/p8_20261026/result.json
+p8_predictions: data/interim/p8_20261026
+tokenizer_source: microsoft/deberta-v3-base
+pretrained_model: microsoft/deberta-v3-base
+revision: 8ccc9b6f36199bec6961081d44eb72fb3f7353f3
+labels:
+- negative
+- neutral
+- positive
+conflict_policy: exclude_preserve_original
+representation: occurrence_markers_single_sequence
+markers:
+- '[unused0]'
+- '[unused1]'
+max_length: 128
+data_directory: data/processed/p9_exp01_deberta_20261026_v2_seed44
+model_directory: artifacts/models/p9_exp01_deberta_20261026_v2_seed44
+report_directory: reports/p9_exp01_deberta_20261026_v2_seed44
+prediction_directory: data/interim/p9_exp01_deberta_20261026_v2_seed44
+end_to_end:
+  enabled: true
+  conflict_policy: exclude_gold_and_ignore_exact_conflict_predictions
+  p8_source: saved_predictions_frozen
+training:
+  device: cuda
+  threads: 2
+  epochs: 5
+  learning_rate: 3.0e-05
+  batch_size: 4
+  eval_batch_size: 8
+  gradient_accumulation: 4
+  weight_decay: 0.01
+  warmup_ratio: 0.1
+  max_grad_norm: 1.0
+  optimizer: AdamW
+  scheduler: linear_warmup_decay
+  loss_candidates:
+  - unweighted
+  evaluation_strategy: epoch
+  selection_metric: validation_macro_f1
+  tie_break: first_candidate_then_earliest_epoch
+  gradient_checkpointing: true
+  mixed_precision: fp16
+  max_seconds: 10800
+  max_process_rss_bytes: 6000000000
+experiment: P9-EXP01-STABILITY
+tokenizer_revision: 8ccc9b6f36199bec6961081d44eb72fb3f7353f3
+pretrained_filename: pytorch_model.bin
+attention_implementation: eager
+validation_only: true
+primary_selection_lock_sha256: f90092b7552da6c1f0f9f02aa77e67e347f04359dd0abdce478fbc8fe5e84b36

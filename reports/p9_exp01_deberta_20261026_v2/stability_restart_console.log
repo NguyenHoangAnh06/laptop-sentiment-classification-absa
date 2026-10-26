@@ -1,0 +1,106 @@
+DebertaV2ForSequenceClassification LOAD REPORT from: C:\Users\ADMIN\.cache\huggingface\hub\models--microsoft--deberta-v3-base\snapshots\8ccc9b6f36199bec6961081d44eb72fb3f7353f3
+Key                                     | Status     | 
+----------------------------------------+------------+-
+mask_predictions.dense.bias             | UNEXPECTED | 
+lm_predictions.lm_head.bias             | UNEXPECTED | 
+mask_predictions.dense.weight           | UNEXPECTED | 
+lm_predictions.lm_head.dense.weight     | UNEXPECTED | 
+mask_predictions.LayerNorm.bias         | UNEXPECTED | 
+mask_predictions.LayerNorm.weight       | UNEXPECTED | 
+mask_predictions.classifier.bias        | UNEXPECTED | 
+lm_predictions.lm_head.dense.bias       | UNEXPECTED | 
+lm_predictions.lm_head.LayerNorm.bias   | UNEXPECTED | 
+lm_predictions.lm_head.LayerNorm.weight | UNEXPECTED | 
+mask_predictions.classifier.weight      | UNEXPECTED | 
+classifier.weight                       | MISSING    | 
+classifier.bias                         | MISSING    | 
+pooler.dense.bias                       | MISSING    | 
+pooler.dense.weight                     | MISSING    | 
+
+Notes:
+- UNEXPECTED	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING	:those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+{"mode": "unweighted", "epoch": 1, "batch": 100, "batches": 500, "seen": 400, "seconds": 21.100634100381285}
+{"mode": "unweighted", "epoch": 1, "batch": 200, "batches": 500, "seen": 800, "seconds": 40.57002730015665}
+{"mode": "unweighted", "epoch": 1, "batch": 300, "batches": 500, "seen": 1200, "seconds": 72.38646290032193}
+{"mode": "unweighted", "epoch": 1, "batch": 400, "batches": 500, "seen": 1599, "seconds": 111.55179470032454}
+{"mode": "unweighted", "epoch": 1, "batch": 500, "batches": 500, "seen": 1999, "seconds": 149.28250870015472}
+{"mode": "unweighted", "epoch": 1, "validation_macro_f1": 0.6829854612887875}
+{"mode": "unweighted", "epoch": 2, "batch": 100, "batches": 500, "seen": 399, "seconds": 39.03769379993901}
+{"mode": "unweighted", "epoch": 2, "batch": 200, "batches": 500, "seen": 799, "seconds": 77.16801859997213}
+{"mode": "unweighted", "epoch": 2, "batch": 300, "batches": 500, "seen": 1199, "seconds": 116.37407159991562}
+{"mode": "unweighted", "epoch": 2, "batch": 400, "batches": 500, "seen": 1599, "seconds": 154.85972149996087}
+{"mode": "unweighted", "epoch": 2, "batch": 500, "batches": 500, "seen": 1999, "seconds": 191.1699911998585}
+{"mode": "unweighted", "epoch": 2, "validation_macro_f1": 0.7347101407751228}
+{"mode": "unweighted", "epoch": 3, "batch": 100, "batches": 500, "seen": 400, "seconds": 39.98767800023779}
+{"mode": "unweighted", "epoch": 3, "batch": 200, "batches": 500, "seen": 800, "seconds": 79.39204740012065}
+{"mode": "unweighted", "epoch": 3, "batch": 300, "batches": 500, "seen": 1200, "seconds": 118.95000330032781}
+{"mode": "unweighted", "epoch": 3, "batch": 400, "batches": 500, "seen": 1599, "seconds": 157.9398361002095}
+{"mode": "unweighted", "epoch": 3, "batch": 500, "batches": 500, "seen": 1999, "seconds": 181.09858920006081}
+{"mode": "unweighted", "epoch": 3, "validation_macro_f1": 0.760213702074167}
+{"mode": "unweighted", "epoch": 4, "batch": 100, "batches": 500, "seen": 400, "seconds": 19.482437199912965}
+{"mode": "unweighted", "epoch": 4, "batch": 200, "batches": 500, "seen": 800, "seconds": 39.179897299967706}
+{"mode": "unweighted", "epoch": 4, "batch": 300, "batches": 500, "seen": 1199, "seconds": 58.66923499992117}
+{"mode": "unweighted", "epoch": 4, "batch": 400, "batches": 500, "seen": 1599, "seconds": 78.27817980013788}
+{"mode": "unweighted", "epoch": 4, "batch": 500, "batches": 500, "seen": 1999, "seconds": 98.06608969997615}
+{"mode": "unweighted", "epoch": 4, "validation_macro_f1": 0.7679430188686432}
+{"mode": "unweighted", "epoch": 5, "batch": 100, "batches": 500, "seen": 399, "seconds": 19.740510900039226}
+{"mode": "unweighted", "epoch": 5, "batch": 200, "batches": 500, "seen": 799, "seconds": 39.730587899684906}
+{"mode": "unweighted", "epoch": 5, "batch": 300, "batches": 500, "seen": 1199, "seconds": 59.15589200006798}
+{"mode": "unweighted", "epoch": 5, "batch": 400, "batches": 500, "seen": 1599, "seconds": 79.34380839997903}
+{"mode": "unweighted", "epoch": 5, "batch": 500, "batches": 500, "seen": 1999, "seconds": 101.37847549980506}
+{"mode": "unweighted", "epoch": 5, "validation_macro_f1": 0.7572965457552137}
+{"status": "VALIDATION_ONLY_COMPLETE", "selected": {"mode": "unweighted", "epoch": 4, "validation_macro_f1": 0.7679430188686432, "model_sha256": "9027a2c3f06f3f8a784da09e3cfc91d525feb13038219bbc9815d79606873102", "wall_seconds": 750.1788436998613}, "validation": {"accuracy": 0.7961783439490446, "macro_f1": 0.7679430188686432, "weighted_f1": 0.8059555970704794, "per_class": {"negative": {"precision": 0.8790322580645161, "recall": 0.8195488721804511, "f1": 0.8482490272373541, "support": 133}, "neutral": {"precision": 0.5060240963855421, "recall": 0.6885245901639344, "f1": 0.5833333333333334, "support": 61}, "positive": {"precision": 0.9252336448598131, "recall": 0.825, "f1": 0.8722466960352423, "support": 120}}, "confusion_matrix": [[109, 23, 1], [12, 42, 7], [3, 18, 99]], "confusion_matrix_order": ["negative", "neutral", "positive"]}, "model_directory": "artifacts/models/p9_exp01_deberta_20261026_v2_seed43_restart01/unweighted/best", "selection_lock_sha256": "1917ab6d05b998aebf9e7a8caeef2bf58605cbdb29acaec7b330653fd5a313c4", "reload_validation_predictions_identical": true, "test_opened": false, "test_tuning": false, "runtime_seconds": 757.2912401999347, "seed": 43}
+DebertaV2ForSequenceClassification LOAD REPORT from: C:\Users\ADMIN\.cache\huggingface\hub\models--microsoft--deberta-v3-base\snapshots\8ccc9b6f36199bec6961081d44eb72fb3f7353f3
+Key                                     | Status     | 
+----------------------------------------+------------+-
+mask_predictions.dense.bias             | UNEXPECTED | 
+lm_predictions.lm_head.bias             | UNEXPECTED | 
+mask_predictions.dense.weight           | UNEXPECTED | 
+lm_predictions.lm_head.dense.weight     | UNEXPECTED | 
+mask_predictions.LayerNorm.bias         | UNEXPECTED | 
+mask_predictions.LayerNorm.weight       | UNEXPECTED | 
+mask_predictions.classifier.bias        | UNEXPECTED | 
+lm_predictions.lm_head.dense.bias       | UNEXPECTED | 
+lm_predictions.lm_head.LayerNorm.bias   | UNEXPECTED | 
+lm_predictions.lm_head.LayerNorm.weight | UNEXPECTED | 
+mask_predictions.classifier.weight      | UNEXPECTED | 
+classifier.weight                       | MISSING    | 
+classifier.bias                         | MISSING    | 
+pooler.dense.bias                       | MISSING    | 
+pooler.dense.weight                     | MISSING    | 
+
+Notes:
+- UNEXPECTED	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING	:those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+{"mode": "unweighted", "epoch": 1, "batch": 100, "batches": 500, "seen": 399, "seconds": 21.004020700231194}
+{"mode": "unweighted", "epoch": 1, "batch": 200, "batches": 500, "seen": 799, "seconds": 43.05695950007066}
+{"mode": "unweighted", "epoch": 1, "batch": 300, "batches": 500, "seen": 1199, "seconds": 64.51203670026734}
+{"mode": "unweighted", "epoch": 1, "batch": 400, "batches": 500, "seen": 1599, "seconds": 86.16974160028622}
+{"mode": "unweighted", "epoch": 1, "batch": 500, "batches": 500, "seen": 1999, "seconds": 107.64865460013971}
+{"mode": "unweighted", "epoch": 1, "validation_macro_f1": 0.5494683135055948}
+{"mode": "unweighted", "epoch": 2, "batch": 100, "batches": 500, "seen": 400, "seconds": 21.62437540013343}
+{"mode": "unweighted", "epoch": 2, "batch": 200, "batches": 500, "seen": 800, "seconds": 43.139900600072}
+{"mode": "unweighted", "epoch": 2, "batch": 300, "batches": 500, "seen": 1200, "seconds": 64.6466542002745}
+{"mode": "unweighted", "epoch": 2, "batch": 400, "batches": 500, "seen": 1599, "seconds": 86.012253400404}
+{"mode": "unweighted", "epoch": 2, "batch": 500, "batches": 500, "seen": 1999, "seconds": 107.64917340036482}
+{"mode": "unweighted", "epoch": 2, "validation_macro_f1": 0.7314886469816048}
+{"mode": "unweighted", "epoch": 3, "batch": 100, "batches": 500, "seen": 400, "seconds": 21.59923220006749}
+{"mode": "unweighted", "epoch": 3, "batch": 200, "batches": 500, "seen": 800, "seconds": 43.081434099934995}
+{"mode": "unweighted", "epoch": 3, "batch": 300, "batches": 500, "seen": 1199, "seconds": 64.90527579979971}
+{"mode": "unweighted", "epoch": 3, "batch": 400, "batches": 500, "seen": 1599, "seconds": 86.48788739973679}
+{"mode": "unweighted", "epoch": 3, "batch": 500, "batches": 500, "seen": 1999, "seconds": 107.89145859982818}
+{"mode": "unweighted", "epoch": 3, "validation_macro_f1": 0.7546642111046088}
+{"mode": "unweighted", "epoch": 4, "batch": 100, "batches": 500, "seen": 399, "seconds": 21.714124399702996}
+{"mode": "unweighted", "epoch": 4, "batch": 200, "batches": 500, "seen": 799, "seconds": 43.08139290008694}
+{"mode": "unweighted", "epoch": 4, "batch": 300, "batches": 500, "seen": 1199, "seconds": 64.52263709995896}
+{"mode": "unweighted", "epoch": 4, "batch": 400, "batches": 500, "seen": 1599, "seconds": 86.5237014000304}
+{"mode": "unweighted", "epoch": 4, "batch": 500, "batches": 500, "seen": 1999, "seconds": 109.38536270009354}
+{"mode": "unweighted", "epoch": 4, "validation_macro_f1": 0.7514542043878967}
+{"mode": "unweighted", "epoch": 5, "batch": 100, "batches": 500, "seen": 400, "seconds": 20.588343399576843}
+{"mode": "unweighted", "epoch": 5, "batch": 200, "batches": 500, "seen": 800, "seconds": 40.14624669961631}
+{"mode": "unweighted", "epoch": 5, "batch": 300, "batches": 500, "seen": 1200, "seconds": 59.93677369970828}
+{"mode": "unweighted", "epoch": 5, "batch": 400, "batches": 500, "seen": 1600, "seconds": 79.51084150001407}
+{"mode": "unweighted", "epoch": 5, "batch": 500, "batches": 500, "seen": 1999, "seconds": 99.14812929974869}
+{"mode": "unweighted", "epoch": 5, "validation_macro_f1": 0.7480224937584022}
+{"status": "VALIDATION_ONLY_COMPLETE", "selected": {"mode": "unweighted", "epoch": 3, "validation_macro_f1": 0.7546642111046088, "model_sha256": "72d24f319ae6f6f0f7bead7e78f6b54904b66d1a4b689f1b526c2ba67fdad1ac", "wall_seconds": 552.3404765999876}, "validation": {"accuracy": 0.7993630573248408, "macro_f1": 0.7546642111046088, "weighted_f1": 0.7999276937267634, "per_class": {"negative": {"precision": 0.8518518518518519, "recall": 0.8646616541353384, "f1": 0.8582089552238806, "support": 133}, "neutral": {"precision": 0.532258064516129, "recall": 0.5409836065573771, "f1": 0.5365853658536586, "support": 61}, "positive": {"precision": 0.8803418803418803, "recall": 0.8583333333333333, "f1": 0.869198312236287, "support": 120}}, "confusion_matrix": [[115, 16, 2], [16, 33, 12], [4, 13, 103]], "confusion_matrix_order": ["negative", "neutral", "positive"]}, "model_directory": "artifacts/models/p9_exp01_deberta_20261026_v2_seed44/unweighted/best", "selection_lock_sha256": "02f39e50e45a8de8ff5093b073a9002037c5454ff3f77161be48c353aef2ab97", "reload_validation_predictions_identical": true, "test_opened": false, "test_tuning": false, "runtime_seconds": 558.7870884002186, "seed": 44}

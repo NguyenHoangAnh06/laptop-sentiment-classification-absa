@@ -1,0 +1,4 @@
+class,support,both_correct,corrected_by_balanced,regressed_by_balanced,both_wrong,unweighted_false_positives,balanced_false_positives
+negative,1239,1045,4,58,132,163,133
+neutral,395,179,62,7,147,236,391
+positive,2866,2601,6,82,177,129,79

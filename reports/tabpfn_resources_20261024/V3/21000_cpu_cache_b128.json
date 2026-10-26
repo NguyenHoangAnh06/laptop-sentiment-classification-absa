@@ -1,0 +1,28 @@
+{
+  "version": "V3",
+  "samples": 21000,
+  "device": "cpu",
+  "prediction_batch_size": 128,
+  "split": "train",
+  "seed": 42,
+  "status": "ERROR",
+  "token_configured": false,
+  "features": 384,
+  "dtype": "float32",
+  "settings": {
+    "n_estimators": 1,
+    "fit_mode": "fit_with_cache",
+    "memory_saving_mode": true,
+    "keep_cache_on_device": false,
+    "inference_precision": "autocast"
+  },
+  "package": "9.2.0",
+  "class_counts": [
+    5781,
+    1842,
+    13377
+  ],
+  "checkpoint": "tabpfn-v3-classifier-v3_default.ckpt",
+  "error_type": "ValueError",
+  "seconds": 5.190803099889308
+}

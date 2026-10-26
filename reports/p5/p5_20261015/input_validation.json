@@ -1,0 +1,68 @@
+{
+  "status": "PASS",
+  "isolation": {
+    "review_id": {
+      "train__validation": 0,
+      "train__test": 0,
+      "validation__test": 0
+    },
+    "parent_asin": {
+      "train__validation": 0,
+      "train__test": 0,
+      "validation__test": 0
+    },
+    "asin": {
+      "train__validation": 0,
+      "train__test": 0,
+      "validation__test": 0
+    },
+    "split_group_id": {
+      "train__validation": 0,
+      "train__test": 0,
+      "validation__test": 0
+    },
+    "text": {
+      "train__validation": 0,
+      "train__test": 0,
+      "validation__test": 0
+    },
+    "clean_text_sha256": {
+      "train__validation": 0,
+      "train__test": 0,
+      "validation__test": 0
+    }
+  },
+  "train_only_idf_reconstruction": "PASS",
+  "frozen_tfidf_full_retransform": "PASS",
+  "protected_input_count": 149,
+  "counts": {
+    "train": {
+      "rows": 21000,
+      "products": 6357,
+      "labels": {
+        "negative": 5781,
+        "neutral": 1842,
+        "positive": 13377
+      }
+    },
+    "validation": {
+      "rows": 4500,
+      "products": 1361,
+      "labels": {
+        "negative": 1239,
+        "neutral": 395,
+        "positive": 2866
+      }
+    },
+    "test": {
+      "rows": 4500,
+      "products": 1362,
+      "labels": {
+        "negative": 1239,
+        "neutral": 394,
+        "positive": 2867
+      }
+    }
+  },
+  "near_duplicate_evidence": "Reused checksum-bound P4 report; not exhaustive semantic proof"
+}

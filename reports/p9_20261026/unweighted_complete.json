@@ -1,0 +1,7 @@
+{
+  "mode": "unweighted",
+  "epoch": 4,
+  "validation_macro_f1": 0.7141454682092473,
+  "model_sha256": "bc1268bda1a37996b6899588b5c5b20f87cd89d17c754c091232e0e9e81d6713",
+  "wall_seconds": 183.15371249988675
+}

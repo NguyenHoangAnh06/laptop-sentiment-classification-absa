@@ -1,0 +1,85 @@
+{
+  "status": "DONE",
+  "mode": "scan",
+  "metadata_only": true,
+  "source": "Electronics",
+  "inputs": {
+    "metadata": {
+      "name": "meta_Electronics.jsonl.gz",
+      "sha256": "a4a196a1c8e443e0942d8a5c79b5a5d2d68e29d483f2badec1126690b4b2790d",
+      "manifest": {
+        "source_url": "https://mcauleylab.ucsd.edu/public_datasets/data/amazon_2023/raw/meta_categories/meta_Electronics.jsonl.gz",
+        "resolved_url": "https://mcauleylab.ucsd.edu/public_datasets/data/amazon_2023/raw/meta_categories/meta_Electronics.jsonl.gz",
+        "retrieved_utc": "2026-10-08T06:27:38.891086+00:00",
+        "etag": "\"4e41454b-62bda3bbc47f3\"",
+        "last_modified": "Thu, 16 Jan 2025 22:22:45 GMT",
+        "requested_limit": null,
+        "rows": null,
+        "bytes": 1312900427,
+        "stop_reason": "source_eof",
+        "complete_source": true,
+        "format": "original_file_bytes",
+        "http_resume_implemented": false,
+        "sha256": "a4a196a1c8e443e0942d8a5c79b5a5d2d68e29d483f2badec1126690b4b2790d"
+      },
+      "complete_source": true
+    }
+  },
+  "settings_sha256": "8a3c1eaf1583440337f6cde349b8f35fa782110eda66b72e2f3c7f356eec297d",
+  "source_coverage_complete": false,
+  "metadata_coverage_complete": true,
+  "metadata_scan": {
+    "rows": 1610012,
+    "decoded_bytes": 5246144134,
+    "invalid_records": 0,
+    "oversized_records": 0,
+    "malformed_records": 0,
+    "truncated_records": 0,
+    "eof_observed": true,
+    "stop_reason": "source_eof",
+    "error_lines": []
+  },
+  "review_scan": {
+    "rows": 0,
+    "decoded_bytes": 0,
+    "invalid_records": 0,
+    "oversized_records": 0,
+    "malformed_records": 0,
+    "truncated_records": 0,
+    "eof_observed": false,
+    "stop_reason": "not_started",
+    "error_lines": []
+  },
+  "candidate_products": {
+    "laptop": 28172
+  },
+  "filter_decisions": {
+    "laptop": {
+      "insufficient_laptop_evidence": 830326,
+      "excluded_category": 328872,
+      "accessory_or_ambiguous_title": 422642,
+      "laptop_category_and_title": 28172
+    }
+  },
+  "baseline_laptop_filter_decisions": {
+    "insufficient_laptop_evidence": 830326,
+    "excluded_category": 328872,
+    "accessory_or_ambiguous_title": 422642,
+    "laptop_category_and_title": 28172
+  },
+  "join_counts": {},
+  "resources": {
+    "elapsed_seconds": 212.96179550001398,
+    "estimated_index_bytes": 38002675,
+    "checksum_read_bytes": 1312900427,
+    "decoded_read_bytes": 5246144134,
+    "working_set_bytes": 71163904,
+    "peak_working_set_bytes": 71163904
+  },
+  "output_sha256": {
+    "products.jsonl": "8c359dbc575980fd31066de83c484110e7c5908fb590aeb5f44b2d757748912e"
+  },
+  "qa_rule_sha256": {
+    "Electronics_laptop_8a3c1eaf1583.csv": "5454e6e8d591f646c4c239b99ca1941df3a5f8b90125ee9e19fb3e4ac9336062"
+  }
+}

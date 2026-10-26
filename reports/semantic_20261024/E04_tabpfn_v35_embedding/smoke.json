@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "rows": 24,
+  "checkpoint": "tabpfn-v3.5-20260909.safetensors",
+  "gpu_allocated_bytes": 1406364672
+}

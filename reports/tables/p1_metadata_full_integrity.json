@@ -1,0 +1,39 @@
+{
+  "metadata_preflight": "DONE",
+  "row_conservation": "PASS",
+  "products_unique_laptop_only": "PASS",
+  "product_rows": 28172,
+  "products_jsonl_bytes": 9639464,
+  "output_sha256_verified": true,
+  "raw_checksums": {
+    "Cell_Phones_and_Accessories_metadata_probe_5000.jsonl": "MATCH",
+    "Cell_Phones_and_Accessories_reviews_probe_20000.jsonl": "MATCH",
+    "metadata_prefix_20000.jsonl": "MATCH",
+    "meta_Electronics.jsonl.gz": "MATCH",
+    "reviews_prefix_100000.jsonl": "MATCH"
+  },
+  "qa": {
+    "Electronics_laptop_8a3c1eaf1583.csv": {
+      "status": "unvalidated",
+      "rows": 100,
+      "pending_or_unsure": 100,
+      "included_sample": 50,
+      "observed_precision": null,
+      "minimum_included": 50,
+      "required_precision": 0.95,
+      "false_positives_in_included_sample": null,
+      "note": "Sample precision is not a population guarantee; source coverage remains separate.",
+      "group": "laptop",
+      "false_negatives_in_excluded_sample": 0,
+      "population_recall": "NOT_MEASURED"
+    }
+  },
+  "reviews_full_file_exists": false,
+  "reviews_authorized": false,
+  "qa_strata": {
+    "included": 50,
+    "excluded_near_boundary": 25,
+    "excluded_other": 25
+  },
+  "human_annotation_fields_blank": true
+}

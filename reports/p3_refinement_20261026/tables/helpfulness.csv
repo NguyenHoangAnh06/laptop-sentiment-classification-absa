@@ -1,0 +1,4 @@
+sentiment,reviews,helpful_mean,helpful_median,helpful_nonzero_share
+negative,8259,2.842353796,1,0.5300883884
+neutral,2631,3.670847586,1,0.5043709616
+positive,19110,3.264887493,0,0.4747252747

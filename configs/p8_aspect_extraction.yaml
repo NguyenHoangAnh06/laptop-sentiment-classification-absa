@@ -1,0 +1,40 @@
+version: p8_ate_v1
+seed: 42
+sources:
+  train_xml: data/raw/semeval/Laptop_Train_v2.xml
+  test_xml: data/raw/semeval/Laptops_Test_Gold.xml
+  train_jsonl: data/interim/semeval/train_sentences.jsonl
+  test_jsonl: data/interim/semeval/test_sentences.jsonl
+tokenizer: artifacts/preprocessing/p4_20261009_final/bert/tokenizer.json
+pretrained_model: google-bert/bert-base-uncased
+revision: 86b5e0934494bd15c9632b12f734a8a67f723594
+validation_fraction: 0.15
+max_length: 128
+labels: [O, B-ASP, I-ASP]
+subword_policy: all_wordpieces_bio
+span_policy: trim_boundary_whitespace_preserve_original
+decode_policy: orphan_I_starts_entity
+data_directory: data/processed/p8_20261026
+model_directory: artifacts/models/p8_20261026
+report_directory: reports/p8_20261026
+prediction_directory: data/interim/p8_20261026
+training:
+  device: cuda
+  threads: 2
+  epochs: 5
+  learning_rate: 0.00003
+  batch_size: 8
+  eval_batch_size: 16
+  gradient_accumulation: 2
+  weight_decay: 0.01
+  warmup_ratio: 0.1
+  max_grad_norm: 1.0
+  optimizer: AdamW
+  scheduler: linear_warmup_decay
+  evaluation_strategy: epoch
+  selection_metric: validation_entity_f1
+  tie_break: earliest_epoch
+  gradient_checkpointing: true
+  mixed_precision: fp16
+  max_seconds: 10800
+  max_process_rss_bytes: 6000000000

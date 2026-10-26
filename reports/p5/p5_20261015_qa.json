@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "models": {
+    "majority": "PASS",
+    "logistic_regression": "PASS",
+    "linear_svm": "PASS",
+    "decision_tree": "PASS"
+  },
+  "saved_test_predictions": 4500,
+  "selection_recomputed_from_validation": "PASS",
+  "metrics_recomputed_from_saved_predictions": "PASS",
+  "test_predictions_rerun": false,
+  "input_hashes_verified": 149,
+  "verification_sources_sha256": {
+    "scripts/validate_p5.py": "fa9a4f331e52f1c7f6262be93fae9ebeaa1427a0299f191210a3fe0900edfe71",
+    "tests/test_p5.py": "b31376dc552d1ce5120b96c2a4630128a72d5554815009ea57b200385a54b9bc"
+  },
+  "observed_commands": {
+    "pytest_full": "195 passed in 9.62s",
+    "pytest_p5": "15 passed in 2.87s",
+    "pip_check": "No broken requirements found.",
+    "compileall_src_scripts": "exit 0"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "total_passed": 380,
+  "failed": 0,
+  "groups": [
+    347,
+    25,
+    8
+  ],
+  "previous_tests": 350,
+  "new_tests": 30,
+  "commands": [
+    {
+      "command": ".venv/Scripts/python.exe -B -m scripts.test_all",
+      "exit_code": 0
+    },
+    {
+      "command": ".venv/Scripts/python.exe -m pip check",
+      "exit_code": 0
+    },
+    {
+      "command": ".venv/Scripts/python.exe -m compileall -q src scripts tests",
+      "exit_code": 0
+    }
+  ],
+  "pip_check": "PASS",
+  "compileall": "PASS",
+  "source_sha256": {
+    "scripts/test_all.py": "9c2f13052107ac1a9ab6aba7ee3fdf54e16783c8de09e59e606ca00ec45f81fb",
+    "scripts/prepare_p9.py": "ace83a92ae401b1eba1717e8ca3cd86dc51bd2c7d1a7bc1ca80fcddc935d72b4",
+    "scripts/train_p9.py": "9b8c42903b371c10854b429d9b1c445f1c5faacb45aad7a31633ef0444018f65",
+    "scripts/evaluate_p9_end_to_end.py": "338e9179196caf8c69f2bd115ef49460a9715c10fd3a8ea9e69ca7cb0db5ebe3",
+    "scripts/finalize_p9.py": "be53538e735e20789e288cee8bee5e3c1e6d812f0e67dc2cb297c8dc0d1cc386",
+    "src/absa/sentiment_data.py": "193dc38fb944e883443ee9398ff9967ebac41d559d2f285ab02de33a6039c04a",
+    "src/absa/sentiment.py": "a01379e7fc6e395d4485f48f828bee4d6b5ba6649d52f543612bf085b6257dcd",
+    "src/evaluation/aspect_sentiment.py": "fd55d1cdc1be31ecfbe014cc0e709dc7806c8acc96aa6397c94ab7299f06ca88",
+    "src/inference/absa.py": "678444210f4dbc363854979c16affd57cbc737cd44c5211032e1d5fbd2198279",
+    "tests/test_p9_data.py": "c956565f490d4aed2a657f363eef845fe3bba2645f389b7911d98ad555c0f21d",
+    "tests/test_p9_model.py": "115f646dd748c4356c0c2bb14fc3ad633523e124c401cd9de8a6a6d75c4d6255"
+  },
+  "console_log": "reports/p9_exp01_deberta_20261026_v2/test_console.log"
+}

@@ -1,0 +1,7 @@
+DebertaV2ForSequenceClassification LOAD REPORT from: C:\Users\ADMIN\Desktop\code\project1\artifacts\models\p9_exp01_deberta_20261026_v2_seed43\unweighted\last
+Key                                       | Status   |                                                                                               
+------------------------------------------+----------+-----------------------------------------------------------------------------------------------
+deberta.embeddings.word_embeddings.weight | MISMATCH | Reinit due to size mismatch ckpt: torch.Size([128003, 768]) vs model:torch.Size([128100, 768])
+
+Notes:
+- MISMATCH	:ckpt weights were loaded, but they did not match the original empty weight shapes.

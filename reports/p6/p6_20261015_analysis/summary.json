@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "selected_mode": "balanced",
+  "best_epoch": 3,
+  "cost_ratios_caveat": "Historical P5 CPU vs P6 device/workload; observed ratios, not architecture-only causality",
+  "technical_slice": {
+    "definition": "technical lexical cue, no word from fixed emotion lexicon; heuristic only",
+    "rows": 231,
+    "proxy_errors": 40,
+    "error_rate": 0.17316017316017315,
+    "human_verified": false
+  },
+  "test_retuning": false,
+  "P7_phase_executed": false
+}

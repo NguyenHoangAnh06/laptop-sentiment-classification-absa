@@ -1,0 +1,17 @@
+{
+  "status": "VERIFIED_EXACT_FROZEN_SOURCE",
+  "sha256": {
+    "scripts/test_all.py": "9c2f13052107ac1a9ab6aba7ee3fdf54e16783c8de09e59e606ca00ec45f81fb",
+    "scripts/prepare_p9.py": "ace83a92ae401b1eba1717e8ca3cd86dc51bd2c7d1a7bc1ca80fcddc935d72b4",
+    "scripts/train_p9.py": "cdfd655e3fb0a8dca93f97ff8fa6d794c9e1adacc4c8d59142d914397e90cce5",
+    "scripts/evaluate_p9_end_to_end.py": "f4fd57fb2323705a4a0ea42742ee3960ba8f1ffc8700b19344495494154a42af",
+    "scripts/finalize_p9.py": "be53538e735e20789e288cee8bee5e3c1e6d812f0e67dc2cb297c8dc0d1cc386",
+    "src/absa/sentiment_data.py": "e0a1e1caede157b8538aa315193b927bf45d878e79119a08d01fbeca28aeac42",
+    "src/absa/sentiment.py": "e267f1072961a805c200d7f96a8e20388ba818207bf4c50ec0ae04fee30fb23a",
+    "src/evaluation/aspect_sentiment.py": "fd55d1cdc1be31ecfbe014cc0e709dc7806c8acc96aa6397c94ab7299f06ca88",
+    "src/inference/absa.py": "678444210f4dbc363854979c16affd57cbc737cd44c5211032e1d5fbd2198279",
+    "tests/test_p9_data.py": "637549f7944319929f86e25163898967ba57d75028f351a74fa1fbbb48f0a421",
+    "tests/test_p9_model.py": "db9f2180d9a9c1b97c810f5e375c17246d92f202fde7b0b51bffb49ba0963761"
+  },
+  "method": "Đảo chỉ các chỉnh sửa của tác vụ hiện tại; chỉ lưu bytes nếu SHA256 khớp validation BERT frozen, không tạo lịch sử giả"
+}

@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-09",
+  "timezone": "Asia/Saigon",
+  "authority": "project owner explicit chat instruction",
+  "decisions": {
+    "C1-A": "APPROVED: selected laptop pool; disclose recall/CI/selection bias/coverage limits",
+    "C2-A": "APPROVED: human-verified assisted QA exception for P1 only; original provenance and independent P10 gold retained",
+    "C3-A": "APPROVED: current metadata/sampling, no equal brand quotas; before/after P2 diversity mandatory",
+    "C4-B": "APPROVED: Amazon-only P2 while P1 incomplete and SemEval source/license BLOCKED"
+  },
+  "p1_complete": false,
+  "semeval_authorized": false,
+  "p2_amazon_only_authorized": true,
+  "split_phase": "P4",
+  "training_authorized": false
+}

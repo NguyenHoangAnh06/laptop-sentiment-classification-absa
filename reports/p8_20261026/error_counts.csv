@@ -1,0 +1,3 @@
+split,boundary_pairs,boundary_gold_entities,boundary_predicted_entities,missed_without_overlap,false_positive_without_overlap,multiword_gold,multiword_missed,rare_gold,rare_missed,long_phrase_gold,long_phrase_missed,generic_gold,generic_missed,multiple_aspect_sentences,multiple_aspect_sentences_with_error,sentences_with_error
+validation,20,19,20,33,62,134,23,137,39,32,9,1,1,73,31,92
+test,97,69,97,46,50,290,77,345,104,75,44,3,0,156,62,137

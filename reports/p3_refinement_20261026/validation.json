@@ -1,0 +1,67 @@
+{
+  "status": "PASS",
+  "task_id": "P3-REFINE-01",
+  "date": "2026-10-26",
+  "commands": [
+    {
+      "command": ".venv/Scripts/python.exe -X utf8 -B -m scripts.test_all",
+      "exit_code": 0
+    },
+    {
+      "command": ".venv/Scripts/python.exe -m pip check",
+      "exit_code": 0
+    },
+    {
+      "command": ".venv/Scripts/python.exe -m compileall -q src scripts tests",
+      "exit_code": 0
+    },
+    {
+      "command": ".venv/Scripts/python.exe -X utf8 -m scripts.refine_p3",
+      "exit_code": 0
+    }
+  ],
+  "total_passed": 386,
+  "groups": [
+    353,
+    25,
+    8
+  ],
+  "failed": 0,
+  "previous_tests": 380,
+  "new_tests": 6,
+  "warning_summary": "2 Swig warnings in model group; 12 SDK/Swig warnings in SDK group; no failures",
+  "targeted_tests": {
+    "command": ".venv/Scripts/python.exe -X utf8 -m pytest -q tests/test_eda_refinement.py",
+    "passed": 6,
+    "failed": 0
+  },
+  "report_build": "PASS",
+  "core_tables": 8,
+  "core_figures": 3,
+  "appendix_items": 9,
+  "visual_qa": "PASS; inspected three PNGs; shared phrase legend avoids overlapping observations",
+  "reproduction": {
+    "status": "PASS",
+    "independent_temporary_copy_of_inputs": true,
+    "byte_identical_outputs": 19,
+    "includes": [
+      "CSV",
+      "Markdown",
+      "HTML",
+      "PNG",
+      "SVG",
+      "summary.json"
+    ]
+  },
+  "source_artifact_hashes": "PASS at report build; full project preservation recorded separately",
+  "report_links": "PASS",
+  "test_console": "reports/p3_refinement_20261026/test_console.log",
+  "benchmark_retrained": false,
+  "absa_amazon_run": false,
+  "source_sha256": {
+    "configs/p3_refinement.yaml": "e408a86789ed98ef6e22cce0836f5b2ded9019aa3f2e9e73e60d671da0b8da68",
+    "src/data/eda_refinement.py": "07728b96066d8d1e0351a65bf2da07ad39c37f8020b27ffc2ea0efc9ccd8a700",
+    "scripts/refine_p3.py": "4bc4091d92d1239af325dc54ae999b4c03e679c37ea6e4c1c70f39b0f728c4c9",
+    "tests/test_eda_refinement.py": "c3c03a2c6a009761ee5882ba28aa67d70390a9308a2c311fb122eaf925216d25"
+  }
+}

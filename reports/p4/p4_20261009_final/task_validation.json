@@ -1,0 +1,36 @@
+{
+  "P4": "DONE",
+  "tasks_completed": [
+    "P4-T01",
+    "P4-T02",
+    "P4-T03",
+    "P4-T04",
+    "P4-T05"
+  ],
+  "tests_passed": 180,
+  "p4_fixture_tests": 11,
+  "pytest_seconds": 10.29,
+  "pip_check": "PASS",
+  "production_validation": "PASS",
+  "reload_validation": "PASS",
+  "byte_identical_split_replay": true,
+  "protected41": "PASS",
+  "completed_inputs_preserved": 121,
+  "source_parquet_unchanged": true,
+  "models_trained": false,
+  "P5": "NOT_STARTED",
+  "semeval_source_license": "NOT_VERIFIED_OWNER_EXCEPTION",
+  "environment_sha256": "c6340802af9b8d88af19ffeeed510632a23902d805af49083ffe28371cba5b55",
+  "report_sha256": "7061b168deca9e47b4d58931411b218ca63898400aabf3d7705d24d7ec2b2a69",
+  "contract_sha256": "b947c6c4fd7f22bf8d1cbace7c89964bbe8a67476b519d669abe739be42b0b2f",
+  "final_docs_status_check": "PASS",
+  "final_output_and_implementation_hash_check": "PASS",
+  "two_actual_runs_split_byte_match": {
+    "train": true,
+    "validation": true,
+    "test": true
+  },
+  "official_phase_structure": "P0-P13 unchanged",
+  "p5_checkboxes_unchecked": true,
+  "leakage_report_sha256": "975a829a04546e15fa9489192dc5571ae9751b8aa89106a82aee8af933556454"
+}

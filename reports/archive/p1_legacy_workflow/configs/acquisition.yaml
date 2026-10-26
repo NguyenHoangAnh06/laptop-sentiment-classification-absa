@@ -1,0 +1,39 @@
+amazon:
+  category: Electronics
+  reviews_url: https://mcauleylab.ucsd.edu/public_datasets/data/amazon_2023/raw/review_categories/Electronics.jsonl.gz
+  metadata_url: https://mcauleylab.ucsd.edu/public_datasets/data/amazon_2023/raw/meta_categories/meta_Electronics.jsonl.gz
+  metadata_limit: 20000
+  reviews_limit: 100000
+  max_uncompressed_bytes_per_file: 150000000
+  max_seconds_per_file: 180
+  full_download_max_bytes:
+    metadata: 1400000000
+    reviews: 6600000000
+  full_download_max_seconds_per_file:
+    metadata: 3600
+    reviews: 10800
+  scope: bounded_source_prefix_not_representative
+  terms_status: public_research_download_no_explicit_license_identified_no_redistribution
+schema:
+  metadata_id: [parent_asin]
+  review_parent_id: [parent_asin]
+  review_text: [text, reviewText]
+  review_title: [title, summary]
+  review_rating: [rating, overall]
+  review_timestamp: [timestamp, sort_timestamp]
+  review_helpful: [helpful_vote, helpful_votes]
+filter:
+  version: laptop_metadata_v1
+  laptop_categories: [Laptops, Traditional Laptops, Laptop Computers, Notebook Computers]
+  title_include: '\b(laptop|notebook|chromebook)\b'
+  title_exclude: '\b(bag|bags|sleeve|sleeves|charger|chargers|charging|dock|docking|stand|stands|replacement|protector|protectors|skin|skins|case|cases|adapter|adapters|cover|covers|backpack|backpacks|screen replacement|keyboard replacement|battery replacement)\b'
+  category_exclude: '^(.*laptop accessories.*|.*bags.*|.*sleeves.*|.*stands.*|.*chargers.*|.*replacement parts.*|tablets|desktop computers|computer tablets|docking stations)$'
+  require_category_and_title: true
+  human_validation: unvalidated
+qa:
+  sample_size_per_decision: 50
+  required_precision: 0.95
+semeval:
+  trial_url: https://alt.qcri.org/semeval2014/task4/data/uploads/laptops-trial.xml
+  original_train_access: https://metashare.ilsp.gr/repository/browse/semeval-2014-absa-train-data-v20/683b709298b811e3a0e2842b2b6a04d7c7a19307f18a4940beef6a6143f937f0/
+  conflict_policy: preserve_for_extraction_exclude_from_three_class_sentiment

@@ -1,0 +1,47 @@
+﻿{
+    "status":  "ARCHIVED",
+    "automatic_deletion_review":  "blocked by policy; no deletion executed",
+    "archived_directories":  [
+                                 {
+                                     "path":  "src/__pycache__",
+                                     "destination":  "reports/archive/regenerable_caches/src/__pycache__",
+                                     "reason":  "regenerable cache; reversible archive after deletion blocked by automatic approval review"
+                                 },
+                                 {
+                                     "path":  "src/data/__pycache__",
+                                     "destination":  "reports/archive/regenerable_caches/src/data/__pycache__",
+                                     "reason":  "regenerable cache; reversible archive after deletion blocked by automatic approval review"
+                                 },
+                                 {
+                                     "path":  "src/inference/__pycache__",
+                                     "destination":  "reports/archive/regenerable_caches/src/inference/__pycache__",
+                                     "reason":  "regenerable cache; reversible archive after deletion blocked by automatic approval review"
+                                 },
+                                 {
+                                     "path":  "src/models/__pycache__",
+                                     "destination":  "reports/archive/regenerable_caches/src/models/__pycache__",
+                                     "reason":  "regenerable cache; reversible archive after deletion blocked by automatic approval review"
+                                 },
+                                 {
+                                     "path":  "scripts/__pycache__",
+                                     "destination":  "reports/archive/regenerable_caches/scripts/__pycache__",
+                                     "reason":  "regenerable cache; reversible archive after deletion blocked by automatic approval review"
+                                 },
+                                 {
+                                     "path":  "tests/__pycache__",
+                                     "destination":  "reports/archive/regenerable_caches/tests/__pycache__",
+                                     "reason":  "regenerable cache; reversible archive after deletion blocked by automatic approval review"
+                                 },
+                                 {
+                                     "path":  "reports/archive/p1_legacy_workflow/tests/__pycache__",
+                                     "destination":  "reports/archive/regenerable_caches/reports/archive/p1_legacy_workflow/tests/__pycache__",
+                                     "reason":  "regenerable cache; reversible archive after deletion blocked by automatic approval review"
+                                 },
+                                 {
+                                     "path":  ".pytest_cache",
+                                     "destination":  "reports/archive/regenerable_caches/.pytest_cache",
+                                     "reason":  "regenerable cache; reversible archive after deletion blocked by automatic approval review"
+                                 }
+                             ],
+    "count":  8
+}

@@ -1,0 +1,97 @@
+{
+  "project": "customer-sentiment-laptop-reviews",
+  "created_at": "2026-10-24T13:24:52.128301+00:00",
+  "seed": 42,
+  "dataset_scope": "English laptop-only; rating-derived proxy labels",
+  "train_count": 21000,
+  "validation_count": 4500,
+  "test_count": 4500,
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "embedding_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "embedding_dimension": 384,
+  "embedding_dtype": "float32",
+  "embedding_normalized": true,
+  "label_mapping": {
+    "negative": 0,
+    "neutral": 1,
+    "positive": 2
+  },
+  "tabpfn_package_version": "9.2.0",
+  "expected_versions": {
+    "TabPFN-3": "ModelVersion.V3",
+    "TabPFN-3.5": "ModelVersion.V3_5"
+  },
+  "source_split_hashes": {
+    "train": "3b3a1a92d6019659510c6282a92e1ce47b15f24e4857770d3b65deff964fe41b",
+    "validation": "80e706247adb3daca99580d31ba618bb10b784fa4af9aa5fd15123320d6ce7a0",
+    "test": "f2a621178b8d7e76c385d3e336f66fdb8041a2c2c9ee07e89ca281cc82a1e097"
+  },
+  "source_embedding_hashes": {
+    "train": "f46d2414ffe3f3e0e777f338ea7af663221a6ffd1e56724c87f08f98925566ab",
+    "validation": "335e1fb7cd041d07f123fb738a203b31359368129c7ae3c2d9337e28ab39d7b5",
+    "test": "f952400f970731d5276079b0bb731ddc0212f729921f25412f1838afa2058af3"
+  },
+  "splits": {
+    "train": {
+      "shape": [
+        21000,
+        384
+      ],
+      "dtype": "float32",
+      "byte_size": 32256128,
+      "alignment_verified": true,
+      "source_mapping_sha256": "b513560686e67629ffb98ab5ea02a6dde7fe6ccab37f59ada4f72e5bf185fcdc",
+      "ordered_ids_sha256": "133f66baf6a133def6f14bc745e00773c6210bb27d7a90a78f032c257688dfc4"
+    },
+    "validation": {
+      "shape": [
+        4500,
+        384
+      ],
+      "dtype": "float32",
+      "byte_size": 6912128,
+      "alignment_verified": true,
+      "source_mapping_sha256": "989e71989ac02a16d444bb51ab459a55fb6c47d13f4aee672dbb1fb23bcb07cf",
+      "ordered_ids_sha256": "2587e82ca4011ef44254ecfc926fd0ddce6817c50a92a44c60d289f3f193867d"
+    },
+    "test": {
+      "shape": [
+        4500,
+        384
+      ],
+      "dtype": "float32",
+      "byte_size": 6912128,
+      "alignment_verified": true,
+      "source_mapping_sha256": "df504bab884b076b5f3988adf92951298ba566392f6d8047eb968ba763c6f4f0",
+      "ordered_ids_sha256": "991717dee623e3bb2386ae47cfb742f965e4ad1ff02bad1e4d69e2f46d824644"
+    }
+  },
+  "source_cache_metadata_sha256": "04a2d89861ac4ff3b0517e3b2efd67bdab47dc608371d591c582baa933f83556",
+  "test_reused": true,
+  "bundle_file_hashes": {
+    "config/cloud_experiment.yaml": "78ee364c3e61df4fe86ad6328dd95ab44a850f4fb0eec5b8440ed80ed5c571ae",
+    "data/embeddings/test.npy": "f952400f970731d5276079b0bb731ddc0212f729921f25412f1838afa2058af3",
+    "data/embeddings/train.npy": "f46d2414ffe3f3e0e777f338ea7af663221a6ffd1e56724c87f08f98925566ab",
+    "data/embeddings/validation.npy": "335e1fb7cd041d07f123fb738a203b31359368129c7ae3c2d9337e28ab39d7b5",
+    "data/ids/test.npy": "991717dee623e3bb2386ae47cfb742f965e4ad1ff02bad1e4d69e2f46d824644",
+    "data/ids/train.npy": "133f66baf6a133def6f14bc745e00773c6210bb27d7a90a78f032c257688dfc4",
+    "data/ids/validation.npy": "2587e82ca4011ef44254ecfc926fd0ddce6817c50a92a44c60d289f3f193867d",
+    "data/labels/test.npy": "3e6b771cc7bca3141fee0c23ef7a9e4c9f750c5be2951ac393bc76b51f937ea4",
+    "data/labels/train.npy": "7bd8932180700b90375ce2416676f45ebb1f528e0b5594ff9d3a2fd79d74652f",
+    "data/labels/validation.npy": "0abf3e79f81efce3da2c62455fc4ef15aab33fedcbd2040330205a7ae8704a04",
+    "kaggle_notebook.ipynb": "a87c968c8e9286011c98abd6c7e6e5024bcfc1f8e3d88516a05160a052e998dc",
+    "metadata/label_mapping.json": "f2c4a486ca49310f84bfd1d6495bad389cbaa69cef7d0a591a4167c3fac0fb4d",
+    "output/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "README.md": "6555efbfdf4e375b65e982f2d0367f23e4cd6b7b96318984d25b79a38bc62be4",
+    "requirements.txt": "2cab947a980db2a55335795092a8bd77694ffcf1448f84876c5aa669d4a2cc65",
+    "scripts/common.py": "313dd5050f4fbb47c228e745db9720f3ead62cfa64667cade61f3c0824213810",
+    "scripts/metrics.py": "d57dc770542bc722bbdc70ba0099258f368276feee88029961ea0dd25f533216",
+    "scripts/notebook_steps.py": "1f477a486fbf8a70e9559759f62176ab62a9ea094774fb336d756182e4df4f9e",
+    "scripts/package_results.py": "bfbabc57cf0bfcbf55600c658c0e5592b3057d9a54b6f1939a30a65f9d027128",
+    "scripts/redaction.py": "a35fc7d39faa518d2fccb821c18b7d20a307711991a38ba80b41fc8a54cab5aa",
+    "scripts/resource_probe.py": "3bc90e47928df96d1d37a95f6e2074332433872ee7767b5551fa3563aa77994b",
+    "scripts/run_tabpfn_cloud.py": "18e884f3c04b7f0ea357f3926dbf2970b15016d22e1e7a3a88758822beb08728",
+    "scripts/verify_bundle.py": "393322187adb1fc6a59e0344528b5a797b27c7d358b5f2c84014edbedb8aec31",
+    "scripts/versions.py": "6785f7fb1d2a2e672d5605a6744abc111e7e096f413e46407a001ad1d8fba96f"
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "status": "DONE",
+  "readiness": "P9-EXP01 COMPLETE — READY TO CONTINUE TO P10",
+  "date": "2026-10-26",
+  "canonical": "microsoft/deberta-v3-base",
+  "revision": "8ccc9b6f36199bec6961081d44eb72fb3f7353f3",
+  "tokenizer_revision": "8ccc9b6f36199bec6961081d44eb72fb3f7353f3",
+  "selected": {
+    "mode": "unweighted",
+    "epoch": 5,
+    "validation_macro_f1": 0.7774672584799167,
+    "model_sha256": "3ea6a9e1f5918722532c88906ea5c461b46419886f5d861a58ae1964e460967a",
+    "wall_seconds": 975.088649299927
+  },
+  "model_directory": "artifacts/models/p9_exp01_deberta_20261026_v2/unweighted/best",
+  "standalone_validation": {
+    "accuracy": 0.8089171974522293,
+    "macro_f1": 0.7774672584799167,
+    "weighted_f1": 0.8129729122230935,
+    "per_class": {
+      "negative": {
+        "precision": 0.8809523809523809,
+        "recall": 0.8345864661654135,
+        "f1": 0.8571428571428571,
+        "support": 133
+      },
+      "neutral": {
+        "precision": 0.5633802816901409,
+        "recall": 0.6557377049180327,
+        "f1": 0.6060606060606061,
+        "support": 61
+      },
+      "positive": {
+        "precision": 0.8803418803418803,
+        "recall": 0.8583333333333333,
+        "f1": 0.869198312236287,
+        "support": 120
+      }
+    },
+    "confusion_matrix": [
+      [
+        111,
+        20,
+        2
+      ],
+      [
+        9,
+        40,
+        12
+      ],
+      [
+        6,
+        11,
+        103
+      ]
+    ],
+    "confusion_matrix_order": [
+      "negative",
+      "neutral",
+      "positive"
+    ]
+  },
+  "standalone_official_test": {
+    "accuracy": 0.8150470219435737,
+    "macro_f1": 0.7804334770682583,
+    "weighted_f1": 0.8132320374921376,
+    "per_class": {
+      "negative": {
+        "precision": 0.6685714285714286,
+        "recall": 0.9140625,
+        "f1": 0.7722772277227723,
+        "support": 128
+      },
+      "neutral": {
+        "precision": 0.7593984962406015,
+        "recall": 0.5976331360946746,
+        "f1": 0.6688741721854304,
+        "support": 169
+      },
+      "positive": {
+        "precision": 0.9151515151515152,
+        "recall": 0.8856304985337243,
+        "f1": 0.9001490312965723,
+        "support": 341
+      }
+    },
+    "confusion_matrix": [
+      [
+        117,
+        8,
+        3
+      ],
+      [
+        43,
+        101,
+        25
+      ],
+      [
+        15,
+        24,
+        302
+      ]
+    ],
+    "confusion_matrix_order": [
+      "negative",
+      "neutral",
+      "positive"
+    ]
+  },
+  "joint_official_test": {
+    "precision": 0.6447761194029851,
+    "recall": 0.677115987460815,
+    "f1": 0.6605504587155963,
+    "sentences": 800,
+    "counts": {
+      "gold_entities": 638,
+      "raw_predicted_entities": 686,
+      "predicted_entities_scored": 670,
+      "conflict_gold_excluded": 16,
+      "predictions_ignored_exact_conflict": 16,
+      "true_positive": 432,
+      "false_negative": 206,
+      "false_positive": 238,
+      "extraction_missing_gold_spans": 115,
+      "extraction_spurious_predicted_spans": 147,
+      "exact_extraction_matched_spans": 523,
+      "sentiment_errors_on_exact_span": 91,
+      "boundary_gold_spans": 69,
+      "boundary_predicted_spans": 97,
+      "boundary_pairs": 97,
+      "joint_wrong_span_and_polarity_pairs": 18,
+      "missed_without_predicted_overlap": 46
+    },
+    "policy": "exact span+polarity; exclude conflict gold and ignore predictions exactly at conflict spans; partial overlap still counts FP; no partial credit; boundary/joint pairs overlap, not additive causes"
+  },
+  "selection_metric": "validation_macro_f1",
+  "test_used_for_selection": false,
+  "test_prediction_passes": 1,
+  "stability_validation_only": [
+    {
+      "seed": 43,
+      "macro_f1": 0.7679430188686432,
+      "test_opened": false
+    },
+    {
+      "seed": 44,
+      "macro_f1": 0.7546642111046088,
+      "test_opened": false
+    }
+  ],
+  "tests_passed": 380,
+  "tests_failed": 0,
+  "frozen_files_unchanged": 381,
+  "p0_p8_changed": false,
+  "p8_retrained": false,
+  "p9_split_changed": false,
+  "p10_implemented": false,
+  "previous_bert_retained": true,
+  "previous_source_files_exact_sha256": 11,
+  "inference_smoke": "PASS",
+  "deberta_resume": "NOT_SUPPORTED; vocab128003 checkpoint vs pretrained config128100; seed43 restarted from pretrained",
+  "all_attempt_total_compute": "NOT_MEASURED",
+  "evidence_sha256": {
+    "report.md": "639a48b431c992ea7d25daa5efe72a431e06b514c773e9ba1d2e0724f8670c65",
+    "comparison.json": "0aa154f0b2c56e2e047f3bf131a17e7f9c9b3ffb25e30f67fe86f9d39e44c88f",
+    "validation.json": "0149740f523a16daf773c137e963a741be7fbf3331527d0fc27f4d8c6d657db3",
+    "preservation.json": "6ebbec2bfd36b136f20e498e8c712430c55c8129cc060539d37f0819b18fe46f",
+    "canonical_decision.json": "12d8ee36aefb0834e96c793d72e6ad11a8d930e8e6accc7b671296647f2731f8",
+    "selection_lock.json": "f90092b7552da6c1f0f9f02aa77e67e347f04359dd0abdce478fbc8fe5e84b36",
+    "stability.json": "6d367d1adde0a3d908f57a498a1a5fe6c88737c0ae497938d4e81d2886aa8ab6",
+    "validation_latency.json": "a7e24b00ce65d19b99464cfd539bc616408532f1b70d2c5aa31a87d2e03bed8b",
+    "inference_smoke.json": "59425fe6682210b887e093b49c367a1de068e3287c1ddaaddcb609adbdacae88"
+  },
+  "current_source_files_exact_sha256": 20,
+  "documentation_links": "PASS"
+}

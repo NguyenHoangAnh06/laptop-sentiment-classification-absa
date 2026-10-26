@@ -1,0 +1,13 @@
+{
+  "capture": "final source snapshot after execution; not a claim of launch-time hash",
+  "files": {
+    "configs/transformer_benchmark.yaml": "e5789547e097dba91ea1547754b7861c0bc185303de285e5efe31815da76944f",
+    "configs/modern_tabular.yaml": "8450af81b7ea4b56f621238f25680202f65c2ad2f67838f1b36a64d479975a68",
+    "src/sentiment/tabpfn_versions.py": "e8d10e25d3b354fae4bff80c654f38e45ae5c2362d55780112764c45f19daf30",
+    "scripts/train_transformer.py": "ed21d5f5c6a6b59a3fff26f3b1177bd6f8a9be91c3f6d2c5202cf1b3998da68d",
+    "scripts/train_modern.py": "403ebce95cf8178b48aef142aec1c14b319f51bf53de15d846f4cde6ca82173b",
+    "scripts/finish_benchmark.py": "ff71fe64d5ea153e360ae44f215c45b85aeebb6ae82146388516817800d49511",
+    "scripts/final_completion.py": "d1a5ddd1f55edbe3473d42777ac0792fa6e4295e4b3f65d109efdbfdc0dfda81",
+    "scripts/verify_benchmark.py": "b8a9f70448ebd8f6db46a09b4be13bdf2645d9840cf1dcbc3f77ea6e369bc9c0"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "mode": "unweighted",
+  "epoch": 2,
+  "batch": 400,
+  "batches": 500,
+  "seen": 1599,
+  "seconds": 146.41367040015757
+}

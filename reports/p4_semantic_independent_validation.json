@@ -1,0 +1,54 @@
+{
+  "status": "PASS",
+  "cache_hashes_alignment": "PASS",
+  "full_token_reencode": {
+    "train": 21000,
+    "validation": 4500,
+    "test": 4500
+  },
+  "source_and_split_hashes_unchanged": true,
+  "embedding_qa": {
+    "train": {
+      "shape": [
+        21000,
+        384
+      ],
+      "dtype": "float32",
+      "norm_min": 0.9999998807907104,
+      "norm_max": 1.0000001192092896,
+      "finite": true,
+      "seconds": 18.533025099895895,
+      "peak_process_rss_bytes": 1571921920,
+      "peak_gpu_allocated_bytes": 278148608,
+      "ordered_ids_hash": "10ebaba1aaf26076ac652b0933ac7195847a3b85e3c6e5e07cb4e4b246e5e533"
+    },
+    "validation": {
+      "shape": [
+        4500,
+        384
+      ],
+      "dtype": "float32",
+      "norm_min": 0.9999998807907104,
+      "norm_max": 1.0000001192092896,
+      "finite": true,
+      "seconds": 4.323343399912119,
+      "peak_process_rss_bytes": 1702555648,
+      "peak_gpu_allocated_bytes": 277952000,
+      "ordered_ids_hash": "8b4019a679d155c6fd3cc313aa40486c92bd7edfc460baf1509665fa15237024"
+    },
+    "test": {
+      "shape": [
+        4500,
+        384
+      ],
+      "dtype": "float32",
+      "norm_min": 0.9999998807907104,
+      "norm_max": 1.0000001192092896,
+      "finite": true,
+      "seconds": 3.9811856001615524,
+      "peak_process_rss_bytes": 1482510336,
+      "peak_gpu_allocated_bytes": 277952000,
+      "ordered_ids_hash": "ebbbfc08b872c13d62893e9e74c51b8ebff865fb6663f869d8d0719ac7b8e03f"
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "seed": 42,
+  "device": "cuda",
+  "threads": 2,
+  "learning_rate": 2e-05,
+  "batch_size": 8,
+  "eval_batch_size": 16,
+  "gradient_accumulation": 4,
+  "epochs": 3,
+  "weight_decay": 0.01,
+  "warmup_ratio": 0.1,
+  "max_grad_norm": 1.0,
+  "early_stopping_patience": 1,
+  "gradient_checkpointing": true,
+  "mixed_precision": "fp16",
+  "loss_candidates": [
+    "unweighted",
+    "balanced"
+  ],
+  "max_seconds": 14400,
+  "max_process_rss_bytes": 6000000000,
+  "transformer": {
+    "checkpoint": "google-bert/bert-base-uncased",
+    "revision": "86b5e0934494bd15c9632b12f734a8a67f723594",
+    "tokenizer": "artifacts/preprocessing/p4_20261009_final/bert/tokenizer.json",
+    "max_length": 512
+  },
+  "canonical_text": {
+    "title_field": "review_title",
+    "body_field": "text",
+    "separator": "\n",
+    "normalization": "nfc_whitespace_v1"
+  },
+  "cache_identity": {
+    "dataset_hash": "611b73584a933645336784b13b7f004a17e8803758d1be8ac64708563eabb5ba",
+    "split_hash": {
+      "train": "3b3a1a92d6019659510c6282a92e1ce47b15f24e4857770d3b65deff964fe41b",
+      "validation": "80e706247adb3daca99580d31ba618bb10b784fa4af9aa5fd15123320d6ce7a0",
+      "test": "f2a621178b8d7e76c385d3e336f66fdb8041a2c2c9ee07e89ca281cc82a1e097"
+    },
+    "configuration_hash": "a63e6653e6644293e9d3bba48b45e49ecd44756937798015d15ff27ae296725b",
+    "tokenizer_hash": "435667fab0c06c165b1283ecb422497c37124f2d6a35b2ac73dc876332fc9518"
+  }
+}

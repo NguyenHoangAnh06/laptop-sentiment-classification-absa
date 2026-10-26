@@ -1,0 +1,80 @@
+{
+  "date": "2026-10-08",
+  "target_clean_reviews": 30000,
+  "domain": "laptop",
+  "metadata_full_exists": false,
+  "raw_snapshots": {
+    "Cell_Phones_and_Accessories_metadata_probe_5000.jsonl": {
+      "checksum": "MATCH",
+      "bytes": 17952345,
+      "complete_source": false,
+      "rows": 5000
+    },
+    "Cell_Phones_and_Accessories_reviews_probe_20000.jsonl": {
+      "checksum": "MATCH",
+      "bytes": 11680327,
+      "complete_source": false,
+      "rows": 20000
+    },
+    "metadata_prefix_20000.jsonl": {
+      "checksum": "MATCH",
+      "bytes": 73240352,
+      "complete_source": false,
+      "rows": 20000
+    },
+    "reviews_prefix_100000.jsonl": {
+      "checksum": "MATCH",
+      "bytes": 67212341,
+      "complete_source": false,
+      "rows": 100000
+    }
+  },
+  "metadata_head": {
+    "url": "https://mcauleylab.ucsd.edu/public_datasets/data/amazon_2023/raw/meta_categories/meta_Electronics.jsonl.gz",
+    "status": 200,
+    "compressed_bytes": 1312900427,
+    "etag": "\"4e41454b-62bda3bbc47f3\"",
+    "downloaded_body_bytes": 0
+  },
+  "disk_free_bytes": 75439374336,
+  "existing_metadata_preflight_verified": {
+    "reused_existing_report": true,
+    "metadata_scan": {
+      "rows": 20000,
+      "decoded_bytes": 73240352,
+      "invalid_records": 0,
+      "oversized_records": 0,
+      "malformed_records": 0,
+      "truncated_records": 0,
+      "eof_observed": false,
+      "stop_reason": "record_limit",
+      "error_lines": []
+    },
+    "metadata_coverage_complete": false,
+    "candidate_products": {
+      "laptop": 319
+    },
+    "review_scan": {
+      "rows": 0,
+      "decoded_bytes": 0,
+      "invalid_records": 0,
+      "oversized_records": 0,
+      "malformed_records": 0,
+      "truncated_records": 0,
+      "eof_observed": false,
+      "stop_reason": "not_started",
+      "error_lines": []
+    },
+    "previous_run_resources": {
+      "elapsed_seconds": 2.5453289998695254,
+      "estimated_index_bytes": 432728,
+      "checksum_read_bytes": 73240352,
+      "decoded_read_bytes": 73240352,
+      "working_set_bytes": 28942336,
+      "peak_working_set_bytes": 28979200
+    }
+  },
+  "full_metadata_download_status": "PENDING_USER_APPROVAL",
+  "full_review_download_status": "NOT_AUTHORIZED",
+  "clean_english_reviews": "NOT_MEASURED"
+}

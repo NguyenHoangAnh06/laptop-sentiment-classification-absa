@@ -1,0 +1,143 @@
+{
+  "status": "user_approved_sample",
+  "label_provenance": "ai_assisted_user_approved",
+  "independent_human_verified": false,
+  "sample_precision_criterion_passed": true,
+  "rows": 100,
+  "labeled_rows": 100,
+  "confusion_matrix": {
+    "true_positive": 50,
+    "false_positive": 0,
+    "false_negative": 4,
+    "true_negative": 46
+  },
+  "included_labeled_rows": 50,
+  "excluded_labeled_rows": 50,
+  "sample_precision": 1.0,
+  "false_positive_fraction_in_included": 0.0,
+  "false_negative_fraction_in_excluded": 0.08,
+  "pending_or_unsure": 0,
+  "label_counts": {
+    "true": 54,
+    "false": 46,
+    "pending": 0
+  },
+  "included_sample": 50,
+  "observed_precision": 1.0,
+  "minimum_included": 50,
+  "required_precision": 0.95,
+  "false_positives_in_included_sample": 0,
+  "strata": {
+    "included": {
+      "rows": 50,
+      "labeled_rows": 50,
+      "confusion_matrix": {
+        "true_positive": 50,
+        "false_positive": 0,
+        "false_negative": 0,
+        "true_negative": 0
+      },
+      "included_labeled_rows": 50,
+      "excluded_labeled_rows": 0,
+      "sample_precision": 1.0,
+      "false_positive_fraction_in_included": 0.0,
+      "false_negative_fraction_in_excluded": null,
+      "pending_or_unsure": 0
+    },
+    "excluded_near_boundary": {
+      "rows": 25,
+      "labeled_rows": 25,
+      "confusion_matrix": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 4,
+        "true_negative": 21
+      },
+      "included_labeled_rows": 0,
+      "excluded_labeled_rows": 25,
+      "sample_precision": null,
+      "false_positive_fraction_in_included": null,
+      "false_negative_fraction_in_excluded": 0.16,
+      "pending_or_unsure": 0
+    },
+    "excluded_other": {
+      "rows": 25,
+      "labeled_rows": 25,
+      "confusion_matrix": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "true_negative": 25
+      },
+      "included_labeled_rows": 0,
+      "excluded_labeled_rows": 25,
+      "sample_precision": null,
+      "false_positive_fraction_in_included": null,
+      "false_negative_fraction_in_excluded": 0.0,
+      "pending_or_unsure": 0
+    }
+  },
+  "misclassified_products": [
+    {
+      "group": "laptop",
+      "source": "Electronics",
+      "parent_asin": "B07FYPFHHZ",
+      "title": "MSI GL73 8RD-282 (8th Gen Intel Core i7-8750H, 8GB DDR4 2666MHz, 1TB HDD, NVIDIA GeForce GTX 1050 Ti 4GB, 17.3\" Full HD 120Hz 3ms Display, Windows 10 Home) Gaming Laptop",
+      "categories": "[\"Electronics\", \"Computers & Accessories\", \"Computers & Tablets\"]",
+      "brand": "MSI",
+      "rule_include": "False",
+      "rule_reason": "insufficient_laptop_evidence",
+      "stratum": "excluded_near_boundary",
+      "human_is_target_product": "True",
+      "human_notes": "AI-assisted label, accepted by user in chat; not independently human-verified. MSI GL73 8RD-282 là laptop chơi game hoàn chỉnh; bị loại do danh mục quá chung (Computers & Tablets). Source: https://es.msi.com/Laptop/GL73-8RD/Specification",
+      "error_type": "false_negative"
+    },
+    {
+      "group": "laptop",
+      "source": "Electronics",
+      "parent_asin": "B0027JVI30",
+      "title": "Panasonic CF19KDRAX6M Toughbook 19 Tablet PC Centrino 2 vPro - Intel Core 2 Duo SU9300 1.20 GHz - 10.40 XGA - 2 GB DDR2 SDRAM - 160 GB - Gigabit Ethernet, Bluetooth, Wi-Fi - Windows Vista Business",
+      "categories": "[\"Electronics\", \"Computers & Accessories\", \"Computers & Tablets\", \"Laptops\", \"Traditional Laptops\"]",
+      "brand": "Panasonic",
+      "rule_include": "False",
+      "rule_reason": "insufficient_laptop_evidence",
+      "stratum": "excluded_near_boundary",
+      "human_is_target_product": "True",
+      "human_notes": "AI-assisted label, accepted by user in chat; not independently human-verified. Panasonic Toughbook CF-19 là notebook convertible xoay màn hình sang chế độ tablet; tính là laptop/2-in-1. Source: https://www.panasonic.com/au/support/product-archives/computers-tablets-and-pos/notebook-tablet/toughbook-2-in-1-convertible-laptops.html",
+      "error_type": "false_negative"
+    },
+    {
+      "group": "laptop",
+      "source": "Electronics",
+      "parent_asin": "B0872V1HHF",
+      "title": "(Renewed) HP 14 14\" Laptop Computer, AMD Athlon 3050U Up to 3.2GHz (Beat i3-7130U), 8GB DDR4 RAM, 512GB SSD, HDMI, Black, Windows 10 Home S, Online Class Ready, Webcam, Microphone, SPMOR Mouse Pad",
+      "categories": "[\"Electronics\", \"Computers & Accessories\", \"Computers & Tablets\"]",
+      "brand": "HP",
+      "rule_include": "False",
+      "rule_reason": "insufficient_laptop_evidence",
+      "stratum": "excluded_near_boundary",
+      "human_is_target_product": "True",
+      "human_notes": "AI-assisted label, accepted by user in chat; not independently human-verified. HP 14 với Athlon 3050U, RAM và SSD là laptop hoàn chỉnh; bị loại vì category chung, không khớp danh mục laptop được phép. Source: https://www.newegg.com/hp-notebook-14-14-0-hd-non-touch-screen-2-20ghz-amd-radeon-graphics-16gb-memory-1-tb-ssd-black/p/1TS-000D-09WE3",
+      "error_type": "false_negative"
+    },
+    {
+      "group": "laptop",
+      "source": "Electronics",
+      "parent_asin": "B098BNXYGR",
+      "title": "HP Pavilion X360 2-in-1 14\" Touchscreen Laptop, Intel Core i3-1115G4, 16GB RAM, 2TB SSD, WiFi, HDMI, Webcam, USB Type-C, Windows 10",
+      "categories": "[]",
+      "brand": "HP",
+      "rule_include": "False",
+      "rule_reason": "insufficient_laptop_evidence",
+      "stratum": "excluded_near_boundary",
+      "human_is_target_product": "True",
+      "human_notes": "AI-assisted label, accepted by user in chat; not independently human-verified. HP Pavilion x360 i3-1115G4 là dòng laptop convertible 2-in-1; metadata categories rỗng nên rule loại. Source: https://support.hp.com/sg-en/document/c06989835",
+      "error_type": "false_negative"
+    }
+  ],
+  "population_recall": "NOT_MEASURED",
+  "population_accuracy": "NOT_MEASURED",
+  "note": "Stratified sample agreement only; AI-assisted user approval is not independent human gold. Excluded error fraction uses excluded labeled rows, not all actual laptops.",
+  "group": "laptop",
+  "false_negatives_in_excluded_sample": 4
+}

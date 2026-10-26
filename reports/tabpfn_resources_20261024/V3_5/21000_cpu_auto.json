@@ -1,0 +1,29 @@
+{
+  "version": "V3_5",
+  "samples": 21000,
+  "device": "cpu",
+  "prediction_batch_size": 128,
+  "split": "train",
+  "seed": 42,
+  "status": "ERROR",
+  "token_configured": false,
+  "features": 384,
+  "dtype": "float32",
+  "settings": {
+    "n_estimators": 1,
+    "fit_mode": "fit_with_cache",
+    "memory_saving_mode": true,
+    "keep_cache_on_device": false,
+    "inference_precision": "auto"
+  },
+  "package": "9.2.0",
+  "class_counts": [
+    5781,
+    1842,
+    13377
+  ],
+  "checkpoint": "tabpfn-v3.5-20260909.safetensors",
+  "error_type": "RuntimeError",
+  "error": "Running on CPU with more than 5000 samples is not allowed by default due to slow performance.\nTo override this behavior, set the environment variable TABPFN_ALLOW_CPU_LARGE_DATASET=1 or set ignore_pretraining_limits=True.\nAlternatively, consider using a GPU or the tabpfn-client API: [URL]",
+  "seconds": 5.123327699955553
+}

@@ -1,0 +1,32 @@
+{
+  "selected": {
+    "mode": "unweighted",
+    "epoch": 4,
+    "validation_macro_f1": 0.7141454682092473,
+    "model_sha256": "bc1268bda1a37996b6899588b5c5b20f87cd89d17c754c091232e0e9e81d6713",
+    "wall_seconds": 183.15371249988675
+  },
+  "candidates": [
+    {
+      "mode": "unweighted",
+      "epoch": 4,
+      "validation_macro_f1": 0.7141454682092473,
+      "model_sha256": "bc1268bda1a37996b6899588b5c5b20f87cd89d17c754c091232e0e9e81d6713",
+      "wall_seconds": 183.15371249988675
+    },
+    {
+      "mode": "balanced",
+      "epoch": 4,
+      "validation_macro_f1": 0.7122916307768682,
+      "model_sha256": "4d85d9980cfcbbdedee6b5a1510e9b7e73fb412f3ab20afed247f77b583d7505",
+      "wall_seconds": 160.3315333998762
+    }
+  ],
+  "selection_metric": "validation_macro_f1",
+  "tie_break": "first_candidate_then_earliest_epoch",
+  "selection_complete_before_test": true,
+  "test_used_for_selection": false,
+  "data_manifest_sha256": "9525c80f6138736070776b9f6fe96de420fbd7e46e6c1a183b264e7bb2b330fb",
+  "training_identity_sha256": "1226217b52d04a6a1a3f6b914ce7fc4508f0868b74f8a42986f356c74175e99d",
+  "history_sha256": "3590b4fbea360a6ea8d0b814d67adf62e69cf78edcaab22c3fb6b4ec82e8f3d9"
+}

@@ -1,0 +1,35 @@
+{
+  "status": "BLOCKED",
+  "splits": {
+    "train": {
+      "status": "missing",
+      "path": "data/raw/semeval/Laptop_Train_v2.xml"
+    },
+    "test": {
+      "status": "missing",
+      "path": "data/raw/semeval/Laptops_Test_Gold.xml"
+    },
+    "trial": {
+      "status": "audited",
+      "path": "C:/Users/ADMIN/Desktop/code/project1/data/raw/semeval/laptops-trial.xml",
+      "sha256": "0971a30e6add454d344ac011385fb8407db4193db048c8cd8e7a82908ac5172d",
+      "bytes": 18547,
+      "sentences": 100,
+      "aspect_terms": 49,
+      "polarities": {
+        "positive": 29,
+        "negative": 16,
+        "neutral": 4
+      },
+      "unsupported_labels": [],
+      "conflict_terms": 0,
+      "sentences_without_aspects": 60,
+      "duplicate_text_additional_occurrences": 0,
+      "duplicate_normalized_text_additional_occurrences": 0,
+      "span_alignment": "PASS"
+    }
+  },
+  "train_test_overlap": "NOT_MEASURED",
+  "conflict_policy": "preserve_for_extraction_exclude_from_three_class_sentiment",
+  "NEXT_ACTION": "Obtain authorized original Laptop train/test XML; trial is not a substitute"
+}

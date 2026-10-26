@@ -1,0 +1,8 @@
+{
+  "status": "INVALID_FOR_COMPARISON",
+  "reason": "Transformers5 conversion missing CLS/SEP post_processor; invalid representation",
+  "test_opened": false,
+  "canonical_changed": false,
+  "preserved": "all checkpoints/history kept; training stopped before standalone selection",
+  "NEXT_ACTION": "new namespace p9_exp01_deberta_20261026_v2 with explicit standard CLS/SEP; restart pretrained, no reuse fine-tuned weights"
+}

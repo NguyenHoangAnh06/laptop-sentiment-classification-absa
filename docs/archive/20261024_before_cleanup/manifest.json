@@ -1,0 +1,30 @@
+{
+  "purpose": "Snapshot before documentation cleanup; historical only",
+  "files": [
+    {
+      "source": "PLAN_AI.md",
+      "archive": "docs/archive/20261024_before_cleanup/PLAN_AI.md",
+      "sha256": "986988e553b745a75070168c1ec638c72fdc8842ea2a0740391128f5ef256d5d"
+    },
+    {
+      "source": "PLAN_HUMAN.md",
+      "archive": "docs/archive/20261024_before_cleanup/PLAN_HUMAN.md",
+      "sha256": "0fdf57ab6b6a501eb7496272b2a281aa3adbc5bda65c9c28596080eb6532ea5a"
+    },
+    {
+      "source": "README.md",
+      "archive": "docs/archive/20261024_before_cleanup/README.md",
+      "sha256": "436eb5f5f7e7fe72248dd2325d439c08449d41b263ba28555ee4954b82bf9870"
+    },
+    {
+      "source": "docs/CODEX_HANDOFF.md",
+      "archive": "docs/archive/20261024_before_cleanup/docs__CODEX_HANDOFF.md",
+      "sha256": "ebe7f538ca250b982c06fd75d34cdf28541dcda48a4b3c8a7ccc379bb4321c67"
+    },
+    {
+      "source": "scripts/report_model_refactor.py",
+      "archive": "docs/archive/20261024_before_cleanup/scripts__report_model_refactor.py",
+      "sha256": "f02fd4ab04495198896e2a1ba6953297775ab45e47712b469934d8e1288499d5"
+    }
+  ]
+}

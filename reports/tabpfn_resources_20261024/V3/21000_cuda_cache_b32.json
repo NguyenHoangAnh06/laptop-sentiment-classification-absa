@@ -1,0 +1,34 @@
+{
+  "version": "V3",
+  "samples": 21000,
+  "device": "cuda",
+  "prediction_batch_size": 32,
+  "split": "train",
+  "seed": 42,
+  "status": "PASS",
+  "token_configured": false,
+  "features": 384,
+  "dtype": "float32",
+  "settings": {
+    "n_estimators": 1,
+    "fit_mode": "fit_with_cache",
+    "memory_saving_mode": true,
+    "keep_cache_on_device": false,
+    "inference_precision": "autocast"
+  },
+  "package": "9.2.0",
+  "class_counts": [
+    5781,
+    1842,
+    13377
+  ],
+  "checkpoint": "tabpfn-v3-classifier-v3_default.ckpt",
+  "fit_seconds": 14.067206100095063,
+  "inference_seconds": 0.35633340012282133,
+  "warm_inference_seconds": 0.3666668999940157,
+  "probe_rows": 32,
+  "peak_process_rss_bytes": 6078504960,
+  "peak_gpu_allocated_bytes": 6221636608,
+  "peak_gpu_reserved_bytes": 9611247616,
+  "seconds": 19.940949199721217
+}

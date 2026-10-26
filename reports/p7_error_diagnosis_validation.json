@@ -1,0 +1,68 @@
+{
+  "status": "PASS",
+  "date": "2026-10-25",
+  "total_passed": 321,
+  "failed": 0,
+  "groups": [
+    301,
+    12,
+    8
+  ],
+  "previous_tests": 306,
+  "new_tests": 15,
+  "command": ".venv/Scripts/python.exe -B -m scripts.test_all",
+  "console_log": "reports/p7_human_final_tests.log",
+  "warnings": "10 SDK DeprecationWarnings cũ",
+  "pip_check": "PASS: No broken requirements found.",
+  "compileall": "PASS: src scripts tests",
+  "human_audit_status": "HUMAN_REVIEWED_DIAGNOSIS_COMPLETE",
+  "human_annotation_created": false,
+  "human_review_confirmed_by_user": true,
+  "metadata_update": "reports/p7_human_metadata_update.json",
+  "canonical_metrics_changed": false,
+  "models_retrained": false,
+  "dataset_splits_changed": false,
+  "reproducibility": {
+    "command": ".venv/Scripts/python.exe -B -m scripts.analyze_error_causes",
+    "status": "PASS",
+    "outputs_byte_identical": [
+      "reports/p7_error_cause_analysis.md",
+      "reports/p7_error_cause_analysis.json",
+      "reports/p7_human_audit_results.json",
+      "reports/p7_human_model_metrics.csv",
+      "reports/p7_human_attribution.csv",
+      "reports/p7_human_model_classes.csv",
+      "reports/p7_completion.json"
+    ]
+  },
+  "preservation": {
+    "status": "PASS",
+    "scientific_files_unchanged": 153,
+    "mismatches": [],
+    "task_snapshot_files_unchanged": 185,
+    "task_snapshot_mismatches": [],
+    "legacy": {
+      "p5": {
+        "files": 27,
+        "mismatches": []
+      },
+      "p6": {
+        "files": 26,
+        "mismatches": []
+      }
+    },
+    "benchmark_csv_sha256": "260068014d210a8549d09156e79eadd4ae0b8546f0dda64b51e361b664753f54",
+    "manual_rows": 360,
+    "human_fields_nonempty": 360,
+    "annotation_file_sha256": "69a7cd3e58b5b997a69005fcb5524b84bc46b6369d43458a05032145d9233cc8",
+    "private_sidecar_sha256": "157f4f43a0b2e53d7729ba05a2ca95d1947cdd936511692fbcb9a5cdc345498d"
+  },
+  "source_sha256": {
+    "src/evaluation/sentiment_audit.py": "16650c3faa25e0b8185abad73c9d3cd4b85be2cee239a8b9faa5fe53ca42e324",
+    "src/evaluation/human_diagnosis.py": "5dd8452b167e11892778459878dc68095cba2aaddd09027668d5c687ac36755b",
+    "scripts/analyze_error_causes.py": "636b95ae460339c97200b0db3ca5f046c8bcd5656fab5e5e944443a873f9d22c",
+    "scripts/finalize_p7_acceptance.py": "3f2a507e9c21608edf4e21dadcd8a637d84147bf46c2f94db3a6d98e86a1721f",
+    "tests/test_human_diagnosis.py": "9e03df06ec453a48afa0b2f61e6d6db1396b43d560fcf3f1dbebe0128c5226e2"
+  },
+  "resolved_during_task": "Assertion mới ban đầu quá rộng, nhận nhầm giới hạn thiếu causal tags là thiếu human sentiment; đã thu hẹp điều kiện và chạy lại toàn suite PASS."
+}

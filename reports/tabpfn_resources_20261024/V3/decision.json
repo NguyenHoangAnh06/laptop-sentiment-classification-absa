@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "train_samples": 10000,
+  "data_regime": "SUBSAMPLED",
+  "fit_mode": "fit_with_cache",
+  "prediction_batch_size": 128,
+  "evidence": "10000_cuda_cache_b128.json",
+  "reason": "Full21K cached RSS exceeds 6000000000 bytes; low_memory small batches exceed 1800 seconds projected; CPU default guard >5000 samples."
+}

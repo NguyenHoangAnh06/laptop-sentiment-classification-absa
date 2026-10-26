@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "verification_provenance": "Recorded from observed scripts.validate_p6 output (exit 0); no repeat test predictions",
+  "independent_validation": {
+    "input_hashes_verified": 181,
+    "saved_prediction_metrics": "PASS",
+    "validation_selection": "PASS",
+    "full_train_epochs": "PASS",
+    "cpu_reload_inference": "PASS",
+    "backbone_update": "PASS: embeddings and encoder query weights differ from pinned pretrained source",
+    "test_predictions_rerun": false,
+    "P7_executed": false
+  },
+  "observed_commands": {
+    "scripts.test_all": "195 passed in 13.38s + 12 passed in 13.73s; exit 0",
+    "pip_check": "No broken requirements found.",
+    "compileall_src_scripts": "exit 0",
+    "scripts.report_p6": "exit 0/PASS; PNG visual QA complete"
+  },
+  "training_shell_wrapper": {
+    "exit_code": 1,
+    "note": "PowerShell redirected expected HF task-head stderr as NativeCommandError; pipeline printed DONE and complete manifest independently validated"
+  },
+  "verification_source_sha256": {
+    "scripts/validate_p6.py": "6febcded72ef5da3292541fb3cee3fe0b6fd5b8e00eb59eb3fb2a9a036cf8a85",
+    "scripts/report_p6.py": "f918b63095197dc6b0fd06991ba69d71f4b351455b5b2440e410dccb1330e75b",
+    "scripts/test_all.py": "5e5bfbef94e32c0274efd15d4c6732fc6e48f92305997845ff6f03eec26593c1",
+    "tests/test_p6.py": "05e7301e9bdd8320169f82ed46ae2180b0299b17322138c7ffc1ff67bb67f802"
+  },
+  "run_manifest_sha256": "fc189aa14f68fae062dd3136538b2cb77e2ac450c9c666679041c5d4a51e3ad5",
+  "analysis_sha256": {
+    "reports/p6/p6_20261015_analysis/cost_performance_deltas.csv": "56769ad5a11665c0e0d3a7d6150848dd9951b30f0313e22927fd5296e7ebdab3",
+    "reports/p6/p6_20261015_analysis/summary.json": "7dcae29e15deae9c98759d782ee33998565d70846f25ee03dd40cca8c0b41846",
+    "reports/p6/p6_20261015_analysis/technical_slice.json": "31cca88a5c45780ccdaf58b3a0d95bbdfd55a5588b2a58c1d0651bb271609d7c",
+    "reports/p6/p6_20261015_analysis/training_curves.png": "9b239ea9c0bb367bfdd528579c3014dd01ba4fdad5ad3dfeb63fe26109503349",
+    "reports/p6/p6_20261015_analysis/training_curves.svg": "3b8e4c59d69d45935d4650785467dcd7145a354c7b621f0bc3a4578d677223a3"
+  }
+}

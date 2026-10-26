@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "experiment": "E03_tabpfn_v3_embedding",
+  "metrics_recomputed": {
+    "validation": "PASS",
+    "test": "PASS"
+  },
+  "artifact_hashes": "PASS",
+  "validation_selection": "PASS",
+  "test_predictions_rerun": false
+}

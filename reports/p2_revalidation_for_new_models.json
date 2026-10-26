@@ -1,0 +1,54 @@
+{
+  "status": "PASS",
+  "checks": {
+    "rows_30000": true,
+    "valid_ratings": true,
+    "labels_match_rating": true,
+    "label_ids": true,
+    "proxy_provenance": true,
+    "unique_review_id": true,
+    "unique_clean_body": true,
+    "body_nonempty": true,
+    "english": true
+  },
+  "counts": {
+    "positive": 19110,
+    "negative": 8259,
+    "neutral": 2631
+  },
+  "missing": {
+    "review_id": 0,
+    "source": 0,
+    "source_line": 0,
+    "group": 0,
+    "parent_asin": 0,
+    "asin": 0,
+    "user_id": 0,
+    "review_title": 0,
+    "text": 0,
+    "rating": 0,
+    "product_title": 0,
+    "brand": 70,
+    "timestamp": 0,
+    "helpful_vote": 0,
+    "verified_purchase": 0,
+    "raw_text": 0,
+    "brand_raw": 0,
+    "brand_normalized": 0,
+    "sentiment": 0,
+    "label_id": 0,
+    "label_provenance": 0,
+    "quality_flags": 0,
+    "clean_text_sha256": 0,
+    "language": 0,
+    "language_detector_score": 0,
+    "near_duplicate_group_id": 30000
+  },
+  "text_characters_min_max": [
+    9,
+    17381
+  ],
+  "dataset_sha256": "611b73584a933645336784b13b7f004a17e8803758d1be8ac64708563eabb5ba",
+  "relabelled": false,
+  "gold_used": false
+}

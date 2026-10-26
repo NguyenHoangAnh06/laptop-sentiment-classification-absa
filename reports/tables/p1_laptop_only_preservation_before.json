@@ -1,0 +1,147 @@
+[
+  {
+    "path": "data/raw/amazon/.gitkeep",
+    "bytes": 0,
+    "mtime_ns": 1791429633126245900,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "data/raw/amazon/Cell_Phones_and_Accessories_metadata_probe_5000.jsonl",
+    "bytes": 17952345,
+    "mtime_ns": 1791435239465921400,
+    "sha256": "292fe169c9a7f1bef87a535dab0facd35cec52f394c1f99c2e30cb48296fb121"
+  },
+  {
+    "path": "data/raw/amazon/Cell_Phones_and_Accessories_metadata_probe_5000.jsonl.manifest.json",
+    "bytes": 736,
+    "mtime_ns": 1791435239488246200,
+    "sha256": "162ff6bb7c18a16bc319f94a47291a042d43592c7b131074c16f6a968574fb53"
+  },
+  {
+    "path": "data/raw/amazon/Cell_Phones_and_Accessories_reviews_probe_20000.jsonl",
+    "bytes": 11680327,
+    "mtime_ns": 1791435325539518400,
+    "sha256": "78f8f3a796fc49dd28ec9c980277500f59964f5f9a44a64cd35eed608f1c4987"
+  },
+  {
+    "path": "data/raw/amazon/Cell_Phones_and_Accessories_reviews_probe_20000.jsonl.manifest.json",
+    "bytes": 732,
+    "mtime_ns": 1791435325563196000,
+    "sha256": "d991006c8334e0a2681d6a0216bbf68b1496fb11fee48e75972a4fba9971b3bb"
+  },
+  {
+    "path": "data/raw/amazon/Electronics.jsonl.gz",
+    "bytes": 6474438619,
+    "mtime_ns": 1791447736334198000
+  },
+  {
+    "path": "data/raw/amazon/Electronics.jsonl.gz.manifest.json",
+    "bytes": 689,
+    "mtime_ns": 1791447741944081400,
+    "sha256": "06b9037da084f05e127fd5f98afea3dc82007c43afaff1b8d6a2674231f27772"
+  },
+  {
+    "path": "data/raw/amazon/metadata_prefix_20000.jsonl",
+    "bytes": 73240352,
+    "mtime_ns": 1791432042535002100
+  },
+  {
+    "path": "data/raw/amazon/metadata_prefix_20000.jsonl.manifest.json",
+    "bytes": 669,
+    "mtime_ns": 1791432042536006400,
+    "sha256": "bffbcfa56b50bb6c6b974cc06d96556f4524d5b121d42ab15402a4038dd68d5e"
+  },
+  {
+    "path": "data/raw/amazon/metadata_prefix_20000.jsonl.verified.manifest.json",
+    "bytes": 988,
+    "mtime_ns": 1791432229811971600,
+    "sha256": "d00985165686af6113fc77b1e85b8c37c058c81ba994251a0c42c41b9249d502"
+  },
+  {
+    "path": "data/raw/amazon/meta_Electronics.jsonl.gz",
+    "bytes": 1312900427,
+    "mtime_ns": 1791440858890158000
+  },
+  {
+    "path": "data/raw/amazon/meta_Electronics.jsonl.gz.manifest.json",
+    "bytes": 694,
+    "mtime_ns": 1791440859821934100,
+    "sha256": "e2ce02f6f5372fd49825596476364d27c22695277cd56684eda2f0516a452496"
+  },
+  {
+    "path": "data/raw/amazon/reviews_prefix_100000.jsonl",
+    "bytes": 67212341,
+    "mtime_ns": 1791432097899551100
+  },
+  {
+    "path": "data/raw/amazon/reviews_prefix_100000.jsonl.manifest.json",
+    "bytes": 666,
+    "mtime_ns": 1791432097900557700,
+    "sha256": "520281ca0b2f80d35c63e2f32dfffd1668343689ae89ffffed1e9644bf1a7df1"
+  },
+  {
+    "path": "data/raw/amazon/reviews_prefix_100000.jsonl.verified.manifest.json",
+    "bytes": 985,
+    "mtime_ns": 1791432229895584100,
+    "sha256": "e97aaac23217b65bac97718ff81ed3abcfc89212b498fd143bfcd829ddebd917"
+  },
+  {
+    "path": "data/raw/semeval/.gitkeep",
+    "bytes": 0,
+    "mtime_ns": 1791429633126245900,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "data/raw/semeval/laptops-trial.xml",
+    "bytes": 18547,
+    "mtime_ns": 1791432053301255500,
+    "sha256": "0971a30e6add454d344ac011385fb8407db4193db048c8cd8e7a82908ac5172d"
+  },
+  {
+    "path": "data/raw/semeval/laptops-trial.xml.manifest.json",
+    "bytes": 574,
+    "mtime_ns": 1791432053308051800,
+    "sha256": "8f8a31183439a6725e84014ef8c2ddba9d11cd791289d76a903dce5979c3c912"
+  },
+  {
+    "path": "data/interim/feasibility/electronics_full_laptop_30k/laptop_sample.jsonl",
+    "bytes": 5095238,
+    "mtime_ns": 1791450014437334100,
+    "sha256": "26bb2ce9153cded05651d632d6921b8f92c494c742805544315ca6e951c922ff"
+  },
+  {
+    "path": "data/interim/feasibility/electronics_full_laptop_30k/laptop_valid.jsonl",
+    "bytes": 416018817,
+    "mtime_ns": 1791450014137917700
+  },
+  {
+    "path": "data/interim/feasibility/electronics_full_laptop_30k/products.jsonl",
+    "bytes": 9639464,
+    "mtime_ns": 1791449229064041000,
+    "sha256": "8c359dbc575980fd31066de83c484110e7c5908fb590aeb5f44b2d757748912e"
+  },
+  {
+    "path": "data/interim/feasibility/electronics_full_laptop_30k/report.json",
+    "bytes": 10451,
+    "mtime_ns": 1791450014852705200,
+    "sha256": "97e1ee2e9df65b02c47af7d433af1dd0977bcc1367fb4c6372d629f266e74878"
+  },
+  {
+    "path": "data/interim/feasibility/electronics_metadata_full_30k/products.jsonl",
+    "bytes": 9639464,
+    "mtime_ns": 1791441092108065500,
+    "sha256": "8c359dbc575980fd31066de83c484110e7c5908fb590aeb5f44b2d757748912e"
+  },
+  {
+    "path": "data/interim/feasibility/electronics_metadata_full_30k/report.json",
+    "bytes": 2854,
+    "mtime_ns": 1791441092158452000,
+    "sha256": "820201c9da78da069fc0bead982dd479265c21ce6ac9760ee91138a3dea91b6b"
+  },
+  {
+    "path": "data/manual/feasibility/Electronics_laptop_3aeb96dfe815.csv",
+    "bytes": 42116,
+    "mtime_ns": 1791452190814770300,
+    "sha256": "9c0b1594b6207fb1d29066e4baa483ebc9b2ea9f3b82051c9399a505e6206f83"
+  }
+]

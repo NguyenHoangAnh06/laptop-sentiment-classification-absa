@@ -1,0 +1,419 @@
+{
+  "integrity_status": "PASS",
+  "models": {
+    "v3": {
+      "status": "SUCCESS",
+      "train_samples": 21000,
+      "requested_version": "V3",
+      "resolved_version": "V3",
+      "environment": {
+        "python": "3.13.15",
+        "packages": {
+          "torch": "2.11.0+cu128",
+          "tabpfn": "9.2.0",
+          "numpy": "2.2.6",
+          "scikit-learn": "1.7.2"
+        },
+        "cuda": "12.8",
+        "gpu": "Tesla T4",
+        "cpu_count": 4,
+        "ram_total_bytes": 33658155008
+      },
+      "metrics": {
+        "validation": {
+          "accuracy": 0.822,
+          "macro_f1": 0.5806938330623277,
+          "weighted_f1": 0.7877212927704672,
+          "per_class": {
+            "negative": {
+              "precision": 0.7831125827814569,
+              "recall": 0.7635189669087974,
+              "f1": 0.7731916632611361,
+              "support": 1239
+            },
+            "neutral": {
+              "precision": 0.7619047619047619,
+              "recall": 0.04050632911392405,
+              "f1": 0.07692307692307693,
+              "support": 395
+            },
+            "positive": {
+              "precision": 0.8367471721186182,
+              "recall": 0.9549895324494069,
+              "f1": 0.8919667590027701,
+              "support": 2866
+            }
+          },
+          "confusion_matrix": [
+            [
+              946,
+              4,
+              289
+            ],
+            [
+              134,
+              16,
+              245
+            ],
+            [
+              128,
+              1,
+              2737
+            ]
+          ],
+          "confusion_matrix_order": [
+            "negative",
+            "neutral",
+            "positive"
+          ],
+          "balanced_accuracy": 0.5863382761573761,
+          "neutral_f1": 0.07692307692307693
+        },
+        "test": {
+          "accuracy": 0.8266666666666667,
+          "macro_f1": 0.5729714579859373,
+          "weighted_f1": 0.7901613513685757,
+          "per_class": {
+            "negative": {
+              "precision": 0.7766295707472178,
+              "recall": 0.7885391444713479,
+              "f1": 0.7825390468562274,
+              "support": 1239
+            },
+            "neutral": {
+              "precision": 1.0,
+              "recall": 0.02030456852791878,
+              "f1": 0.03980099502487562,
+              "support": 394
+            },
+            "positive": {
+              "precision": 0.8457019171304886,
+              "recall": 0.9539588419951168,
+              "f1": 0.8965743320767088,
+              "support": 2867
+            }
+          },
+          "confusion_matrix": [
+            [
+              977,
+              0,
+              262
+            ],
+            [
+              149,
+              8,
+              237
+            ],
+            [
+              132,
+              0,
+              2735
+            ]
+          ],
+          "confusion_matrix_order": [
+            "negative",
+            "neutral",
+            "positive"
+          ],
+          "balanced_accuracy": 0.5876008516647945,
+          "neutral_f1": 0.03980099502487562
+        }
+      },
+      "metric_max_abs_delta": {
+        "validation": 0.0,
+        "test": 0.0
+      },
+      "resource": {
+        "fit_seconds": 7.968202819999988,
+        "validation_inference_seconds": 35.43076634299996,
+        "test_inference_seconds": 35.34369149300005,
+        "peak_process_rss_bytes": 2287575040,
+        "wall_seconds": 80.04689233199997,
+        "peak_gpu_allocated_bytes": 6195194880,
+        "peak_gpu_reserved_bytes": 9086959616
+      },
+      "checkpoint": "tabpfn-v3-classifier-v3_default.ckpt",
+      "artifact_directory": "artifacts/cloud_runs/tabpfn_full21k_20261024/tabpfn_v3_full21k",
+      "probe_full21k": {
+        "status": "PASS",
+        "sample_count": 21000,
+        "requested_version": "V3",
+        "split": "train",
+        "feature_dimension": 384,
+        "dtype": "float32",
+        "environment": {
+          "python": "3.13.15",
+          "packages": {
+            "torch": "2.11.0+cu128",
+            "tabpfn": "9.2.0",
+            "numpy": "2.2.6",
+            "scikit-learn": "1.7.2"
+          },
+          "cuda": "12.8",
+          "gpu": "Tesla T4",
+          "cpu_count": 4,
+          "ram_total_bytes": 33658155008
+        },
+        "resolved_version": "V3",
+        "checkpoint": "tabpfn-v3-classifier-v3_default.ckpt",
+        "tabpfn_package_version": "9.2.0",
+        "fit_seconds": 7.881236848000015,
+        "inference_seconds": 0.14212372299999743,
+        "elapsed_seconds": 13.529357004000019,
+        "process_rss_bytes": 2267414528,
+        "peak_process_rss_bytes": 2281271296,
+        "gpu_allocated_bytes": 222231040,
+        "gpu_reserved_bytes": 9086959616,
+        "max_gpu_memory_bytes": 6195194880
+      },
+      "protocol_status": "PASS_WITH_EVIDENCE_LIMITATIONS"
+    },
+    "v35": {
+      "status": "SUCCESS",
+      "train_samples": 21000,
+      "requested_version": "V3_5",
+      "resolved_version": "V3_5",
+      "environment": {
+        "python": "3.13.15",
+        "packages": {
+          "torch": "2.11.0+cu128",
+          "tabpfn": "9.2.0",
+          "numpy": "2.2.6",
+          "scikit-learn": "1.7.2"
+        },
+        "cuda": "12.8",
+        "gpu": "Tesla T4",
+        "cpu_count": 4,
+        "ram_total_bytes": 33658155008
+      },
+      "metrics": {
+        "validation": {
+          "accuracy": 0.8386666666666667,
+          "macro_f1": 0.6143324847668338,
+          "weighted_f1": 0.8101802601549114,
+          "per_class": {
+            "negative": {
+              "precision": 0.7593123209169055,
+              "recall": 0.8555286521388217,
+              "f1": 0.8045540796963947,
+              "support": 1239
+            },
+            "neutral": {
+              "precision": 0.6744186046511628,
+              "recall": 0.07341772151898734,
+              "f1": 0.1324200913242009,
+              "support": 395
+            },
+            "positive": {
+              "precision": 0.8771643253838615,
+              "recall": 0.9368457780879275,
+              "f1": 0.9060232832799056,
+              "support": 2866
+            }
+          },
+          "confusion_matrix": [
+            [
+              1060,
+              7,
+              172
+            ],
+            [
+              162,
+              29,
+              204
+            ],
+            [
+              174,
+              7,
+              2685
+            ]
+          ],
+          "confusion_matrix_order": [
+            "negative",
+            "neutral",
+            "positive"
+          ],
+          "balanced_accuracy": 0.6219307172485787,
+          "neutral_f1": 0.1324200913242009
+        },
+        "test": {
+          "accuracy": 0.8375555555555556,
+          "macro_f1": 0.614017409201096,
+          "weighted_f1": 0.809843491645755,
+          "per_class": {
+            "negative": {
+              "precision": 0.7530335474660956,
+              "recall": 0.8514931396287329,
+              "f1": 0.7992424242424242,
+              "support": 1239
+            },
+            "neutral": {
+              "precision": 0.625,
+              "recall": 0.07614213197969544,
+              "f1": 0.13574660633484162,
+              "support": 394
+            },
+            "positive": {
+              "precision": 0.8797115699770567,
+              "recall": 0.9361702127659575,
+              "f1": 0.9070631970260223,
+              "support": 2867
+            }
+          },
+          "confusion_matrix": [
+            [
+              1055,
+              7,
+              177
+            ],
+            [
+              174,
+              30,
+              190
+            ],
+            [
+              172,
+              11,
+              2684
+            ]
+          ],
+          "confusion_matrix_order": [
+            "negative",
+            "neutral",
+            "positive"
+          ],
+          "balanced_accuracy": 0.6212684947914618,
+          "neutral_f1": 0.13574660633484162
+        }
+      },
+      "metric_max_abs_delta": {
+        "validation": 0.0,
+        "test": 0.0
+      },
+      "resource": {
+        "fit_seconds": 21.14593929099999,
+        "validation_inference_seconds": 48.59099152199997,
+        "test_inference_seconds": 48.269700019000084,
+        "peak_process_rss_bytes": 3121553408,
+        "wall_seconds": 119.24424333399998,
+        "peak_gpu_allocated_bytes": 7439429120,
+        "peak_gpu_reserved_bytes": 14350811136
+      },
+      "checkpoint": "tabpfn-v3.5-20260909.safetensors",
+      "artifact_directory": "artifacts/cloud_runs/tabpfn_full21k_20261024/tabpfn_v35_full21k",
+      "probe_full21k": {
+        "status": "PASS",
+        "sample_count": 21000,
+        "requested_version": "V3_5",
+        "split": "train",
+        "feature_dimension": 384,
+        "dtype": "float32",
+        "environment": {
+          "python": "3.13.15",
+          "packages": {
+            "torch": "2.11.0+cu128",
+            "tabpfn": "9.2.0",
+            "numpy": "2.2.6",
+            "scikit-learn": "1.7.2"
+          },
+          "cuda": "12.8",
+          "gpu": "Tesla T4",
+          "cpu_count": 4,
+          "ram_total_bytes": 33658155008
+        },
+        "resolved_version": "V3_5",
+        "checkpoint": "tabpfn-v3.5-20260909.safetensors",
+        "tabpfn_package_version": "9.2.0",
+        "fit_seconds": 20.785189994000007,
+        "inference_seconds": 0.18550078399994163,
+        "elapsed_seconds": 26.410577363000016,
+        "process_rss_bytes": 3093127168,
+        "peak_process_rss_bytes": 3140427776,
+        "gpu_allocated_bytes": 888027648,
+        "gpu_reserved_bytes": 14350811136,
+        "max_gpu_memory_bytes": 7439429120
+      },
+      "protocol_status": "PASS_WITH_EVIDENCE_LIMITATIONS"
+    }
+  },
+  "warnings": [
+    "Bằng chứng protocol là code bundle được hash, config/selection lock và metadata; không có attestation độc lập hoặc log timestamp fit/test.",
+    "Test được tái sử dụng; không suy diễn là holdout mới. Không chạy lại model để xác minh."
+  ],
+  "zip_source": "cloud/results/tabpfn_cloud_results_20261024T134959209612Z.zip",
+  "zip_sha256": "041e66d97c14c760a6cc5231ac8df4e8314c972a0835d21ac6bbfe25db6c9e3b",
+  "artifact_directory": "artifacts/cloud_runs/tabpfn_full21k_20261024",
+  "tests": {
+    "status": "PASS",
+    "existing_test_count": 276,
+    "new_tests": 15,
+    "total_passed": 291,
+    "failed": 0,
+    "groups": [
+      271,
+      12,
+      8
+    ],
+    "command": ".venv/Scripts/python.exe -B -m scripts.test_all",
+    "warnings": "10 SDK DeprecationWarnings trong nhóm cũ",
+    "targeted_checks": "19PASS (15 mới+4 P7); hai lỗi fixture ban đầu đã sửa trước full suite"
+  },
+  "preservation": {
+    "status": "PASS",
+    "unchanged_scientific_files": 153,
+    "legacy": {
+      "p5": {
+        "files": 27,
+        "mismatches": []
+      },
+      "p6": {
+        "files": 26,
+        "mismatches": []
+      }
+    },
+    "intentional_p7_updates": [
+      "reports/p7_unified_results.csv",
+      "reports/p7_unified_benchmark.md"
+    ]
+  },
+  "update_decision": {
+    "p7_updated": true,
+    "models_updated": [
+      "E03_tabpfn_v3_embedding",
+      "E04_tabpfn_v35_embedding"
+    ],
+    "historical_directory": "reports/history/tabpfn_before_kaggle_20261024",
+    "no_models_rerun": true
+  },
+  "files_modified": [
+    "scripts/verify_kaggle_results.py",
+    "scripts/publish_kaggle_results.py",
+    "scripts/finish_benchmark.py",
+    "scripts/final_completion.py",
+    "tests/test_kaggle_results.py",
+    "tests/test_final_benchmark.py",
+    "reports/p7_unified_results.csv",
+    "reports/p7_unified_benchmark.md",
+    "reports/p7_completion.json",
+    "reports/model_stack_refactor_completion.md",
+    "reports/tabpfn_kaggle_full21k_verification.md",
+    "reports/tabpfn_kaggle_full21k_verification.json",
+    "PLAN_AI.md",
+    "PLAN_HUMAN.md",
+    "README.md",
+    "docs/PROJECT_INDEX.md",
+    "docs/TABPFN_CLOUD_PLAN.md",
+    "docs/CODEX_HANDOFF.md",
+    ".gitignore",
+    "scripts/benchmark_reports.py",
+    "reports/p5_modern_tabular_models.md",
+    "reports/p5_e03_tabpfn_v3.md",
+    "reports/p5_e04_tabpfn_v35.md"
+  ],
+  "verification_source_sha256": {
+    "scripts/verify_kaggle_results.py": "49bab6f56d8a88f25c6b7e612512b35f5441dd9e6b720b4898078b9c89a7557a",
+    "scripts/publish_kaggle_results.py": "8c5509e371a52d1138771793d11ff135b8634b2d146d6f5b789e50c24e6e13be",
+    "tests/test_kaggle_results.py": "1b5ee3df04b3abb1bb7af5b0b46a3615607192d9c2b559b48d06b3bc5c3bc6c1",
+    "tests/test_final_benchmark.py": "08dcb8caee9d2f979fa7c54dbc2c8dfc273f2f80e66970af1c8907b11dcd3c50"
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "deleted_duplicates": [
+    {
+      "path": "reports/model_stack_partial_results.csv",
+      "bytes": 1912,
+      "sha256": "402080bb1abd80a2a75e5db254b8323c148fb1ecde4a8ed839eef46af3346aa8",
+      "replacement": "reports/p7_unified_results.csv"
+    }
+  ],
+  "archive_manifest": "docs/archive/20261024_before_cleanup/manifest.json",
+  "cloud_status": "PENDING",
+  "training_or_test_predictions_run": false,
+  "documentation_links_checked": 58,
+  "missing_links": [],
+  "long_term_P8_P12_preserved": true,
+  "phase_headings_each_plan": 14,
+  "archive_hashes": "PASS",
+  "active_documents": [
+    "AGENTS.md",
+    "README.md",
+    "PLAN_AI.md",
+    "PLAN_HUMAN.md",
+    "docs/PROJECT_INDEX.md",
+    "docs/MODEL_STACK_REFACTOR.md",
+    "docs/TABPFN_CLOUD_PLAN.md",
+    "docs/P4_DATA_CONTRACT.md",
+    "docs/P5_MODEL_CONTRACT.md",
+    "docs/P6_MODEL_CONTRACT.md",
+    "docs/VIETNAMESE_TRANSLATION.md"
+  ],
+  "report_generators_updated": [
+    "scripts/report_model_refactor.py",
+    "scripts/final_completion.py",
+    "scripts/benchmark_reports.py",
+    "scripts/finish_benchmark.py",
+    "scripts/report_tabpfn_resources.py"
+  ],
+  "preserved_evidence": [
+    "data/raw",
+    "data/processed",
+    "artifacts",
+    "reports/semantic_20261024",
+    "reports/tabpfn_resources_20261024",
+    "reports/tabpfn_smoke_20261024",
+    "reports/p5/p5_20261015",
+    "reports/p6/p6_20261015"
+  ],
+  "plan_size_bytes": {
+    "PLAN_AI.md": {
+      "before": 57174,
+      "after": 16621
+    },
+    "PLAN_HUMAN.md": {
+      "before": 38648,
+      "after": 10164
+    },
+    "README.md": {
+      "before": 14843,
+      "after": 6074
+    }
+  },
+  "cache_directories_removed": [
+    {
+      "path": "src/__pycache__",
+      "files": 2,
+      "bytes": 1989
+    },
+    {
+      "path": "src/data/__pycache__",
+      "files": 18,
+      "bytes": 278845
+    },
+    {
+      "path": "src/evaluation/__pycache__",
+      "files": 3,
+      "bytes": 15508
+    },
+    {
+      "path": "src/inference/__pycache__",
+      "files": 1,
+      "bytes": 3898
+    },
+    {
+      "path": "src/models/__pycache__",
+      "files": 1,
+      "bytes": 2179
+    },
+    {
+      "path": "src/preprocessing/__pycache__",
+      "files": 4,
+      "bytes": 22430
+    },
+    {
+      "path": "src/sentiment/__pycache__",
+      "files": 4,
+      "bytes": 35374
+    },
+    {
+      "path": "scripts/__pycache__",
+      "files": 51,
+      "bytes": 494830
+    },
+    {
+      "path": "tests/__pycache__",
+      "files": 44,
+      "bytes": 721168
+    },
+    {
+      "path": ".pytest_cache",
+      "files": 6,
+      "bytes": 21309
+    }
+  ],
+  "cache_bytes_removed": 1597530,
+  "tests_passed": 249,
+  "model_validators": "PASS",
+  "legacy_hashes": "53 unchanged",
+  "resource_table_layout": "PASS",
+  "status": "PASS",
+  "modified_source_sha256": {
+    "scripts/report_model_refactor.py": "5d6c1ded2636d4726cc0faf26538099da339d77d81e5bf9ad0a7969e273d427c",
+    "scripts/final_completion.py": "4d9d2c9bc4bcb197029e031d462e3352305538536073509aa64a43d69608dcc1",
+    "scripts/benchmark_reports.py": "98775d6a152fba7af53db1a82892d551f5bcfe6d5154d8a577ef21b33f02caf2",
+    "scripts/finish_benchmark.py": "62438ac33b73bc7cef017b0d177658ae993555fbabfdd0f03afac984c46fdfd2",
+    "scripts/report_tabpfn_resources.py": "aa13075df2d609ac2bbd109ec8af13bf77b354e8e1556fa86514bc19e98200a4"
+  },
+  "handoff_updated": true
+}

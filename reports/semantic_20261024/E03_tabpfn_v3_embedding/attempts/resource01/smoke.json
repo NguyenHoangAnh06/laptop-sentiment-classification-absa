@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "rows": 24,
+  "checkpoint": "tabpfn-v3-classifier-v3_default.ckpt",
+  "gpu_allocated_bytes": 393164288
+}

@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "experiment": "E02_tabm_embedding",
+  "metrics_recomputed": {
+    "validation": "PASS",
+    "test": "PASS"
+  },
+  "artifact_hashes": "PASS",
+  "validation_selection": "PASS",
+  "test_predictions_rerun": false
+}

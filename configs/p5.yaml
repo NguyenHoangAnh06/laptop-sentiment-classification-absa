@@ -1,0 +1,27 @@
+version: p5_classical_v1
+p4_manifest: reports/p4/p4_20261009_final/manifest.json
+output_suffix: p5_20261015
+seed: 42
+threads: 1
+max_seconds: 900
+max_memory_bytes: 1000000000
+max_output_bytes: 100000000
+latency_batch_size: 128
+latency_repeats: 5
+grids:
+  majority: [{}]
+  logistic_regression:
+    - {C: 0.5, class_weight: null}
+    - {C: 0.5, class_weight: balanced}
+    - {C: 2.0, class_weight: null}
+    - {C: 2.0, class_weight: balanced}
+  linear_svm:
+    - {C: 0.5, class_weight: null}
+    - {C: 0.5, class_weight: balanced}
+    - {C: 2.0, class_weight: null}
+    - {C: 2.0, class_weight: balanced}
+  decision_tree:
+    - {max_depth: 10, min_samples_leaf: 5, class_weight: null}
+    - {max_depth: 10, min_samples_leaf: 5, class_weight: balanced}
+    - {max_depth: 25, min_samples_leaf: 5, class_weight: null}
+    - {max_depth: 25, min_samples_leaf: 5, class_weight: balanced}

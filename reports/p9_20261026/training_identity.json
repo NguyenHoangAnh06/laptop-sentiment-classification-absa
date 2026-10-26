@@ -1,0 +1,69 @@
+{
+  "config": {
+    "version": "p9_asc_v1",
+    "seed": 42,
+    "p8_manifest": "data/processed/p8_20261026/manifest.json",
+    "p8_result": "reports/p8_20261026/result.json",
+    "p8_predictions": "data/interim/p8_20261026",
+    "tokenizer_source": "artifacts/preprocessing/p4_20261009_final/bert/tokenizer.json",
+    "pretrained_model": "google-bert/bert-base-uncased",
+    "revision": "86b5e0934494bd15c9632b12f734a8a67f723594",
+    "labels": [
+      "negative",
+      "neutral",
+      "positive"
+    ],
+    "conflict_policy": "exclude_preserve_original",
+    "representation": "occurrence_markers_single_sequence",
+    "markers": [
+      "[unused0]",
+      "[unused1]"
+    ],
+    "max_length": 128,
+    "data_directory": "data/processed/p9_20261026",
+    "model_directory": "artifacts/models/p9_20261026",
+    "report_directory": "reports/p9_20261026",
+    "prediction_directory": "data/interim/p9_20261026",
+    "end_to_end": {
+      "enabled": true,
+      "conflict_policy": "exclude_gold_and_ignore_exact_conflict_predictions",
+      "p8_source": "saved_predictions_frozen"
+    },
+    "training": {
+      "device": "cuda",
+      "threads": 2,
+      "epochs": 5,
+      "learning_rate": 3e-05,
+      "batch_size": 8,
+      "eval_batch_size": 16,
+      "gradient_accumulation": 2,
+      "weight_decay": 0.01,
+      "warmup_ratio": 0.1,
+      "max_grad_norm": 1.0,
+      "optimizer": "AdamW",
+      "scheduler": "linear_warmup_decay",
+      "loss_candidates": [
+        "unweighted",
+        "balanced"
+      ],
+      "evaluation_strategy": "epoch",
+      "selection_metric": "validation_macro_f1",
+      "tie_break": "first_candidate_then_earliest_epoch",
+      "gradient_checkpointing": true,
+      "mixed_precision": "fp16",
+      "max_seconds": 10800,
+      "max_process_rss_bytes": 6000000000
+    }
+  },
+  "data_manifest_sha256": "9525c80f6138736070776b9f6fe96de420fbd7e46e6c1a183b264e7bb2b330fb",
+  "pretrained_sha256": "68d45e234eb4a928074dfd868cead0219ab85354cc53d20e772753c6bb9169d3",
+  "tokenizer_sha256": "ec016527f68e73fefeca9fd1a548b7e7c395a6231131e730841e7d9539a950dc",
+  "source_sha256": {
+    "scripts/train_p9.py": "cdfd655e3fb0a8dca93f97ff8fa6d794c9e1adacc4c8d59142d914397e90cce5",
+    "scripts/evaluate_p9_end_to_end.py": "f4fd57fb2323705a4a0ea42742ee3960ba8f1ffc8700b19344495494154a42af",
+    "src/absa/sentiment.py": "e267f1072961a805c200d7f96a8e20388ba818207bf4c50ec0ae04fee30fb23a",
+    "src/absa/sentiment_data.py": "e0a1e1caede157b8538aa315193b927bf45d878e79119a08d01fbeca28aeac42",
+    "src/evaluation/aspect_sentiment.py": "fd55d1cdc1be31ecfbe014cc0e709dc7806c8acc96aa6397c94ab7299f06ca88",
+    "src/inference/absa.py": "678444210f4dbc363854979c16affd57cbc737cd44c5211032e1d5fbd2198279"
+  }
+}

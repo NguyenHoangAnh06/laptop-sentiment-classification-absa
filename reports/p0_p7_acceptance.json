@@ -1,0 +1,130 @@
+{
+  "status": "PASS",
+  "date": "2026-10-25",
+  "phases": {
+    "P0": {
+      "status": "DONE",
+      "artifact_existence": "VERIFIED",
+      "previous_phase_execution": "REPORTED_NOT_RERUN",
+      "evidence": [
+        "reports/p0_model_stack_refactor.md",
+        "reports/p0_model_stack_environment.json",
+        "requirements.txt"
+      ],
+      "limitations": "Môi trường đã xác minh trước; không cài lại hoặc nâng dependency."
+    },
+    "P1": {
+      "status": "DONE WITH LIMITATION",
+      "artifact_existence": "VERIFIED",
+      "previous_phase_execution": "REPORTED_NOT_RERUN",
+      "evidence": [
+        "reports/p1_revalidation_for_new_models.json",
+        "reports/p1_acceptance_decision_20261009.md",
+        "reports/tables/p1_semeval_owner_exception_20261009.json",
+        "data/raw/amazon/Electronics.jsonl.gz"
+      ],
+      "limitations": "DONE WITH LIMITATION: ngoại lệ giáo dục của chủ sở hữu; SemEval source/license NOT_VERIFIED, không gọi quyền truy cập đã xác minh."
+    },
+    "P2": {
+      "status": "DONE",
+      "artifact_existence": "VERIFIED",
+      "previous_phase_execution": "REPORTED_NOT_RERUN",
+      "evidence": [
+        "reports/p2_revalidation_for_new_models.json",
+        "reports/p2_amazon_completion_20261009.md",
+        "data/processed/laptop_reviews.parquet"
+      ],
+      "limitations": "Nhãn suy từ sao; audit360 chỉ diagnosis, không xác nhận độ sạch ngôn ngữ/spam toàn30K."
+    },
+    "P3": {
+      "status": "DONE",
+      "artifact_existence": "VERIFIED",
+      "previous_phase_execution": "REPORTED_NOT_RERUN",
+      "evidence": [
+        "reports/p3_model_readiness.json",
+        "reports/p3_data_analysis_20261009.md",
+        "reports/p3/20261009_verified/task_validation.json"
+      ],
+      "limitations": "EDA mô tả trên laptop; cue/keyword không phải gold ABSA."
+    },
+    "P4": {
+      "status": "DONE",
+      "artifact_existence": "VERIFIED",
+      "previous_phase_execution": "REPORTED_NOT_RERUN",
+      "evidence": [
+        "reports/p4_semantic_representation.md",
+        "reports/p4_semantic_independent_validation.json",
+        "reports/p4_semantic_split_validation.json",
+        "configs/semantic_benchmark.yaml"
+      ],
+      "limitations": "MiniLM256/BERT512, giữ split/product leakage audit đã khóa; không re-encode."
+    },
+    "P5": {
+      "status": "DONE WITH LIMITATION",
+      "artifact_existence": "VERIFIED",
+      "previous_phase_execution": "REPORTED_NOT_RERUN",
+      "evidence": [
+        "reports/p5_modern_tabular_models.md",
+        "reports/tabpfn_kaggle_full21k_verification.json",
+        "configs/modern_tabular.yaml"
+      ],
+      "limitations": "DONE WITH LIMITATION: cloud full21K SUCCESS; V3 coverage nội bộ200/384, khác hardware/runtime, cloud không xuất weights. Local subsample giữ LIMITED lịch sử."
+    },
+    "P6": {
+      "status": "DONE WITH LIMITATION",
+      "artifact_existence": "VERIFIED",
+      "previous_phase_execution": "REPORTED_NOT_RERUN",
+      "evidence": [
+        "reports/p6_transformer_benchmark.md",
+        "reports/semantic_20261024/E05_transformer/history.json",
+        "configs/transformer_benchmark.yaml"
+      ],
+      "limitations": "DONE WITH LIMITATION: một seed/search nhỏ và test reuse; không thống kê ưu thế."
+    },
+    "P7": {
+      "status": "DONE",
+      "artifact_existence": "VERIFIED",
+      "previous_phase_execution": "REPORTED_NOT_RERUN",
+      "evidence": [
+        "reports/p7_completion.json",
+        "reports/p7_unified_results.csv",
+        "reports/p7_human_audit_results.json",
+        "reports/p7_error_cause_analysis.md",
+        "reports/p7_human_model_metrics.csv",
+        "reports/p7_human_attribution.csv"
+      ],
+      "limitations": "360 human-reviewed,300SRS+60enriched; causal fraction imbalance không xác định, independent P10 gold vẫn PENDING."
+    }
+  },
+  "p7_status": "DONE",
+  "readiness": "READY FOR P8",
+  "mandatory_blockers_before_p8": [],
+  "no_p8_implementation": true,
+  "canonical_metrics_changed": false,
+  "models_retrained": false,
+  "dataset_splits_changed": false,
+  "preservation": {
+    "status": "PASS",
+    "scientific_files_unchanged": 153,
+    "mismatches": [],
+    "task_snapshot_files_unchanged": 185,
+    "task_snapshot_mismatches": [],
+    "legacy": {
+      "p5": {
+        "files": 27,
+        "mismatches": []
+      },
+      "p6": {
+        "files": 26,
+        "mismatches": []
+      }
+    },
+    "benchmark_csv_sha256": "260068014d210a8549d09156e79eadd4ae0b8546f0dda64b51e361b664753f54",
+    "manual_rows": 360,
+    "human_fields_nonempty": 360,
+    "annotation_file_sha256": "69a7cd3e58b5b997a69005fcb5524b84bc46b6369d43458a05032145d9233cc8",
+    "private_sidecar_sha256": "157f4f43a0b2e53d7729ba05a2ca95d1947cdd936511692fbcb9a5cdc345498d"
+  },
+  "tests_evidence": "reports/p7_error_diagnosis_validation.json",
+  "NEXT_ACTION": "Dừng tại READY FOR P8; P8 chỉ thực hiện trong tác vụ tiếp theo."
+}

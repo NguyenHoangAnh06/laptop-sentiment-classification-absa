@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "reload_checks": {
+    "majority": "PASS: raw-text validation batch equals saved feature prediction",
+    "logistic_regression": "PASS: raw-text validation batch equals saved feature prediction",
+    "linear_svm": "PASS: raw-text validation batch equals saved feature prediction",
+    "decision_tree": "PASS: raw-text validation batch equals saved feature prediction"
+  },
+  "protected_inputs_unchanged": 149,
+  "selection_lock_sha256": "f538b57c31810ea74561268b5062732fcc55b6d0491b5ec7f7708de1c86f7dc7",
+  "test_prediction_passes_per_family": 1,
+  "test_used_for_selection": false,
+  "output_bytes_before_manifest": 1580739
+}

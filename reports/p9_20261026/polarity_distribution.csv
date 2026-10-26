@@ -1,0 +1,13 @@
+split,polarity,original_count,original_share,included_supervised
+train,negative,733,0.35948994605198625,True
+train,neutral,399,0.19568415890142227,True
+train,positive,867,0.4252084355076018,True
+train,conflict,40,0.0196174595389897,False
+validation,negative,133,0.4169278996865204,True
+validation,neutral,61,0.19122257053291536,True
+validation,positive,120,0.3761755485893417,True
+validation,conflict,5,0.01567398119122257,False
+test,negative,128,0.19571865443425077,True
+test,neutral,169,0.25840978593272174,True
+test,positive,341,0.5214067278287462,True
+test,conflict,16,0.024464831804281346,False

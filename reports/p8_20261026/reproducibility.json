@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "command": ".venv/Scripts/python.exe -B -m scripts.finalize_p8",
+  "outputs_byte_identical": {
+    "data/processed/p8_20261026/manifest.json": "8967c69760a85b050a12459e8bf9222bfe983e1565209e5467b8f3c884918a34",
+    "reports/p8_aspect_extraction.md": "be305f53779c6b4f316d08b252cefee375e93f2ba0a0db69bb78bf8f2cb7c95e",
+    "reports/p8_20261026/independent_evaluation.json": "cd924ef41636892fc517038aa8bac2ae086b67abb0f0bd3fbeee250778b6a120",
+    "reports/p8_20261026/acceptance.json": "f3e61607abfecb84c8788c90c05a1ab739461ef5e19f0e9b9187223ea028f09c",
+    "data/interim/p8_20261026/test_predictions.jsonl": "3fc3cff706bffc433494593d2fe71f6a55885b46dd2eb3f0d0610442cf386971"
+  },
+  "training_rerun": false,
+  "test_predictions_rerun": false
+}

@@ -1,0 +1,19 @@
+version: p9_canonical_v2
+domain: laptop
+language: en
+labels:
+- negative
+- neutral
+- positive
+pretrained_model: microsoft/deberta-v3-base
+revision: 8ccc9b6f36199bec6961081d44eb72fb3f7353f3
+tokenizer_revision: 8ccc9b6f36199bec6961081d44eb72fb3f7353f3
+model_directory: artifacts/models/p9_exp01_deberta_20261026_v2/unweighted/best
+seed: 42
+loss: unweighted
+epoch: 5
+selection_metric: validation_macro_f1
+selection_lock: reports/p9_exp01_deberta_20261026_v2/selection_lock.json
+report: reports/p9_exp01_deberta_20261026_v2/report.md
+previous_model_directory: artifacts/models/p9_20261026/unweighted/best
+confidence: null

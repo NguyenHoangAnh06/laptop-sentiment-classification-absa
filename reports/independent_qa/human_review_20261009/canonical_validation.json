@@ -1,0 +1,7 @@
+{
+  "rows": true,
+  "source_fingerprints": true,
+  "label_enum": true,
+  "evidence": true,
+  "reason_enum": true
+}

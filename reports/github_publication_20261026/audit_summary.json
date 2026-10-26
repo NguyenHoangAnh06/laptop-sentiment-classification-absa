@@ -1,0 +1,66 @@
+{
+  "task_id": "GITHUB-PUBLISH-01",
+  "date": "2026-10-26",
+  "timezone": "Asia/Saigon",
+  "summary": {
+    "TRACK": {
+      "count": 844,
+      "bytes": 40050662
+    },
+    "IGNORE": {
+      "count": 50523,
+      "bytes": 45428263511
+    },
+    "REVIEW": {
+      "count": 0,
+      "bytes": 0
+    },
+    "LARGE FILE": {
+      "count": 0,
+      "bytes": 0
+    },
+    "SECRET RISK": {
+      "count": 0,
+      "bytes": 0
+    }
+  },
+  "candidate_count": 844,
+  "candidate_bytes": 40050662,
+  "candidate_blockers": [],
+  "secret_scan": "PASS",
+  "scan_scope": "UTF-8/UTF-16-BOM text <=10MB, first-party files including ignored reports; data/, local audit inventory, venv/cache/binary datasets/models metadata-only. Heuristic scan, not proof of absence.",
+  "snapshot_stage": "PRE_STAGING_INTERMEDIATE",
+  "historical_absolute_path_files": 20,
+  "candidate_directories": {
+    ".gitignore": 1,
+    "AGENTS.md": 1,
+    "PLAN_AI.md": 1,
+    "PLAN_HUMAN.md": 1,
+    "README.md": 1,
+    "data_dictionary.md": 1,
+    "pytest.ini": 1,
+    "requirements.txt": 1,
+    "app": 1,
+    "artifacts": 1,
+    "cloud": 18,
+    "configs": 22,
+    "data": 5,
+    "docs": 19,
+    "notebooks": 2,
+    "reports": 616,
+    "scripts": 68,
+    "src": 53,
+    "tests": 31
+  },
+  "large_file_counts": {
+    ">10MB": 85,
+    ">50MB": 62,
+    ">=100MB": 52
+  },
+  "tests": {
+    "command": ".venv/Scripts/python.exe -X utf8 -B -m pytest -q tests/test_public_snapshot.py",
+    "passed": 6,
+    "failed": 0,
+    "full_suite": "NOT_RERUN"
+  }
+}

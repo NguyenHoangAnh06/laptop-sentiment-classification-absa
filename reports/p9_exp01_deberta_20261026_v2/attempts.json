@@ -1,0 +1,13 @@
+{
+  "invalid_namespace": "p9_exp01_deberta_20261026",
+  "invalid_status": "INVALID_FOR_COMPARISON",
+  "test_opened_in_invalid_attempts": false,
+  "failures": [
+    "FP16 parameters with GradScaler; explicit float32 parameters fixed before restart",
+    "Transformers5 native tokenizer conversion missing CLS/SEP; explicit standard post_processor restored"
+  ],
+  "valid_namespace": "p9_exp01_deberta_20261026_v2",
+  "pretrained_restart": true,
+  "no_finetuned_weights_reused": true,
+  "frozen_p9_representation_bug": false
+}

@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "protected_files_unchanged": 41,
+  "supplemental_rows": 868,
+  "human_fields_all_blank": true,
+  "no_v1_overlap": true,
+  "source_bindings_and_probabilities": "PASS",
+  "brand_count_share_assertions": "PASS",
+  "supplemental_official_evaluation": "NOT_RUN",
+  "p2_training_survey": "NOT_RUN",
+  "test_commands": {
+    "targeted": "19 passed in2.71s",
+    "full_suite": "139 passed in3.14s",
+    "pip_check": "PASS"
+  },
+  "chart_visual_inspection": "5 PNGs inspected, no clipping/layout issues",
+  "new_kit_sha256": {
+    "annotation_guide.md": "201fa6cb74af76780f09f3f046c4b989038e33465ddf597fd05232cb793d634d",
+    "manifest.json": "42b5d6039f6d47b65621bc141839b8850d618278f759c7e8cb058ab7b4f05293",
+    "private_predictions.json": "67ab3beb70f7647eb2a4902c11f02a6a5540dc32c8bf7b9a95ba04982468fb04",
+    "review_annotation.csv": "e32f540d5e64fb3a80ff98ab409027f5984705c3094c4b23fd1f65ecce7fe0aa",
+    "sample_size_planning.json": "4df6d9f1cd2bd2da7e8f0af4213ad1501f336e6b0f255157a7e989d9a86db630"
+  },
+  "plot_environment": {
+    "matplotlib": "3.10.7",
+    "numpy": "2.2.6",
+    "contourpy": "1.3.3"
+  },
+  "python_311_compatibility": "All added dependency Requires-Python specs include 3.11; runtime tests executed on existing Python3.13.12, not a new3.11 interpreter."
+}

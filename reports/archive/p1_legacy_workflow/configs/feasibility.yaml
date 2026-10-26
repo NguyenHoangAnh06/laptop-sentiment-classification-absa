@@ -1,0 +1,56 @@
+purpose: feasibility_only_not_project_domain_expansion
+version: p1_metadata_first_v4
+groups: [laptop, smartphone, tablet]
+sources:
+  Electronics:
+    metadata_url: https://mcauleylab.ucsd.edu/public_datasets/data/amazon_2023/raw/meta_categories/meta_Electronics.jsonl.gz
+    reviews_url: https://mcauleylab.ucsd.edu/public_datasets/data/amazon_2023/raw/review_categories/Electronics.jsonl.gz
+  Cell_Phones_and_Accessories:
+    metadata_url: https://mcauleylab.ucsd.edu/public_datasets/data/amazon_2023/raw/meta_categories/meta_Cell_Phones_and_Accessories.jsonl.gz
+    reviews_url: https://mcauleylab.ucsd.edu/public_datasets/data/amazon_2023/raw/review_categories/Cell_Phones_and_Accessories.jsonl.gz
+probe:
+  metadata_records: 5000
+  review_records: 20000
+  max_bytes_per_file: 25000000
+  max_seconds_per_file: 60
+limits:
+  probe_metadata_records: 20000
+  probe_review_records: 100000
+  scan_metadata_records: 2000000
+  scan_review_records: 50000000
+  max_index_products: 100000
+  max_index_estimated_bytes: 128000000
+  max_record_bytes: 1000000
+  max_process_working_set_bytes: 512000000
+  max_probe_read_bytes: 320000000
+  max_scan_read_bytes: 60000000000
+  max_probe_seconds: 90
+  max_scan_seconds: 14400
+  max_probe_output_bytes: 16000000
+  max_scan_output_bytes: 2000000000
+  max_unique_text_hashes_per_group: 100000
+  max_sample_rows_per_group: 5000
+  max_sample_estimated_bytes_per_group: 16000000
+  max_reviews_per_product_in_sample: 100
+qa:
+  included: 50
+  excluded_near_boundary: 25
+  excluded_other: 25
+survey:
+  short_review_words: 5
+  min_absa_proxy_words: 10
+  aspect_keywords:
+    laptop: [battery, screen, display, keyboard, performance, price, fan, touchpad, storage]
+    smartphone: [battery, screen, display, camera, performance, price, signal, speaker, charging]
+    tablet: [battery, screen, display, performance, price, stylus, speaker, charging, storage]
+product_rules:
+  smartphone:
+    categories: [Cell Phones, Smartphones, Unlocked Cell Phones, Carrier Cell Phones, Prepaid Phones]
+    title_include: '\b(smartphone|smart phone|iphone|galaxy|pixel|oneplus|motorola|nokia|cell phone|mobile phone)\b'
+    title_exclude: '\b(case|cases|cover|covers|cable|cables|charger|chargers|protector|protectors|replacement|battery replacement|holster|holsters|mount|mounts|stand|stands|adapter|adapters|screen repair|dummy|toy|tablet|tab)\b'
+    category_exclude: '(cases|holsters|sleeves|protectors|chargers|cables|replacement|mounts|stands|accessory|accessories$|tablets)'
+  tablet:
+    categories: [Tablets, Computer Tablets, Tablet Computers]
+    title_include: '\b(tablet|ipad|galaxy tab|fire hd|kindle fire)\b'
+    title_exclude: '\b(case|cases|cover|covers|cable|cables|charger|chargers|protector|protectors|replacement|sleeve|sleeves|mount|mounts|stand|stands|adapter|adapters|screen repair|dummy|toy|laptop|notebook)\b'
+    category_exclude: '(cases|holsters|sleeves|protectors|chargers|cables|replacement|mounts|stands|accessory|accessories$|laptops|desktops)'

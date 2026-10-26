@@ -1,0 +1,170 @@
+{
+  "status": "PASS",
+  "protected_files": 41,
+  "files": {
+    "data/interim/feasibility/electronics_full_laptop_30k/laptop_sample.jsonl": {
+      "expected": "26bb2ce9153cded05651d632d6921b8f92c494c742805544315ca6e951c922ff",
+      "actual": "26bb2ce9153cded05651d632d6921b8f92c494c742805544315ca6e951c922ff"
+    },
+    "data/interim/feasibility/electronics_full_laptop_30k/laptop_valid.jsonl": {
+      "expected": "d53d81507734d0537491c37ee665119e9b563ebaa4f9160a31b1ced438934d2a",
+      "actual": "d53d81507734d0537491c37ee665119e9b563ebaa4f9160a31b1ced438934d2a"
+    },
+    "data/interim/feasibility/electronics_full_laptop_30k/products.jsonl": {
+      "expected": "8c359dbc575980fd31066de83c484110e7c5908fb590aeb5f44b2d757748912e",
+      "actual": "8c359dbc575980fd31066de83c484110e7c5908fb590aeb5f44b2d757748912e"
+    },
+    "data/interim/feasibility/electronics_full_laptop_30k/report.json": {
+      "expected": "97e1ee2e9df65b02c47af7d433af1dd0977bcc1367fb4c6372d629f266e74878",
+      "actual": "97e1ee2e9df65b02c47af7d433af1dd0977bcc1367fb4c6372d629f266e74878"
+    },
+    "data/interim/semeval/test_sentences.jsonl": {
+      "expected": "42e17079730204223294e83c88ecfe961a225f5630347fe867d62c10e354de96",
+      "actual": "42e17079730204223294e83c88ecfe961a225f5630347fe867d62c10e354de96"
+    },
+    "data/interim/semeval/train_sentences.jsonl": {
+      "expected": "06abcd3f33eb256a73b40bcbcfe3217854346c54c40cc952843db0a16d89011b",
+      "actual": "06abcd3f33eb256a73b40bcbcfe3217854346c54c40cc952843db0a16d89011b"
+    },
+    "data/manual/independent_qa/p1_v1/manifest.json": {
+      "expected": "2b3c93250e971c218f6b505606d0037619fc370fe9a4c933fcfe740c15aaa108",
+      "actual": "2b3c93250e971c218f6b505606d0037619fc370fe9a4c933fcfe740c15aaa108"
+    },
+    "data/manual/independent_qa/p1_v1/private_predictions.json": {
+      "expected": "b4cad402e6ca3de5a1dbce5e208c9bce37ab0de4b3a9f6186c11d4ae8a5aaae6",
+      "actual": "b4cad402e6ca3de5a1dbce5e208c9bce37ab0de4b3a9f6186c11d4ae8a5aaae6"
+    },
+    "data/manual/independent_qa/p1_v1/product_annotation.csv": {
+      "expected": "134a1e746202337ebb4d5fab1927c791b037fc2feb08e9875d55002433e0c721",
+      "actual": "134a1e746202337ebb4d5fab1927c791b037fc2feb08e9875d55002433e0c721"
+    },
+    "data/manual/independent_qa/p1_v1/review_annotation.csv": {
+      "expected": "ee3da05db04aeb0ef67a4ad71d428d5c72b419a7bb690acedb6bbc9048999f15",
+      "actual": "ee3da05db04aeb0ef67a4ad71d428d5c72b419a7bb690acedb6bbc9048999f15"
+    },
+    "data/raw/amazon/.gitkeep": {
+      "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "data/raw/amazon/Cell_Phones_and_Accessories_metadata_probe_5000.jsonl": {
+      "expected": "292fe169c9a7f1bef87a535dab0facd35cec52f394c1f99c2e30cb48296fb121",
+      "actual": "292fe169c9a7f1bef87a535dab0facd35cec52f394c1f99c2e30cb48296fb121"
+    },
+    "data/raw/amazon/Cell_Phones_and_Accessories_metadata_probe_5000.jsonl.manifest.json": {
+      "expected": "162ff6bb7c18a16bc319f94a47291a042d43592c7b131074c16f6a968574fb53",
+      "actual": "162ff6bb7c18a16bc319f94a47291a042d43592c7b131074c16f6a968574fb53"
+    },
+    "data/raw/amazon/Cell_Phones_and_Accessories_reviews_probe_20000.jsonl": {
+      "expected": "78f8f3a796fc49dd28ec9c980277500f59964f5f9a44a64cd35eed608f1c4987",
+      "actual": "78f8f3a796fc49dd28ec9c980277500f59964f5f9a44a64cd35eed608f1c4987"
+    },
+    "data/raw/amazon/Cell_Phones_and_Accessories_reviews_probe_20000.jsonl.manifest.json": {
+      "expected": "d991006c8334e0a2681d6a0216bbf68b1496fb11fee48e75972a4fba9971b3bb",
+      "actual": "d991006c8334e0a2681d6a0216bbf68b1496fb11fee48e75972a4fba9971b3bb"
+    },
+    "data/raw/amazon/Electronics.jsonl.gz": {
+      "expected": "17b2c5f3736d4c0cb874859076436ebd4513f4c2396c528440a63204084e6a28",
+      "actual": "17b2c5f3736d4c0cb874859076436ebd4513f4c2396c528440a63204084e6a28"
+    },
+    "data/raw/amazon/Electronics.jsonl.gz.manifest.json": {
+      "expected": "06b9037da084f05e127fd5f98afea3dc82007c43afaff1b8d6a2674231f27772",
+      "actual": "06b9037da084f05e127fd5f98afea3dc82007c43afaff1b8d6a2674231f27772"
+    },
+    "data/raw/amazon/meta_Electronics.jsonl.gz": {
+      "expected": "a4a196a1c8e443e0942d8a5c79b5a5d2d68e29d483f2badec1126690b4b2790d",
+      "actual": "a4a196a1c8e443e0942d8a5c79b5a5d2d68e29d483f2badec1126690b4b2790d"
+    },
+    "data/raw/amazon/meta_Electronics.jsonl.gz.manifest.json": {
+      "expected": "e2ce02f6f5372fd49825596476364d27c22695277cd56684eda2f0516a452496",
+      "actual": "e2ce02f6f5372fd49825596476364d27c22695277cd56684eda2f0516a452496"
+    },
+    "data/raw/amazon/metadata_prefix_20000.jsonl": {
+      "expected": "fd842cd280741053ef4ea0cfe88321b9d28dd5080ab848fd1eec74bd45ef9978",
+      "actual": "fd842cd280741053ef4ea0cfe88321b9d28dd5080ab848fd1eec74bd45ef9978"
+    },
+    "data/raw/amazon/metadata_prefix_20000.jsonl.manifest.json": {
+      "expected": "bffbcfa56b50bb6c6b974cc06d96556f4524d5b121d42ab15402a4038dd68d5e",
+      "actual": "bffbcfa56b50bb6c6b974cc06d96556f4524d5b121d42ab15402a4038dd68d5e"
+    },
+    "data/raw/amazon/metadata_prefix_20000.jsonl.verified.manifest.json": {
+      "expected": "d00985165686af6113fc77b1e85b8c37c058c81ba994251a0c42c41b9249d502",
+      "actual": "d00985165686af6113fc77b1e85b8c37c058c81ba994251a0c42c41b9249d502"
+    },
+    "data/raw/amazon/reviews_prefix_100000.jsonl": {
+      "expected": "89d2b890fe6f0b53df1e37bc888d55191995f4e839d210b31f2d4cc569708e67",
+      "actual": "89d2b890fe6f0b53df1e37bc888d55191995f4e839d210b31f2d4cc569708e67"
+    },
+    "data/raw/amazon/reviews_prefix_100000.jsonl.manifest.json": {
+      "expected": "520281ca0b2f80d35c63e2f32dfffd1668343689ae89ffffed1e9644bf1a7df1",
+      "actual": "520281ca0b2f80d35c63e2f32dfffd1668343689ae89ffffed1e9644bf1a7df1"
+    },
+    "data/raw/amazon/reviews_prefix_100000.jsonl.verified.manifest.json": {
+      "expected": "e97aaac23217b65bac97718ff81ed3abcfc89212b498fd143bfcd829ddebd917",
+      "actual": "e97aaac23217b65bac97718ff81ed3abcfc89212b498fd143bfcd829ddebd917"
+    },
+    "data/raw/semeval/.gitkeep": {
+      "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "data/raw/semeval/Laptop_Train_v2.xml": {
+      "expected": "efec2ed73b4efb83b47c697114d800149c558118884afa80362a6e975ba7248c",
+      "actual": "efec2ed73b4efb83b47c697114d800149c558118884afa80362a6e975ba7248c"
+    },
+    "data/raw/semeval/laptops-trial.xml": {
+      "expected": "0971a30e6add454d344ac011385fb8407db4193db048c8cd8e7a82908ac5172d",
+      "actual": "0971a30e6add454d344ac011385fb8407db4193db048c8cd8e7a82908ac5172d"
+    },
+    "data/raw/semeval/laptops-trial.xml.manifest.json": {
+      "expected": "8f8a31183439a6725e84014ef8c2ddba9d11cd791289d76a903dce5979c3c912",
+      "actual": "8f8a31183439a6725e84014ef8c2ddba9d11cd791289d76a903dce5979c3c912"
+    },
+    "data/raw/semeval/Laptops_Test_Gold.xml": {
+      "expected": "aa3a30c9dd7e0eacf9b69e898eb4118a36c1b4f391a30a08dfc41a38d8b8745b",
+      "actual": "aa3a30c9dd7e0eacf9b69e898eb4118a36c1b4f391a30a08dfc41a38d8b8745b"
+    },
+    "reports/independent_qa/p1_v1_evaluation/assessment.md": {
+      "expected": "f0dee308d4d848fd1ae50652c317f62134c92a6734008df85da46b769381fcc9",
+      "actual": "f0dee308d4d848fd1ae50652c317f62134c92a6734008df85da46b769381fcc9"
+    },
+    "reports/independent_qa/p1_v1_evaluation/comparisons.csv": {
+      "expected": "c82aa459868928d568efcfc468654c269a1c0a9e316e1fb8f2e20f27c781994d",
+      "actual": "c82aa459868928d568efcfc468654c269a1c0a9e316e1fb8f2e20f27c781994d"
+    },
+    "reports/independent_qa/p1_v1_evaluation/errors.csv": {
+      "expected": "9a764586870a27c2b85d19651a22fd7fbf2a7ac69dca1021503b3ec9cd2c4d0b",
+      "actual": "9a764586870a27c2b85d19651a22fd7fbf2a7ac69dca1021503b3ec9cd2c4d0b"
+    },
+    "reports/independent_qa/p1_v1_evaluation/evaluation.json": {
+      "expected": "070df4e2879cdb6f97082f33d1dd16e5cd400e78fca0daec783362bd2b46821e",
+      "actual": "070df4e2879cdb6f97082f33d1dd16e5cd400e78fca0daec783362bd2b46821e"
+    },
+    "reports/independent_qa/p1_v1_evaluation/integrity.json": {
+      "expected": "1c29de13db77721794538c7bc9f21cf7e3c5f07a01407654d5f80cfa55014c52",
+      "actual": "1c29de13db77721794538c7bc9f21cf7e3c5f07a01407654d5f80cfa55014c52"
+    },
+    "reports/independent_qa/p1_v1_evaluation/report.md": {
+      "expected": "066a328df114a7e86013d1ca4e8dd717807341c69330c7543cdf3515ee780fca",
+      "actual": "066a328df114a7e86013d1ca4e8dd717807341c69330c7543cdf3515ee780fca"
+    },
+    "reports/independent_qa/p1_v1_evaluation/statistical_summary.json": {
+      "expected": "f835a22d7028b4029ba4926be8ef165b4f35f93bd4e57499392720fe116e41d0",
+      "actual": "f835a22d7028b4029ba4926be8ef165b4f35f93bd4e57499392720fe116e41d0"
+    },
+    "reports/independent_qa/p1_v1_evaluation/strata.csv": {
+      "expected": "67e3bcd663912465aa13984cd98e8a0dacb4094202c646c12cbe66618c5b3e2c",
+      "actual": "67e3bcd663912465aa13984cd98e8a0dacb4094202c646c12cbe66618c5b3e2c"
+    },
+    "configs/acquisition.yaml": {
+      "expected": "f23e040f8544958f323b482885b00a6b438cc0135174ce4353d37b0fc0af22ec",
+      "actual": "f23e040f8544958f323b482885b00a6b438cc0135174ce4353d37b0fc0af22ec"
+    },
+    "configs/feasibility.yaml": {
+      "expected": "862a97b659c0c78961556b1e4ca84c70415746593abfcffd248fb032e8a0e184",
+      "actual": "862a97b659c0c78961556b1e4ca84c70415746593abfcffd248fb032e8a0e184"
+    },
+    "reports/tables/p1_semeval_normalization.json": {
+      "expected": "17bd4765957748b9fe3fe3b1a4ca5f3936e2817d748619af906d5c8921d60158",
+      "actual": "17bd4765957748b9fe3fe3b1a4ca5f3936e2817d748619af906d5c8921d60158"
+    }
+  }
+}

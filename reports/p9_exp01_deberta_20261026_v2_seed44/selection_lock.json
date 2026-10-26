@@ -1,0 +1,25 @@
+{
+  "selected": {
+    "mode": "unweighted",
+    "epoch": 3,
+    "validation_macro_f1": 0.7546642111046088,
+    "model_sha256": "72d24f319ae6f6f0f7bead7e78f6b54904b66d1a4b689f1b526c2ba67fdad1ac",
+    "wall_seconds": 552.3404765999876
+  },
+  "candidates": [
+    {
+      "mode": "unweighted",
+      "epoch": 3,
+      "validation_macro_f1": 0.7546642111046088,
+      "model_sha256": "72d24f319ae6f6f0f7bead7e78f6b54904b66d1a4b689f1b526c2ba67fdad1ac",
+      "wall_seconds": 552.3404765999876
+    }
+  ],
+  "selection_metric": "validation_macro_f1",
+  "tie_break": "first_candidate_then_earliest_epoch",
+  "selection_complete_before_test": true,
+  "test_used_for_selection": false,
+  "data_manifest_sha256": "0d2c8049e0dfaf287fb61f20f13623cbfaffcc2d414f4cc610920b3d844d9b9e",
+  "training_identity_sha256": "1f6e6f0e6410e800a80882f7c0fffb93fa2df40f0abaf604cd54823ba160613f",
+  "history_sha256": "b557d05d7418a2604c0883df3489b4e194df535e41e42b0f69ee40fdeece67be"
+}

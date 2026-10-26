@@ -1,0 +1,3 @@
+verified_purchase,reviews,negative_count,neutral_count,negative_share,neutral_share,median_words
+False,3650,1335,350,0.3657534247,0.09589041096,102
+True,26350,6924,2281,0.2627703985,0.0865654649,38

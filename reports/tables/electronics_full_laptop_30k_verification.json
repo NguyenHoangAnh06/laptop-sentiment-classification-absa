@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "raw_checksums": "verified by full survey; manifest/size consistency rechecked, no second raw hash pass",
+  "eof_and_gzip_integrity": "both raw streams reached EOF without gzip/JSON errors",
+  "output_files": {
+    "laptop_sample.jsonl": {
+      "rows": 5000,
+      "bytes": 5095238,
+      "sha256": "26bb2ce9153cded05651d632d6921b8f92c494c742805544315ca6e951c922ff"
+    },
+    "laptop_valid.jsonl": {
+      "rows": 408480,
+      "bytes": 416018817,
+      "sha256": "d53d81507734d0537491c37ee665119e9b563ebaa4f9160a31b1ced438934d2a"
+    },
+    "products.jsonl": {
+      "rows": 28172,
+      "bytes": 9639464,
+      "sha256": "8c359dbc575980fd31066de83c484110e7c5908fb590aeb5f44b2d757748912e"
+    }
+  },
+  "sample_subset_verified": 5000,
+  "valid_products": 28161,
+  "aspect_keyword_proxy_reviews": 171998,
+  "row_conservation": "PASS",
+  "metrics_recomputed_from_saved_valid_output": "PASS",
+  "qa": {
+    "Electronics_laptop_3aeb96dfe815.csv": {
+      "rows": 100,
+      "blank_human_labels": 100,
+      "rule_sha256": "5454e6e8d591f646c4c239b99ca1941df3a5f8b90125ee9e19fb3e4ac9336062"
+    }
+  },
+  "elapsed_verification_seconds": 24.59199450002052,
+  "tests": "53 passed: python -m pytest -q tests/test_p1_feasibility.py"
+}

@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-09",
+  "authority": "project owner explicit instruction",
+  "decision": "APPROVED_OWNER_EXCEPTION",
+  "license_status": "NOT_VERIFIED",
+  "source_verification": "WAIVED_FOR_THIS_EDUCATIONAL_PROJECT",
+  "authorized_acquisition_evidence": "NOT_REQUIRED_BY_OWNER_EXCEPTION_NOT_VERIFIED",
+  "use_existing_train_test_and_converted_jsonl": true,
+  "redownload": false,
+  "preserve_original_partitions_offsets_polarity_and_provenance": true,
+  "reuse_unchanged_technical_PASS": true,
+  "p1_gate_accepted_by_exception": true,
+  "p3_authorized": true,
+  "absa_dataset_use_permitted_in_relevant_later_phases": true,
+  "p4_or_later_execution_now_authorized": false,
+  "evidence": "reports/tables/p1_semeval_normalization.json",
+  "files": [
+    "data/raw/semeval/Laptop_Train_v2.xml",
+    "data/raw/semeval/Laptops_Test_Gold.xml",
+    "data/interim/semeval/train_sentences.jsonl",
+    "data/interim/semeval/test_sentences.jsonl"
+  ],
+  "p1_complete": true,
+  "previous_approval_record": "reports/tables/p1_owner_approval_20261009.json",
+  "p1_completion_basis": "Prior unchanged technical PASS plus C1/C2/C3 approvals and explicit educational SemEval exception; no verified rights claim"
+}

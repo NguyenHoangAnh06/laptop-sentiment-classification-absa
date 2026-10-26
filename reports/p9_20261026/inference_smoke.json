@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "device": "cpu",
+  "validation_example_id": "train:1047:aspect:0",
+  "gold_aspect_prediction": {
+    "aspect": "RAM slots",
+    "sentiment": "neutral",
+    "confidence": null
+  },
+  "pipeline_aspect_count": 3,
+  "official_test_inference": false,
+  "model_sha256": "bc1268bda1a37996b6899588b5c5b20f87cd89d17c754c091232e0e9e81d6713"
+}

@@ -1,0 +1,4 @@
+sentiment,label_id,reviews,percentage
+negative,0,8259,27.53
+neutral,1,2631,8.77
+positive,2,19110,63.7

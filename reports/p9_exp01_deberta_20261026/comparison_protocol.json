@@ -1,0 +1,17 @@
+{
+  "selection_metric": "validation_macro_f1",
+  "baseline": 0.7141454682092473,
+  "loss_candidates": [
+    "unweighted",
+    "balanced"
+  ],
+  "learning_rate": 3e-05,
+  "epochs": 5,
+  "seed": 42,
+  "effective_batch": 16,
+  "test_used_for_selection": false,
+  "official_test_prediction_passes_allowed": 1,
+  "promotion": "validation improvement with practical relevance; no test-based veto or selection",
+  "stability": "separate analysis; never best-of-seeds selection",
+  "timestamp_basis": "before candidate validation/test"
+}

@@ -1,0 +1,1626 @@
+{
+  "status": "completed_verified",
+  "actions": [
+    {
+      "path": "data/interim/feasibility/cell_phones_feasibility_small",
+      "action": "ARCHIVE",
+      "destination": "data/interim/archive/feasibility/cell_phones_feasibility_small",
+      "reason": "superseded source probe; preserve all historical evidence and Laptop outputs",
+      "status": "archive_destination_verified"
+    },
+    {
+      "path": "data/interim/feasibility/cell_phones_hardening_v4",
+      "action": "ARCHIVE",
+      "destination": "data/interim/archive/feasibility/cell_phones_hardening_v4",
+      "reason": "superseded source probe; preserve all historical evidence and Laptop outputs",
+      "status": "archive_destination_verified"
+    },
+    {
+      "path": "data/interim/feasibility/cell_phones_probe_v2",
+      "action": "ARCHIVE",
+      "destination": "data/interim/archive/feasibility/cell_phones_probe_v2",
+      "reason": "superseded source probe; preserve all historical evidence and Laptop outputs",
+      "status": "archive_destination_verified"
+    },
+    {
+      "path": "data/interim/feasibility/cell_phones_refactor",
+      "action": "ARCHIVE",
+      "destination": "data/interim/archive/feasibility/cell_phones_refactor",
+      "reason": "superseded source probe; preserve all historical evidence and Laptop outputs",
+      "status": "archive_destination_verified"
+    },
+    {
+      "path": "data/interim/feasibility/electronics_feasibility_small",
+      "action": "ARCHIVE",
+      "destination": "data/interim/archive/feasibility/electronics_feasibility_small",
+      "reason": "superseded source probe; preserve all historical evidence and Laptop outputs",
+      "status": "archive_destination_verified"
+    },
+    {
+      "path": "data/interim/feasibility/electronics_full_laptop_30k",
+      "action": "KEEP",
+      "destination": null,
+      "reason": "current full Laptop evidence",
+      "status": "preserved"
+    },
+    {
+      "path": "data/interim/feasibility/electronics_hardening_v4",
+      "action": "ARCHIVE",
+      "destination": "data/interim/archive/feasibility/electronics_hardening_v4",
+      "reason": "superseded source probe; preserve all historical evidence and Laptop outputs",
+      "status": "archive_destination_verified"
+    },
+    {
+      "path": "data/interim/feasibility/electronics_metadata_full_30k",
+      "action": "KEEP",
+      "destination": null,
+      "reason": "current full Laptop evidence",
+      "status": "preserved"
+    },
+    {
+      "path": "data/interim/feasibility/electronics_metadata_preflight_probe_v4",
+      "action": "ARCHIVE",
+      "destination": "data/interim/archive/feasibility/electronics_metadata_preflight_probe_v4",
+      "reason": "superseded source probe; preserve all historical evidence and Laptop outputs",
+      "status": "archive_destination_verified"
+    },
+    {
+      "path": "data/interim/feasibility/electronics_probe_v2",
+      "action": "ARCHIVE",
+      "destination": "data/interim/archive/feasibility/electronics_probe_v2",
+      "reason": "superseded source probe; preserve all historical evidence and Laptop outputs",
+      "status": "archive_destination_verified"
+    },
+    {
+      "path": "data/interim/feasibility/electronics_refactor",
+      "action": "ARCHIVE",
+      "destination": "data/interim/archive/feasibility/electronics_refactor",
+      "reason": "superseded source probe; preserve all historical evidence and Laptop outputs",
+      "status": "archive_destination_verified"
+    },
+    {
+      "path": "data/manual/feasibility/Cell_Phones_and_Accessories_laptop_2c63945bd664.csv",
+      "action": "ARCHIVE",
+      "destination": "data/manual/archive/feasibility/Cell_Phones_and_Accessories_laptop_2c63945bd664.csv",
+      "rows": 32,
+      "rows_with_labels_or_notes": 0,
+      "reason": "blank superseded/non-project-domain QA, retained for historic fingerprints",
+      "status": "archive_destination_verified"
+    },
+    {
+      "path": "data/manual/feasibility/Cell_Phones_and_Accessories_laptop_594e2bd6704d.csv",
+      "action": "ARCHIVE",
+      "destination": "data/manual/archive/feasibility/Cell_Phones_and_Accessories_laptop_594e2bd6704d.csv",
+      "rows": 32,
+      "rows_with_labels_or_notes": 0,
+      "reason": "blank superseded/non-project-domain QA, retained for historic fingerprints",
+      "status": "archive_destination_verified"
+    },
+    {
+      "path": "data/manual/feasibility/Cell_Phones_and_Accessories_laptop_a36f57eda9ae.csv",
+      "action": "ARCHIVE",
+      "destination": "data/manual/archive/feasibility/Cell_Phones_and_Accessories_laptop_a36f57eda9ae.csv",
+      "rows": 32,
+      "rows_with_labels_or_notes": 0,
+      "reason": "blank superseded/non-project-domain QA, retained for historic fingerprints",
+      "status": "archive_destination_verified"
+    },
+    {
+      "path": "data/manual/feasibility/Cell_Phones_and_Accessories_laptop_a88a8da3a5f7.csv",
+      "action": "ARCHIVE",
+      "destination": "data/manual/archive/feasibility/Cell_Phones_and_Accessories_laptop_a88a8da3a5f7.csv",
+      "rows": 32,
+      "rows_with_labels_or_notes": 0,
+      "reason": "blank superseded/non-project-domain QA, retained for historic fingerprints",
+      "status": "archive_destination_verified"
+    },
+    {
+      "path": "data/manual/feasibility/Cell_Phones_and_Accessories_smartphone_2c63945bd664.csv",
+      "action": "ARCHIVE",
+      "destination": "data/manual/archive/feasibility/Cell_Phones_and_Accessories_smartphone_2c63945bd664.csv",
+      "rows": 75,
+      "rows_with_labels_or_notes": 0,
+      "reason": "blank superseded/non-project-domain QA, retained for historic fingerprints",
+      "status": "archive_destination_verified"
+    },
+    {
+      "path": "data/manual/feasibility/Cell_Phones_and_Accessories_smartphone_594e2bd6704d.csv",
+      "action": "ARCHIVE",
+      "destination": "data/manual/archive/feasibility/Cell_Phones_and_Accessories_smartphone_594e2bd6704d.csv",
+      "rows": 75,
+      "rows_with_labels_or_notes": 0,
+      "reason": "blank superseded/non-project-domain QA, retained for historic fingerprints",
+      "status": "archive_destination_verified"
+    },
+    {
+      "path": "data/manual/feasibility/Cell_Phones_and_Accessories_smartphone_a36f57eda9ae.csv",
+      "action": "ARCHIVE",
+      "destination": "data/manual/archive/feasibility/Cell_Phones_and_Accessories_smartphone_a36f57eda9ae.csv",
+      "rows": 75,
+      "rows_with_labels_or_notes": 0,
+      "reason": "blank superseded/non-project-domain QA, retained for historic fingerprints",
+      "status": "archive_destination_verified"
+    },
+    {
+      "path": "data/manual/feasibility/Cell_Phones_and_Accessories_smartphone_a88a8da3a5f7.csv",
+      "action": "ARCHIVE",
+      "destination": "data/manual/archive/feasibility/Cell_Phones_and_Accessories_smartphone_a88a8da3a5f7.csv",
+      "rows": 75,
+      "rows_with_labels_or_notes": 0,
+      "reason": "blank superseded/non-project-domain QA, retained for historic fingerprints",
+      "status": "archive_destination_verified"
+    },
+    {
+      "path": "data/manual/feasibility/Cell_Phones_and_Accessories_tablet_2c63945bd664.csv",
+      "action": "ARCHIVE",
+      "destination": "data/manual/archive/feasibility/Cell_Phones_and_Accessories_tablet_2c63945bd664.csv",
+      "rows": 50,
+      "rows_with_labels_or_notes": 0,
+      "reason": "blank superseded/non-project-domain QA, retained for historic fingerprints",
+      "status": "archive_destination_verified"
+    },
+    {
+      "path": "data/manual/feasibility/Cell_Phones_and_Accessories_tablet_594e2bd6704d.csv",
+      "action": "ARCHIVE",
+      "destination": "data/manual/archive/feasibility/Cell_Phones_and_Accessories_tablet_594e2bd6704d.csv",
+      "rows": 50,
+      "rows_with_labels_or_notes": 0,
+      "reason": "blank superseded/non-project-domain QA, retained for historic fingerprints",
+      "status": "archive_destination_verified"
+    },
+    {
+      "path": "data/manual/feasibility/Cell_Phones_and_Accessories_tablet_a36f57eda9ae.csv",
+      "action": "ARCHIVE",
+      "destination": "data/manual/archive/feasibility/Cell_Phones_and_Accessories_tablet_a36f57eda9ae.csv",
+      "rows": 50,
+      "rows_with_labels_or_notes": 0,
+      "reason": "blank superseded/non-project-domain QA, retained for historic fingerprints",
+      "status": "archive_destination_verified"
+    },
+    {
+      "path": "data/manual/feasibility/Cell_Phones_and_Accessories_tablet_a88a8da3a5f7.csv",
+      "action": "ARCHIVE",
+      "destination": "data/manual/archive/feasibility/Cell_Phones_and_Accessories_tablet_a88a8da3a5f7.csv",
+      "rows": 50,
+      "rows_with_labels_or_notes": 0,
+      "reason": "blank superseded/non-project-domain QA, retained for historic fingerprints",
+      "status": "archive_destination_verified"
+    },
+    {
+      "path": "data/manual/feasibility/Electronics_laptop_1059e9de8334.csv",
+      "action": "ARCHIVE",
+      "destination": "data/manual/archive/feasibility/Electronics_laptop_1059e9de8334.csv",
+      "rows": 100,
+      "rows_with_labels_or_notes": 0,
+      "reason": "blank superseded/non-project-domain QA, retained for historic fingerprints",
+      "status": "archive_destination_verified"
+    },
+    {
+      "path": "data/manual/feasibility/Electronics_laptop_22c3bdfd9e59.csv",
+      "action": "ARCHIVE",
+      "destination": "data/manual/archive/feasibility/Electronics_laptop_22c3bdfd9e59.csv",
+      "rows": 100,
+      "rows_with_labels_or_notes": 0,
+      "reason": "blank superseded/non-project-domain QA, retained for historic fingerprints",
+      "status": "archive_destination_verified"
+    },
+    {
+      "path": "data/manual/feasibility/Electronics_laptop_3aeb96dfe815.csv",
+      "action": "KEEP",
+      "destination": null,
+      "rows": 100,
+      "rows_with_labels_or_notes": 100,
+      "reason": "current full run QA or protected annotations",
+      "status": "preserved"
+    },
+    {
+      "path": "data/manual/feasibility/Electronics_laptop_623f134d11e0.csv",
+      "action": "ARCHIVE",
+      "destination": "data/manual/archive/feasibility/Electronics_laptop_623f134d11e0.csv",
+      "rows": 100,
+      "rows_with_labels_or_notes": 0,
+      "reason": "blank superseded/non-project-domain QA, retained for historic fingerprints",
+      "status": "archive_destination_verified"
+    },
+    {
+      "path": "data/manual/feasibility/Electronics_laptop_876f2dde9a7f.csv",
+      "action": "ARCHIVE",
+      "destination": "data/manual/archive/feasibility/Electronics_laptop_876f2dde9a7f.csv",
+      "rows": 100,
+      "rows_with_labels_or_notes": 0,
+      "reason": "blank superseded/non-project-domain QA, retained for historic fingerprints",
+      "status": "archive_destination_verified"
+    },
+    {
+      "path": "data/manual/feasibility/Electronics_laptop_8a3c1eaf1583.csv",
+      "action": "KEEP",
+      "destination": null,
+      "rows": 100,
+      "rows_with_labels_or_notes": 0,
+      "reason": "current full run QA or protected annotations",
+      "status": "preserved"
+    },
+    {
+      "path": "data/manual/feasibility/Electronics_laptop_b758d75b08b2.csv",
+      "action": "ARCHIVE",
+      "destination": "data/manual/archive/feasibility/Electronics_laptop_b758d75b08b2.csv",
+      "rows": 100,
+      "rows_with_labels_or_notes": 0,
+      "reason": "blank superseded/non-project-domain QA, retained for historic fingerprints",
+      "status": "archive_destination_verified"
+    },
+    {
+      "path": "data/manual/feasibility/Electronics_smartphone_22c3bdfd9e59.csv",
+      "action": "ARCHIVE",
+      "destination": "data/manual/archive/feasibility/Electronics_smartphone_22c3bdfd9e59.csv",
+      "rows": 50,
+      "rows_with_labels_or_notes": 0,
+      "reason": "blank superseded/non-project-domain QA, retained for historic fingerprints",
+      "status": "archive_destination_verified"
+    },
+    {
+      "path": "data/manual/feasibility/Electronics_smartphone_623f134d11e0.csv",
+      "action": "ARCHIVE",
+      "destination": "data/manual/archive/feasibility/Electronics_smartphone_623f134d11e0.csv",
+      "rows": 50,
+      "rows_with_labels_or_notes": 0,
+      "reason": "blank superseded/non-project-domain QA, retained for historic fingerprints",
+      "status": "archive_destination_verified"
+    },
+    {
+      "path": "data/manual/feasibility/Electronics_smartphone_876f2dde9a7f.csv",
+      "action": "ARCHIVE",
+      "destination": "data/manual/archive/feasibility/Electronics_smartphone_876f2dde9a7f.csv",
+      "rows": 50,
+      "rows_with_labels_or_notes": 0,
+      "reason": "blank superseded/non-project-domain QA, retained for historic fingerprints",
+      "status": "archive_destination_verified"
+    },
+    {
+      "path": "data/manual/feasibility/Electronics_smartphone_b758d75b08b2.csv",
+      "action": "ARCHIVE",
+      "destination": "data/manual/archive/feasibility/Electronics_smartphone_b758d75b08b2.csv",
+      "rows": 50,
+      "rows_with_labels_or_notes": 0,
+      "reason": "blank superseded/non-project-domain QA, retained for historic fingerprints",
+      "status": "archive_destination_verified"
+    },
+    {
+      "path": "data/manual/feasibility/Electronics_tablet_22c3bdfd9e59.csv",
+      "action": "ARCHIVE",
+      "destination": "data/manual/archive/feasibility/Electronics_tablet_22c3bdfd9e59.csv",
+      "rows": 100,
+      "rows_with_labels_or_notes": 0,
+      "reason": "blank superseded/non-project-domain QA, retained for historic fingerprints",
+      "status": "archive_destination_verified"
+    },
+    {
+      "path": "data/manual/feasibility/Electronics_tablet_623f134d11e0.csv",
+      "action": "ARCHIVE",
+      "destination": "data/manual/archive/feasibility/Electronics_tablet_623f134d11e0.csv",
+      "rows": 100,
+      "rows_with_labels_or_notes": 0,
+      "reason": "blank superseded/non-project-domain QA, retained for historic fingerprints",
+      "status": "archive_destination_verified"
+    },
+    {
+      "path": "data/manual/feasibility/Electronics_tablet_876f2dde9a7f.csv",
+      "action": "ARCHIVE",
+      "destination": "data/manual/archive/feasibility/Electronics_tablet_876f2dde9a7f.csv",
+      "rows": 100,
+      "rows_with_labels_or_notes": 0,
+      "reason": "blank superseded/non-project-domain QA, retained for historic fingerprints",
+      "status": "archive_destination_verified"
+    },
+    {
+      "path": "data/manual/feasibility/Electronics_tablet_b758d75b08b2.csv",
+      "action": "ARCHIVE",
+      "destination": "data/manual/archive/feasibility/Electronics_tablet_b758d75b08b2.csv",
+      "rows": 100,
+      "rows_with_labels_or_notes": 0,
+      "reason": "blank superseded/non-project-domain QA, retained for historic fingerprints",
+      "status": "archive_destination_verified"
+    },
+    {
+      "path": "data/processed",
+      "action": "KEEP",
+      "destination": null,
+      "reason": "active source/tests/config/documentation or reproducibility evidence; archive snapshots kept separately",
+      "status": "preserved"
+    },
+    {
+      "path": "reports",
+      "action": "KEEP",
+      "destination": null,
+      "reason": "active source/tests/config/documentation or reproducibility evidence; archive snapshots kept separately",
+      "status": "preserved"
+    },
+    {
+      "path": "configs",
+      "action": "KEEP",
+      "destination": null,
+      "reason": "active source/tests/config/documentation or reproducibility evidence; archive snapshots kept separately",
+      "status": "preserved"
+    },
+    {
+      "path": "scripts",
+      "action": "KEEP",
+      "destination": null,
+      "reason": "active source/tests/config/documentation or reproducibility evidence; archive snapshots kept separately",
+      "status": "preserved"
+    },
+    {
+      "path": "src",
+      "action": "KEEP",
+      "destination": null,
+      "reason": "active source/tests/config/documentation or reproducibility evidence; archive snapshots kept separately",
+      "status": "preserved"
+    },
+    {
+      "path": "tests",
+      "action": "KEEP",
+      "destination": null,
+      "reason": "active source/tests/config/documentation or reproducibility evidence; archive snapshots kept separately",
+      "status": "preserved"
+    },
+    {
+      "path": "src/data/product_filter.py",
+      "action": "DELETE",
+      "destination": "reports/archive/p1_legacy_workflow/src/data/product_filter.py",
+      "reason": "obsolete multi-domain classifier; active import removed, original copy archived",
+      "status": "active_file_removed_original_snapshot_preserved"
+    },
+    {
+      "path": "customer_sentiment_analysis_plan.docx",
+      "action": "REVIEW_REQUIRED",
+      "destination": null,
+      "reason": "original user document; purpose/content not audited, leave untouched",
+      "status": "preserved"
+    },
+    {
+      "path": "data/raw",
+      "action": "KEEP",
+      "destination": null,
+      "reason": "immutable raw sources, including historical non-Laptop prefixes; deletion needs separate approval",
+      "status": "preserved"
+    }
+  ],
+  "file_inventory": [
+    {
+      "path": "data/manual/feasibility/Electronics_laptop_3aeb96dfe815.csv",
+      "action": "KEEP",
+      "bytes": 42116
+    },
+    {
+      "path": "data/manual/feasibility/Electronics_laptop_8a3c1eaf1583.csv",
+      "action": "KEEP",
+      "bytes": 32419
+    },
+    {
+      "path": "data/manual/archive/feasibility/Cell_Phones_and_Accessories_laptop_2c63945bd664.csv",
+      "action": "ARCHIVE",
+      "bytes": 10207
+    },
+    {
+      "path": "data/manual/archive/feasibility/Cell_Phones_and_Accessories_laptop_594e2bd6704d.csv",
+      "action": "ARCHIVE",
+      "bytes": 10207
+    },
+    {
+      "path": "data/manual/archive/feasibility/Cell_Phones_and_Accessories_laptop_a36f57eda9ae.csv",
+      "action": "ARCHIVE",
+      "bytes": 10207
+    },
+    {
+      "path": "data/manual/archive/feasibility/Cell_Phones_and_Accessories_laptop_a88a8da3a5f7.csv",
+      "action": "ARCHIVE",
+      "bytes": 10207
+    },
+    {
+      "path": "data/manual/archive/feasibility/Cell_Phones_and_Accessories_smartphone_2c63945bd664.csv",
+      "action": "ARCHIVE",
+      "bytes": 22730
+    },
+    {
+      "path": "data/manual/archive/feasibility/Cell_Phones_and_Accessories_smartphone_594e2bd6704d.csv",
+      "action": "ARCHIVE",
+      "bytes": 22730
+    },
+    {
+      "path": "data/manual/archive/feasibility/Cell_Phones_and_Accessories_smartphone_a36f57eda9ae.csv",
+      "action": "ARCHIVE",
+      "bytes": 22730
+    },
+    {
+      "path": "data/manual/archive/feasibility/Cell_Phones_and_Accessories_smartphone_a88a8da3a5f7.csv",
+      "action": "ARCHIVE",
+      "bytes": 22730
+    },
+    {
+      "path": "data/manual/archive/feasibility/Cell_Phones_and_Accessories_tablet_2c63945bd664.csv",
+      "action": "ARCHIVE",
+      "bytes": 16547
+    },
+    {
+      "path": "data/manual/archive/feasibility/Cell_Phones_and_Accessories_tablet_594e2bd6704d.csv",
+      "action": "ARCHIVE",
+      "bytes": 16547
+    },
+    {
+      "path": "data/manual/archive/feasibility/Cell_Phones_and_Accessories_tablet_a36f57eda9ae.csv",
+      "action": "ARCHIVE",
+      "bytes": 16547
+    },
+    {
+      "path": "data/manual/archive/feasibility/Cell_Phones_and_Accessories_tablet_a88a8da3a5f7.csv",
+      "action": "ARCHIVE",
+      "bytes": 16547
+    },
+    {
+      "path": "data/manual/archive/feasibility/Electronics_laptop_1059e9de8334.csv",
+      "action": "ARCHIVE",
+      "bytes": 33982
+    },
+    {
+      "path": "data/manual/archive/feasibility/Electronics_laptop_22c3bdfd9e59.csv",
+      "action": "ARCHIVE",
+      "bytes": 33982
+    },
+    {
+      "path": "data/manual/archive/feasibility/Electronics_laptop_623f134d11e0.csv",
+      "action": "ARCHIVE",
+      "bytes": 33982
+    },
+    {
+      "path": "data/manual/archive/feasibility/Electronics_laptop_876f2dde9a7f.csv",
+      "action": "ARCHIVE",
+      "bytes": 33982
+    },
+    {
+      "path": "data/manual/archive/feasibility/Electronics_laptop_b758d75b08b2.csv",
+      "action": "ARCHIVE",
+      "bytes": 33982
+    },
+    {
+      "path": "data/manual/archive/feasibility/Electronics_smartphone_22c3bdfd9e59.csv",
+      "action": "ARCHIVE",
+      "bytes": 16617
+    },
+    {
+      "path": "data/manual/archive/feasibility/Electronics_smartphone_623f134d11e0.csv",
+      "action": "ARCHIVE",
+      "bytes": 16617
+    },
+    {
+      "path": "data/manual/archive/feasibility/Electronics_smartphone_876f2dde9a7f.csv",
+      "action": "ARCHIVE",
+      "bytes": 16617
+    },
+    {
+      "path": "data/manual/archive/feasibility/Electronics_smartphone_b758d75b08b2.csv",
+      "action": "ARCHIVE",
+      "bytes": 16617
+    },
+    {
+      "path": "data/manual/archive/feasibility/Electronics_tablet_22c3bdfd9e59.csv",
+      "action": "ARCHIVE",
+      "bytes": 29798
+    },
+    {
+      "path": "data/manual/archive/feasibility/Electronics_tablet_623f134d11e0.csv",
+      "action": "ARCHIVE",
+      "bytes": 29798
+    },
+    {
+      "path": "data/manual/archive/feasibility/Electronics_tablet_876f2dde9a7f.csv",
+      "action": "ARCHIVE",
+      "bytes": 29798
+    },
+    {
+      "path": "data/manual/archive/feasibility/Electronics_tablet_b758d75b08b2.csv",
+      "action": "ARCHIVE",
+      "bytes": 29798
+    },
+    {
+      "path": "data/interim/feasibility/electronics_full_laptop_30k/laptop_sample.jsonl",
+      "action": "KEEP",
+      "bytes": 5095238
+    },
+    {
+      "path": "data/interim/feasibility/electronics_full_laptop_30k/laptop_valid.jsonl",
+      "action": "KEEP",
+      "bytes": 416018817
+    },
+    {
+      "path": "data/interim/feasibility/electronics_full_laptop_30k/products.jsonl",
+      "action": "KEEP",
+      "bytes": 9639464
+    },
+    {
+      "path": "data/interim/feasibility/electronics_full_laptop_30k/report.json",
+      "action": "KEEP",
+      "bytes": 10451
+    },
+    {
+      "path": "data/interim/feasibility/electronics_metadata_full_30k/products.jsonl",
+      "action": "KEEP",
+      "bytes": 9639464
+    },
+    {
+      "path": "data/interim/feasibility/electronics_metadata_full_30k/report.json",
+      "action": "KEEP",
+      "bytes": 2854
+    },
+    {
+      "path": "data/interim/archive/feasibility/cell_phones_feasibility_small/laptop_sample.jsonl",
+      "action": "ARCHIVE",
+      "bytes": 0
+    },
+    {
+      "path": "data/interim/archive/feasibility/cell_phones_feasibility_small/laptop_valid.jsonl",
+      "action": "ARCHIVE",
+      "bytes": 0
+    },
+    {
+      "path": "data/interim/archive/feasibility/cell_phones_feasibility_small/products.jsonl",
+      "action": "ARCHIVE",
+      "bytes": 6463
+    },
+    {
+      "path": "data/interim/archive/feasibility/cell_phones_feasibility_small/report.json",
+      "action": "ARCHIVE",
+      "bytes": 13029
+    },
+    {
+      "path": "data/interim/archive/feasibility/cell_phones_feasibility_small/smartphone_sample.jsonl",
+      "action": "ARCHIVE",
+      "bytes": 2964
+    },
+    {
+      "path": "data/interim/archive/feasibility/cell_phones_feasibility_small/smartphone_valid.jsonl",
+      "action": "ARCHIVE",
+      "bytes": 2964
+    },
+    {
+      "path": "data/interim/archive/feasibility/cell_phones_feasibility_small/tablet_sample.jsonl",
+      "action": "ARCHIVE",
+      "bytes": 0
+    },
+    {
+      "path": "data/interim/archive/feasibility/cell_phones_feasibility_small/tablet_valid.jsonl",
+      "action": "ARCHIVE",
+      "bytes": 0
+    },
+    {
+      "path": "data/interim/archive/feasibility/cell_phones_hardening_v4/laptop_sample.jsonl",
+      "action": "ARCHIVE",
+      "bytes": 0
+    },
+    {
+      "path": "data/interim/archive/feasibility/cell_phones_hardening_v4/laptop_valid.jsonl",
+      "action": "ARCHIVE",
+      "bytes": 0
+    },
+    {
+      "path": "data/interim/archive/feasibility/cell_phones_hardening_v4/products.jsonl",
+      "action": "ARCHIVE",
+      "bytes": 6463
+    },
+    {
+      "path": "data/interim/archive/feasibility/cell_phones_hardening_v4/report.json",
+      "action": "ARCHIVE",
+      "bytes": 14024
+    },
+    {
+      "path": "data/interim/archive/feasibility/cell_phones_hardening_v4/smartphone_sample.jsonl",
+      "action": "ARCHIVE",
+      "bytes": 3258
+    },
+    {
+      "path": "data/interim/archive/feasibility/cell_phones_hardening_v4/smartphone_valid.jsonl",
+      "action": "ARCHIVE",
+      "bytes": 3258
+    },
+    {
+      "path": "data/interim/archive/feasibility/cell_phones_hardening_v4/tablet_sample.jsonl",
+      "action": "ARCHIVE",
+      "bytes": 0
+    },
+    {
+      "path": "data/interim/archive/feasibility/cell_phones_hardening_v4/tablet_valid.jsonl",
+      "action": "ARCHIVE",
+      "bytes": 0
+    },
+    {
+      "path": "data/interim/archive/feasibility/cell_phones_probe_v2/laptop_sample.jsonl",
+      "action": "ARCHIVE",
+      "bytes": 0
+    },
+    {
+      "path": "data/interim/archive/feasibility/cell_phones_probe_v2/laptop_valid.jsonl",
+      "action": "ARCHIVE",
+      "bytes": 0
+    },
+    {
+      "path": "data/interim/archive/feasibility/cell_phones_probe_v2/products.jsonl",
+      "action": "ARCHIVE",
+      "bytes": 6463
+    },
+    {
+      "path": "data/interim/archive/feasibility/cell_phones_probe_v2/report.json",
+      "action": "ARCHIVE",
+      "bytes": 13042
+    },
+    {
+      "path": "data/interim/archive/feasibility/cell_phones_probe_v2/smartphone_sample.jsonl",
+      "action": "ARCHIVE",
+      "bytes": 2964
+    },
+    {
+      "path": "data/interim/archive/feasibility/cell_phones_probe_v2/smartphone_valid.jsonl",
+      "action": "ARCHIVE",
+      "bytes": 2964
+    },
+    {
+      "path": "data/interim/archive/feasibility/cell_phones_probe_v2/tablet_sample.jsonl",
+      "action": "ARCHIVE",
+      "bytes": 0
+    },
+    {
+      "path": "data/interim/archive/feasibility/cell_phones_probe_v2/tablet_valid.jsonl",
+      "action": "ARCHIVE",
+      "bytes": 0
+    },
+    {
+      "path": "data/interim/archive/feasibility/cell_phones_refactor/laptop_sample.jsonl",
+      "action": "ARCHIVE",
+      "bytes": 0
+    },
+    {
+      "path": "data/interim/archive/feasibility/cell_phones_refactor/laptop_valid.jsonl",
+      "action": "ARCHIVE",
+      "bytes": 0
+    },
+    {
+      "path": "data/interim/archive/feasibility/cell_phones_refactor/products.jsonl",
+      "action": "ARCHIVE",
+      "bytes": 6463
+    },
+    {
+      "path": "data/interim/archive/feasibility/cell_phones_refactor/report.json",
+      "action": "ARCHIVE",
+      "bytes": 13445
+    },
+    {
+      "path": "data/interim/archive/feasibility/cell_phones_refactor/smartphone_sample.jsonl",
+      "action": "ARCHIVE",
+      "bytes": 2964
+    },
+    {
+      "path": "data/interim/archive/feasibility/cell_phones_refactor/smartphone_valid.jsonl",
+      "action": "ARCHIVE",
+      "bytes": 2964
+    },
+    {
+      "path": "data/interim/archive/feasibility/cell_phones_refactor/tablet_sample.jsonl",
+      "action": "ARCHIVE",
+      "bytes": 0
+    },
+    {
+      "path": "data/interim/archive/feasibility/cell_phones_refactor/tablet_valid.jsonl",
+      "action": "ARCHIVE",
+      "bytes": 0
+    },
+    {
+      "path": "data/interim/archive/feasibility/electronics_feasibility_small/laptop_sample.jsonl",
+      "action": "ARCHIVE",
+      "bytes": 19482
+    },
+    {
+      "path": "data/interim/archive/feasibility/electronics_feasibility_small/laptop_valid.jsonl",
+      "action": "ARCHIVE",
+      "bytes": 19482
+    },
+    {
+      "path": "data/interim/archive/feasibility/electronics_feasibility_small/products.jsonl",
+      "action": "ARCHIVE",
+      "bytes": 131422
+    },
+    {
+      "path": "data/interim/archive/feasibility/electronics_feasibility_small/report.json",
+      "action": "ARCHIVE",
+      "bytes": 13872
+    },
+    {
+      "path": "data/interim/archive/feasibility/electronics_feasibility_small/smartphone_sample.jsonl",
+      "action": "ARCHIVE",
+      "bytes": 0
+    },
+    {
+      "path": "data/interim/archive/feasibility/electronics_feasibility_small/smartphone_valid.jsonl",
+      "action": "ARCHIVE",
+      "bytes": 0
+    },
+    {
+      "path": "data/interim/archive/feasibility/electronics_feasibility_small/tablet_sample.jsonl",
+      "action": "ARCHIVE",
+      "bytes": 10978
+    },
+    {
+      "path": "data/interim/archive/feasibility/electronics_feasibility_small/tablet_valid.jsonl",
+      "action": "ARCHIVE",
+      "bytes": 10978
+    },
+    {
+      "path": "data/interim/archive/feasibility/electronics_hardening_v4/laptop_sample.jsonl",
+      "action": "ARCHIVE",
+      "bytes": 20930
+    },
+    {
+      "path": "data/interim/archive/feasibility/electronics_hardening_v4/laptop_valid.jsonl",
+      "action": "ARCHIVE",
+      "bytes": 20930
+    },
+    {
+      "path": "data/interim/archive/feasibility/electronics_hardening_v4/products.jsonl",
+      "action": "ARCHIVE",
+      "bytes": 131422
+    },
+    {
+      "path": "data/interim/archive/feasibility/electronics_hardening_v4/report.json",
+      "action": "ARCHIVE",
+      "bytes": 14860
+    },
+    {
+      "path": "data/interim/archive/feasibility/electronics_hardening_v4/smartphone_sample.jsonl",
+      "action": "ARCHIVE",
+      "bytes": 0
+    },
+    {
+      "path": "data/interim/archive/feasibility/electronics_hardening_v4/smartphone_valid.jsonl",
+      "action": "ARCHIVE",
+      "bytes": 0
+    },
+    {
+      "path": "data/interim/archive/feasibility/electronics_hardening_v4/tablet_sample.jsonl",
+      "action": "ARCHIVE",
+      "bytes": 11879
+    },
+    {
+      "path": "data/interim/archive/feasibility/electronics_hardening_v4/tablet_valid.jsonl",
+      "action": "ARCHIVE",
+      "bytes": 11879
+    },
+    {
+      "path": "data/interim/archive/feasibility/electronics_metadata_preflight_probe_v4/products.jsonl",
+      "action": "ARCHIVE",
+      "bytes": 109886
+    },
+    {
+      "path": "data/interim/archive/feasibility/electronics_metadata_preflight_probe_v4/report.json",
+      "action": "ARCHIVE",
+      "bytes": 2699
+    },
+    {
+      "path": "data/interim/archive/feasibility/electronics_probe_v2/laptop_sample.jsonl",
+      "action": "ARCHIVE",
+      "bytes": 19482
+    },
+    {
+      "path": "data/interim/archive/feasibility/electronics_probe_v2/laptop_valid.jsonl",
+      "action": "ARCHIVE",
+      "bytes": 19482
+    },
+    {
+      "path": "data/interim/archive/feasibility/electronics_probe_v2/products.jsonl",
+      "action": "ARCHIVE",
+      "bytes": 131422
+    },
+    {
+      "path": "data/interim/archive/feasibility/electronics_probe_v2/report.json",
+      "action": "ARCHIVE",
+      "bytes": 13885
+    },
+    {
+      "path": "data/interim/archive/feasibility/electronics_probe_v2/smartphone_sample.jsonl",
+      "action": "ARCHIVE",
+      "bytes": 0
+    },
+    {
+      "path": "data/interim/archive/feasibility/electronics_probe_v2/smartphone_valid.jsonl",
+      "action": "ARCHIVE",
+      "bytes": 0
+    },
+    {
+      "path": "data/interim/archive/feasibility/electronics_probe_v2/tablet_sample.jsonl",
+      "action": "ARCHIVE",
+      "bytes": 10978
+    },
+    {
+      "path": "data/interim/archive/feasibility/electronics_probe_v2/tablet_valid.jsonl",
+      "action": "ARCHIVE",
+      "bytes": 10978
+    },
+    {
+      "path": "data/interim/archive/feasibility/electronics_refactor/laptop_sample.jsonl",
+      "action": "ARCHIVE",
+      "bytes": 19482
+    },
+    {
+      "path": "data/interim/archive/feasibility/electronics_refactor/laptop_valid.jsonl",
+      "action": "ARCHIVE",
+      "bytes": 19482
+    },
+    {
+      "path": "data/interim/archive/feasibility/electronics_refactor/products.jsonl",
+      "action": "ARCHIVE",
+      "bytes": 131422
+    },
+    {
+      "path": "data/interim/archive/feasibility/electronics_refactor/report.json",
+      "action": "ARCHIVE",
+      "bytes": 14239
+    },
+    {
+      "path": "data/interim/archive/feasibility/electronics_refactor/smartphone_sample.jsonl",
+      "action": "ARCHIVE",
+      "bytes": 0
+    },
+    {
+      "path": "data/interim/archive/feasibility/electronics_refactor/smartphone_valid.jsonl",
+      "action": "ARCHIVE",
+      "bytes": 0
+    },
+    {
+      "path": "data/interim/archive/feasibility/electronics_refactor/tablet_sample.jsonl",
+      "action": "ARCHIVE",
+      "bytes": 10978
+    },
+    {
+      "path": "data/interim/archive/feasibility/electronics_refactor/tablet_valid.jsonl",
+      "action": "ARCHIVE",
+      "bytes": 10978
+    },
+    {
+      "path": "data/processed/.gitkeep",
+      "action": "KEEP",
+      "bytes": 0
+    },
+    {
+      "path": "reports/p0_initialization.md",
+      "action": "KEEP",
+      "bytes": 2441
+    },
+    {
+      "path": "reports/p1_data_acquisition.md",
+      "action": "KEEP",
+      "bytes": 22456
+    },
+    {
+      "path": "reports/p1_data_feasibility.md",
+      "action": "KEEP",
+      "bytes": 17081
+    },
+    {
+      "path": "reports/p1_full_laptop_survey.md",
+      "action": "KEEP",
+      "bytes": 8909
+    },
+    {
+      "path": "reports/p1_full_scan_readiness.md",
+      "action": "KEEP",
+      "bytes": 25535
+    },
+    {
+      "path": "reports/p1_laptop_filter_qa.md",
+      "action": "KEEP",
+      "bytes": 5336
+    },
+    {
+      "path": "reports/p1_metadata_full_preflight.md",
+      "action": "KEEP",
+      "bytes": 8713
+    },
+    {
+      "path": "reports/p1_pipeline_changes.md",
+      "action": "KEEP",
+      "bytes": 9293
+    },
+    {
+      "path": "reports/p1_reviews_full_acquisition.md",
+      "action": "KEEP",
+      "bytes": 5288
+    },
+    {
+      "path": "reports/p1_semeval_laptop.md",
+      "action": "KEEP",
+      "bytes": 4288
+    },
+    {
+      "path": "reports/project_laptop_only_cleanup.md",
+      "action": "KEEP",
+      "bytes": 7197
+    },
+    {
+      "path": "reports/figures/.gitkeep",
+      "action": "KEEP",
+      "bytes": 0
+    },
+    {
+      "path": "reports/final/.gitkeep",
+      "action": "KEEP",
+      "bytes": 0
+    },
+    {
+      "path": "reports/tables/.gitkeep",
+      "action": "KEEP",
+      "bytes": 0
+    },
+    {
+      "path": "reports/tables/cell_phones_feasibility_small.json",
+      "action": "KEEP",
+      "bytes": 13029
+    },
+    {
+      "path": "reports/tables/cell_phones_hardening_v4.json",
+      "action": "KEEP",
+      "bytes": 14024
+    },
+    {
+      "path": "reports/tables/cell_phones_probe_v2.json",
+      "action": "KEEP",
+      "bytes": 13042
+    },
+    {
+      "path": "reports/tables/cell_phones_refactor.json",
+      "action": "KEEP",
+      "bytes": 13445
+    },
+    {
+      "path": "reports/tables/electronics_feasibility_small.json",
+      "action": "KEEP",
+      "bytes": 13872
+    },
+    {
+      "path": "reports/tables/electronics_full_laptop_30k.json",
+      "action": "KEEP",
+      "bytes": 10451
+    },
+    {
+      "path": "reports/tables/electronics_full_laptop_30k_verification.json",
+      "action": "KEEP",
+      "bytes": 1286
+    },
+    {
+      "path": "reports/tables/electronics_hardening_v4.json",
+      "action": "KEEP",
+      "bytes": 14860
+    },
+    {
+      "path": "reports/tables/electronics_metadata_full_30k.json",
+      "action": "KEEP",
+      "bytes": 2854
+    },
+    {
+      "path": "reports/tables/electronics_metadata_preflight_probe_v4.json",
+      "action": "KEEP",
+      "bytes": 2699
+    },
+    {
+      "path": "reports/tables/electronics_probe_v2.json",
+      "action": "KEEP",
+      "bytes": 13885
+    },
+    {
+      "path": "reports/tables/electronics_refactor.json",
+      "action": "KEEP",
+      "bytes": 14239
+    },
+    {
+      "path": "reports/tables/p1_30k_acquisition_status.json",
+      "action": "KEEP",
+      "bytes": 2355
+    },
+    {
+      "path": "reports/tables/p1_audit.json",
+      "action": "KEEP",
+      "bytes": 7355
+    },
+    {
+      "path": "reports/tables/p1_feasibility_30k_status.csv",
+      "action": "KEEP",
+      "bytes": 1547
+    },
+    {
+      "path": "reports/tables/p1_feasibility_30k_status.json",
+      "action": "KEEP",
+      "bytes": 11206
+    },
+    {
+      "path": "reports/tables/p1_feasibility_hardening.csv",
+      "action": "KEEP",
+      "bytes": 1547
+    },
+    {
+      "path": "reports/tables/p1_feasibility_hardening.json",
+      "action": "KEEP",
+      "bytes": 11178
+    },
+    {
+      "path": "reports/tables/p1_feasibility_small.csv",
+      "action": "KEEP",
+      "bytes": 1547
+    },
+    {
+      "path": "reports/tables/p1_feasibility_small.json",
+      "action": "KEEP",
+      "bytes": 11178
+    },
+    {
+      "path": "reports/tables/p1_full_scan_resource_check.json",
+      "action": "KEEP",
+      "bytes": 1055
+    },
+    {
+      "path": "reports/tables/p1_hardening_integrity.json",
+      "action": "KEEP",
+      "bytes": 4156
+    },
+    {
+      "path": "reports/tables/p1_laptop_filter_qa.json",
+      "action": "KEEP",
+      "bytes": 6414
+    },
+    {
+      "path": "reports/tables/p1_laptop_only_cache_cleanup.json",
+      "action": "KEEP",
+      "bytes": 3426
+    },
+    {
+      "path": "reports/tables/p1_laptop_only_cleanup_inventory.json",
+      "action": "KEEP",
+      "bytes": 52222
+    },
+    {
+      "path": "reports/tables/p1_laptop_only_preservation_after.json",
+      "action": "KEEP",
+      "bytes": 2477
+    },
+    {
+      "path": "reports/tables/p1_laptop_only_preservation_before.json",
+      "action": "KEEP",
+      "bytes": 5237
+    },
+    {
+      "path": "reports/tables/p1_laptop_only_validation.json",
+      "action": "KEEP",
+      "bytes": 1058
+    },
+    {
+      "path": "reports/tables/p1_laptop_survey_summary.csv",
+      "action": "KEEP",
+      "bytes": 606
+    },
+    {
+      "path": "reports/tables/p1_laptop_survey_summary.json",
+      "action": "KEEP",
+      "bytes": 2346
+    },
+    {
+      "path": "reports/tables/p1_metadata_download_execution.json",
+      "action": "KEEP",
+      "bytes": 1168
+    },
+    {
+      "path": "reports/tables/p1_metadata_full_integrity.json",
+      "action": "KEEP",
+      "bytes": 1282
+    },
+    {
+      "path": "reports/tables/p1_reviews_acquisition_readiness.json",
+      "action": "KEEP",
+      "bytes": 1526
+    },
+    {
+      "path": "reports/tables/p1_reviews_download_execution.json",
+      "action": "KEEP",
+      "bytes": 7956
+    },
+    {
+      "path": "reports/tables/p1_semeval_access_checks.json",
+      "action": "KEEP",
+      "bytes": 3345
+    },
+    {
+      "path": "reports/tables/p1_semeval_download_access.json",
+      "action": "KEEP",
+      "bytes": 1259
+    },
+    {
+      "path": "reports/tables/p1_semeval_laptop_audit.json",
+      "action": "KEEP",
+      "bytes": 1204
+    },
+    {
+      "path": "reports/tables/p1_source_probe.json",
+      "action": "KEEP",
+      "bytes": 2076
+    },
+    {
+      "path": "reports/archive/p1_legacy_workflow/data_dictionary.md",
+      "action": "ARCHIVE",
+      "bytes": 6577
+    },
+    {
+      "path": "reports/archive/p1_legacy_workflow/PLAN_AI.md",
+      "action": "ARCHIVE",
+      "bytes": 33916
+    },
+    {
+      "path": "reports/archive/p1_legacy_workflow/PLAN_HUMAN.md",
+      "action": "ARCHIVE",
+      "bytes": 23334
+    },
+    {
+      "path": "reports/archive/p1_legacy_workflow/README.md",
+      "action": "ARCHIVE",
+      "bytes": 6242
+    },
+    {
+      "path": "reports/archive/p1_legacy_workflow/README_ARCHIVE.md",
+      "action": "ARCHIVE",
+      "bytes": 1000
+    },
+    {
+      "path": "reports/archive/p1_legacy_workflow/requirements.txt",
+      "action": "ARCHIVE",
+      "bytes": 259
+    },
+    {
+      "path": "reports/archive/regenerable_caches/.pytest_cache/.gitignore",
+      "action": "ARCHIVE",
+      "bytes": 39
+    },
+    {
+      "path": "reports/archive/regenerable_caches/.pytest_cache/CACHEDIR.TAG",
+      "action": "ARCHIVE",
+      "bytes": 191
+    },
+    {
+      "path": "reports/archive/regenerable_caches/.pytest_cache/README.md",
+      "action": "ARCHIVE",
+      "bytes": 310
+    },
+    {
+      "path": "reports/archive/regenerable_caches/tests/__pycache__/test_filter_qa.cpython-313-pytest-8.3.5.pyc",
+      "action": "ARCHIVE",
+      "bytes": 10977
+    },
+    {
+      "path": "reports/archive/regenerable_caches/tests/__pycache__/test_initialization.cpython-313-pytest-8.3.5.pyc",
+      "action": "ARCHIVE",
+      "bytes": 8909
+    },
+    {
+      "path": "reports/archive/regenerable_caches/tests/__pycache__/test_initialization.cpython-313.pyc",
+      "action": "ARCHIVE",
+      "bytes": 3796
+    },
+    {
+      "path": "reports/archive/regenerable_caches/tests/__pycache__/test_p1_data.cpython-313-pytest-8.3.5.pyc",
+      "action": "ARCHIVE",
+      "bytes": 34223
+    },
+    {
+      "path": "reports/archive/regenerable_caches/tests/__pycache__/test_p1_data.cpython-313.pyc",
+      "action": "ARCHIVE",
+      "bytes": 11835
+    },
+    {
+      "path": "reports/archive/regenerable_caches/tests/__pycache__/test_p1_feasibility.cpython-313-pytest-8.3.5.pyc",
+      "action": "ARCHIVE",
+      "bytes": 91447
+    },
+    {
+      "path": "reports/archive/regenerable_caches/tests/__pycache__/test_p1_feasibility.cpython-313.pyc",
+      "action": "ARCHIVE",
+      "bytes": 36273
+    },
+    {
+      "path": "reports/archive/regenerable_caches/tests/__pycache__/test_semeval_audit.cpython-313-pytest-8.3.5.pyc",
+      "action": "ARCHIVE",
+      "bytes": 5415
+    },
+    {
+      "path": "reports/archive/regenerable_caches/src/__pycache__/config.cpython-313.pyc",
+      "action": "ARCHIVE",
+      "bytes": 1686
+    },
+    {
+      "path": "reports/archive/regenerable_caches/src/__pycache__/__init__.cpython-313.pyc",
+      "action": "ARCHIVE",
+      "bytes": 196
+    },
+    {
+      "path": "reports/archive/regenerable_caches/src/models/__pycache__/registry.cpython-313.pyc",
+      "action": "ARCHIVE",
+      "bytes": 1148
+    },
+    {
+      "path": "reports/archive/regenerable_caches/src/inference/__pycache__/schema.cpython-313.pyc",
+      "action": "ARCHIVE",
+      "bytes": 3829
+    },
+    {
+      "path": "reports/archive/regenerable_caches/src/data/__pycache__/acquisition.cpython-313.pyc",
+      "action": "ARCHIVE",
+      "bytes": 7161
+    },
+    {
+      "path": "reports/archive/regenerable_caches/src/data/__pycache__/feasibility.cpython-313.pyc",
+      "action": "ARCHIVE",
+      "bytes": 32562
+    },
+    {
+      "path": "reports/archive/regenerable_caches/src/data/__pycache__/filter_qa.cpython-313.pyc",
+      "action": "ARCHIVE",
+      "bytes": 8010
+    },
+    {
+      "path": "reports/archive/regenerable_caches/src/data/__pycache__/laptop_filter.cpython-313.pyc",
+      "action": "ARCHIVE",
+      "bytes": 3820
+    },
+    {
+      "path": "reports/archive/regenerable_caches/src/data/__pycache__/loader.cpython-313.pyc",
+      "action": "ARCHIVE",
+      "bytes": 7941
+    },
+    {
+      "path": "reports/archive/regenerable_caches/src/data/__pycache__/product_filter.cpython-313.pyc",
+      "action": "ARCHIVE",
+      "bytes": 5071
+    },
+    {
+      "path": "reports/archive/regenerable_caches/src/data/__pycache__/semeval.cpython-313.pyc",
+      "action": "ARCHIVE",
+      "bytes": 7603
+    },
+    {
+      "path": "reports/archive/regenerable_caches/src/data/__pycache__/survey.cpython-313.pyc",
+      "action": "ARCHIVE",
+      "bytes": 11328
+    },
+    {
+      "path": "reports/archive/regenerable_caches/src/data/__pycache__/validation.cpython-313.pyc",
+      "action": "ARCHIVE",
+      "bytes": 5823
+    },
+    {
+      "path": "reports/archive/regenerable_caches/scripts/__pycache__/acquire_p1.cpython-313.pyc",
+      "action": "ARCHIVE",
+      "bytes": 3158
+    },
+    {
+      "path": "reports/archive/regenerable_caches/scripts/__pycache__/audit_p1.cpython-313.pyc",
+      "action": "ARCHIVE",
+      "bytes": 13121
+    },
+    {
+      "path": "reports/archive/regenerable_caches/scripts/__pycache__/audit_semeval_p1.cpython-313.pyc",
+      "action": "ARCHIVE",
+      "bytes": 1957
+    },
+    {
+      "path": "reports/archive/regenerable_caches/scripts/__pycache__/summarize_p1.cpython-313.pyc",
+      "action": "ARCHIVE",
+      "bytes": 4094
+    },
+    {
+      "path": "reports/archive/regenerable_caches/scripts/__pycache__/survey_p1.cpython-313.pyc",
+      "action": "ARCHIVE",
+      "bytes": 4224
+    },
+    {
+      "path": "reports/archive/regenerable_caches/scripts/__pycache__/validate_filter_qa.cpython-313.pyc",
+      "action": "ARCHIVE",
+      "bytes": 2021
+    },
+    {
+      "path": "reports/archive/regenerable_caches/reports/archive/p1_legacy_workflow/tests/__pycache__/test_p1_data.cpython-313-pytest-8.3.5.pyc",
+      "action": "ARCHIVE",
+      "bytes": 34258
+    },
+    {
+      "path": "reports/archive/regenerable_caches/reports/archive/p1_legacy_workflow/tests/__pycache__/test_p1_feasibility.cpython-313-pytest-8.3.5.pyc",
+      "action": "ARCHIVE",
+      "bytes": 92671
+    },
+    {
+      "path": "reports/archive/regenerable_caches/.pytest_cache/v/cache/lastfailed",
+      "action": "ARCHIVE",
+      "bytes": 79
+    },
+    {
+      "path": "reports/archive/regenerable_caches/.pytest_cache/v/cache/nodeids",
+      "action": "ARCHIVE",
+      "bytes": 12874
+    },
+    {
+      "path": "reports/archive/regenerable_caches/.pytest_cache/v/cache/stepwise",
+      "action": "ARCHIVE",
+      "bytes": 2
+    },
+    {
+      "path": "reports/archive/p1_legacy_workflow/configs/acquisition.yaml",
+      "action": "ARCHIVE",
+      "bytes": 2044
+    },
+    {
+      "path": "reports/archive/p1_legacy_workflow/configs/data.yaml",
+      "action": "ARCHIVE",
+      "bytes": 716
+    },
+    {
+      "path": "reports/archive/p1_legacy_workflow/configs/feasibility.yaml",
+      "action": "ARCHIVE",
+      "bytes": 2986
+    },
+    {
+      "path": "reports/archive/p1_legacy_workflow/scripts/acquire_p1.py",
+      "action": "ARCHIVE",
+      "bytes": 2699
+    },
+    {
+      "path": "reports/archive/p1_legacy_workflow/scripts/summarize_p1.py",
+      "action": "ARCHIVE",
+      "bytes": 2228
+    },
+    {
+      "path": "reports/archive/p1_legacy_workflow/scripts/survey_p1.py",
+      "action": "ARCHIVE",
+      "bytes": 2625
+    },
+    {
+      "path": "reports/archive/p1_legacy_workflow/src/config.py",
+      "action": "ARCHIVE",
+      "bytes": 929
+    },
+    {
+      "path": "reports/archive/p1_legacy_workflow/tests/test_p1_data.py",
+      "action": "ARCHIVE",
+      "bytes": 7105
+    },
+    {
+      "path": "reports/archive/p1_legacy_workflow/tests/test_p1_feasibility.py",
+      "action": "ARCHIVE",
+      "bytes": 22198
+    },
+    {
+      "path": "reports/archive/p1_legacy_workflow/src/data/acquisition.py",
+      "action": "ARCHIVE",
+      "bytes": 5318
+    },
+    {
+      "path": "reports/archive/p1_legacy_workflow/src/data/feasibility.py",
+      "action": "ARCHIVE",
+      "bytes": 24847
+    },
+    {
+      "path": "reports/archive/p1_legacy_workflow/src/data/filter_qa.py",
+      "action": "ARCHIVE",
+      "bytes": 2980
+    },
+    {
+      "path": "reports/archive/p1_legacy_workflow/src/data/laptop_filter.py",
+      "action": "ARCHIVE",
+      "bytes": 1798
+    },
+    {
+      "path": "reports/archive/p1_legacy_workflow/src/data/loader.py",
+      "action": "ARCHIVE",
+      "bytes": 5326
+    },
+    {
+      "path": "reports/archive/p1_legacy_workflow/src/data/product_filter.py",
+      "action": "ARCHIVE",
+      "bytes": 2581
+    },
+    {
+      "path": "reports/archive/p1_legacy_workflow/src/data/survey.py",
+      "action": "ARCHIVE",
+      "bytes": 5552
+    },
+    {
+      "path": "reports/archive/p1_legacy_workflow/src/data/validation.py",
+      "action": "ARCHIVE",
+      "bytes": 2867
+    },
+    {
+      "path": "configs/acquisition.yaml",
+      "action": "KEEP",
+      "bytes": 2396
+    },
+    {
+      "path": "configs/data.yaml",
+      "action": "KEEP",
+      "bytes": 716
+    },
+    {
+      "path": "configs/feasibility.yaml",
+      "action": "KEEP",
+      "bytes": 1219
+    },
+    {
+      "path": "configs/language.yaml",
+      "action": "KEEP",
+      "bytes": 192
+    },
+    {
+      "path": "configs/model.yaml",
+      "action": "KEEP",
+      "bytes": 503
+    },
+    {
+      "path": "scripts/.gitkeep",
+      "action": "KEEP",
+      "bytes": 0
+    },
+    {
+      "path": "scripts/acquire_p1.py",
+      "action": "KEEP",
+      "bytes": 2265
+    },
+    {
+      "path": "scripts/audit_p1.py",
+      "action": "KEEP",
+      "bytes": 9355
+    },
+    {
+      "path": "scripts/audit_semeval_p1.py",
+      "action": "KEEP",
+      "bytes": 1032
+    },
+    {
+      "path": "scripts/summarize_p1.py",
+      "action": "KEEP",
+      "bytes": 2405
+    },
+    {
+      "path": "scripts/survey_p1.py",
+      "action": "KEEP",
+      "bytes": 2593
+    },
+    {
+      "path": "scripts/validate_filter_qa.py",
+      "action": "KEEP",
+      "bytes": 1296
+    },
+    {
+      "path": "src/config.py",
+      "action": "KEEP",
+      "bytes": 929
+    },
+    {
+      "path": "src/__init__.py",
+      "action": "KEEP",
+      "bytes": 39
+    },
+    {
+      "path": "src/data/.gitkeep",
+      "action": "KEEP",
+      "bytes": 0
+    },
+    {
+      "path": "src/data/acquisition.py",
+      "action": "KEEP",
+      "bytes": 5318
+    },
+    {
+      "path": "src/data/feasibility.py",
+      "action": "KEEP",
+      "bytes": 24563
+    },
+    {
+      "path": "src/data/filter_qa.py",
+      "action": "KEEP",
+      "bytes": 6067
+    },
+    {
+      "path": "src/data/laptop_filter.py",
+      "action": "KEEP",
+      "bytes": 1798
+    },
+    {
+      "path": "src/data/loader.py",
+      "action": "KEEP",
+      "bytes": 5326
+    },
+    {
+      "path": "src/data/semeval.py",
+      "action": "KEEP",
+      "bytes": 4687
+    },
+    {
+      "path": "src/data/survey.py",
+      "action": "KEEP",
+      "bytes": 5552
+    },
+    {
+      "path": "src/data/validation.py",
+      "action": "KEEP",
+      "bytes": 2867
+    },
+    {
+      "path": "src/evaluation/.gitkeep",
+      "action": "KEEP",
+      "bytes": 0
+    },
+    {
+      "path": "src/inference/schema.py",
+      "action": "KEEP",
+      "bytes": 1909
+    },
+    {
+      "path": "src/models/registry.py",
+      "action": "KEEP",
+      "bytes": 573
+    },
+    {
+      "path": "src/preprocessing/.gitkeep",
+      "action": "KEEP",
+      "bytes": 0
+    },
+    {
+      "path": "src/sentiment/classical/.gitkeep",
+      "action": "KEEP",
+      "bytes": 0
+    },
+    {
+      "path": "src/sentiment/transformer/.gitkeep",
+      "action": "KEEP",
+      "bytes": 0
+    },
+    {
+      "path": "src/absa/aspect_extraction/.gitkeep",
+      "action": "KEEP",
+      "bytes": 0
+    },
+    {
+      "path": "src/absa/aspect_sentiment/.gitkeep",
+      "action": "KEEP",
+      "bytes": 0
+    },
+    {
+      "path": "tests/test_filter_qa.py",
+      "action": "KEEP",
+      "bytes": 3231
+    },
+    {
+      "path": "tests/test_initialization.py",
+      "action": "KEEP",
+      "bytes": 2072
+    },
+    {
+      "path": "tests/test_p1_data.py",
+      "action": "KEEP",
+      "bytes": 7105
+    },
+    {
+      "path": "tests/test_p1_feasibility.py",
+      "action": "KEEP",
+      "bytes": 21876
+    },
+    {
+      "path": "tests/test_semeval_audit.py",
+      "action": "KEEP",
+      "bytes": 1682
+    },
+    {
+      "path": "docs/CODEX_HANDOFF.md",
+      "action": "KEEP",
+      "bytes": 9404
+    }
+  ],
+  "cache_ledger": "reports/tables/p1_laptop_only_cache_cleanup.json"
+}

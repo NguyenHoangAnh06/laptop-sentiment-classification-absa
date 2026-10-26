@@ -1,0 +1,2 @@
+accuracy,macro_f1,weighted_f1,negative_precision,negative_recall,negative_f1,negative_support,neutral_precision,neutral_recall,neutral_f1,neutral_support,positive_precision,positive_recall,positive_f1,positive_support,balanced_accuracy
+0.6371111111111111,0.2594452739695036,0.49588640031371134,0.0,0.0,0.0,1239,0.0,0.0,0.0,394,0.6371111111111111,1.0,0.7783358219085109,2867,0.3333333333333333

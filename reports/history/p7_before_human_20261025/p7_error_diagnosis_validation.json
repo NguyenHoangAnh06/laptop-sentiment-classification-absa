@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "total_passed": 306,
+  "failed": 0,
+  "groups": [
+    286,
+    12,
+    8
+  ],
+  "previous_tests": 291,
+  "new_tests": 15,
+  "command": ".venv/Scripts/python.exe -B -m scripts.test_all",
+  "targeted_command": ".venv/Scripts/python.exe -B -m pytest -q tests/test_error_diagnosis.py",
+  "targeted_passed": 15,
+  "warnings": "10 SDK DeprecationWarnings ở nhóm cũ",
+  "no_training_or_benchmark_inference": true,
+  "human_annotation_created": false,
+  "human_audit_status": "BLOCKED_PENDING_HUMAN_ANNOTATION",
+  "preservation": {
+    "status": "PASS",
+    "scientific_files_unchanged": 153,
+    "mismatches": [],
+    "legacy": {
+      "p5": {
+        "count": 27,
+        "mismatches": []
+      },
+      "p6": {
+        "count": 26,
+        "mismatches": []
+      }
+    },
+    "benchmark_csv_sha256": "260068014d210a8549d09156e79eadd4ae0b8546f0dda64b51e361b664753f54",
+    "manual_rows": 360,
+    "human_fields_nonempty": 0,
+    "annotation_file_sha256": "f0ebdbb864a102b52892f3bf2c7b122283522d064b3dda422074260eb0a5f563",
+    "private_sidecar_sha256": "157f4f43a0b2e53d7729ba05a2ca95d1947cdd936511692fbcb9a5cdc345498d"
+  },
+  "source_sha256": {
+    "src/evaluation/error_diagnosis.py": "f23f7f5db3bb7196dedd6fffe7a1729f78219c0e210b9d8913e138e88ae7045e",
+    "src/evaluation/sentiment_audit.py": "372325bc5703a0fac1fa5c4461fcbce6b29a485c0ecf2eaab312b5a6f308e277",
+    "scripts/analyze_error_causes.py": "5e24c89429b6f69d0a0fdac028209102e0aff56b125c0ecee1c7d8117bcdc9a6",
+    "scripts/publish_kaggle_results.py": "8df896154fbef8b1845ce28099adc844777872d1b62e8d09ccdbc9ff8d9c022e",
+    "tests/test_error_diagnosis.py": "2c9245b98f66d500840a91c06c2a5841e111d67a025be3a4a58ae5b3ae43d6c3"
+  },
+  "final_targeted_after_report_regeneration": {
+    "passed": 19,
+    "failed": 0,
+    "command": ".venv/Scripts/python.exe -B -m pytest -q tests/test_error_diagnosis.py tests/test_final_benchmark.py"
+  }
+}

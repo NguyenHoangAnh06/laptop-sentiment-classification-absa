@@ -1,0 +1,4 @@
+sentiment,reviews,products,mean_rating,median_words,helpful_mean,helpful_median,helpful_nonzero_share,verified_share,negative_count,negative_share,neutral_count,neutral_share,positive_count,positive_share,negative_ci_low,negative_ci_high,sufficient_support,review_share
+negative,8259,4002,1.262864754,50,2.842353796,1,0.5300883884,0.8383581547,8259,1,0,0,0,0,0.9995350923,1,True,0.2753
+neutral,2631,1768,3,56,3.670847586,1,0.5043709616,0.8669707336,0,0,2631,1,0,0,0,0.001457946856,True,0.0877
+positive,19110,6977,4.742752486,37,3.264887493,0,0.4747252747,0.8971742543,0,0,0,0,19110,1,0,0.0002009778531,True,0.637

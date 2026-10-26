@@ -1,0 +1,105 @@
+{
+  "raw_checksums": {
+    "Cell_Phones_and_Accessories_metadata_probe_5000.jsonl": "MATCH",
+    "Cell_Phones_and_Accessories_reviews_probe_20000.jsonl": "MATCH",
+    "metadata_prefix_20000.jsonl": "MATCH",
+    "reviews_prefix_100000.jsonl": "MATCH",
+    "laptops-trial.xml": "MATCH"
+  },
+  "runs": {
+    "electronics_hardening_v4": {
+      "outputs": "CHECKSUM_AND_JSON_MATCH",
+      "qa": {
+        "Electronics_laptop_b758d75b08b2.csv": {
+          "status": "unvalidated",
+          "rows": 100,
+          "pending_or_unsure": 100,
+          "included_sample": 50,
+          "observed_precision": null,
+          "minimum_included": 50,
+          "required_precision": 0.95,
+          "false_positives_in_included_sample": null,
+          "note": "Sample precision is not a population guarantee; source coverage remains separate.",
+          "group": "laptop",
+          "false_negatives_in_excluded_sample": 0,
+          "population_recall": "NOT_MEASURED"
+        },
+        "Electronics_smartphone_b758d75b08b2.csv": {
+          "status": "unvalidated",
+          "rows": 50,
+          "pending_or_unsure": 50,
+          "included_sample": 0,
+          "observed_precision": null,
+          "minimum_included": 50,
+          "required_precision": 0.95,
+          "false_positives_in_included_sample": null,
+          "note": "Sample precision is not a population guarantee; source coverage remains separate.",
+          "group": "smartphone",
+          "false_negatives_in_excluded_sample": 0,
+          "population_recall": "NOT_MEASURED"
+        },
+        "Electronics_tablet_b758d75b08b2.csv": {
+          "status": "unvalidated",
+          "rows": 100,
+          "pending_or_unsure": 100,
+          "included_sample": 50,
+          "observed_precision": null,
+          "minimum_included": 50,
+          "required_precision": 0.95,
+          "false_positives_in_included_sample": null,
+          "note": "Sample precision is not a population guarantee; source coverage remains separate.",
+          "group": "tablet",
+          "false_negatives_in_excluded_sample": 0,
+          "population_recall": "NOT_MEASURED"
+        }
+      }
+    },
+    "cell_phones_hardening_v4": {
+      "outputs": "CHECKSUM_AND_JSON_MATCH",
+      "qa": {
+        "Cell_Phones_and_Accessories_laptop_a88a8da3a5f7.csv": {
+          "status": "unvalidated",
+          "rows": 32,
+          "pending_or_unsure": 32,
+          "included_sample": 0,
+          "observed_precision": null,
+          "minimum_included": 50,
+          "required_precision": 0.95,
+          "false_positives_in_included_sample": null,
+          "note": "Sample precision is not a population guarantee; source coverage remains separate.",
+          "group": "laptop",
+          "false_negatives_in_excluded_sample": 0,
+          "population_recall": "NOT_MEASURED"
+        },
+        "Cell_Phones_and_Accessories_smartphone_a88a8da3a5f7.csv": {
+          "status": "unvalidated",
+          "rows": 75,
+          "pending_or_unsure": 75,
+          "included_sample": 25,
+          "observed_precision": null,
+          "minimum_included": 50,
+          "required_precision": 0.95,
+          "false_positives_in_included_sample": null,
+          "note": "Sample precision is not a population guarantee; source coverage remains separate.",
+          "group": "smartphone",
+          "false_negatives_in_excluded_sample": 0,
+          "population_recall": "NOT_MEASURED"
+        },
+        "Cell_Phones_and_Accessories_tablet_a88a8da3a5f7.csv": {
+          "status": "unvalidated",
+          "rows": 50,
+          "pending_or_unsure": 50,
+          "included_sample": 0,
+          "observed_precision": null,
+          "minimum_included": 50,
+          "required_precision": 0.95,
+          "false_positives_in_included_sample": null,
+          "note": "Sample precision is not a population guarantee; source coverage remains separate.",
+          "group": "tablet",
+          "false_negatives_in_excluded_sample": 0,
+          "population_recall": "NOT_MEASURED"
+        }
+      }
+    }
+  }
+}

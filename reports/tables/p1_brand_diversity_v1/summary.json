@@ -1,0 +1,78 @@
+{
+  "status": "ANALYSIS_COMPLETE_ACCEPTANCE_NEEDS_REVIEW",
+  "products": 28172,
+  "valid_reviews": 408480,
+  "raw_brand_strings_nonmissing": 369,
+  "normalized_metadata_brand_categories": 336,
+  "known_metadata_brand_categories": 334,
+  "status_product_counts": {
+    "metadata_alias": 25884,
+    "metadata_other": 1975,
+    "missing_or_generic": 300,
+    "ambiguous": 13
+  },
+  "unknown_or_ambiguous_product_share": 0.011110322305835581,
+  "unknown_or_ambiguous_review_share": 0.003194770857814336,
+  "metadata_title_disagreement_products": 664,
+  "missing_with_single_title_hint": 236,
+  "product_concentration": {
+    "top3_share": 0.5878176913247196,
+    "top5_share": 0.7631691040749681,
+    "hhi": 0.1468898159495647,
+    "shannon_entropy_nats": 2.546471625426678,
+    "effective_number_of_brands": 12.761995150192353
+  },
+  "review_concentration": {
+    "top3_share": 0.5549231296513906,
+    "top5_share": 0.7977306110458284,
+    "hhi": 0.13761972253156698,
+    "shannon_entropy_nats": 2.403413426665386,
+    "effective_number_of_brands": 11.060867476135323
+  },
+  "product_review_total_variation": 0.23126510606131134,
+  "products_without_valid_reviews": 11,
+  "largest_product": {
+    "product_id": "B009T3EYHO",
+    "reviews": 5117,
+    "review_share": 0.01252692910301606
+  },
+  "top10_product_review_share": 0.07124706227967098,
+  "top100_product_review_share": 0.22825597336466902,
+  "source_hashes": {
+    "products.jsonl": "8c359dbc575980fd31066de83c484110e7c5908fb590aeb5f44b2d757748912e",
+    "laptop_valid.jsonl": "d53d81507734d0537491c37ee665119e9b563ebaa4f9160a31b1ced438934d2a",
+    "report.json": "97e1ee2e9df65b02c47af7d433af1dd0977bcc1367fb4c6372d629f266e74878"
+  },
+  "normalization": "NFKC/whitespace/casefold, exact alias map; other metadata brands retained, multi-brand delimiter strings ambiguous. Metadata is details.Brand from saved index, never store. Title hints do not replace metadata; reseller/manufacturer differences possible.",
+  "alias_map": {
+    "hp": "HP",
+    "hewlett-packard": "HP",
+    "hewlett packard": "HP",
+    "hewlett packard company": "HP",
+    "asus": "ASUS",
+    "asustek": "ASUS",
+    "asustek computer inc.": "ASUS",
+    "lenovo": "Lenovo",
+    "dell": "Dell",
+    "acer": "Acer",
+    "apple": "Apple",
+    "msi": "MSI",
+    "micro-star international": "MSI",
+    "samsung": "Samsung",
+    "lg": "LG",
+    "lg electronics": "LG",
+    "microsoft": "Microsoft",
+    "toshiba": "Toshiba",
+    "gateway": "Gateway",
+    "razer": "Razer",
+    "fujitsu": "Fujitsu",
+    "panasonic": "Panasonic",
+    "sony": "Sony",
+    "huawei": "Huawei",
+    "chuwi": "CHUWI",
+    "jumper": "Jumper",
+    "dynabook": "Dynabook",
+    "alienware": "Alienware"
+  },
+  "acceptance": "No approved brand thresholds found; analysis complete, preservation of final clean-data brand diversity remains pending P2. Candidate brand labels are not independently validated manufacturer identities."
+}

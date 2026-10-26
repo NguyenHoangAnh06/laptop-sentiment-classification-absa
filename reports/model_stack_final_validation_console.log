@@ -1,0 +1,48 @@
+{"status": "PASS", "experiment": "E00_majority", "metrics_recomputed": {"validation": "PASS", "test": "PASS"}, "artifact_hashes": "PASS", "validation_selection": "PASS", "test_predictions_rerun": false}
+
+{"status": "PASS", "experiment": "E01_xgboost_embedding", "metrics_recomputed": {"validation": "PASS", "test": "PASS"}, "artifact_hashes": "PASS", "validation_selection": "PASS", "test_predictions_rerun": false}
+
+{"status": "PASS", "experiment": "E02_tabm_embedding", "metrics_recomputed": {"validation": "PASS", "test": "PASS"}, "artifact_hashes": "PASS", "validation_selection": "PASS", "test_predictions_rerun": false}
+
+{"status": "PASS", "experiment": "E03_tabpfn_v3_embedding", "metrics_recomputed": {"validation": "PASS", "test": "PASS"}, "artifact_hashes": "PASS", "validation_selection": "PASS", "test_predictions_rerun": false}
+
+{"status": "PASS", "experiment": "E04_tabpfn_v35_embedding", "metrics_recomputed": {"validation": "PASS", "test": "PASS"}, "artifact_hashes": "PASS", "validation_selection": "PASS", "test_predictions_rerun": false}
+
+{"status": "PASS", "prediction_alignment": "PASS", "metrics_recomputed": "PASS", "validation_selection": "PASS", "checkpoint_hash": "PASS", "test_predictions_rerun": false}
+
+........................................................................ [ 31%]
+........................................................................ [ 62%]
+........................................................................ [ 94%]
+.............                                                            [100%]
+229 passed in 11.70s
+............                                                             [100%]
+12 passed in 12.82s
+........                                                                 [100%]
+============================== warnings summary ===============================
+tests/test_modern_smoke.py::test_retry_cannot_reopen_selected_test[False]
+tests/test_modern_smoke.py::test_retry_cannot_reopen_selected_test[False]
+tests/test_modern_smoke.py::test_retry_cannot_reopen_selected_test[False]
+tests/test_modern_smoke.py::test_retry_cannot_reopen_selected_test[False]
+  C:\Users\ADMIN\miniconda3\Lib\inspect.py:1022: DeprecationWarning: Importing from 'tabpfn.model.loading' is deprecated and will be removed in a future release; import from 'tabpfn.model_loading' instead.
+    if ismodule(module) and hasattr(module, '__file__'):
+
+tests/test_modern_smoke.py::test_retry_cannot_reopen_selected_test[False]
+tests/test_modern_smoke.py::test_retry_cannot_reopen_selected_test[False]
+tests/test_modern_smoke.py::test_retry_cannot_reopen_selected_test[False]
+tests/test_modern_smoke.py::test_retry_cannot_reopen_selected_test[False]
+  C:\Users\ADMIN\miniconda3\Lib\inspect.py:1023: DeprecationWarning: Importing from 'tabpfn.model.loading' is deprecated and will be removed in a future release; import from 'tabpfn.model_loading' instead.
+    f = module.__file__
+
+tests/test_modern_smoke.py::test_retry_cannot_reopen_selected_test[False]
+  C:\Users\ADMIN\miniconda3\Lib\inspect.py:924: DeprecationWarning: Importing from 'tabpfn.model.loading' is deprecated and will be removed in a future release; import from 'tabpfn.model_loading' instead.
+    if getattr(object, '__file__', None):
+
+tests/test_modern_smoke.py::test_retry_cannot_reopen_selected_test[False]
+  C:\Users\ADMIN\miniconda3\Lib\inspect.py:925: DeprecationWarning: Importing from 'tabpfn.model.loading' is deprecated and will be removed in a future release; import from 'tabpfn.model_loading' instead.
+    return object.__file__
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+8 passed, 10 warnings in 14.78s
+
+No broken requirements found.
+

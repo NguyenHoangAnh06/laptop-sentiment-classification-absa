@@ -1,0 +1,377 @@
+{
+  "version": "p1_metadata_first_v4",
+  "purpose": "feasibility_only_not_project_domain_expansion",
+  "source": "Electronics",
+  "mode": "scan",
+  "inputs": {
+    "metadata": {
+      "name": "meta_Electronics.jsonl.gz",
+      "sha256": "a4a196a1c8e443e0942d8a5c79b5a5d2d68e29d483f2badec1126690b4b2790d",
+      "manifest": {
+        "source_url": "https://mcauleylab.ucsd.edu/public_datasets/data/amazon_2023/raw/meta_categories/meta_Electronics.jsonl.gz",
+        "resolved_url": "https://mcauleylab.ucsd.edu/public_datasets/data/amazon_2023/raw/meta_categories/meta_Electronics.jsonl.gz",
+        "retrieved_utc": "2026-10-08T06:27:38.891086+00:00",
+        "etag": "\"4e41454b-62bda3bbc47f3\"",
+        "last_modified": "Thu, 16 Jan 2025 22:22:45 GMT",
+        "requested_limit": null,
+        "rows": null,
+        "bytes": 1312900427,
+        "stop_reason": "source_eof",
+        "complete_source": true,
+        "format": "original_file_bytes",
+        "http_resume_implemented": false,
+        "sha256": "a4a196a1c8e443e0942d8a5c79b5a5d2d68e29d483f2badec1126690b4b2790d"
+      },
+      "complete_source": true
+    },
+    "reviews": {
+      "name": "Electronics.jsonl.gz",
+      "sha256": "17b2c5f3736d4c0cb874859076436ebd4513f4c2396c528440a63204084e6a28",
+      "manifest": {
+        "source_url": "https://mcauleylab.ucsd.edu/public_datasets/data/amazon_2023/raw/review_categories/Electronics.jsonl.gz",
+        "resolved_url": "https://mcauleylab.ucsd.edu/public_datasets/data/amazon_2023/raw/review_categories/Electronics.jsonl.gz",
+        "retrieved_utc": "2026-10-08T08:22:16.334136+00:00",
+        "etag": "\"181e817db-62bdb26aa07c6\"",
+        "last_modified": "Thu, 16 Jan 2025 23:28:26 GMT",
+        "requested_limit": null,
+        "rows": null,
+        "bytes": 6474438619,
+        "stop_reason": "source_eof",
+        "complete_source": true,
+        "format": "original_file_bytes",
+        "http_resume_implemented": false,
+        "sha256": "17b2c5f3736d4c0cb874859076436ebd4513f4c2396c528440a63204084e6a28"
+      },
+      "complete_source": true
+    }
+  },
+  "settings_sha256": "3aeb96dfe815ba9fb9f77fa7f2ffdd745c2f73f406e89dba1532c512532516ed",
+  "seed": 42,
+  "source_coverage_complete": true,
+  "dataset_status": "candidate_pool_requires_human_QA_and_language_validation",
+  "metadata_scan": {
+    "rows": 1610012,
+    "decoded_bytes": 5246144134,
+    "invalid_records": 0,
+    "oversized_records": 0,
+    "malformed_records": 0,
+    "truncated_records": 0,
+    "eof_observed": true,
+    "stop_reason": "source_eof",
+    "error_lines": []
+  },
+  "review_scan": {
+    "rows": 43886944,
+    "decoded_bytes": 22616233652,
+    "invalid_records": 0,
+    "oversized_records": 0,
+    "malformed_records": 0,
+    "truncated_records": 0,
+    "eof_observed": true,
+    "stop_reason": "source_eof",
+    "error_lines": []
+  },
+  "join_counts": {
+    "not_in_selected_metadata_index": 43478204
+  },
+  "metadata_coverage_complete": true,
+  "sample_stop_reason": "completed",
+  "baseline_laptop_filter_decisions": {
+    "insufficient_laptop_evidence": 830326,
+    "excluded_category": 328872,
+    "accessory_or_ambiguous_title": 422642,
+    "laptop_category_and_title": 28172
+  },
+  "record_policy": "oversized lines skipped with bounded drainage; JSON errors counted; corrupt gzip fails",
+  "join_definition": "target match against selected metadata; not_in_selected_index conflates out-of-scope and absent metadata",
+  "groups": {
+    "laptop": {
+      "candidate_products": 28172,
+      "matched_reviews": 408740,
+      "valid_reviews": 408480,
+      "unique_products_with_reviews": 28161,
+      "average_review_length_words": 78.79227379553467,
+      "average_review_length_chars": 424.51709753231495,
+      "duplicate_percentage": "NOT_MEASURED",
+      "duplicate_definition": "repeat normalized casefolded text, additional occurrences / valid reviews",
+      "rating_distribution": {
+        "1": 75626,
+        "2": 28191,
+        "3": 32685,
+        "4": 64764,
+        "5": 207214
+      },
+      "language_distribution": "NOT_MEASURED",
+      "aspect_coverage_estimate": 42.10683509596553,
+      "aspect_method": "keyword hit AND >= min_absa_proxy_words; survey proxy, not ABSA ground truth",
+      "short_review_percentage": 9.406580493537016,
+      "word_length_bins": {
+        "5-19": 97915,
+        "20-99": 183922,
+        "100+": 88219,
+        "0-4": 38424
+      },
+      "known_brands": 369,
+      "brand_missing_reviews": 1156,
+      "largest_product_share_percentage": 1.252692910301606,
+      "proxy_class_distribution": {
+        "negative": 103817,
+        "neutral": 32685,
+        "positive": 271978
+      },
+      "clean_english_reviews": "NOT_MEASURED",
+      "near_duplicate_percentage": "NOT_MEASURED",
+      "invalid_reviews": {
+        "empty_or_invalid_text": 260
+      },
+      "missing_fields_on_matched": {},
+      "filter_decisions": {
+        "insufficient_laptop_evidence": 830326,
+        "excluded_category": 328872,
+        "accessory_or_ambiguous_title": 422642,
+        "laptop_category_and_title": 28172
+      },
+      "filter_validation": "unvalidated",
+      "sample_reviews": 5000,
+      "sample_rating_distribution": {
+        "5": 2529,
+        "2": 340,
+        "3": 405,
+        "1": 917,
+        "4": 809
+      },
+      "sample_unique_products": 2805,
+      "sample_max_reviews_per_product": 68,
+      "sample_budget_rejections": 0,
+      "sample_estimated_bytes": 12852423
+    }
+  },
+  "metadata_schema": {
+    "rows": 1610012,
+    "fields": {
+      "author": {
+        "types": {
+          "NoneType": 585,
+          "dict": 476
+        },
+        "absent": 1608951,
+        "null": 585
+      },
+      "average_rating": {
+        "types": {
+          "float": 1610012
+        },
+        "absent": 0,
+        "null": 0
+      },
+      "bought_together": {
+        "types": {
+          "NoneType": 1610012
+        },
+        "absent": 0,
+        "null": 1610012
+      },
+      "categories": {
+        "types": {
+          "list": 1610012
+        },
+        "absent": 0,
+        "null": 0
+      },
+      "description": {
+        "types": {
+          "list": 1610012
+        },
+        "absent": 0,
+        "null": 0
+      },
+      "details": {
+        "types": {
+          "dict": 1610012
+        },
+        "absent": 0,
+        "null": 0
+      },
+      "features": {
+        "types": {
+          "list": 1610012
+        },
+        "absent": 0,
+        "null": 0
+      },
+      "images": {
+        "types": {
+          "list": 1610012
+        },
+        "absent": 0,
+        "null": 0
+      },
+      "main_category": {
+        "types": {
+          "str": 1503678,
+          "NoneType": 106334
+        },
+        "absent": 0,
+        "null": 106334
+      },
+      "parent_asin": {
+        "types": {
+          "str": 1610012
+        },
+        "absent": 0,
+        "null": 0
+      },
+      "price": {
+        "types": {
+          "NoneType": 1083247,
+          "float": 526449,
+          "str": 316
+        },
+        "absent": 0,
+        "null": 1083247
+      },
+      "rating_number": {
+        "types": {
+          "int": 1610012
+        },
+        "absent": 0,
+        "null": 0
+      },
+      "store": {
+        "types": {
+          "str": 1600492,
+          "NoneType": 9520
+        },
+        "absent": 0,
+        "null": 9520
+      },
+      "subtitle": {
+        "types": {
+          "str": 851,
+          "NoneType": 210
+        },
+        "absent": 1608951,
+        "null": 210
+      },
+      "title": {
+        "types": {
+          "str": 1610012
+        },
+        "absent": 0,
+        "null": 0
+      },
+      "videos": {
+        "types": {
+          "list": 1610012
+        },
+        "absent": 0,
+        "null": 0
+      }
+    }
+  },
+  "review_schema": {
+    "rows": 43886944,
+    "fields": {
+      "asin": {
+        "types": {
+          "str": 43886944
+        },
+        "absent": 0,
+        "null": 0
+      },
+      "helpful_vote": {
+        "types": {
+          "int": 43886944
+        },
+        "absent": 0,
+        "null": 0
+      },
+      "images": {
+        "types": {
+          "list": 43886944
+        },
+        "absent": 0,
+        "null": 0
+      },
+      "parent_asin": {
+        "types": {
+          "str": 43886944
+        },
+        "absent": 0,
+        "null": 0
+      },
+      "rating": {
+        "types": {
+          "float": 43886944
+        },
+        "absent": 0,
+        "null": 0
+      },
+      "text": {
+        "types": {
+          "str": 43886944
+        },
+        "absent": 0,
+        "null": 0
+      },
+      "timestamp": {
+        "types": {
+          "int": 43886944
+        },
+        "absent": 0,
+        "null": 0
+      },
+      "title": {
+        "types": {
+          "str": 43886944
+        },
+        "absent": 0,
+        "null": 0
+      },
+      "user_id": {
+        "types": {
+          "str": 43886944
+        },
+        "absent": 0,
+        "null": 0
+      },
+      "verified_purchase": {
+        "types": {
+          "bool": 43886944
+        },
+        "absent": 0,
+        "null": 0
+      }
+    }
+  },
+  "resources": {
+    "elapsed_seconds": 998.8632698000874,
+    "estimated_index_bytes": 38002675,
+    "index_products": 28172,
+    "bytes_written_jsonl": 430753519,
+    "io_passes": {
+      "checksum": 1,
+      "metadata": 1,
+      "reviews": 1
+    },
+    "checksum_read_bytes": 7787339046,
+    "decoded_read_bytes": 27862377786,
+    "working_set_bytes": 442224640,
+    "peak_working_set_bytes": 442224640
+  },
+  "limitations": [
+    "prefixes are not representative",
+    "language NOT_MEASURED",
+    "keyword aspect coverage is heuristic",
+    "filters unvalidated",
+    "project remains laptop-only"
+  ],
+  "output_sha256": {
+    "laptop_sample.jsonl": "26bb2ce9153cded05651d632d6921b8f92c494c742805544315ca6e951c922ff",
+    "laptop_valid.jsonl": "d53d81507734d0537491c37ee665119e9b563ebaa4f9160a31b1ced438934d2a",
+    "products.jsonl": "8c359dbc575980fd31066de83c484110e7c5908fb590aeb5f44b2d757748912e"
+  },
+  "qa_rule_sha256": {
+    "Electronics_laptop_3aeb96dfe815.csv": "5454e6e8d591f646c4c239b99ca1941df3a5f8b90125ee9e19fb3e4ac9336062"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "relevant_tests": "27 passed in 0.24s",
+  "test_scope": "fixtures/parser, not missing original datasets",
+  "raw_files": [
+    ".gitkeep",
+    "laptops-trial.xml",
+    "laptops-trial.xml.manifest.json"
+  ],
+  "trial_sha256_matches_manifest": "0971a30e6add454d344ac011385fb8407db4193db048c8cd8e7a82908ac5172d",
+  "original_xml_downloaded": false,
+  "original_statistics": "NOT_MEASURED",
+  "ATE_ASC_original_readiness": "NOT_VERIFIED",
+  "mirror_source_review_consistency": "PASS",
+  "git_ignore": "three SemEval raw paths ignored (git check-ignore executed)",
+  "handoff_sections": "A-H",
+  "code_or_amazon_changes": false
+}

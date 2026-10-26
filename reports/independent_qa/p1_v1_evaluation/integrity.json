@@ -1,0 +1,85 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "path": "C:/Users/ADMIN/Desktop/code/project1/data/raw/amazon/meta_Electronics.jsonl.gz",
+      "sha256": "a4a196a1c8e443e0942d8a5c79b5a5d2d68e29d483f2badec1126690b4b2790d",
+      "expected": "a4a196a1c8e443e0942d8a5c79b5a5d2d68e29d483f2badec1126690b4b2790d",
+      "matches": true
+    },
+    {
+      "path": "C:/Users/ADMIN/Desktop/code/project1/data/raw/amazon/Electronics.jsonl.gz",
+      "sha256": "17b2c5f3736d4c0cb874859076436ebd4513f4c2396c528440a63204084e6a28",
+      "expected": "17b2c5f3736d4c0cb874859076436ebd4513f4c2396c528440a63204084e6a28",
+      "matches": true
+    },
+    {
+      "path": "data/interim/feasibility/electronics_full_laptop_30k/laptop_sample.jsonl",
+      "sha256": "26bb2ce9153cded05651d632d6921b8f92c494c742805544315ca6e951c922ff",
+      "expected": "26bb2ce9153cded05651d632d6921b8f92c494c742805544315ca6e951c922ff",
+      "matches": true
+    },
+    {
+      "path": "data/interim/feasibility/electronics_full_laptop_30k/laptop_valid.jsonl",
+      "sha256": "d53d81507734d0537491c37ee665119e9b563ebaa4f9160a31b1ced438934d2a",
+      "expected": "d53d81507734d0537491c37ee665119e9b563ebaa4f9160a31b1ced438934d2a",
+      "matches": true
+    },
+    {
+      "path": "data/interim/feasibility/electronics_full_laptop_30k/products.jsonl",
+      "sha256": "8c359dbc575980fd31066de83c484110e7c5908fb590aeb5f44b2d757748912e",
+      "expected": "8c359dbc575980fd31066de83c484110e7c5908fb590aeb5f44b2d757748912e",
+      "matches": true
+    },
+    {
+      "path": "data/raw/semeval/Laptop_Train_v2.xml",
+      "sha256": "efec2ed73b4efb83b47c697114d800149c558118884afa80362a6e975ba7248c",
+      "expected": "efec2ed73b4efb83b47c697114d800149c558118884afa80362a6e975ba7248c",
+      "matches": true
+    },
+    {
+      "path": "data/interim/semeval/train_sentences.jsonl",
+      "sha256": "06abcd3f33eb256a73b40bcbcfe3217854346c54c40cc952843db0a16d89011b",
+      "expected": "06abcd3f33eb256a73b40bcbcfe3217854346c54c40cc952843db0a16d89011b",
+      "matches": true
+    },
+    {
+      "path": "data/raw/semeval/Laptops_Test_Gold.xml",
+      "sha256": "aa3a30c9dd7e0eacf9b69e898eb4118a36c1b4f391a30a08dfc41a38d8b8745b",
+      "expected": "aa3a30c9dd7e0eacf9b69e898eb4118a36c1b4f391a30a08dfc41a38d8b8745b",
+      "matches": true
+    },
+    {
+      "path": "data/interim/semeval/test_sentences.jsonl",
+      "sha256": "42e17079730204223294e83c88ecfe961a225f5630347fe867d62c10e354de96",
+      "expected": "42e17079730204223294e83c88ecfe961a225f5630347fe867d62c10e354de96",
+      "matches": true
+    },
+    {
+      "path": "data/manual/independent_qa/p1_v1/product_annotation.csv",
+      "sha256": "134a1e746202337ebb4d5fab1927c791b037fc2feb08e9875d55002433e0c721",
+      "expected": "134a1e746202337ebb4d5fab1927c791b037fc2feb08e9875d55002433e0c721",
+      "matches": true
+    },
+    {
+      "path": "data/manual/independent_qa/p1_v1/review_annotation.csv",
+      "sha256": "ee3da05db04aeb0ef67a4ad71d428d5c72b419a7bb690acedb6bbc9048999f15",
+      "expected": "ee3da05db04aeb0ef67a4ad71d428d5c72b419a7bb690acedb6bbc9048999f15",
+      "matches": true
+    },
+    {
+      "path": "data/manual/independent_qa/p1_v1/private_predictions.json",
+      "sha256": "b4cad402e6ca3de5a1dbce5e208c9bce37ab0de4b3a9f6186c11d4ae8a5aaae6",
+      "expected": "b4cad402e6ca3de5a1dbce5e208c9bce37ab0de4b3a9f6186c11d4ae8a5aaae6",
+      "matches": true
+    },
+    {
+      "path": "data/manual/independent_qa/p1_v1/manifest.json",
+      "sha256": "2b3c93250e971c218f6b505606d0037619fc370fe9a4c933fcfe740c15aaa108",
+      "expected": "2b3c93250e971c218f6b505606d0037619fc370fe9a4c933fcfe740c15aaa108",
+      "matches": true
+    }
+  ],
+  "manifest_note": "Manifest hash captured this task; other expectations from frozen kit/run/SemEval manifests and annotation preflight.",
+  "end_of_task_sha256_recheck": "PASS: all 13 paths unchanged relative to captured hashes"
+}

@@ -1,0 +1,129 @@
+{
+  "status": "AUDIT_PASS",
+  "formula_or_weight_bug_found": false,
+  "strata": {
+    "review:random_keep": {
+      "N": 408480,
+      "n": 150,
+      "probability": 0.0003672150411280846,
+      "weight": 2723.2,
+      "counts": {
+        "TP": 150
+      }
+    },
+    "review:random_reject": {
+      "N": 43478204,
+      "n": 150,
+      "probability": 3.4500045126059024e-06,
+      "weight": 289854.69333333336,
+      "counts": {
+        "TN": 149,
+        "FN": 1
+      }
+    }
+  },
+  "estimates": {
+    "confusion_matrix": {
+      "TP": 408480.0,
+      "FP": 0.0,
+      "FN": 289854.69333333336,
+      "TN": 43188349.306666665
+    },
+    "precision": 1.0,
+    "recall": 0.5849344217028923,
+    "f1": 0.7381181374992468,
+    "confidence_level": 0.95,
+    "intervals": {
+      "precision": [
+        0.9712152369761066,
+        1.0
+      ],
+      "recall": [
+        0.1792338775259416,
+        0.9911531910143985
+      ],
+      "f1": [
+        0.30262037780062795,
+        0.9955569420647667
+      ]
+    },
+    "success_total_bounds": {
+      "KEEP": [
+        396722,
+        408480
+      ],
+      "REJECT": [
+        3646,
+        1816710
+      ]
+    },
+    "sampling_weights": {
+      "KEEP": 2723.2,
+      "REJECT_remaining": 289854.69333333336,
+      "certainty": 1
+    },
+    "kish_effective_sample_size": 152.8182669266305,
+    "method": "Equal-tail exact hypergeometric inversion per random stratum at alpha/2; Bonferroni joint bounds transformed monotonically to ratios. Conditional on fixed labels and valid SRS. Kish ESS is descriptive, not ratio-specific precision."
+  },
+  "planning": {
+    "pilot_prevalence": 0.006666666666666667,
+    "options": [
+      {
+        "relative_halfwidth_target": 1.0,
+        "planned_total": 573,
+        "additional": 423,
+        "expected_additional_FN_at_pilot_rate": 2.8200000000000003,
+        "remaining_frame_relative_halfwidth_at_pilot_rate": 1.1632445903718498,
+        "chance_at_least_one_FN_binomial_approx": 0.9409542072481293,
+        "hours_at_30_seconds_per_review": 3.525
+      },
+      {
+        "relative_halfwidth_target": 0.75,
+        "planned_total": 1018,
+        "additional": 868,
+        "expected_additional_FN_at_pilot_rate": 5.786666666666667,
+        "remaining_frame_relative_halfwidth_at_pilot_rate": 0.8120473672106863,
+        "chance_at_least_one_FN_binomial_approx": 0.996990681731943,
+        "hours_at_30_seconds_per_review": 7.233333333333333
+      },
+      {
+        "relative_halfwidth_target": 0.5,
+        "planned_total": 2290,
+        "additional": 2140,
+        "expected_additional_FN_at_pilot_rate": 14.266666666666667,
+        "remaining_frame_relative_halfwidth_at_pilot_rate": 0.5171712077024074,
+        "chance_at_least_one_FN_binomial_approx": 0.9999993928164135,
+        "hours_at_30_seconds_per_review": 17.833333333333332
+      },
+      {
+        "relative_halfwidth_target": 0.25,
+        "planned_total": 9157,
+        "additional": 9007,
+        "expected_additional_FN_at_pilot_rate": 60.046666666666674,
+        "remaining_frame_relative_halfwidth_at_pilot_rate": 0.25208740280414577,
+        "chance_at_least_one_FN_binomial_approx": 1.0,
+        "hours_at_30_seconds_per_review": 75.05833333333334
+      }
+    ],
+    "minimum_additional_for_95pct_detection_at_pilot_rate": 448,
+    "chosen_additional": 868,
+    "selection_rationale": "Middle total-review-budget scenario: conventional pilot-rate planning targets nominal 75% relative half-width at total1018, hence 868 new after150 existing. Correct conditional complement estimator gives nominal remaining-frame half-width81.2%, not75%; this is an annotation-budget compromise, not a guaranteed precision or recall acceptance threshold. Rare-event Wald planning is approximate; pilot-dependent n requires complement-frame estimation.",
+    "pilot_95_prevalence_interval": [
+      0.00016877422075668074,
+      0.0365831118507103
+    ],
+    "detection_probability_at_pilot_interval_endpoints_binomial_approx": [
+      0.1362815120342884,
+      0.9999999999999911
+    ]
+  },
+  "scope": "Product random frame: saved KEEP products. Review inference frame: valid saved KEEP plus all metadata-unselected REJECT source records. Excludes selected-but-invalid records; does not estimate recall of whole raw-source final-validity pipeline. Diagnostic review frame is KEEP-only; not a false-negative search.",
+  "excluded_selected_but_invalid": 260,
+  "label_provenance": "human_verified_after_ai_assistance",
+  "warnings": [
+    "Intervals assume fixed correct human labels, valid SRS and frozen population. Do not cover AI anchoring.",
+    "Diagnostic/uncertain samples never treated as negative or pooled into representative estimates.",
+    "Nonparametric bootstrap is unreliable with one FN; zero-event replicates collapse recall to 1.",
+    "Sample-size planning uses uncertain pilot rate; selected nominal precision is a planning target, not approved acceptance."
+  ]
+}

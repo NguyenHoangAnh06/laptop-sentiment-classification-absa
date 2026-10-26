@@ -1,0 +1,16 @@
+{
+  "python": "3.13.12",
+  "platform": "Windows",
+  "packages": {
+    "scikit-learn": "1.7.2",
+    "scipy": "1.18.1",
+    "tokenizers": "0.22.1",
+    "pandas": "2.3.3",
+    "pyarrow": "23.0.1",
+    "numpy": "2.2.6",
+    "joblib": "1.6.0",
+    "huggingface-hub": "1.33.0"
+  },
+  "requirements_sha256": "76c41a6c4c27583f4cc315e696174f1834f52c68bbb6148abd10dabef083bf2b",
+  "validator_sha256": "b63b985dfbf7a77467bced044ea2aa3415cef0204a7744ff764c0589bb2a21c2"
+}

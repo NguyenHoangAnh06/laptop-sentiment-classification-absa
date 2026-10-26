@@ -1,0 +1,46 @@
+{
+  "status": "BLOCKED_VALIDATION",
+  "annotation_sha256": "0b972c4337e552dd322a201b1f8746bc5ac17e680c88a36a7e21b846f92a4d22",
+  "rows": 868,
+  "encoding": "strict UTF-8 (optional BOM)",
+  "types": "CSV fields preserved as strings, including all IDs",
+  "checks": {
+    "schema": true,
+    "sample_count": true,
+    "unique_annotation_ids": true,
+    "unique_review_ids": true,
+    "original_sample_ids": true,
+    "immutable_source_fields": true,
+    "no_v1_overlap": true,
+    "sidecar_checksum": true,
+    "pilot_evaluation_checksum": true,
+    "pilot_manifest_checksum": true,
+    "sampling_design": true
+  },
+  "submitted_label_counts": {
+    "REJECT": 867,
+    "ACCEPT": 1
+  },
+  "missing_values_by_column": {
+    "annotation_id": 0,
+    "review_id": 0,
+    "product_id": 0,
+    "review_title": 0,
+    "review_text": 0,
+    "title": 0,
+    "categories": 0,
+    "description": 0,
+    "features": 0,
+    "details": 0,
+    "source_evidence": 0,
+    "product_url": 0,
+    "human_label": 0,
+    "human_evidence": 0,
+    "human_notes": 0,
+    "human_error_reason": 868
+  },
+  "issue_rows": 868,
+  "conflicting_canonical_product_labels": [],
+  "label_mapping": "NOT_APPLIED; ACCEPT/REJECT require user interpretation confirmation",
+  "official_evaluation": "NOT_RUN; human reviewer identity/process declaration required"
+}

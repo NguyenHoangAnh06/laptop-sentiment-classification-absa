@@ -1,0 +1,8 @@
+{
+  "manifest_sha256": "80a7ec0f80b4d8db7689448829fec97e4c505c4eed5af733ad88b1ec0a4bf82c",
+  "counts": {
+    "train": 21000,
+    "validation": 4500,
+    "test": 4500
+  }
+}

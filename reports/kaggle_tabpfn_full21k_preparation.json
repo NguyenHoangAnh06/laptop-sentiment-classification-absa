@@ -1,0 +1,84 @@
+{
+  "status": "READY FOR KAGGLE",
+  "bundle_path": "cloud/kaggle_tabpfn_full21k",
+  "size_bytes": 56446254,
+  "file_count": 27,
+  "zip_path": "cloud/kaggle_tabpfn_full21k.zip",
+  "zip_size_bytes": 42957687,
+  "zip_sha256": "d129d02fecbb873d57220c787bed6172addaa2acd3a02f8c5efd474a63f4a6b8",
+  "largest_files": [
+    {
+      "path": "data/embeddings/train.npy",
+      "bytes": 32256128
+    },
+    {
+      "path": "data/ids/train.npy",
+      "bytes": 7056128
+    },
+    {
+      "path": "data/embeddings/test.npy",
+      "bytes": 6912128
+    },
+    {
+      "path": "data/embeddings/validation.npy",
+      "bytes": 6912128
+    },
+    {
+      "path": "data/ids/test.npy",
+      "bytes": 1512128
+    }
+  ],
+  "tests": {
+    "existing_passed": 249,
+    "new_passed": 27,
+    "total_passed": 276,
+    "failed": 0,
+    "groups": [
+      256,
+      12,
+      8
+    ]
+  },
+  "secret_scan": "PASS",
+  "standalone_extracted_zip_verify": "PASS",
+  "sdk_version_resolution": "PASS",
+  "preserved_files": 155,
+  "legacy_preserved_files": 53,
+  "cloud_run": "PENDING",
+  "full21k_local_run": false,
+  "commands": [
+    ".venv/Scripts/python.exe -m scripts.prepare_kaggle_tabpfn",
+    ".venv/Scripts/python.exe -m scripts.test_all",
+    ".venv/Scripts/python.exe -B -m pytest -q tests/test_kaggle_bundle.py",
+    ".venv/Scripts/python.exe -B -m pip check"
+  ],
+  "files_created": [
+    "config/cloud_experiment.yaml",
+    "config/expected_manifest.json",
+    "data/embeddings/test.npy",
+    "data/embeddings/train.npy",
+    "data/embeddings/validation.npy",
+    "data/ids/test.npy",
+    "data/ids/train.npy",
+    "data/ids/validation.npy",
+    "data/labels/test.npy",
+    "data/labels/train.npy",
+    "data/labels/validation.npy",
+    "kaggle_notebook.ipynb",
+    "metadata/bundle_manifest.json",
+    "metadata/hashes.json",
+    "metadata/label_mapping.json",
+    "output/.gitkeep",
+    "README.md",
+    "requirements.txt",
+    "scripts/common.py",
+    "scripts/metrics.py",
+    "scripts/notebook_steps.py",
+    "scripts/package_results.py",
+    "scripts/redaction.py",
+    "scripts/resource_probe.py",
+    "scripts/run_tabpfn_cloud.py",
+    "scripts/verify_bundle.py",
+    "scripts/versions.py"
+  ]
+}

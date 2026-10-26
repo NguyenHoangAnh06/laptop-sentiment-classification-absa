@@ -1,0 +1,2 @@
+# Giữ byte gốc để checksum source/report lịch sử không đổi khi Git chuyển CRLF/LF.
+* -text

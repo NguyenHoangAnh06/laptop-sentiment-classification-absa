@@ -1,0 +1,6 @@
+scope,indicator,numerator,denominator,share
+product,products_total,9080,9080,1
+product,singleton_products,5025,9080,0.553414096916
+product,top100_review_share,5802,30000,0.1934
+product,maximum_reviews_per_product,100,,
+brand,top5_review_share,23837,30000,0.794566666667

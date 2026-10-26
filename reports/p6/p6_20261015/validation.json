@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "protected_inputs_unchanged": 181,
+  "reload_validation_macro_f1": 0.7346463550090223,
+  "deterministic_text_inference": "PASS",
+  "test_prediction_passes": 1,
+  "test_used_for_selection": false
+}

@@ -1,0 +1,8 @@
+finding,later_phase,decision,limits
+Neutral minority,P5/P6/P7,Macro F1 và per-class/neutral F1; thử weights chỉ train/validation,Quan sát cũ; không chứng minh causal imbalance
+Median/IQR và đuôi dài,P4/P6,Giữ context/negation; đối chiếu tokenizer max length đã khóa,Không đổi max_length bằng full-data EDA
+Product/brand concentration,P4,Product/variant-aware split; kiểm ID/text/near overlap,P4 đã thực hiện; EDA không chứng minh zero semantic leakage
+Phrase phân biệt theo lớp,P7,"Ngữ cảnh chẩn đoán phủ định, failure, mixed wording",Không dùng full-data phrases làm selected features
+Rating là proxy,P7/P10,Human diagnosis; giữ independent gold riêng,"P7 là xác nhận về sau, không thông tin P3 đã biết"
+Aspect-like language đa chủ đề,P8/P9,ATE span-level + ASC theo occurrence,"Động lực, không gold ABSA từ keyword"
+Verified-group khác cả độ dài,P7,Nêu giới hạn composition; không metadata feature hoặc lọc lại,"Liên hệ mô tả, không causal quality label"

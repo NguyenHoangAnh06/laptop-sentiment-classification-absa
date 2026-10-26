@@ -1,0 +1,19 @@
+version: p3_refinement_v1
+task_id: P3-REFINE-01
+date: '2026-10-26'
+source_directory: reports/p3/20261009_verified
+output_directory: reports/p3_refinement_20261026
+lexical:
+  minimum_class_documents: 30
+  phrase_length: 2
+  top_per_class: 5
+  failure_top: 5
+  failure_pattern: '\b(?:stopped|broke|broken|dead|defect\w*|fail\w*|return\w*|refund\w*)\b'
+selection_order: [prevalence_difference_desc, documents_desc, term_asc]
+policy:
+  dataset_changed: false
+  split_changed: false
+  model_changed: false
+  canonical_metrics_changed: false
+  human_labels_created: false
+  historical_artifacts_preserved: true

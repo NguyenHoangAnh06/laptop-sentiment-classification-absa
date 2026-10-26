@@ -1,0 +1,68 @@
+{
+  "cell_metadata": {
+    "url": "https://mcauleylab.ucsd.edu/public_datasets/data/amazon_2023/raw/meta_categories/meta_Cell_Phones_and_Accessories.jsonl.gz",
+    "status": 200,
+    "compressed_bytes": 857990660,
+    "etag": "\"3323e604-62bda1e7e1b15\"",
+    "accept_ranges": "bytes",
+    "first_row_keys": [
+      "main_category",
+      "title",
+      "average_rating",
+      "rating_number",
+      "features",
+      "description",
+      "price",
+      "images",
+      "videos",
+      "store",
+      "categories",
+      "details",
+      "parent_asin",
+      "bought_together"
+    ],
+    "categories": [
+      "Cell Phones & Accessories",
+      "Cases, Holsters & Sleeves",
+      "Basic Cases"
+    ],
+    "title": "ARAREE Slim Diary Cell Phone Case for Samsung Galaxy Note 5 - Retail Packaging - Coral Pink",
+    "parent_asin_type": "str"
+  },
+  "cell_reviews": {
+    "url": "https://mcauleylab.ucsd.edu/public_datasets/data/amazon_2023/raw/review_categories/Cell_Phones_and_Accessories.jsonl.gz",
+    "status": 200,
+    "compressed_bytes": 2532539010,
+    "etag": "\"96f37a82-62bdadc715168\"",
+    "accept_ranges": "bytes",
+    "first_row_keys": [
+      "rating",
+      "title",
+      "text",
+      "images",
+      "asin",
+      "parent_asin",
+      "user_id",
+      "timestamp",
+      "helpful_vote",
+      "verified_purchase"
+    ],
+    "categories": null,
+    "title": "No white background! It\u2019s clear!",
+    "parent_asin_type": "str"
+  },
+  "electronics_metadata": {
+    "url": "https://mcauleylab.ucsd.edu/public_datasets/data/amazon_2023/raw/meta_categories/meta_Electronics.jsonl.gz",
+    "status": 200,
+    "compressed_bytes": 1312900427,
+    "etag": "\"4e41454b-62bda3bbc47f3\"",
+    "accept_ranges": "bytes"
+  },
+  "electronics_reviews": {
+    "url": "https://mcauleylab.ucsd.edu/public_datasets/data/amazon_2023/raw/review_categories/Electronics.jsonl.gz",
+    "status": 200,
+    "compressed_bytes": 6474438619,
+    "etag": "\"181e817db-62bdb26aa07c6\"",
+    "accept_ranges": "bytes"
+  }
+}

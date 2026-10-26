@@ -1,0 +1,64 @@
+{
+  "status": "PASS",
+  "full_token_reencode": "PASS",
+  "isolation": {
+    "review_id": {
+      "train__validation": 0,
+      "train__test": 0,
+      "validation__test": 0
+    },
+    "parent_asin": {
+      "train__validation": 0,
+      "train__test": 0,
+      "validation__test": 0
+    },
+    "asin": {
+      "train__validation": 0,
+      "train__test": 0,
+      "validation__test": 0
+    },
+    "split_group_id": {
+      "train__validation": 0,
+      "train__test": 0,
+      "validation__test": 0
+    },
+    "text": {
+      "train__validation": 0,
+      "train__test": 0,
+      "validation__test": 0
+    },
+    "clean_text_sha256": {
+      "train__validation": 0,
+      "train__test": 0,
+      "validation__test": 0
+    }
+  },
+  "max_length": 512,
+  "vocab_size": 30522,
+  "counts": {
+    "train": {
+      "rows": 21000,
+      "classes": [
+        5781,
+        1842,
+        13377
+      ]
+    },
+    "validation": {
+      "rows": 4500,
+      "classes": [
+        1239,
+        395,
+        2866
+      ]
+    },
+    "test": {
+      "rows": 4500,
+      "classes": [
+        1239,
+        394,
+        2867
+      ]
+    }
+  }
+}

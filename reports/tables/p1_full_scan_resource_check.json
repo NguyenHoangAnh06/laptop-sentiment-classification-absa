@@ -1,0 +1,29 @@
+{
+  "checked_utc": "2026-10-08T05:34:42.618232+00:00",
+  "network_policy": "HEAD only; no response bodies downloaded",
+  "disk_free_bytes": 77582667776,
+  "ram_total_bytes": 16849264640,
+  "ram_available_bytes": 2152431616,
+  "python_process": {
+    "working_set_bytes": 26931200,
+    "peak_working_set_bytes": 26931200
+  },
+  "sources": {
+    "metadata_url": {
+      "url": "https://mcauleylab.ucsd.edu/public_datasets/data/amazon_2023/raw/meta_categories/meta_Electronics.jsonl.gz",
+      "status": 200,
+      "compressed_bytes": 1312900427,
+      "etag": "\"4e41454b-62bda3bbc47f3\"",
+      "last_modified": "Thu, 16 Jan 2025 22:22:45 GMT",
+      "accept_ranges": "bytes"
+    },
+    "reviews_url": {
+      "url": "https://mcauleylab.ucsd.edu/public_datasets/data/amazon_2023/raw/review_categories/Electronics.jsonl.gz",
+      "status": 200,
+      "compressed_bytes": 6474438619,
+      "etag": "\"181e817db-62bdb26aa07c6\"",
+      "last_modified": "Thu, 16 Jan 2025 23:28:26 GMT",
+      "accept_ranges": "bytes"
+    }
+  }
+}

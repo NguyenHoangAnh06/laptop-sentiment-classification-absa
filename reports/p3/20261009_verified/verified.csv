@@ -1,0 +1,3 @@
+verified_purchase,reviews,products,mean_rating,median_words,helpful_mean,helpful_median,helpful_nonzero_share,verified_share,negative_count,negative_share,neutral_count,neutral_share,positive_count,positive_share,negative_ci_low,negative_ci_high,sufficient_support
+False,3650,2397,3.270410959,102,5.428219178,1,0.6131506849,0,1335,0.3657534247,350,0.09589041096,1965,0.5383561644,0.3502769664,0.3815121626,True
+True,26350,8115,3.681973435,38,2.873320683,0,0.4758633776,1,6924,0.2627703985,2281,0.0865654649,17145,0.6506641366,0.2574909369,0.2681190195,True

@@ -1,0 +1,64 @@
+{
+  "status": "VALIDATION_ONLY_COMPLETE",
+  "selected": {
+    "mode": "unweighted",
+    "epoch": 3,
+    "validation_macro_f1": 0.7546642111046088,
+    "model_sha256": "72d24f319ae6f6f0f7bead7e78f6b54904b66d1a4b689f1b526c2ba67fdad1ac",
+    "wall_seconds": 552.3404765999876
+  },
+  "validation": {
+    "accuracy": 0.7993630573248408,
+    "macro_f1": 0.7546642111046088,
+    "weighted_f1": 0.7999276937267634,
+    "per_class": {
+      "negative": {
+        "precision": 0.8518518518518519,
+        "recall": 0.8646616541353384,
+        "f1": 0.8582089552238806,
+        "support": 133
+      },
+      "neutral": {
+        "precision": 0.532258064516129,
+        "recall": 0.5409836065573771,
+        "f1": 0.5365853658536586,
+        "support": 61
+      },
+      "positive": {
+        "precision": 0.8803418803418803,
+        "recall": 0.8583333333333333,
+        "f1": 0.869198312236287,
+        "support": 120
+      }
+    },
+    "confusion_matrix": [
+      [
+        115,
+        16,
+        2
+      ],
+      [
+        16,
+        33,
+        12
+      ],
+      [
+        4,
+        13,
+        103
+      ]
+    ],
+    "confusion_matrix_order": [
+      "negative",
+      "neutral",
+      "positive"
+    ]
+  },
+  "model_directory": "artifacts/models/p9_exp01_deberta_20261026_v2_seed44/unweighted/best",
+  "selection_lock_sha256": "02f39e50e45a8de8ff5093b073a9002037c5454ff3f77161be48c353aef2ab97",
+  "reload_validation_predictions_identical": true,
+  "test_opened": false,
+  "test_tuning": false,
+  "runtime_seconds": 558.7870884002186,
+  "seed": 44
+}

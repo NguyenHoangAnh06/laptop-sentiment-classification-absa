@@ -1,0 +1,80 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.env
+.env.*
+!.env.example
+.ipynb_checkpoints/
+.qodo/
+data/**
+!data/**/
+!data/**/.gitkeep
+artifacts/**
+!artifacts/**/
+!artifacts/**/.gitkeep
+*.egg-info/
+build/
+dist/
+
+# Mẫu lỗi chứa trích đoạn review; chỉ giữ cục bộ để phân tích.
+reports/p7_error_examples.csv
+
+# Gói dữ liệu cloud private và ZIP upload chỉ lưu cục bộ.
+cloud/kaggle_tabpfn_full21k/data/
+cloud/kaggle_tabpfn_full21k/output/*
+!cloud/kaggle_tabpfn_full21k/output/.gitkeep
+cloud/kaggle_tabpfn_full21k.zip
+
+# ZIP kết quả cloud nhập riêng, không đưa vào Git.
+cloud/results/*.zip
+
+# Snapshot công khai: dữ liệu, trọng số và binary phát sinh ở mọi vị trí.
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.joblib
+*.ubj
+*.npy
+*.npz
+*.parquet
+*.sqlite
+*.gz
+*.zip
+*.xml
+*.pem
+*.key
+*.p12
+credentials.json
+kaggle.json
+.netrc
+.pypirc
+id_rsa
+id_ed25519
+.cache/
+.mypy_cache/
+.ruff_cache/
+.vscode/
+.idea/
+*.tmp
+*.temp
+
+# Trích đoạn review và metadata gốc: chưa có quyền redistribution.
+reports/**/p7_error_examples.csv
+reports/**/noise_examples.csv
+reports/**/theme_contexts.csv
+reports/tables/p1_brand_diversity_v1/products.csv
+reports/independent_qa/**/comparisons.csv
+reports/independent_qa/**/errors.csv
+reports/independent_qa/p1_v2_evaluation_20261009/evaluation.json
+reports/independent_qa/p1_v2_validation_20261009/semeval_revalidation.json
+reports/tables/p1_semeval_normalization.json
+reports/p3/**/*.ipynb
+reports/p3/P3_tong_hop_20261019.html
+
+# Kế hoạch Word lịch sử không cần thiết cho methodology hiện hành.
+/customer_sentiment_analysis_plan.docx
+
+# Inventory đầy đủ và QA bảo mật chỉ ở máy; summary công khai ở namespace khác.
+/reports/github_publication_local/

@@ -1,0 +1,23 @@
+{
+  "python": "3.13.12 | packaged by Anaconda, Inc. | (main, Feb 24 2026, 16:05:56) [MSC v.1942 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.22621-SP0",
+  "packages": {
+    "torch": "2.8.0+cu128",
+    "transformers": "5.0.0",
+    "xgboost": "3.4.1",
+    "tabm": "0.0.3",
+    "tabpfn": "9.2.0",
+    "sentence-transformers": "6.2.0",
+    "scikit-learn": "1.7.2"
+  },
+  "cuda": "12.8",
+  "cuda_available": true,
+  "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "gpu_memory_bytes": 6438780928,
+  "tabpfn_checkpoints": {
+    "E03_tabpfn_v3_embedding": "C:\\Users\\ADMIN\\AppData\\Roaming\\tabpfn\\tabpfn-v3-classifier-v3_default.ckpt",
+    "E04_tabpfn_v35_embedding": "C:\\Users\\ADMIN\\AppData\\Roaming\\tabpfn\\tabpfn-v3.5-20260909.safetensors"
+  },
+  "pip_check": "No broken requirements found.",
+  "status": "PASS"
+}

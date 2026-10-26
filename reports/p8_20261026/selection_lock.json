@@ -1,0 +1,12 @@
+{
+  "selected_epoch": 4,
+  "selection_metric": "validation_entity_f1",
+  "selected_value": 0.7994011976047904,
+  "test_used_for_selection": false,
+  "selection_complete_before_test": true,
+  "tie_break": "earliest_epoch",
+  "model_sha256": "0a234b7d9a9c231d6e3102273e1475e57cab0d136afb7e7b2d39cbcd0025d120",
+  "training_identity_sha256": "a5d9b8ecb5e1e3fe66fc6a586866dd700f63a9924dbd306cd6298075eff30a93",
+  "data_manifest_sha256": "8967c69760a85b050a12459e8bf9222bfe983e1565209e5467b8f3c884918a34",
+  "history_sha256": "9510aff64a3cc4f5747ec9273c929bf0e95aaa2fe076042f9a4752848a8ccaef"
+}

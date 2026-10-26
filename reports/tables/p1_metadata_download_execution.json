@@ -1,0 +1,25 @@
+{
+  "metadata_download_authorized": true,
+  "download_started_utc": "2026-10-08T06:05:46.1224877Z",
+  "reviews_download_authorized": false,
+  "process_id": 24812,
+  "download_status": "DONE",
+  "checksum_verified": true,
+  "manifest": {
+    "source_url": "https://mcauleylab.ucsd.edu/public_datasets/data/amazon_2023/raw/meta_categories/meta_Electronics.jsonl.gz",
+    "resolved_url": "https://mcauleylab.ucsd.edu/public_datasets/data/amazon_2023/raw/meta_categories/meta_Electronics.jsonl.gz",
+    "retrieved_utc": "2026-10-08T06:27:38.891086+00:00",
+    "etag": "\"4e41454b-62bda3bbc47f3\"",
+    "last_modified": "Thu, 16 Jan 2025 22:22:45 GMT",
+    "requested_limit": null,
+    "rows": null,
+    "bytes": 1312900427,
+    "stop_reason": "source_eof",
+    "complete_source": true,
+    "format": "original_file_bytes",
+    "http_resume_implemented": false,
+    "sha256": "a4a196a1c8e443e0942d8a5c79b5a5d2d68e29d483f2badec1126690b4b2790d"
+  },
+  "download_transfer_elapsed_seconds": 1312.768599,
+  "elapsed_definition": "process start to manifest retrieval timestamp; includes connection/setup/transfer, excludes final checksum verification"
+}

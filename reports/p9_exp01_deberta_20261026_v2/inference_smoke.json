@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "device": "cpu",
+  "source_split": "validation",
+  "sentence_uid": "train:1047",
+  "gold_aspect_inputs": 4,
+  "gold_aspect_output_labels": [
+    "neutral",
+    "neutral",
+    "neutral",
+    "negative"
+  ],
+  "pipeline_aspects": 3,
+  "confidence_null": true,
+  "empty_aspects_pass": true,
+  "unsupported_vi_rejected": true,
+  "p8_retrained": false,
+  "test_opened": false
+}

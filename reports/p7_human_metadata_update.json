@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "annotation_before_sha256": "eec0688be209da851795cfeffc427308d5c0508c96cfd43ee825c4c24905c797",
+  "annotation_after_sha256": "69a7cd3e58b5b997a69005fcb5524b84bc46b6369d43458a05032145d9233cc8",
+  "filled_only_empty_fields": {
+    "reviewer_id": 360,
+    "reviewed_at": 360
+  },
+  "other_fields_unchanged": true,
+  "request_date": "2026-10-25"
+}

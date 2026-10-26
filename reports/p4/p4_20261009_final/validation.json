@@ -1,0 +1,147 @@
+{
+  "status": "PASS",
+  "source_rows": 30000,
+  "assigned_rows": 30000,
+  "excluded_rows": 0,
+  "cross_split_overlaps": {
+    "review_id": {
+      "train__validation": 0,
+      "train__test": 0,
+      "validation__test": 0
+    },
+    "parent_asin": {
+      "train__validation": 0,
+      "train__test": 0,
+      "validation__test": 0
+    },
+    "asin": {
+      "train__validation": 0,
+      "train__test": 0,
+      "validation__test": 0
+    },
+    "split_group_id": {
+      "train__validation": 0,
+      "train__test": 0,
+      "validation__test": 0
+    },
+    "text": {
+      "train__validation": 0,
+      "train__test": 0,
+      "validation__test": 0
+    },
+    "clean_text_sha256": {
+      "train__validation": 0,
+      "train__test": 0,
+      "validation__test": 0
+    },
+    "normalized_text": {
+      "train__validation": 0,
+      "train__test": 0,
+      "validation__test": 0
+    },
+    "classical_text": {
+      "train__validation": 0,
+      "train__test": 0,
+      "validation__test": 0
+    }
+  },
+  "near_cross_split_pairs": 0,
+  "near_holdout_pairs": 0,
+  "qa_id_overlap": 0,
+  "qa_text_overlap": 0,
+  "diagnostic_id_overlap": 0,
+  "diagnostic_text_overlap": 0,
+  "counts": {
+    "train": {
+      "rows": 21000,
+      "products": 6357,
+      "labels": {
+        "negative": 5781,
+        "neutral": 1842,
+        "positive": 13377
+      }
+    },
+    "validation": {
+      "rows": 4500,
+      "products": 1361,
+      "labels": {
+        "negative": 1239,
+        "neutral": 395,
+        "positive": 2866
+      }
+    },
+    "test": {
+      "rows": 4500,
+      "products": 1362,
+      "labels": {
+        "negative": 1239,
+        "neutral": 394,
+        "positive": 2867
+      }
+    }
+  },
+  "user_overlap_diagnostic": {
+    "train__validation": 35,
+    "train__test": 37,
+    "validation__test": 6
+  },
+  "user_isolation_required": false,
+  "features": [
+    "text"
+  ],
+  "rating_metadata_features": false,
+  "p10_gold_status": "NOT_CREATED; future independent gold must exclude training IDs/text groups",
+  "near_audit": {
+    "method": "32 stable uint64 MinHash components,8 bands x4; exact hashed word-triple Jaccard>=threshold",
+    "threshold": 0.9,
+    "comparisons": 36,
+    "pairs": 0,
+    "groups": 0,
+    "comparison_cap_reached": false,
+    "limits": "Lexical approximate candidate search, not exhaustive semantic detection. Short<10word texts skipped. Pairs retained with group IDs for P4 leakage control; no sentiment-changing near-dedup deletion.",
+    "source_rows": 30000,
+    "holdout_texts": 1518,
+    "reused_p2_near_pairs": 0,
+    "new_scope": "cross-split and QA/noise holdout control"
+  },
+  "reproducibility": "PASS; reversed input order gives identical assignments",
+  "qa_product_overlap_diagnostic": {
+    "train": 177,
+    "validation": 40,
+    "test": 39
+  },
+  "qa_products_policy": "P1 domain QA products may overlap; no QA labels used as sentiment labels",
+  "label_provenance": "rating-derived proxy",
+  "source_immutable": true,
+  "protected41": "PASS",
+  "completed_input_snapshot_files": 121,
+  "completed_inputs_preserved": true,
+  "features_schema": "text-only TF-IDF/BERT; label_id is separate target, rating/metadata absent",
+  "preprocessing_fit": "TF-IDF vocabulary/IDF and max length selected on train only",
+  "pretrained_tokenizer_fit": false,
+  "feature_reload": "PASS",
+  "max_sequence_length": 512,
+  "tokenization": {
+    "train": {
+      "rows": 21000,
+      "truncated_reviews": 654,
+      "truncation_share": 0.031142857142857142,
+      "unknown_token_share": 7.098584570821483e-05,
+      "tokens_saved": 2099010
+    },
+    "validation": {
+      "rows": 4500,
+      "truncated_reviews": 141,
+      "truncation_share": 0.03133333333333333,
+      "unknown_token_share": 4.482023723351568e-05,
+      "tokens_saved": 446227
+    },
+    "test": {
+      "rows": 4500,
+      "truncated_reviews": 137,
+      "truncation_share": 0.030444444444444444,
+      "unknown_token_share": 0.00011176395452803679,
+      "tokens_saved": 438424
+    }
+  }
+}

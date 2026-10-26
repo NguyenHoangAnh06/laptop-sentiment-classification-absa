@@ -1,0 +1,28 @@
+{
+  "status": "PROMOTED",
+  "selection_metric": "validation_macro_f1",
+  "primary_seed": 42,
+  "baseline_validation_macro_f1": 0.7141454682092473,
+  "candidate_validation_macro_f1": 0.7774672584799167,
+  "delta": 0.06332179027066942,
+  "selected": {
+    "mode": "unweighted",
+    "epoch": 5,
+    "validation_macro_f1": 0.7774672584799167,
+    "model_sha256": "3ea6a9e1f5918722532c88906ea5c461b46419886f5d861a58ae1964e460967a",
+    "wall_seconds": 975.088649299927
+  },
+  "test_used_for_selection": false,
+  "stability_seeds": [
+    43,
+    44
+  ],
+  "stability_role": "Phân tích độ ổn định riêng, không chọn lại seed hoặc thay primary seed42 bằng mean",
+  "canonical_current": "microsoft/deberta-v3-base",
+  "decision": "PROMOTE DeBERTa-v3-base as P9 canonical ASC model.",
+  "reason": "Validation Macro F1 tăng0,063322; F1 cả3lớp validation tăng, neutralF1 tăng0,083673. Seed43/44 hỗ trợ độ ổn định; giữ primary seed42, không chọn theo test/joint hoặc best seed.",
+  "model_directory": "artifacts/models/p9_exp01_deberta_20261026_v2/unweighted/best",
+  "previous_model_directory": "artifacts/models/p9_20261026/unweighted/best",
+  "previous_report": "reports/p9_aspect_sentiment.md",
+  "previous_artifacts_retained": true
+}

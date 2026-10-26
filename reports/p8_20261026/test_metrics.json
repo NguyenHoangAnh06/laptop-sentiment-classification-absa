@@ -1,0 +1,15 @@
+{
+  "entity_precision": 0.7857142857142857,
+  "entity_recall": 0.8241590214067278,
+  "entity_f1": 0.8044776119402985,
+  "true_positive": 539,
+  "false_positive": 147,
+  "false_negative": 115,
+  "gold_entities": 654,
+  "predicted_entities": 686,
+  "sentences": 800,
+  "convention": "micro_exact_character_span_no_partial_credit",
+  "token_accuracy": 0.9743812076304588,
+  "labeled_wordpieces": 12686,
+  "orphan_I_predictions_repaired": 30
+}

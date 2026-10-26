@@ -1,0 +1,4 @@
+{"command": ".venv/Scripts/python.exe -B -m scripts.test_all", "exit_code": 0}
+{"command": ".venv/Scripts/python.exe -m pip check", "exit_code": 0}
+{"command": ".venv/Scripts/python.exe -m compileall -q src scripts tests", "exit_code": 0}
+{"status": "VERIFIED", "selected": {"mode": "unweighted", "epoch": 5, "validation_macro_f1": 0.7774672584799167, "model_sha256": "3ea6a9e1f5918722532c88906ea5c461b46419886f5d861a58ae1964e460967a", "wall_seconds": 975.088649299927}, "validation_delta_macro_f1": 0.06332179027066942, "paired": {"validation": {"fixed": 36, "regressed": 17, "both_correct": 218, "both_wrong": 43}, "test": {"fixed": 49, "regressed": 33, "both_correct": 471, "both_wrong": 85}}}

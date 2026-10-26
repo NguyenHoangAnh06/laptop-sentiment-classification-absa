@@ -1,0 +1,4 @@
+sentiment,reviews,q25_words,median_words,q75_words,iqr_words
+negative,8259,25,50,101,76
+neutral,2631,25,56,118,93
+positive,19110,17,37,89,72

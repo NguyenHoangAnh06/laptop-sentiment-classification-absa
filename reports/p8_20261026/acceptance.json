@@ -1,0 +1,141 @@
+{
+  "status": "DONE",
+  "readiness": "READY FOR P9",
+  "date": "2026-10-26",
+  "tasks": {
+    "P8-T01": "PASS",
+    "P8-T02": "PASS",
+    "P8-T03": "PASS",
+    "P8-T04": "PASS"
+  },
+  "alignment": {
+    "status": "PASS",
+    "unexplained_failures": 0,
+    "explained_whitespace_adjustments": [
+      {
+        "uid": "train:1436",
+        "sentence_id": "1436",
+        "aspect_index": 3,
+        "original_span": [
+          44,
+          54
+        ],
+        "extraction_span": [
+          44,
+          53
+        ],
+        "reason": "trim_boundary_whitespace_only; original annotation preserved"
+      }
+    ],
+    "sentences_over_max_length": 0,
+    "truncated_sentences": 0
+  },
+  "natural_official_overlap_disclosed": {
+    "qualified_id_overlap": {
+      "train__validation": [],
+      "train__test": [],
+      "validation__test": []
+    },
+    "train_validation_normalized_text_overlap": 0,
+    "raw_official_id_collisions": [
+      "227"
+    ],
+    "official_cross_split_duplicate_texts": [
+      {
+        "test_uid": "test:227",
+        "original_sentence_id": "227",
+        "matching_train_uids": [
+          "train:227"
+        ]
+      }
+    ],
+    "policy": "Preserve official partitions and natural duplicate; IDs source-split-qualified; validation grouped by normalized train text; no test-driven deletion or tuning"
+  },
+  "validation": {
+    "entity_precision": 0.7650429799426934,
+    "entity_recall": 0.8369905956112853,
+    "entity_f1": 0.7994011976047904,
+    "true_positive": 267,
+    "false_positive": 82,
+    "false_negative": 52,
+    "gold_entities": 319,
+    "predicted_entities": 349,
+    "sentences": 458,
+    "convention": "micro_exact_character_span_no_partial_credit",
+    "token_accuracy": 0.9777638975640225,
+    "labeled_wordpieces": 8005
+  },
+  "official_test": {
+    "entity_precision": 0.7857142857142857,
+    "entity_recall": 0.8241590214067278,
+    "entity_f1": 0.8044776119402985,
+    "true_positive": 539,
+    "false_positive": 147,
+    "false_negative": 115,
+    "gold_entities": 654,
+    "predicted_entities": 686,
+    "sentences": 800,
+    "convention": "micro_exact_character_span_no_partial_credit",
+    "token_accuracy": 0.9743812076304588,
+    "labeled_wordpieces": 12686
+  },
+  "test_used_for_tuning": false,
+  "canonical_metrics_changed": false,
+  "amazon_dataset_changed": false,
+  "p9_implemented": false,
+  "tests": {
+    "status": "PASS",
+    "total_passed": 350,
+    "failed": 0,
+    "groups": [
+      325,
+      17,
+      8
+    ],
+    "previous_tests": 321,
+    "new_tests": 29,
+    "commands": [
+      {
+        "command": ".venv/Scripts/python.exe -B -m scripts.test_all",
+        "exit_code": 0
+      },
+      {
+        "command": ".venv/Scripts/python.exe -m pip check",
+        "exit_code": 0
+      },
+      {
+        "command": ".venv/Scripts/python.exe -m compileall -q src scripts tests",
+        "exit_code": 0
+      }
+    ],
+    "pip_check": "PASS",
+    "compileall": "PASS",
+    "source_sha256": {
+      "src/absa/extraction.py": "62fc1af057392ceb0d1e348d43497639beaec55054c1620af971ce415637916c",
+      "src/absa/extraction_data.py": "1bf8172dfcf1b58c175b99efa077df99e02b4d91e385069a60aae68d067c2540",
+      "src/evaluation/aspect_extraction.py": "5da71a11c3ae820f6f430365e0a4d2f8053a3a4ed6a4454c400c4cc8162658e4",
+      "scripts/prepare_p8.py": "9caad231bfa51ef949e3a1133d1c2928eb89792d531312b9dd3335ac291f7a40",
+      "scripts/train_p8.py": "b06a52fcb69c5ed95f6c81ab0533790d5e78b58919b49c6043a535dc75638f24",
+      "scripts/finalize_p8.py": "9cfd3939e64daa356fa7c6269bce59d29ab12038142698ae917a1c5b8995b04e",
+      "scripts/test_all.py": "2f0817254081208cc5ab66bbc17e3f9fa2df9ffd556da838f04ac8bac380e678",
+      "tests/test_p8_data.py": "4ba57228b1a557ee07fdd6535a7a0a61d2510e6e1791e6d70b786c4d6d3e83b5",
+      "tests/test_p8_model.py": "7379ee6c7517c301264029ec1206570b078b9d3bdb3ef71c2b7ada479bff6283"
+    },
+    "console_log": "reports/p8_20261026/test_console.log"
+  },
+  "preservation": {
+    "status": "PASS",
+    "files_verified_unchanged": 269,
+    "mismatches": [],
+    "canonical_metric_csv_sha256": "260068014d210a8549d09156e79eadd4ae0b8546f0dda64b51e361b664753f54"
+  },
+  "limitations": [
+    "SemEval license/source NOT_VERIFIED with owner exception",
+    "one natural official train/test duplicate retained",
+    "one train-only whitespace-boundary adjustment, original preserved",
+    "single seed; CUDA attention backward not guaranteed bitwise deterministic",
+    "SemEval-to-Amazon shift; small independent P10 human gold remains pending",
+    "no calibrated confidence; API rejects overlength sentences"
+  ],
+  "NEXT_ACTION": "Dừng tại READY FOR P9; không train ASC hoặc nối end-to-end ABSA."
+}

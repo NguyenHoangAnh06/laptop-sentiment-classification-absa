@@ -1,0 +1,66 @@
+{
+  "status": "PASS",
+  "experiment": "E05_transformer",
+  "train_rows": 21000,
+  "data_regime": "FULL",
+  "selected_spec": {
+    "mode": "unweighted"
+  },
+  "validation_macro_f1": 0.7603380514273251,
+  "test_metrics": {
+    "accuracy": 0.8866666666666667,
+    "macro_f1": 0.7553821869139502,
+    "weighted_f1": 0.886262401590757,
+    "per_class": {
+      "negative": {
+        "precision": 0.8641686182669789,
+        "recall": 0.8934624697336562,
+        "f1": 0.8785714285714286,
+        "support": 1239
+      },
+      "neutral": {
+        "precision": 0.4435695538057743,
+        "recall": 0.4289340101522843,
+        "f1": 0.43612903225806454,
+        "support": 394
+      },
+      "positive": {
+        "precision": 0.95630725863284,
+        "recall": 0.9466341123125218,
+        "f1": 0.9514460999123576,
+        "support": 2867
+      }
+    },
+    "confusion_matrix": [
+      [
+        1107,
+        99,
+        33
+      ],
+      [
+        134,
+        169,
+        91
+      ],
+      [
+        40,
+        113,
+        2714
+      ]
+    ],
+    "confusion_matrix_order": [
+      "negative",
+      "neutral",
+      "positive"
+    ],
+    "balanced_accuracy": 0.7563435307328207
+  },
+  "runtime_seconds": 2303.734280699864,
+  "peak_process_rss_bytes": 3118305280,
+  "peak_gpu_allocated_bytes": 2301708288,
+  "test_prediction_seconds": 25.07829889981076,
+  "inference_ms_per_review": 5.572955311069058,
+  "artifact_bytes": 438674765,
+  "artifact_directory": "artifacts/models/semantic_20261024/E05_transformer/unweighted",
+  "test_prediction_passes": 1
+}

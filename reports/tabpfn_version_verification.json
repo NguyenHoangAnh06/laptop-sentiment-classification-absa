@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "E03": {
+    "requested_version": "V3",
+    "resolved_version": "V3",
+    "checkpoint": "C:\\Users\\ADMIN\\AppData\\Roaming\\tabpfn\\tabpfn-v3-classifier-v3_default.ckpt"
+  },
+  "E04": {
+    "requested_version": "V3_5",
+    "resolved_version": "V3_5",
+    "checkpoint": "C:\\Users\\ADMIN\\AppData\\Roaming\\tabpfn\\tabpfn-v3.5-20260909.safetensors"
+  }
+}

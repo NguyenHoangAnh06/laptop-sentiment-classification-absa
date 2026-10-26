@@ -1,0 +1,15 @@
+labels: [negative, neutral, positive]
+label_to_id:
+  negative: 0
+  neutral: 1
+  positive: 2
+overall_models:
+  - majority
+  - tfidf_logistic_regression
+  - tfidf_linear_svm
+  - tfidf_decision_tree
+  - bert
+absa_models: [bert_aspect_extraction, bert_aspect_sentiment]
+primary_metric: macro_f1
+secondary_metrics: [accuracy, precision_per_class, recall_per_class, f1_per_class, weighted_f1, confusion_matrix]
+cost_metrics: [training_seconds, inference_latency_ms, artifact_bytes, ram_bytes, gpu_vram_bytes]

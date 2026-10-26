@@ -1,0 +1,208 @@
+{
+  "download_started_utc": "2026-10-08T06:54:23.415314+00:00",
+  "authorization": "Full Electronics Reviews download and integrity only; no survey/join",
+  "download_time_ceiling_seconds": 10800,
+  "download_byte_ceiling": 6600000000,
+  "disk_free_bytes_before": 86871724032,
+  "existing_raw_stats": {
+    "data\\raw\\amazon\\.gitkeep": {
+      "bytes": 0,
+      "mtime_ns": 1791429633126245900
+    },
+    "data\\raw\\amazon\\Cell_Phones_and_Accessories_metadata_probe_5000.jsonl": {
+      "bytes": 17952345,
+      "mtime_ns": 1791435239465921400
+    },
+    "data\\raw\\amazon\\Cell_Phones_and_Accessories_metadata_probe_5000.jsonl.manifest.json": {
+      "bytes": 736,
+      "mtime_ns": 1791435239488246200
+    },
+    "data\\raw\\amazon\\Cell_Phones_and_Accessories_reviews_probe_20000.jsonl": {
+      "bytes": 11680327,
+      "mtime_ns": 1791435325539518400
+    },
+    "data\\raw\\amazon\\Cell_Phones_and_Accessories_reviews_probe_20000.jsonl.manifest.json": {
+      "bytes": 732,
+      "mtime_ns": 1791435325563196000
+    },
+    "data\\raw\\amazon\\metadata_prefix_20000.jsonl": {
+      "bytes": 73240352,
+      "mtime_ns": 1791432042535002100
+    },
+    "data\\raw\\amazon\\metadata_prefix_20000.jsonl.manifest.json": {
+      "bytes": 669,
+      "mtime_ns": 1791432042536006400
+    },
+    "data\\raw\\amazon\\metadata_prefix_20000.jsonl.verified.manifest.json": {
+      "bytes": 988,
+      "mtime_ns": 1791432229811971600
+    },
+    "data\\raw\\amazon\\meta_Electronics.jsonl.gz": {
+      "bytes": 1312900427,
+      "mtime_ns": 1791440858890158000
+    },
+    "data\\raw\\amazon\\meta_Electronics.jsonl.gz.manifest.json": {
+      "bytes": 694,
+      "mtime_ns": 1791440859821934100
+    },
+    "data\\raw\\amazon\\reviews_prefix_100000.jsonl": {
+      "bytes": 67212341,
+      "mtime_ns": 1791432097899551100
+    },
+    "data\\raw\\amazon\\reviews_prefix_100000.jsonl.manifest.json": {
+      "bytes": 666,
+      "mtime_ns": 1791432097900557700
+    },
+    "data\\raw\\amazon\\reviews_prefix_100000.jsonl.verified.manifest.json": {
+      "bytes": 985,
+      "mtime_ns": 1791432229895584100
+    }
+  },
+  "existing_qa_stats": {
+    "data\\manual\\laptop_filter_qa.csv": {
+      "bytes": 31375,
+      "mtime_ns": 1791432232733738100
+    },
+    "data\\manual\\feasibility\\Cell_Phones_and_Accessories_laptop_2c63945bd664.csv": {
+      "bytes": 10207,
+      "mtime_ns": 1791435437416999100
+    },
+    "data\\manual\\feasibility\\Cell_Phones_and_Accessories_laptop_594e2bd6704d.csv": {
+      "bytes": 10207,
+      "mtime_ns": 1791435333698102900
+    },
+    "data\\manual\\feasibility\\Cell_Phones_and_Accessories_laptop_a36f57eda9ae.csv": {
+      "bytes": 10207,
+      "mtime_ns": 1791435605443302500
+    },
+    "data\\manual\\feasibility\\Cell_Phones_and_Accessories_laptop_a88a8da3a5f7.csv": {
+      "bytes": 10207,
+      "mtime_ns": 1791437663506246800
+    },
+    "data\\manual\\feasibility\\Cell_Phones_and_Accessories_smartphone_2c63945bd664.csv": {
+      "bytes": 22730,
+      "mtime_ns": 1791435437416999100
+    },
+    "data\\manual\\feasibility\\Cell_Phones_and_Accessories_smartphone_594e2bd6704d.csv": {
+      "bytes": 22730,
+      "mtime_ns": 1791435333708717900
+    },
+    "data\\manual\\feasibility\\Cell_Phones_and_Accessories_smartphone_a36f57eda9ae.csv": {
+      "bytes": 22730,
+      "mtime_ns": 1791435605444736900
+    },
+    "data\\manual\\feasibility\\Cell_Phones_and_Accessories_smartphone_a88a8da3a5f7.csv": {
+      "bytes": 22730,
+      "mtime_ns": 1791437663506246800
+    },
+    "data\\manual\\feasibility\\Cell_Phones_and_Accessories_tablet_2c63945bd664.csv": {
+      "bytes": 16547,
+      "mtime_ns": 1791435437419691200
+    },
+    "data\\manual\\feasibility\\Cell_Phones_and_Accessories_tablet_594e2bd6704d.csv": {
+      "bytes": 16547,
+      "mtime_ns": 1791435333709970500
+    },
+    "data\\manual\\feasibility\\Cell_Phones_and_Accessories_tablet_a36f57eda9ae.csv": {
+      "bytes": 16547,
+      "mtime_ns": 1791435605444736900
+    },
+    "data\\manual\\feasibility\\Cell_Phones_and_Accessories_tablet_a88a8da3a5f7.csv": {
+      "bytes": 16547,
+      "mtime_ns": 1791437663506246800
+    },
+    "data\\manual\\feasibility\\Electronics_laptop_1059e9de8334.csv": {
+      "bytes": 33982,
+      "mtime_ns": 1791437749859976100
+    },
+    "data\\manual\\feasibility\\Electronics_laptop_22c3bdfd9e59.csv": {
+      "bytes": 33982,
+      "mtime_ns": 1791435440359004700
+    },
+    "data\\manual\\feasibility\\Electronics_laptop_623f134d11e0.csv": {
+      "bytes": 33982,
+      "mtime_ns": 1791435608558955000
+    },
+    "data\\manual\\feasibility\\Electronics_laptop_876f2dde9a7f.csv": {
+      "bytes": 33982,
+      "mtime_ns": 1791435336616221800
+    },
+    "data\\manual\\feasibility\\Electronics_laptop_8a3c1eaf1583.csv": {
+      "bytes": 32419,
+      "mtime_ns": 1791441092123687300
+    },
+    "data\\manual\\feasibility\\Electronics_laptop_b758d75b08b2.csv": {
+      "bytes": 33982,
+      "mtime_ns": 1791437660706297900
+    },
+    "data\\manual\\feasibility\\Electronics_smartphone_22c3bdfd9e59.csv": {
+      "bytes": 16617,
+      "mtime_ns": 1791435440359004700
+    },
+    "data\\manual\\feasibility\\Electronics_smartphone_623f134d11e0.csv": {
+      "bytes": 16617,
+      "mtime_ns": 1791435608558955000
+    },
+    "data\\manual\\feasibility\\Electronics_smartphone_876f2dde9a7f.csv": {
+      "bytes": 16617,
+      "mtime_ns": 1791435336616221800
+    },
+    "data\\manual\\feasibility\\Electronics_smartphone_b758d75b08b2.csv": {
+      "bytes": 16617,
+      "mtime_ns": 1791437660706297900
+    },
+    "data\\manual\\feasibility\\Electronics_tablet_22c3bdfd9e59.csv": {
+      "bytes": 29798,
+      "mtime_ns": 1791435440367028700
+    },
+    "data\\manual\\feasibility\\Electronics_tablet_623f134d11e0.csv": {
+      "bytes": 29798,
+      "mtime_ns": 1791435608566720600
+    },
+    "data\\manual\\feasibility\\Electronics_tablet_876f2dde9a7f.csv": {
+      "bytes": 29798,
+      "mtime_ns": 1791435336616221800
+    },
+    "data\\manual\\feasibility\\Electronics_tablet_b758d75b08b2.csv": {
+      "bytes": 29798,
+      "mtime_ns": 1791437660706297900
+    }
+  },
+  "status": "DONE",
+  "automatic_retry": false,
+  "manifest": {
+    "source_url": "https://mcauleylab.ucsd.edu/public_datasets/data/amazon_2023/raw/review_categories/Electronics.jsonl.gz",
+    "resolved_url": "https://mcauleylab.ucsd.edu/public_datasets/data/amazon_2023/raw/review_categories/Electronics.jsonl.gz",
+    "retrieved_utc": "2026-10-08T08:22:16.334136+00:00",
+    "etag": "\"181e817db-62bdb26aa07c6\"",
+    "last_modified": "Thu, 16 Jan 2025 23:28:26 GMT",
+    "requested_limit": null,
+    "rows": null,
+    "bytes": 6474438619,
+    "stop_reason": "source_eof",
+    "complete_source": true,
+    "format": "original_file_bytes",
+    "http_resume_implemented": false,
+    "sha256": "17b2c5f3736d4c0cb874859076436ebd4513f4c2396c528440a63204084e6a28"
+  },
+  "checksum_verified": true,
+  "gzip_header_verified": true,
+  "download_transfer_elapsed_seconds": 5272.918822,
+  "elapsed_definition": "execution start to manifest retrieval timestamp; connection/setup/transfer included, final downloader checksum and separate verification excluded",
+  "average_download_bytes_per_second": 1227866.1662658155,
+  "integrity_verification_elapsed_seconds": 5.607072800165042,
+  "disk_free_bytes_after": 78694182912,
+  "ram_available_bytes_after": 4221132800,
+  "ram_total_bytes": 16849264640,
+  "protected_raw_and_qa_stat_markers_unchanged": true,
+  "protected_file_changes": {
+    "existing_raw_stats": [],
+    "existing_qa_stats": []
+  },
+  "partial_present": false,
+  "failure_diagnostic_present": false,
+  "review_scan_status": "NOT_STARTED",
+  "streaming_join_authorized": false,
+  "full_gzip_crc_and_jsonl_scan_status": "NOT_RUN",
+  "target_clean_reviews": 30000
+}

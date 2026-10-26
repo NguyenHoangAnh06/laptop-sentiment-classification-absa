@@ -1,0 +1,36 @@
+{
+  "slices": {
+    "negation_cue": {
+      "rows": 2603,
+      "errors": 436,
+      "error_rate": 0.16749903956972723
+    },
+    "mixed_lexical_cues": {
+      "rows": 216,
+      "errors": 51,
+      "error_rate": 0.2361111111111111
+    },
+    "short_le_5_words": {
+      "rows": 143,
+      "errors": 12,
+      "error_rate": 0.08391608391608392
+    },
+    "long_gt_200_words": {
+      "rows": 431,
+      "errors": 83,
+      "error_rate": 0.1925754060324826
+    }
+  },
+  "errors": 662,
+  "total": 4500,
+  "review_queue_rows": 42,
+  "annotation_status": "UNANNOTATED diagnostic queue",
+  "sarcasm_and_true_rating_text_disagreement": "NOT_MEASURED; human annotation required",
+  "flags": "Fixed lexical/length diagnostics, not confirmed semantic phenomena",
+  "paired_lr_proxy_errors": {
+    "both_wrong": 451,
+    "bert_only_wrong": 211,
+    "lr_only_wrong": 416,
+    "both_correct": 3422
+  }
+}

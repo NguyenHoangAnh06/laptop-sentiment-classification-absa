@@ -1,0 +1,52 @@
+{
+  "method": "95% Wilson score interval, z=1.959963984540054; binomial approximation to SRS without replacement; finite population correction omitted (small sampling fractions). Marginal intervals, not simultaneous. Conditional on fixed human-verified labels; do not cover AI anchoring or mislabeling. No recall/F1 confidence interval claimed.",
+  "random_strata": {
+    "product:random_keep": {
+      "laptop_count": 150,
+      "n": 150,
+      "laptop_fraction": 1.0,
+      "wilson_95_interval": [
+        0.9750297556319235,
+        1
+      ],
+      "sampling_fraction": 0.005324435609825358
+    },
+    "review:random_keep": {
+      "laptop_count": 150,
+      "n": 150,
+      "laptop_fraction": 1.0,
+      "wilson_95_interval": [
+        0.9750297556319235,
+        1
+      ],
+      "sampling_fraction": 0.0003672150411280846
+    },
+    "review:random_reject": {
+      "laptop_count": 1,
+      "n": 150,
+      "laptop_fraction": 0.006666666666666667,
+      "wilson_95_interval": [
+        0.0011778013350174366,
+        0.03679283977481815
+      ],
+      "sampling_fraction": 3.4500045126059024e-06
+    }
+  },
+  "review_design_weights": {
+    "review:random_keep": 2723.2,
+    "review:random_reject": 289854.69333333336
+  },
+  "review_weighted_confusion_independently_recomputed": {
+    "TP": 408480.0,
+    "FP": 0.0,
+    "FN": 289854.69333333336,
+    "TN": 43188349.30666667
+  },
+  "sensitivity_only_hypothetical_reject_FN_count_to_recall": {
+    "0": 1.0,
+    "1": 0.5849344217028923,
+    "2": 0.41336205945084425
+  },
+  "required_precision_existing_config": 0.95,
+  "acceptance": "Numerical precision threshold met; independence/fully blind gate NEEDS REVIEW; no approved recall/F1 thresholds found."
+}

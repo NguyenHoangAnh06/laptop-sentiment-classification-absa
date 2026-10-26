@@ -1,0 +1,260 @@
+{
+  "candidates": [
+    {
+      "candidate": 0,
+      "spec": {
+        "max_depth": 4,
+        "learning_rate": 0.05,
+        "n_estimators": 250,
+        "min_child_weight": 2,
+        "subsample": 0.9,
+        "colsample_bytree": 0.9,
+        "reg_alpha": 0.0,
+        "reg_lambda": 1.0,
+        "weighted": false
+      },
+      "fit_validation_seconds": 17.265747199766338,
+      "validation_metrics": {
+        "accuracy": 0.8308888888888889,
+        "macro_f1": 0.5893346684704917,
+        "weighted_f1": 0.7987680004248808,
+        "per_class": {
+          "negative": {
+            "precision": 0.7617625093353249,
+            "recall": 0.8232445520581114,
+            "f1": 0.791311093871218,
+            "support": 1239
+          },
+          "neutral": {
+            "precision": 0.5,
+            "recall": 0.04050632911392405,
+            "f1": 0.07494145199063232,
+            "support": 395
+          },
+          "positive": {
+            "precision": 0.8638542665388304,
+            "recall": 0.9431263084438242,
+            "f1": 0.9017514595496247,
+            "support": 2866
+          }
+        },
+        "confusion_matrix": [
+          [
+            1020,
+            10,
+            209
+          ],
+          [
+            162,
+            16,
+            217
+          ],
+          [
+            157,
+            6,
+            2703
+          ]
+        ],
+        "confusion_matrix_order": [
+          "negative",
+          "neutral",
+          "positive"
+        ],
+        "balanced_accuracy": 0.6022923965386199
+      },
+      "history": []
+    },
+    {
+      "candidate": 1,
+      "spec": {
+        "max_depth": 4,
+        "learning_rate": 0.05,
+        "n_estimators": 250,
+        "min_child_weight": 2,
+        "subsample": 0.9,
+        "colsample_bytree": 0.9,
+        "reg_alpha": 0.0,
+        "reg_lambda": 1.0,
+        "weighted": true
+      },
+      "fit_validation_seconds": 17.514944800175726,
+      "validation_metrics": {
+        "accuracy": 0.794,
+        "macro_f1": 0.6645657182236885,
+        "weighted_f1": 0.808647956271747,
+        "per_class": {
+          "negative": {
+            "precision": 0.7732603596559813,
+            "recall": 0.7982243744955609,
+            "f1": 0.7855440826052422,
+            "support": 1239
+          },
+          "neutral": {
+            "precision": 0.26366559485530544,
+            "recall": 0.4151898734177215,
+            "f1": 0.3225172074729597,
+            "support": 395
+          },
+          "positive": {
+            "precision": 0.9311273566756445,
+            "recall": 0.8443824145150035,
+            "f1": 0.8856358645928637,
+            "support": 2866
+          }
+        },
+        "confusion_matrix": [
+          [
+            989,
+            178,
+            72
+          ],
+          [
+            124,
+            164,
+            107
+          ],
+          [
+            166,
+            280,
+            2420
+          ]
+        ],
+        "confusion_matrix_order": [
+          "negative",
+          "neutral",
+          "positive"
+        ],
+        "balanced_accuracy": 0.6859322208094287
+      },
+      "history": []
+    },
+    {
+      "candidate": 2,
+      "spec": {
+        "max_depth": 6,
+        "learning_rate": 0.05,
+        "n_estimators": 400,
+        "min_child_weight": 2,
+        "subsample": 0.9,
+        "colsample_bytree": 0.9,
+        "reg_alpha": 0.1,
+        "reg_lambda": 2.0,
+        "weighted": false
+      },
+      "fit_validation_seconds": 78.56671890011057,
+      "validation_metrics": {
+        "accuracy": 0.8386666666666667,
+        "macro_f1": 0.6028983358115229,
+        "weighted_f1": 0.8076328542920398,
+        "per_class": {
+          "negative": {
+            "precision": 0.7760299625468164,
+            "recall": 0.8361581920903954,
+            "f1": 0.804972804972805,
+            "support": 1239
+          },
+          "neutral": {
+            "precision": 0.5526315789473685,
+            "recall": 0.053164556962025315,
+            "f1": 0.09699769053117784,
+            "support": 395
+          },
+          "positive": {
+            "precision": 0.8688839142948513,
+            "recall": 0.9480111653872993,
+            "f1": 0.9067245119305857,
+            "support": 2866
+          }
+        },
+        "confusion_matrix": [
+          [
+            1036,
+            10,
+            193
+          ],
+          [
+            157,
+            21,
+            217
+          ],
+          [
+            142,
+            7,
+            2717
+          ]
+        ],
+        "confusion_matrix_order": [
+          "negative",
+          "neutral",
+          "positive"
+        ],
+        "balanced_accuracy": 0.6124446381465734
+      },
+      "history": []
+    },
+    {
+      "candidate": 3,
+      "spec": {
+        "max_depth": 6,
+        "learning_rate": 0.05,
+        "n_estimators": 400,
+        "min_child_weight": 2,
+        "subsample": 0.9,
+        "colsample_bytree": 0.9,
+        "reg_alpha": 0.1,
+        "reg_lambda": 2.0,
+        "weighted": true
+      },
+      "fit_validation_seconds": 98.41442389972508,
+      "validation_metrics": {
+        "accuracy": 0.836,
+        "macro_f1": 0.6530887836459821,
+        "weighted_f1": 0.8228580398500407,
+        "per_class": {
+          "negative": {
+            "precision": 0.7667386609071274,
+            "recall": 0.8595641646489104,
+            "f1": 0.8105022831050228,
+            "support": 1239
+          },
+          "neutral": {
+            "precision": 0.3622448979591837,
+            "recall": 0.17974683544303796,
+            "f1": 0.24027072758037224,
+            "support": 395
+          },
+          "positive": {
+            "precision": 0.9008576329331046,
+            "recall": 0.9162595952547103,
+            "f1": 0.9084933402525515,
+            "support": 2866
+          }
+        },
+        "confusion_matrix": [
+          [
+            1065,
+            50,
+            124
+          ],
+          [
+            159,
+            71,
+            165
+          ],
+          [
+            165,
+            75,
+            2626
+          ]
+        ],
+        "confusion_matrix_order": [
+          "negative",
+          "neutral",
+          "positive"
+        ],
+        "balanced_accuracy": 0.6518568651155529
+      },
+      "history": []
+    }
+  ]
+}

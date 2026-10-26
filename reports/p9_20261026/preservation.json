@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "files_verified_unchanged": 317,
+  "mismatches": [],
+  "p8_canonical_test_entity_f1": 0.8044776119402985,
+  "p8_model_sha256": "0a234b7d9a9c231d6e3102273e1475e57cab0d136afb7e7b2d39cbcd0025d120",
+  "sentiment_benchmark_sha256": "260068014d210a8549d09156e79eadd4ae0b8546f0dda64b51e361b664753f54"
+}

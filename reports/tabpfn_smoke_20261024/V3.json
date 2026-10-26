@@ -1,0 +1,58 @@
+{
+  "version": "V3",
+  "token_configured": true,
+  "status": "PASS",
+  "full_dataset_run": false,
+  "split": "train",
+  "purpose": "Kiểm tra kỹ thuật; không phải đánh giá chất lượng mô hình",
+  "tabpfn_package": "9.2.0",
+  "fit_rows": 24,
+  "predict_rows": 3,
+  "features": 384,
+  "fit_indices": [
+    0,
+    2,
+    10,
+    17,
+    22,
+    25,
+    27,
+    33,
+    13,
+    18,
+    19,
+    30,
+    35,
+    43,
+    49,
+    69,
+    1,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "predict_indices": [
+    37,
+    79,
+    11
+  ],
+  "checkpoint": "tabpfn-v3-classifier-v3_default.ckpt",
+  "settings": {
+    "n_estimators": 1,
+    "fit_mode": "low_memory",
+    "memory_saving_mode": true,
+    "keep_cache_on_device": false,
+    "inference_precision": "autocast"
+  },
+  "prediction_ids": [
+    2,
+    1,
+    1
+  ],
+  "peak_gpu_allocated_bytes": 353433600,
+  "elapsed_seconds": 44.429205500055104
+}

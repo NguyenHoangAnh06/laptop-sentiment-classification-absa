@@ -1,0 +1,1 @@
+INCOMPLETE / SUPERSEDED:512MB working-set guard stopped initial BERT tokenization. No complete manifest. Inputs unchanged; final run uses p4_20261009_final after memory optimization.

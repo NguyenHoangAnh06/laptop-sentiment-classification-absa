@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "full_suite": "96 passed in 1.15s",
+  "compileall": "PASS",
+  "pip_check": "No broken requirements found",
+  "legacy_cli_rejections": [
+    {
+      "arguments": [
+        "-m",
+        "scripts.survey_p1",
+        "--source",
+        "Electronics",
+        "--metadata",
+        "absent",
+        "--reviews",
+        "absent",
+        "--groups",
+        "tablet",
+        "--run",
+        "must_not_exist"
+      ],
+      "exit_code": 2,
+      "rejected_before_source_access": true
+    },
+    {
+      "arguments": [
+        "-m",
+        "scripts.acquire_p1",
+        "--source",
+        "metadata",
+        "--category",
+        "Cell_Phones_and_Accessories"
+      ],
+      "exit_code": 2,
+      "rejected_before_source_access": true
+    }
+  ],
+  "original_semeval": "BLOCKED; login required",
+  "qa_provenance": "ai_assisted_user_approved; not independent",
+  "final_full_suite": "96 passed in 1.22s: python -B -m pytest -q -p no:cacheprovider",
+  "final_document_config_checks": "PASS"
+}

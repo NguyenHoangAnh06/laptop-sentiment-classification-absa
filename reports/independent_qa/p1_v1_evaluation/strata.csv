@@ -1,0 +1,6 @@
+﻿stratum,frame_population,sample_size,TP,FP,FN,TN,blank,uncertain
+product:random_keep,28172,150,150,0,0,0,0,0
+product:diagnostic,164453,50,1,0,2,47,0,0
+review:random_keep,408480,150,150,0,0,0,0,0
+review:random_reject,43478204,150,0,0,1,149,0,0
+review:diagnostic,80721,100,100,0,0,0,0,0

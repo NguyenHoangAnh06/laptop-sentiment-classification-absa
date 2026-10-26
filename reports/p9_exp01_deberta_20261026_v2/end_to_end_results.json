@@ -1,0 +1,73 @@
+{
+  "status": "COMPLETE",
+  "source": "frozen P8 saved predictions -> locked P9 classifier",
+  "p8_inference_rerun": false,
+  "asc_selection_lock_sha256": "f90092b7552da6c1f0f9f02aa77e67e347f04359dd0abdce478fbc8fe5e84b36",
+  "protocol": "P8 predicted spans only; conflict handling evaluation-only after inference",
+  "splits": {
+    "validation": {
+      "metrics": {
+        "precision": 0.627906976744186,
+        "recall": 0.6878980891719745,
+        "f1": 0.6565349544072947,
+        "sentences": 458,
+        "counts": {
+          "gold_entities": 314,
+          "raw_predicted_entities": 349,
+          "predicted_entities_scored": 344,
+          "conflict_gold_excluded": 5,
+          "predictions_ignored_exact_conflict": 5,
+          "true_positive": 216,
+          "false_negative": 98,
+          "false_positive": 128,
+          "extraction_missing_gold_spans": 52,
+          "extraction_spurious_predicted_spans": 82,
+          "exact_extraction_matched_spans": 262,
+          "sentiment_errors_on_exact_span": 46,
+          "boundary_gold_spans": 19,
+          "boundary_predicted_spans": 20,
+          "boundary_pairs": 20,
+          "joint_wrong_span_and_polarity_pairs": 3,
+          "missed_without_predicted_overlap": 33
+        },
+        "policy": "exact span+polarity; exclude conflict gold and ignore predictions exactly at conflict spans; partial overlap still counts FP; no partial credit; boundary/joint pairs overlap, not additive causes"
+      },
+      "asc_seconds_from_p8_spans": 3.933492799755186,
+      "p8_prediction_sha256": "5965fcfaf481a343cadd610d038e215a4c8d0b4de39cf756fea67e2d689f9893",
+      "prediction_sha256": "adda15d9d080e11771cf67e4a588a7d7cdf767cde23aeb757a8ae6d82670fe7c",
+      "classifier_examples": 349
+    },
+    "test": {
+      "metrics": {
+        "precision": 0.6447761194029851,
+        "recall": 0.677115987460815,
+        "f1": 0.6605504587155963,
+        "sentences": 800,
+        "counts": {
+          "gold_entities": 638,
+          "raw_predicted_entities": 686,
+          "predicted_entities_scored": 670,
+          "conflict_gold_excluded": 16,
+          "predictions_ignored_exact_conflict": 16,
+          "true_positive": 432,
+          "false_negative": 206,
+          "false_positive": 238,
+          "extraction_missing_gold_spans": 115,
+          "extraction_spurious_predicted_spans": 147,
+          "exact_extraction_matched_spans": 523,
+          "sentiment_errors_on_exact_span": 91,
+          "boundary_gold_spans": 69,
+          "boundary_predicted_spans": 97,
+          "boundary_pairs": 97,
+          "joint_wrong_span_and_polarity_pairs": 18,
+          "missed_without_predicted_overlap": 46
+        },
+        "policy": "exact span+polarity; exclude conflict gold and ignore predictions exactly at conflict spans; partial overlap still counts FP; no partial credit; boundary/joint pairs overlap, not additive causes"
+      },
+      "asc_seconds_from_p8_spans": 4.382552300114185,
+      "p8_prediction_sha256": "3fc3cff706bffc433494593d2fe71f6a55885b46dd2eb3f0d0610442cf386971",
+      "prediction_sha256": "25fd0c327a32ae44f561828c656aa70a11cd81de421547aa5b4817f55952b8e1",
+      "classifier_examples": 686
+    }
+  }
+}

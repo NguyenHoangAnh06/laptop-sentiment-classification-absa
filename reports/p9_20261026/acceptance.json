@@ -1,0 +1,232 @@
+{
+  "status": "DONE",
+  "readiness": "READY FOR P10",
+  "date": "2026-10-26",
+  "tasks": {
+    "P9-T01": "PASS",
+    "P9-T02": "PASS",
+    "P9-T03": "PASS",
+    "P9-T04": "PASS"
+  },
+  "standalone_validation": {
+    "accuracy": 0.7484076433121019,
+    "macro_f1": 0.7141454682092473,
+    "weighted_f1": 0.7539211565219219,
+    "per_class": {
+      "negative": {
+        "precision": 0.8203125,
+        "recall": 0.7894736842105263,
+        "f1": 0.8045977011494253,
+        "support": 133
+      },
+      "neutral": {
+        "precision": 0.4794520547945205,
+        "recall": 0.5737704918032787,
+        "f1": 0.5223880597014925,
+        "support": 61
+      },
+      "positive": {
+        "precision": 0.8407079646017699,
+        "recall": 0.7916666666666666,
+        "f1": 0.8154506437768241,
+        "support": 120
+      }
+    },
+    "confusion_matrix": [
+      [
+        105,
+        21,
+        7
+      ],
+      [
+        15,
+        35,
+        11
+      ],
+      [
+        8,
+        17,
+        95
+      ]
+    ],
+    "confusion_matrix_order": [
+      "negative",
+      "neutral",
+      "positive"
+    ]
+  },
+  "standalone_official_test": {
+    "accuracy": 0.7899686520376176,
+    "macro_f1": 0.7481182549127153,
+    "weighted_f1": 0.7859883746767756,
+    "per_class": {
+      "negative": {
+        "precision": 0.6306818181818182,
+        "recall": 0.8671875,
+        "f1": 0.7302631578947368,
+        "support": 128
+      },
+      "neutral": {
+        "precision": 0.7583333333333333,
+        "recall": 0.5384615384615384,
+        "f1": 0.629757785467128,
+        "support": 169
+      },
+      "positive": {
+        "precision": 0.8830409356725146,
+        "recall": 0.8856304985337243,
+        "f1": 0.8843338213762811,
+        "support": 341
+      }
+    },
+    "confusion_matrix": [
+      [
+        111,
+        10,
+        7
+      ],
+      [
+        45,
+        91,
+        33
+      ],
+      [
+        20,
+        19,
+        302
+      ]
+    ],
+    "confusion_matrix_order": [
+      "negative",
+      "neutral",
+      "positive"
+    ]
+  },
+  "end_to_end": {
+    "validation": {
+      "precision": 0.563953488372093,
+      "recall": 0.6178343949044586,
+      "f1": 0.5896656534954408,
+      "sentences": 458,
+      "counts": {
+        "gold_entities": 314,
+        "raw_predicted_entities": 349,
+        "predicted_entities_scored": 344,
+        "conflict_gold_excluded": 5,
+        "predictions_ignored_exact_conflict": 5,
+        "true_positive": 194,
+        "false_negative": 120,
+        "false_positive": 150,
+        "extraction_missing_gold_spans": 52,
+        "extraction_spurious_predicted_spans": 82,
+        "exact_extraction_matched_spans": 262,
+        "sentiment_errors_on_exact_span": 68,
+        "boundary_gold_spans": 19,
+        "boundary_predicted_spans": 20,
+        "boundary_pairs": 20,
+        "joint_wrong_span_and_polarity_pairs": 6,
+        "missed_without_predicted_overlap": 33
+      },
+      "policy": "exact span+polarity; exclude conflict gold and ignore predictions exactly at conflict spans; partial overlap still counts FP; no partial credit; boundary/joint pairs overlap, not additive causes"
+    },
+    "test": {
+      "precision": 0.6194029850746269,
+      "recall": 0.6504702194357367,
+      "f1": 0.6345565749235473,
+      "sentences": 800,
+      "counts": {
+        "gold_entities": 638,
+        "raw_predicted_entities": 686,
+        "predicted_entities_scored": 670,
+        "conflict_gold_excluded": 16,
+        "predictions_ignored_exact_conflict": 16,
+        "true_positive": 415,
+        "false_negative": 223,
+        "false_positive": 255,
+        "extraction_missing_gold_spans": 115,
+        "extraction_spurious_predicted_spans": 147,
+        "exact_extraction_matched_spans": 523,
+        "sentiment_errors_on_exact_span": 108,
+        "boundary_gold_spans": 69,
+        "boundary_predicted_spans": 97,
+        "boundary_pairs": 97,
+        "joint_wrong_span_and_polarity_pairs": 25,
+        "missed_without_predicted_overlap": 46
+      },
+      "policy": "exact span+polarity; exclude conflict gold and ignore predictions exactly at conflict spans; partial overlap still counts FP; no partial credit; boundary/joint pairs overlap, not additive causes"
+    }
+  },
+  "conflict_policy": "exclude_preserve_original",
+  "selection": {
+    "mode": "unweighted",
+    "epoch": 4,
+    "validation_macro_f1": 0.7141454682092473,
+    "model_sha256": "bc1268bda1a37996b6899588b5c5b20f87cd89d17c754c091232e0e9e81d6713",
+    "wall_seconds": 183.15371249988675
+  },
+  "canonical_artifacts_p0_p8_changed": false,
+  "p8_retrained": false,
+  "amazon_dataset_changed": false,
+  "official_test_used_for_tuning": false,
+  "p10_implemented": false,
+  "tests": {
+    "status": "PASS",
+    "total_passed": 378,
+    "failed": 0,
+    "groups": [
+      346,
+      24,
+      8
+    ],
+    "previous_tests": 350,
+    "new_tests": 28,
+    "commands": [
+      {
+        "command": ".venv/Scripts/python.exe -B -m scripts.test_all",
+        "exit_code": 0
+      },
+      {
+        "command": ".venv/Scripts/python.exe -m pip check",
+        "exit_code": 0
+      },
+      {
+        "command": ".venv/Scripts/python.exe -m compileall -q src scripts tests",
+        "exit_code": 0
+      }
+    ],
+    "pip_check": "PASS",
+    "compileall": "PASS",
+    "source_sha256": {
+      "scripts/test_all.py": "9c2f13052107ac1a9ab6aba7ee3fdf54e16783c8de09e59e606ca00ec45f81fb",
+      "scripts/prepare_p9.py": "ace83a92ae401b1eba1717e8ca3cd86dc51bd2c7d1a7bc1ca80fcddc935d72b4",
+      "scripts/train_p9.py": "cdfd655e3fb0a8dca93f97ff8fa6d794c9e1adacc4c8d59142d914397e90cce5",
+      "scripts/evaluate_p9_end_to_end.py": "f4fd57fb2323705a4a0ea42742ee3960ba8f1ffc8700b19344495494154a42af",
+      "scripts/finalize_p9.py": "be53538e735e20789e288cee8bee5e3c1e6d812f0e67dc2cb297c8dc0d1cc386",
+      "src/absa/sentiment_data.py": "e0a1e1caede157b8538aa315193b927bf45d878e79119a08d01fbeca28aeac42",
+      "src/absa/sentiment.py": "e267f1072961a805c200d7f96a8e20388ba818207bf4c50ec0ae04fee30fb23a",
+      "src/evaluation/aspect_sentiment.py": "fd55d1cdc1be31ecfbe014cc0e709dc7806c8acc96aa6397c94ab7299f06ca88",
+      "src/inference/absa.py": "678444210f4dbc363854979c16affd57cbc737cd44c5211032e1d5fbd2198279",
+      "tests/test_p9_data.py": "637549f7944319929f86e25163898967ba57d75028f351a74fa1fbbb48f0a421",
+      "tests/test_p9_model.py": "db9f2180d9a9c1b97c810f5e375c17246d92f202fde7b0b51bffb49ba0963761"
+    },
+    "console_log": "reports/p9_20261026/test_console.log"
+  },
+  "preservation": {
+    "status": "PASS",
+    "files_verified_unchanged": 317,
+    "mismatches": [],
+    "p8_canonical_test_entity_f1": 0.8044776119402985,
+    "p8_model_sha256": "0a234b7d9a9c231d6e3102273e1475e57cab0d136afb7e7b2d39cbcd0025d120",
+    "sentiment_benchmark_sha256": "260068014d210a8549d09156e79eadd4ae0b8546f0dda64b51e361b664753f54"
+  },
+  "mandatory_blockers_before_p10": [],
+  "limitations": [
+    "SemEval license/source NOT_VERIFIED with owner educational exception",
+    "three-class conditional evaluation excludes conflict; end-to-end ignores exact conflict-span predictions",
+    "one natural official train/test duplicate retained",
+    "single seed and best-effort CUDA backward determinism",
+    "SemEval-to-Amazon platform/style shift not measured; independent small P10 gold pending",
+    "uncalibrated confidence null; API rejects overlength context"
+  ],
+  "NEXT_ACTION": "Dừng tại READY FOR P10; không triển khai independent gold/app hoặc pseudo-label Amazon."
+}

@@ -1,0 +1,28 @@
+project_id: customer-sentiment-laptop-reviews
+domain: laptop
+seed: 42
+target_clean_reviews: 30000
+paths:
+  amazon_raw: data/raw/amazon
+  semeval_raw: data/raw/semeval
+  interim: data/interim
+  processed: data/processed
+  manual: data/manual
+  clean_reviews: data/processed/laptop_reviews.parquet
+  artifacts: artifacts
+sources:
+  amazon: Amazon Reviews 2023 with matching product metadata
+  semeval: SemEval-2014 Laptop
+label_provenance: rating-derived proxy
+rating_to_label:
+  1: negative
+  2: negative
+  3: neutral
+  4: positive
+  5: positive
+split:
+  train: 0.70
+  validation: 0.15
+  test: 0.15
+  leakage_policy: inspect duplicates and product groups before choosing split strategy
+filter_validation: unvalidated

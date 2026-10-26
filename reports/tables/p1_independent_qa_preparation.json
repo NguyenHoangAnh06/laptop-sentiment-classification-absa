@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "human_annotation_status": "NOT_STARTED",
+  "human_labels_created": 0,
+  "metric_status": "NOT_MEASURED",
+  "checks": {
+    "product": {
+      "records": 200,
+      "unique_units": 200,
+      "human_fields_blank": "PASS",
+      "prediction_blinding": "PASS",
+      "immutable_binding": "PASS"
+    },
+    "review": {
+      "records": 400,
+      "unique_units": 400,
+      "human_fields_blank": "PASS",
+      "prediction_blinding": "PASS",
+      "immutable_binding": "PASS"
+    }
+  },
+  "samples": {
+    "product:random_keep": 150,
+    "product:diagnostic": 50,
+    "review:random_keep": 150,
+    "review:random_reject": 150,
+    "review:diagnostic": 100
+  },
+  "raw_and_all_saved_pool_hashes_preserved": "PASS",
+  "legacy_user_approved_qa_hash_preserved": "PASS",
+  "boundary_product_prediction_counts": {
+    "False": 49,
+    "True": 1
+  },
+  "tests": {
+    "command": ".\\.venv\\Scripts\\python.exe -B -m pytest -q -p no:cacheprovider",
+    "observed": "119 passed in 1.73s"
+  }
+}

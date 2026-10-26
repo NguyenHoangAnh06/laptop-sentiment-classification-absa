@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "loss": 1.1646817922592163,
+  "logits_shape": [
+    3,
+    3
+  ],
+  "backbone_gradient": true,
+  "data": "3 real train samples; no optimizer update"
+}

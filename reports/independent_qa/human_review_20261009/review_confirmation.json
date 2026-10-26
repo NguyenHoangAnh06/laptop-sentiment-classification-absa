@@ -1,0 +1,93 @@
+{
+  "review_declaration_date": "2026-10-09 Asia/Saigon",
+  "reviewer_id_mapping": "reviewer_id mapped to existing annotator human_reviewer_01",
+  "storage": "Review metadata sidecar; existing annotation CSV schemas unchanged",
+  "annotations": [
+    {
+      "path": "data/manual/independent_qa/p1_v1/product_annotation.csv",
+      "sha256": "134a1e746202337ebb4d5fab1927c791b037fc2feb08e9875d55002433e0c721",
+      "rows": 200,
+      "annotator": "human_reviewer_01",
+      "human_verified": true,
+      "human_review_status": "COMPLETED",
+      "review_status": "APPROVED",
+      "review_status_scope": "label approval only; not QA or phase acceptance",
+      "label_provenance": "human_verified_after_ai_assistance",
+      "provenance_note": "Project owner declares final review of all existing annotations. Prior history retained; unspecified does not mean no AI assistance.",
+      "label_counts": {
+        "laptop": 153,
+        "non_laptop": 47
+      },
+      "missing_final_labels": 0
+    },
+    {
+      "path": "data/manual/independent_qa/p1_v1/review_annotation.csv",
+      "sha256": "ee3da05db04aeb0ef67a4ad71d428d5c72b419a7bb690acedb6bbc9048999f15",
+      "rows": 400,
+      "annotator": "human_reviewer_01",
+      "human_verified": true,
+      "human_review_status": "COMPLETED",
+      "review_status": "APPROVED",
+      "review_status_scope": "label approval only; not QA or phase acceptance",
+      "label_provenance": "human_verified_after_ai_assistance",
+      "provenance_note": "Project owner declares final review of all existing annotations. Prior history retained; unspecified does not mean no AI assistance.",
+      "label_counts": {
+        "laptop": 251,
+        "non_laptop": 149
+      },
+      "missing_final_labels": 0
+    },
+    {
+      "path": "data/manual/independent_qa/p1_v2/review_annotation.csv",
+      "sha256": "0b972c4337e552dd322a201b1f8746bc5ac17e680c88a36a7e21b846f92a4d22",
+      "rows": 868,
+      "annotator": "human_reviewer_01",
+      "human_verified": true,
+      "human_review_status": "COMPLETED",
+      "review_status": "APPROVED",
+      "review_status_scope": "label approval only; not QA or phase acceptance",
+      "label_provenance": "unspecified",
+      "provenance_note": "Project owner declares final review of all existing annotations. Prior history retained; unspecified does not mean no AI assistance.",
+      "label_counts": {
+        "REJECT": 867,
+        "ACCEPT": 1
+      },
+      "missing_final_labels": 0
+    },
+    {
+      "path": "data/manual/laptop_filter_qa.csv",
+      "sha256": "fcfca66e58b411e3ba3b011ef3a69bb2cf86ce8e279a8304a4717b384972b5fc",
+      "rows": 100,
+      "annotator": "human_reviewer_01",
+      "human_verified": true,
+      "human_review_status": "COMPLETED",
+      "review_status": "APPROVED",
+      "review_status_scope": "label approval only; not QA or phase acceptance",
+      "label_provenance": "unspecified",
+      "provenance_note": "Project owner declares final review of all existing annotations. Prior history retained; unspecified does not mean no AI assistance.",
+      "label_counts": {
+        "": 100
+      },
+      "missing_final_labels": 100
+    }
+  ],
+  "canonical_v2": {
+    "source": "data/manual/independent_qa/p1_v2/review_annotation.csv",
+    "source_sha256": "0b972c4337e552dd322a201b1f8746bc5ac17e680c88a36a7e21b846f92a4d22",
+    "path": "data/interim/annotation_normalization/20261009/v2_review_annotation_canonical.csv",
+    "sha256": "c470ee26d8e004d9c47b8d493496bed0f98d5cd96381a8fb18e8e288433cb974",
+    "mapping": {
+      "ACCEPT": "laptop",
+      "REJECT": "non_laptop"
+    },
+    "mapping_basis": "Domain ACCEPT/REJECT convention under user request to normalize annotations; no filter prediction used.",
+    "labels": {
+      "non_laptop": 867,
+      "laptop": 1
+    },
+    "original_source_fields_preserved": true
+  },
+  "qa_acceptance": "NEEDS REVIEW",
+  "phase_acceptance": "NOT APPROVED",
+  "ai_assistance_v2": "Not specified by latest declaration; do not claim independent/blind"
+}

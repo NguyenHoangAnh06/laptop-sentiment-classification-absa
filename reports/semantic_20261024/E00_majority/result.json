@@ -1,0 +1,139 @@
+{
+  "experiment": "E00_majority",
+  "semantic_cache_metadata_sha256": "04a2d89861ac4ff3b0517e3b2efd67bdab47dc608371d591c582baa933f83556",
+  "cache_identity": {
+    "dataset_hash": "611b73584a933645336784b13b7f004a17e8803758d1be8ac64708563eabb5ba",
+    "split_hash": {
+      "train": "3b3a1a92d6019659510c6282a92e1ce47b15f24e4857770d3b65deff964fe41b",
+      "validation": "80e706247adb3daca99580d31ba618bb10b784fa4af9aa5fd15123320d6ce7a0",
+      "test": "f2a621178b8d7e76c385d3e336f66fdb8041a2c2c9ee07e89ca281cc82a1e097"
+    },
+    "configuration_hash": "a63e6653e6644293e9d3bba48b45e49ecd44756937798015d15ff27ae296725b",
+    "tokenizer_hash": "435667fab0c06c165b1283ecb422497c37124f2d6a35b2ac73dc876332fc9518"
+  },
+  "seed": 42,
+  "packages": {
+    "torch": "2.8.0+cu128",
+    "xgboost": "3.4.1",
+    "tabm": "0.0.3",
+    "tabpfn": "9.2.0",
+    "numpy": "2.2.6",
+    "scikit-learn": "1.7.2"
+  },
+  "training_config": {
+    "seed": 42,
+    "threads": 2,
+    "device": "cuda",
+    "max_seconds_per_experiment": 1800,
+    "max_process_rss_bytes": 6000000000,
+    "latency_batch_size": 128,
+    "xgboost": [
+      {
+        "max_depth": 4,
+        "learning_rate": 0.05,
+        "n_estimators": 250,
+        "min_child_weight": 2,
+        "subsample": 0.9,
+        "colsample_bytree": 0.9,
+        "reg_alpha": 0.0,
+        "reg_lambda": 1.0
+      },
+      {
+        "max_depth": 6,
+        "learning_rate": 0.05,
+        "n_estimators": 400,
+        "min_child_weight": 2,
+        "subsample": 0.9,
+        "colsample_bytree": 0.9,
+        "reg_alpha": 0.1,
+        "reg_lambda": 2.0
+      }
+    ],
+    "tabm": {
+      "n_blocks": 3,
+      "d_block": 256,
+      "k": 32,
+      "dropout": 0.1,
+      "epochs": 25,
+      "batch_size": 256,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0003,
+      "patience": 5
+    },
+    "tabpfn": {
+      "n_estimators": 1,
+      "fit_mode": "low_memory",
+      "memory_saving_mode": true,
+      "keep_cache_on_device": false,
+      "inference_precision": "autocast",
+      "prediction_batch_size": 16
+    }
+  },
+  "train_rows": 21000,
+  "label_provenance": "rating-derived proxy",
+  "selection_metric": "macro_f1",
+  "test_exposure": "Split test đã được đánh giá trong LEGACY; không tune benchmark mới bằng test",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "status": "PASS",
+  "selected_spec": {
+    "weighted": false
+  },
+  "test_metrics": {
+    "accuracy": 0.6371111111111111,
+    "macro_f1": 0.2594452739695036,
+    "weighted_f1": 0.49588640031371134,
+    "per_class": {
+      "negative": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 1239
+      },
+      "neutral": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 394
+      },
+      "positive": {
+        "precision": 0.6371111111111111,
+        "recall": 1.0,
+        "f1": 0.7783358219085109,
+        "support": 2867
+      }
+    },
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        1239
+      ],
+      [
+        0,
+        0,
+        394
+      ],
+      [
+        0,
+        0,
+        2867
+      ]
+    ],
+    "confusion_matrix_order": [
+      "negative",
+      "neutral",
+      "positive"
+    ],
+    "balanced_accuracy": 0.3333333333333333
+  },
+  "validation_macro_f1": 0.2593899900443479,
+  "selection_seconds": 0.015965200029313564,
+  "runtime_seconds": 0.08263930026441813,
+  "test_prediction_seconds": 2.5600194931030273e-05,
+  "inference_ms_per_review": 5.688932206895616e-06,
+  "peak_process_rss_bytes": 830050304,
+  "peak_gpu_allocated_bytes": 0,
+  "peak_gpu_reserved_bytes": 0,
+  "artifact_bytes": 26
+}

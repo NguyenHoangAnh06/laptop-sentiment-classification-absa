@@ -1,0 +1,145 @@
+{
+  "version": "p4_product_disjoint_v1",
+  "source": "data/processed/laptop_reviews.parquet",
+  "source_sha256": "611b73584a933645336784b13b7f004a17e8803758d1be8ac64708563eabb5ba",
+  "dataset_version": "P2 Amazon 20261009_final, fixed30k",
+  "configuration": {
+    "version": "p4_product_disjoint_v1",
+    "source": "data/processed/laptop_reviews.parquet",
+    "source_sha256": "611b73584a933645336784b13b7f004a17e8803758d1be8ac64708563eabb5ba",
+    "output_suffix": "p4_20261009_final",
+    "p2_manifest": "data/interim/p2/20261009_final/manifest.json",
+    "p3_summary": "reports/p3/20261009_verified/summary.json",
+    "near_jaccard": 0.9,
+    "max_near_comparisons": 100000,
+    "tfidf_min_df": 2,
+    "tfidf_max_features": 30000,
+    "bert_repo": "google-bert/bert-base-uncased",
+    "bert_revision": "86b5e0934494bd15c9632b12f734a8a67f723594",
+    "bert_model_card": "https://huggingface.co/google-bert/bert-base-uncased",
+    "bert_declared_license": "apache-2.0",
+    "length_quantile": 0.95,
+    "length_candidates": [
+      128,
+      256,
+      384,
+      512
+    ],
+    "batch_size": 256,
+    "max_memory_bytes": 512000000,
+    "max_seconds": 900,
+    "max_output_bytes": 512000000
+  },
+  "configuration_sha256": "a18541238821654587f2cb531dd7ca9b798897698ff87d1c49b2aa168b4fc311",
+  "strategy": {
+    "strategy": "product/variant/normalized/preprocessed/near-duplicate connected groups; deterministic class-balanced greedy",
+    "seed": 42,
+    "ratios": {
+      "train": 0.7,
+      "validation": 0.15,
+      "test": 0.15
+    },
+    "target_counts": [
+      [
+        5781,
+        1842,
+        13377
+      ],
+      [
+        1239,
+        395,
+        2866
+      ],
+      [
+        1239,
+        394,
+        2867
+      ]
+    ],
+    "actual_counts": [
+      [
+        5781,
+        1842,
+        13377
+      ],
+      [
+        1239,
+        395,
+        2866
+      ],
+      [
+        1239,
+        394,
+        2867
+      ]
+    ],
+    "class_order": [
+      "negative",
+      "neutral",
+      "positive"
+    ],
+    "split_order": [
+      "train",
+      "validation",
+      "test"
+    ],
+    "groups": 9080,
+    "max_group_reviews": 100,
+    "capacity_fallback_groups": 0,
+    "exact_class_quotas": true
+  },
+  "split_sha256": {
+    "train": "3b3a1a92d6019659510c6282a92e1ce47b15f24e4857770d3b65deff964fe41b",
+    "validation": "80e706247adb3daca99580d31ba618bb10b784fa4af9aa5fd15123320d6ce7a0",
+    "test": "f2a621178b8d7e76c385d3e336f66fdb8041a2c2c9ee07e89ca281cc82a1e097"
+  },
+  "membership_sha256": "628d8cc7372069223a1cda028d092ae6f91e90306d878057d69c67df1e2db527",
+  "excluded_rows": 0,
+  "paths": {
+    "splits": "data/processed/splits/p4_20261009_final",
+    "features": "data/processed/features/p4_20261009_final",
+    "preprocessing": "artifacts/preprocessing/p4_20261009_final",
+    "report": "reports/p4/p4_20261009_final"
+  },
+  "implementation_sha256": {
+    "src/data/split.py": "0ac2d1bd12355074a6bdb21b1a70862e4d8170e91871bec9fc7a42d112cb2a99",
+    "src/preprocessing/english.py": "2bf8885dfa96fd720e9bdbbebf29788f7300f2cfc2beb0f9b1be32e9d5c1a702",
+    "src/preprocessing/bert.py": "15319840112cc8c2196f393c3e749b4cbf118e8906f9f2914f188dc644328dff",
+    "scripts/prepare_p4.py": "0f4923f6846a5e8eb2e188cc5007b171f9f0a01c72b9c322c46197a761078ffa"
+  },
+  "train_ids_sha256": "5a44d1cb18ea8c40f2b2656356246be5795e7b25ec55ff78400bb46d0c4b7532",
+  "output_sha256": {
+    "data/processed/splits/p4_20261009_final/test.parquet": "f2a621178b8d7e76c385d3e336f66fdb8041a2c2c9ee07e89ca281cc82a1e097",
+    "data/processed/splits/p4_20261009_final/train.parquet": "3b3a1a92d6019659510c6282a92e1ce47b15f24e4857770d3b65deff964fe41b",
+    "data/processed/splits/p4_20261009_final/validation.parquet": "80e706247adb3daca99580d31ba618bb10b784fa4af9aa5fd15123320d6ce7a0",
+    "data/processed/features/p4_20261009_final/test_bert.parquet": "84a2cc799bc68eb252066c997c9532a885583cd77a5b610fa3cd3ee7a47da0e6",
+    "data/processed/features/p4_20261009_final/train_bert.parquet": "dfa75753949badcf45387a22bdc083efb9e5271eb315adf937b7e368757bf165",
+    "data/processed/features/p4_20261009_final/validation_bert.parquet": "42bb14ce199589d2dc92895b47fdcf67a5170004dc8421d7e2edfd224e0b42a2",
+    "artifacts/preprocessing/p4_20261009_final/bert/config.json": "7160e1553ad2ca51d8c1cb066be533db31826e12d173824c1bb0cb1a4f187d20",
+    "artifacts/preprocessing/p4_20261009_final/bert/tokenizer.json": "435667fab0c06c165b1283ecb422497c37124f2d6a35b2ac73dc876332fc9518",
+    "artifacts/preprocessing/p4_20261009_final/bert/tokenizer_original.json": "ce64fce797c24f68df90b40a3f74f579b336a493db14bd583fd520ea0d8c9a98",
+    "artifacts/preprocessing/p4_20261009_final/preprocessing.json": "c8b260f08deec97a7b56f7748683bf4cf6c990c4cd3b251244295bdf3ad2b448",
+    "artifacts/preprocessing/p4_20261009_final/test_feature_rows.parquet": "f5a16876cc2d8af6d1604ccfa7dfc04c4dc238108673cc6cab5a3b2ef60c30fe",
+    "artifacts/preprocessing/p4_20261009_final/test_tfidf.npz": "d23b24c02e8bf27559620298277303102f318ae875a76c175cb4f753358dedb3",
+    "artifacts/preprocessing/p4_20261009_final/tfidf.joblib": "7d181a0a698e9ea33c5508a820c58477af990df498ed239d189aa568cfc39709",
+    "artifacts/preprocessing/p4_20261009_final/train_feature_rows.parquet": "5980b9aa32ad415207b51fd4a61bcc1d27130e4e0a9ddd630484ca8ad97cbe3f",
+    "artifacts/preprocessing/p4_20261009_final/train_tfidf.npz": "4a902cfdb339012f61e94a66883ab0af34aab89c7eb4d04f9ea85efedbde308a",
+    "artifacts/preprocessing/p4_20261009_final/validation_feature_rows.parquet": "9b9af36c2db56a60d936e6476d81266c2bdd781406ab9dcec745e0b488b60892",
+    "artifacts/preprocessing/p4_20261009_final/validation_tfidf.npz": "e96e13ecb6c881fd68d50c8f9dbeaf6b8942674a0c033e8321f3f1e98dfda7b6",
+    "reports/p4/p4_20261009_final/assignments.csv": "628d8cc7372069223a1cda028d092ae6f91e90306d878057d69c67df1e2db527",
+    "reports/p4/p4_20261009_final/exclusions.csv": "ad6067da7e7e8163a3530c8ceef84013fd8a5e0d217d22022f2e38f160d91cdf",
+    "reports/p4/p4_20261009_final/input_preservation.json": "0f4a78540b6bfad9c7885600bc166fbf0974ed055407795e3d748ed6bbc7614e",
+    "reports/p4/p4_20261009_final/label_distribution.csv": "101de92fbb02c97f0ad657bdc9fe4d530027fd0d4ee3c9369cfe5e4371a03d0d",
+    "reports/p4/p4_20261009_final/near_pairs.json": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f",
+    "reports/p4/p4_20261009_final/validation.json": "6f3d245221a998f381ecbaf2306ca2e2d48d65a097b71affec4023a63e307b08"
+  },
+  "semeval": "UNTOUCHED; source/license NOT_VERIFIED owner educational exception",
+  "models_trained": false,
+  "classifier_predictions_created": false,
+  "gold_labels_created": false,
+  "runtime_seconds": 107.16145810019225,
+  "resources": {
+    "working_set_bytes": 327176192,
+    "peak_working_set_bytes": 459124736
+  }
+}

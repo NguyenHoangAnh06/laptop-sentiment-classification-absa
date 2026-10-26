@@ -1,0 +1,23 @@
+{
+  "rows": 128,
+  "seconds": 0.1476782001554966,
+  "reviews_per_second": 866.749458384673,
+  "peak_process_rss_bytes": 1382313984,
+  "peak_gpu_allocated_bytes": 265123328,
+  "peak_gpu_reserved_bytes": 367001600,
+  "deterministic_sample": true,
+  "duplicate_consistency": true,
+  "selected_encoder": {
+    "model": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "dimension": 384,
+    "pooling": "attention_mask_mean",
+    "normalize_embeddings": true,
+    "max_length": 256,
+    "batch_size": 32,
+    "device": "cuda",
+    "dtype": "float32"
+  },
+  "reason": "MiniLM 6 lớp, 384 chiều và sample đo trực tiếp phù hợp VRAM 6GB; không chọn dựa trên nhãn hoặc test score",
+  "limits": "Một encoder được đo; không khẳng định tối ưu hơn các encoder chưa thử; max_length256 có truncation"
+}

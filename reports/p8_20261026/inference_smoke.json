@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "device": "cpu",
+  "validation_uid": "train:1018",
+  "aspect_count": 1,
+  "span_text_roundtrip": true,
+  "score_is_null": true,
+  "official_test_inference": false,
+  "checkpoint_sha256": "0a234b7d9a9c231d6e3102273e1475e57cab0d136afb7e7b2d39cbcd0025d120"
+}

@@ -1,0 +1,214 @@
+BertForSequenceClassification LOAD REPORT from: C:\Users\ADMIN\.cache\huggingface\hub\models--google-bert--bert-base-uncased\snapshots\86b5e0934494bd15c9632b12f734a8a67f723594
+Key                                        | Status     | 
+-------------------------------------------+------------+-
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED | 
+cls.predictions.transform.dense.weight     | UNEXPECTED | 
+cls.seq_relationship.bias                  | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED | 
+cls.seq_relationship.weight                | UNEXPECTED | 
+cls.predictions.transform.dense.bias       | UNEXPECTED | 
+cls.predictions.bias                       | UNEXPECTED | 
+classifier.bias                            | MISSING    | 
+classifier.weight                          | MISSING    | 
+
+Notes:
+- UNEXPECTED	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING	:those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+`use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
+C:\Users\ADMIN\Desktop\code\project1\.venv\Lib\site-packages\torch\autograd\graph.py:829: UserWarning: Memory Efficient attention defaults to a non-deterministic algorithm. To explicitly enable determinism call torch.use_deterministic_algorithms(True, warn_only=False). (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\native\transformers\cuda\attention_backward.cu:777.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+BertForSequenceClassification LOAD REPORT from: C:\Users\ADMIN\.cache\huggingface\hub\models--google-bert--bert-base-uncased\snapshots\86b5e0934494bd15c9632b12f734a8a67f723594
+Key                                        | Status     | 
+-------------------------------------------+------------+-
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED | 
+cls.predictions.transform.dense.weight     | UNEXPECTED | 
+cls.seq_relationship.bias                  | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED | 
+cls.seq_relationship.weight                | UNEXPECTED | 
+cls.predictions.transform.dense.bias       | UNEXPECTED | 
+cls.predictions.bias                       | UNEXPECTED | 
+classifier.bias                            | MISSING    | 
+classifier.weight                          | MISSING    | 
+
+Notes:
+- UNEXPECTED	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING	:those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+{"mode": "unweighted", "epoch": 1, "batch": 100, "batches": 2625, "seen": 800, "epoch_seconds": 11.392563300207257}
+{"mode": "unweighted", "epoch": 1, "batch": 200, "batches": 2625, "seen": 1600, "epoch_seconds": 23.079023400321603}
+{"mode": "unweighted", "epoch": 1, "batch": 300, "batches": 2625, "seen": 2400, "epoch_seconds": 35.16770390002057}
+{"mode": "unweighted", "epoch": 1, "batch": 400, "batches": 2625, "seen": 3200, "epoch_seconds": 47.23566030012444}
+{"mode": "unweighted", "epoch": 1, "batch": 500, "batches": 2625, "seen": 4000, "epoch_seconds": 59.27437900006771}
+{"mode": "unweighted", "epoch": 1, "batch": 600, "batches": 2625, "seen": 4800, "epoch_seconds": 70.46812790026888}
+{"mode": "unweighted", "epoch": 1, "batch": 700, "batches": 2625, "seen": 5600, "epoch_seconds": 82.65521780028939}
+{"mode": "unweighted", "epoch": 1, "batch": 800, "batches": 2625, "seen": 6400, "epoch_seconds": 94.73767120018601}
+{"mode": "unweighted", "epoch": 1, "batch": 900, "batches": 2625, "seen": 7200, "epoch_seconds": 106.27062470000237}
+{"mode": "unweighted", "epoch": 1, "batch": 1000, "batches": 2625, "seen": 8000, "epoch_seconds": 118.23205340001732}
+{"mode": "unweighted", "epoch": 1, "batch": 1100, "batches": 2625, "seen": 8800, "epoch_seconds": 129.80587520031258}
+{"mode": "unweighted", "epoch": 1, "batch": 1200, "batches": 2625, "seen": 9600, "epoch_seconds": 141.52255719993263}
+{"mode": "unweighted", "epoch": 1, "batch": 1300, "batches": 2625, "seen": 10400, "epoch_seconds": 153.03111330000684}
+{"mode": "unweighted", "epoch": 1, "batch": 1400, "batches": 2625, "seen": 11200, "epoch_seconds": 164.60900080017745}
+{"mode": "unweighted", "epoch": 1, "batch": 1500, "batches": 2625, "seen": 12000, "epoch_seconds": 176.46656899992377}
+{"mode": "unweighted", "epoch": 1, "batch": 1600, "batches": 2625, "seen": 12800, "epoch_seconds": 188.4281831001863}
+{"mode": "unweighted", "epoch": 1, "batch": 1700, "batches": 2625, "seen": 13600, "epoch_seconds": 200.5265567000024}
+{"mode": "unweighted", "epoch": 1, "batch": 1800, "batches": 2625, "seen": 14400, "epoch_seconds": 213.2968779001385}
+{"mode": "unweighted", "epoch": 1, "batch": 1900, "batches": 2625, "seen": 15200, "epoch_seconds": 224.3859220002778}
+{"mode": "unweighted", "epoch": 1, "batch": 2000, "batches": 2625, "seen": 16000, "epoch_seconds": 236.54829449998215}
+{"mode": "unweighted", "epoch": 1, "batch": 2100, "batches": 2625, "seen": 16800, "epoch_seconds": 248.3997186003253}
+{"mode": "unweighted", "epoch": 1, "batch": 2200, "batches": 2625, "seen": 17600, "epoch_seconds": 260.34485780028626}
+{"mode": "unweighted", "epoch": 1, "batch": 2300, "batches": 2625, "seen": 18400, "epoch_seconds": 272.9356492003426}
+{"mode": "unweighted", "epoch": 1, "batch": 2400, "batches": 2625, "seen": 19200, "epoch_seconds": 284.17501450004056}
+{"mode": "unweighted", "epoch": 1, "batch": 2500, "batches": 2625, "seen": 20000, "epoch_seconds": 295.95009079994634}
+{"mode": "unweighted", "epoch": 1, "batch": 2600, "batches": 2625, "seen": 20800, "epoch_seconds": 307.305254700128}
+{"mode": "unweighted", "epoch": 1, "validation_macro_f1": 0.7125736195747168}
+{"mode": "unweighted", "epoch": 2, "batch": 100, "batches": 2625, "seen": 800, "epoch_seconds": 12.934008399955928}
+{"mode": "unweighted", "epoch": 2, "batch": 200, "batches": 2625, "seen": 1600, "epoch_seconds": 25.285091899801046}
+{"mode": "unweighted", "epoch": 2, "batch": 300, "batches": 2625, "seen": 2400, "epoch_seconds": 37.18205469986424}
+{"mode": "unweighted", "epoch": 2, "batch": 400, "batches": 2625, "seen": 3200, "epoch_seconds": 48.784854100085795}
+{"mode": "unweighted", "epoch": 2, "batch": 500, "batches": 2625, "seen": 4000, "epoch_seconds": 60.293121200054884}
+{"mode": "unweighted", "epoch": 2, "batch": 600, "batches": 2625, "seen": 4800, "epoch_seconds": 71.6535207000561}
+{"mode": "unweighted", "epoch": 2, "batch": 700, "batches": 2625, "seen": 5600, "epoch_seconds": 84.13705969974399}
+{"mode": "unweighted", "epoch": 2, "batch": 800, "batches": 2625, "seen": 6400, "epoch_seconds": 96.52501739980653}
+{"mode": "unweighted", "epoch": 2, "batch": 900, "batches": 2625, "seen": 7200, "epoch_seconds": 108.78057659976184}
+{"mode": "unweighted", "epoch": 2, "batch": 1000, "batches": 2625, "seen": 8000, "epoch_seconds": 121.7048451998271}
+{"mode": "unweighted", "epoch": 2, "batch": 1100, "batches": 2625, "seen": 8800, "epoch_seconds": 133.27244099974632}
+{"mode": "unweighted", "epoch": 2, "batch": 1200, "batches": 2625, "seen": 9600, "epoch_seconds": 145.82061979966238}
+{"mode": "unweighted", "epoch": 2, "batch": 1300, "batches": 2625, "seen": 10400, "epoch_seconds": 156.98410200001672}
+{"mode": "unweighted", "epoch": 2, "batch": 1400, "batches": 2625, "seen": 11200, "epoch_seconds": 168.51683779992163}
+{"mode": "unweighted", "epoch": 2, "batch": 1500, "batches": 2625, "seen": 12000, "epoch_seconds": 180.71190059976652}
+{"mode": "unweighted", "epoch": 2, "batch": 1600, "batches": 2625, "seen": 12800, "epoch_seconds": 192.30112290009856}
+{"mode": "unweighted", "epoch": 2, "batch": 1700, "batches": 2625, "seen": 13600, "epoch_seconds": 203.71201370004565}
+{"mode": "unweighted", "epoch": 2, "batch": 1800, "batches": 2625, "seen": 14400, "epoch_seconds": 215.84837260004133}
+{"mode": "unweighted", "epoch": 2, "batch": 1900, "batches": 2625, "seen": 15200, "epoch_seconds": 228.96319649973884}
+{"mode": "unweighted", "epoch": 2, "batch": 2000, "batches": 2625, "seen": 16000, "epoch_seconds": 239.97260899981484}
+{"mode": "unweighted", "epoch": 2, "batch": 2100, "batches": 2625, "seen": 16800, "epoch_seconds": 251.41100970003754}
+{"mode": "unweighted", "epoch": 2, "batch": 2200, "batches": 2625, "seen": 17600, "epoch_seconds": 263.7300525000319}
+{"mode": "unweighted", "epoch": 2, "batch": 2300, "batches": 2625, "seen": 18400, "epoch_seconds": 275.42120300000533}
+{"mode": "unweighted", "epoch": 2, "batch": 2400, "batches": 2625, "seen": 19200, "epoch_seconds": 286.73383849998936}
+{"mode": "unweighted", "epoch": 2, "batch": 2500, "batches": 2625, "seen": 20000, "epoch_seconds": 298.5318171996623}
+{"mode": "unweighted", "epoch": 2, "batch": 2600, "batches": 2625, "seen": 20800, "epoch_seconds": 310.2076300000772}
+{"mode": "unweighted", "epoch": 2, "validation_macro_f1": 0.7424382584256147}
+{"mode": "unweighted", "epoch": 3, "batch": 100, "batches": 2625, "seen": 800, "epoch_seconds": 12.629636999685317}
+{"mode": "unweighted", "epoch": 3, "batch": 200, "batches": 2625, "seen": 1600, "epoch_seconds": 25.169098099693656}
+{"mode": "unweighted", "epoch": 3, "batch": 300, "batches": 2625, "seen": 2400, "epoch_seconds": 36.74641579994932}
+{"mode": "unweighted", "epoch": 3, "batch": 400, "batches": 2625, "seen": 3200, "epoch_seconds": 48.404249699786305}
+{"mode": "unweighted", "epoch": 3, "batch": 500, "batches": 2625, "seen": 4000, "epoch_seconds": 60.59483650000766}
+{"mode": "unweighted", "epoch": 3, "batch": 600, "batches": 2625, "seen": 4800, "epoch_seconds": 72.08776179980487}
+{"mode": "unweighted", "epoch": 3, "batch": 700, "batches": 2625, "seen": 5600, "epoch_seconds": 83.29024680005386}
+{"mode": "unweighted", "epoch": 3, "batch": 800, "batches": 2625, "seen": 6400, "epoch_seconds": 94.98192539997399}
+{"mode": "unweighted", "epoch": 3, "batch": 900, "batches": 2625, "seen": 7200, "epoch_seconds": 106.53842550003901}
+{"mode": "unweighted", "epoch": 3, "batch": 1000, "batches": 2625, "seen": 8000, "epoch_seconds": 118.55294169997796}
+{"mode": "unweighted", "epoch": 3, "batch": 1100, "batches": 2625, "seen": 8800, "epoch_seconds": 130.38459419971332}
+{"mode": "unweighted", "epoch": 3, "batch": 1200, "batches": 2625, "seen": 9600, "epoch_seconds": 142.28570650005713}
+{"mode": "unweighted", "epoch": 3, "batch": 1300, "batches": 2625, "seen": 10400, "epoch_seconds": 153.97001970000565}
+{"mode": "unweighted", "epoch": 3, "batch": 1400, "batches": 2625, "seen": 11200, "epoch_seconds": 165.30095849977806}
+{"mode": "unweighted", "epoch": 3, "batch": 1500, "batches": 2625, "seen": 12000, "epoch_seconds": 178.03883589990437}
+{"mode": "unweighted", "epoch": 3, "batch": 1600, "batches": 2625, "seen": 12800, "epoch_seconds": 189.14397979993373}
+{"mode": "unweighted", "epoch": 3, "batch": 1700, "batches": 2625, "seen": 13600, "epoch_seconds": 201.7244798997417}
+{"mode": "unweighted", "epoch": 3, "batch": 1800, "batches": 2625, "seen": 14400, "epoch_seconds": 212.99775430001318}
+{"mode": "unweighted", "epoch": 3, "batch": 1900, "batches": 2625, "seen": 15200, "epoch_seconds": 224.6970844999887}
+{"mode": "unweighted", "epoch": 3, "batch": 2000, "batches": 2625, "seen": 16000, "epoch_seconds": 237.09485789993778}
+{"mode": "unweighted", "epoch": 3, "batch": 2100, "batches": 2625, "seen": 16800, "epoch_seconds": 248.8694118997082}
+{"mode": "unweighted", "epoch": 3, "batch": 2200, "batches": 2625, "seen": 17600, "epoch_seconds": 260.7831486999057}
+{"mode": "unweighted", "epoch": 3, "batch": 2300, "batches": 2625, "seen": 18400, "epoch_seconds": 273.0587662998587}
+{"mode": "unweighted", "epoch": 3, "batch": 2400, "batches": 2625, "seen": 19200, "epoch_seconds": 285.5005887998268}
+{"mode": "unweighted", "epoch": 3, "batch": 2500, "batches": 2625, "seen": 20000, "epoch_seconds": 297.4164211996831}
+{"mode": "unweighted", "epoch": 3, "batch": 2600, "batches": 2625, "seen": 20800, "epoch_seconds": 309.423485300038}
+{"mode": "unweighted", "epoch": 3, "validation_macro_f1": 0.7603380514273251}
+BertForSequenceClassification LOAD REPORT from: C:\Users\ADMIN\.cache\huggingface\hub\models--google-bert--bert-base-uncased\snapshots\86b5e0934494bd15c9632b12f734a8a67f723594
+Key                                        | Status     | 
+-------------------------------------------+------------+-
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED | 
+cls.predictions.transform.dense.weight     | UNEXPECTED | 
+cls.seq_relationship.bias                  | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED | 
+cls.seq_relationship.weight                | UNEXPECTED | 
+cls.predictions.transform.dense.bias       | UNEXPECTED | 
+cls.predictions.bias                       | UNEXPECTED | 
+classifier.bias                            | MISSING    | 
+classifier.weight                          | MISSING    | 
+
+Notes:
+- UNEXPECTED	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING	:those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+{"mode": "balanced", "epoch": 1, "batch": 100, "batches": 2625, "seen": 800, "epoch_seconds": 11.18903180025518}
+{"mode": "balanced", "epoch": 1, "batch": 200, "batches": 2625, "seen": 1600, "epoch_seconds": 23.038096100091934}
+{"mode": "balanced", "epoch": 1, "batch": 300, "batches": 2625, "seen": 2400, "epoch_seconds": 35.21454010019079}
+{"mode": "balanced", "epoch": 1, "batch": 400, "batches": 2625, "seen": 3200, "epoch_seconds": 47.246804300229996}
+{"mode": "balanced", "epoch": 1, "batch": 500, "batches": 2625, "seen": 4000, "epoch_seconds": 59.21237049996853}
+{"mode": "balanced", "epoch": 1, "batch": 600, "batches": 2625, "seen": 4800, "epoch_seconds": 70.45398840028793}
+{"mode": "balanced", "epoch": 1, "batch": 700, "batches": 2625, "seen": 5600, "epoch_seconds": 82.78229940030724}
+{"mode": "balanced", "epoch": 1, "batch": 800, "batches": 2625, "seen": 6400, "epoch_seconds": 94.87584570003673}
+{"mode": "balanced", "epoch": 1, "batch": 900, "batches": 2625, "seen": 7200, "epoch_seconds": 106.38125710003078}
+{"mode": "balanced", "epoch": 1, "batch": 1000, "batches": 2625, "seen": 8000, "epoch_seconds": 118.47957750037313}
+{"mode": "balanced", "epoch": 1, "batch": 1100, "batches": 2625, "seen": 8800, "epoch_seconds": 130.09712820034474}
+{"mode": "balanced", "epoch": 1, "batch": 1200, "batches": 2625, "seen": 9600, "epoch_seconds": 141.72759449994192}
+{"mode": "balanced", "epoch": 1, "batch": 1300, "batches": 2625, "seen": 10400, "epoch_seconds": 153.25628089997917}
+{"mode": "balanced", "epoch": 1, "batch": 1400, "batches": 2625, "seen": 11200, "epoch_seconds": 164.81482010008767}
+{"mode": "balanced", "epoch": 1, "batch": 1500, "batches": 2625, "seen": 12000, "epoch_seconds": 176.78631870029494}
+{"mode": "balanced", "epoch": 1, "batch": 1600, "batches": 2625, "seen": 12800, "epoch_seconds": 188.77798140002415}
+{"mode": "balanced", "epoch": 1, "batch": 1700, "batches": 2625, "seen": 13600, "epoch_seconds": 200.77429490024224}
+{"mode": "balanced", "epoch": 1, "batch": 1800, "batches": 2625, "seen": 14400, "epoch_seconds": 213.57933109998703}
+{"mode": "balanced", "epoch": 1, "batch": 1900, "batches": 2625, "seen": 15200, "epoch_seconds": 224.87210060004145}
+{"mode": "balanced", "epoch": 1, "batch": 2000, "batches": 2625, "seen": 16000, "epoch_seconds": 237.02256710035726}
+{"mode": "balanced", "epoch": 1, "batch": 2100, "batches": 2625, "seen": 16800, "epoch_seconds": 248.97156090009958}
+{"mode": "balanced", "epoch": 1, "batch": 2200, "batches": 2625, "seen": 17600, "epoch_seconds": 260.83009609999135}
+{"mode": "balanced", "epoch": 1, "batch": 2300, "batches": 2625, "seen": 18400, "epoch_seconds": 273.1795822000131}
+{"mode": "balanced", "epoch": 1, "batch": 2400, "batches": 2625, "seen": 19200, "epoch_seconds": 285.08824270032346}
+{"mode": "balanced", "epoch": 1, "batch": 2500, "batches": 2625, "seen": 20000, "epoch_seconds": 296.7990524000488}
+{"mode": "balanced", "epoch": 1, "batch": 2600, "batches": 2625, "seen": 20800, "epoch_seconds": 308.1030422002077}
+{"mode": "balanced", "epoch": 1, "validation_macro_f1": 0.7407065280852777}
+{"mode": "balanced", "epoch": 2, "batch": 100, "batches": 2625, "seen": 800, "epoch_seconds": 12.324499300215393}
+{"mode": "balanced", "epoch": 2, "batch": 200, "batches": 2625, "seen": 1600, "epoch_seconds": 24.626409700140357}
+{"mode": "balanced", "epoch": 2, "batch": 300, "batches": 2625, "seen": 2400, "epoch_seconds": 36.50307649979368}
+{"mode": "balanced", "epoch": 2, "batch": 400, "batches": 2625, "seen": 3200, "epoch_seconds": 48.17647669976577}
+{"mode": "balanced", "epoch": 2, "batch": 500, "batches": 2625, "seen": 4000, "epoch_seconds": 59.60850000008941}
+{"mode": "balanced", "epoch": 2, "batch": 600, "batches": 2625, "seen": 4800, "epoch_seconds": 71.11495199985802}
+{"mode": "balanced", "epoch": 2, "batch": 700, "batches": 2625, "seen": 5600, "epoch_seconds": 83.61504870001227}
+{"mode": "balanced", "epoch": 2, "batch": 800, "batches": 2625, "seen": 6400, "epoch_seconds": 96.22138789994642}
+{"mode": "balanced", "epoch": 2, "batch": 900, "batches": 2625, "seen": 7200, "epoch_seconds": 109.0988288000226}
+{"mode": "balanced", "epoch": 2, "batch": 1000, "batches": 2625, "seen": 8000, "epoch_seconds": 122.62188570015132}
+{"mode": "balanced", "epoch": 2, "batch": 1100, "batches": 2625, "seen": 8800, "epoch_seconds": 134.22575670015067}
+{"mode": "balanced", "epoch": 2, "batch": 1200, "batches": 2625, "seen": 9600, "epoch_seconds": 147.12824200000614}
+{"mode": "balanced", "epoch": 2, "batch": 1300, "batches": 2625, "seen": 10400, "epoch_seconds": 158.51831430010498}
+{"mode": "balanced", "epoch": 2, "batch": 1400, "batches": 2625, "seen": 11200, "epoch_seconds": 169.95796919986606}
+{"mode": "balanced", "epoch": 2, "batch": 1500, "batches": 2625, "seen": 12000, "epoch_seconds": 182.2606545998715}
+{"mode": "balanced", "epoch": 2, "batch": 1600, "batches": 2625, "seen": 12800, "epoch_seconds": 194.18401299975812}
+{"mode": "balanced", "epoch": 2, "batch": 1700, "batches": 2625, "seen": 13600, "epoch_seconds": 205.77827529981732}
+{"mode": "balanced", "epoch": 2, "batch": 1800, "batches": 2625, "seen": 14400, "epoch_seconds": 217.8158068000339}
+{"mode": "balanced", "epoch": 2, "batch": 1900, "batches": 2625, "seen": 15200, "epoch_seconds": 231.02681499999017}
+{"mode": "balanced", "epoch": 2, "batch": 2000, "batches": 2625, "seen": 16000, "epoch_seconds": 241.9432764998637}
+{"mode": "balanced", "epoch": 2, "batch": 2100, "batches": 2625, "seen": 16800, "epoch_seconds": 253.4536298001185}
+{"mode": "balanced", "epoch": 2, "batch": 2200, "batches": 2625, "seen": 17600, "epoch_seconds": 265.81663089990616}
+{"mode": "balanced", "epoch": 2, "batch": 2300, "batches": 2625, "seen": 18400, "epoch_seconds": 277.4487966001034}
+{"mode": "balanced", "epoch": 2, "batch": 2400, "batches": 2625, "seen": 19200, "epoch_seconds": 288.69901409978047}
+{"mode": "balanced", "epoch": 2, "batch": 2500, "batches": 2625, "seen": 20000, "epoch_seconds": 300.41110819997266}
+{"mode": "balanced", "epoch": 2, "batch": 2600, "batches": 2625, "seen": 20800, "epoch_seconds": 312.0081370999105}
+{"mode": "balanced", "epoch": 2, "validation_macro_f1": 0.7565956437969173}
+{"mode": "balanced", "epoch": 3, "batch": 100, "batches": 2625, "seen": 800, "epoch_seconds": 21.054768899921328}
+{"mode": "balanced", "epoch": 3, "batch": 200, "batches": 2625, "seen": 1600, "epoch_seconds": 41.215928100049496}
+{"mode": "balanced", "epoch": 3, "batch": 300, "batches": 2625, "seen": 2400, "epoch_seconds": 61.4937704000622}
+{"mode": "balanced", "epoch": 3, "batch": 400, "batches": 2625, "seen": 3200, "epoch_seconds": 81.86661909986287}
+{"mode": "balanced", "epoch": 3, "batch": 500, "batches": 2625, "seen": 4000, "epoch_seconds": 102.18947099987417}
+{"mode": "balanced", "epoch": 3, "batch": 600, "batches": 2625, "seen": 4800, "epoch_seconds": 121.82753810007125}
+{"mode": "balanced", "epoch": 3, "batch": 700, "batches": 2625, "seen": 5600, "epoch_seconds": 141.84205929981545}
+{"mode": "balanced", "epoch": 3, "batch": 800, "batches": 2625, "seen": 6400, "epoch_seconds": 162.06958499969915}
+{"mode": "balanced", "epoch": 3, "batch": 900, "batches": 2625, "seen": 7200, "epoch_seconds": 182.03241159999743}
+{"mode": "balanced", "epoch": 3, "batch": 1000, "batches": 2625, "seen": 8000, "epoch_seconds": 202.71716989995912}
+{"mode": "balanced", "epoch": 3, "batch": 1100, "batches": 2625, "seen": 8800, "epoch_seconds": 223.26492640003562}
+{"mode": "balanced", "epoch": 3, "batch": 1200, "batches": 2625, "seen": 9600, "epoch_seconds": 243.3999069998972}
+{"mode": "balanced", "epoch": 3, "batch": 1300, "batches": 2625, "seen": 10400, "epoch_seconds": 263.34283989993855}
+{"mode": "balanced", "epoch": 3, "batch": 1400, "batches": 2625, "seen": 11200, "epoch_seconds": 283.5849736998789}
+{"mode": "balanced", "epoch": 3, "batch": 1500, "batches": 2625, "seen": 12000, "epoch_seconds": 303.973776999861}
+{"mode": "balanced", "epoch": 3, "batch": 1600, "batches": 2625, "seen": 12800, "epoch_seconds": 324.23270139982924}
+{"mode": "balanced", "epoch": 3, "batch": 1700, "batches": 2625, "seen": 13600, "epoch_seconds": 345.1054445998743}
+{"mode": "balanced", "epoch": 3, "batch": 1800, "batches": 2625, "seen": 14400, "epoch_seconds": 365.27767679980025}
+{"mode": "balanced", "epoch": 3, "batch": 1900, "batches": 2625, "seen": 15200, "epoch_seconds": 385.4589566998184}
+{"mode": "balanced", "epoch": 3, "batch": 2000, "batches": 2625, "seen": 16000, "epoch_seconds": 405.61952190008014}
+{"mode": "balanced", "epoch": 3, "batch": 2100, "batches": 2625, "seen": 16800, "epoch_seconds": 425.3963592997752}
+{"mode": "balanced", "epoch": 3, "batch": 2200, "batches": 2625, "seen": 17600, "epoch_seconds": 445.16342319967225}
+{"mode": "balanced", "epoch": 3, "batch": 2300, "batches": 2625, "seen": 18400, "epoch_seconds": 465.3554773000069}
+{"mode": "balanced", "epoch": 3, "batch": 2400, "batches": 2625, "seen": 19200, "epoch_seconds": 485.53487539989874}
+{"mode": "balanced", "epoch": 3, "batch": 2500, "batches": 2625, "seen": 20000, "epoch_seconds": 505.802594400011}
+{"mode": "balanced", "epoch": 3, "batch": 2600, "batches": 2625, "seen": 20800, "epoch_seconds": 525.6301787998527}
+{"mode": "balanced", "epoch": 3, "validation_macro_f1": 0.7583444112844425}
+{"status": "PASS", "experiment": "E05_transformer", "train_rows": 21000, "data_regime": "FULL", "selected_spec": {"mode": "unweighted"}, "validation_macro_f1": 0.7603380514273251, "test_metrics": {"accuracy": 0.8866666666666667, "macro_f1": 0.7553821869139502, "weighted_f1": 0.886262401590757, "per_class": {"negative": {"precision": 0.8641686182669789, "recall": 0.8934624697336562, "f1": 0.8785714285714286, "support": 1239}, "neutral": {"precision": 0.4435695538057743, "recall": 0.4289340101522843, "f1": 0.43612903225806454, "support": 394}, "positive": {"precision": 0.95630725863284, "recall": 0.9466341123125218, "f1": 0.9514460999123576, "support": 2867}}, "confusion_matrix": [[1107, 99, 33], [134, 169, 91], [40, 113, 2714]], "confusion_matrix_order": ["negative", "neutral", "positive"], "balanced_accuracy": 0.7563435307328207}, "runtime_seconds": 2303.734280699864, "peak_process_rss_bytes": 3118305280, "peak_gpu_allocated_bytes": 2301708288, "test_prediction_seconds": 25.07829889981076, "inference_ms_per_review": 5.572955311069058, "artifact_bytes": 438674765, "artifact_directory": "artifacts/models/semantic_20261024/E05_transformer/unweighted", "test_prediction_passes": 1}

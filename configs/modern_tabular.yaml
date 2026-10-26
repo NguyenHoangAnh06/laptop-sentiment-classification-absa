@@ -1,0 +1,26 @@
+seed: 42
+threads: 2
+device: cuda
+max_seconds_per_experiment: 1800
+max_process_rss_bytes: 6000000000
+latency_batch_size: 128
+xgboost:
+  - {max_depth: 4, learning_rate: 0.05, n_estimators: 250, min_child_weight: 2, subsample: 0.9, colsample_bytree: 0.9, reg_alpha: 0.0, reg_lambda: 1.0}
+  - {max_depth: 6, learning_rate: 0.05, n_estimators: 400, min_child_weight: 2, subsample: 0.9, colsample_bytree: 0.9, reg_alpha: 0.1, reg_lambda: 2.0}
+tabm:
+  n_blocks: 3
+  d_block: 256
+  k: 32
+  dropout: 0.1
+  epochs: 25
+  batch_size: 256
+  learning_rate: 0.001
+  weight_decay: 0.0003
+  patience: 5
+tabpfn:
+  n_estimators: 1
+  fit_mode: low_memory
+  memory_saving_mode: true
+  keep_cache_on_device: false
+  inference_precision: autocast
+  prediction_batch_size: 16

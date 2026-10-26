@@ -1,0 +1,56 @@
+{
+  "status": "PASS",
+  "scope": "verified_local_and_kaggle_proxy_benchmark",
+  "cloud_full_train_status": "PASS",
+  "models": [
+    "E00_majority",
+    "E01_xgboost_embedding",
+    "E02_tabm_embedding",
+    "E03_tabpfn_v3_embedding",
+    "E04_tabpfn_v35_embedding",
+    "E05_transformer"
+  ],
+  "selected_by_validation": "E05_transformer",
+  "best_frozen_by_validation": "E02_tabm_embedding",
+  "test_tuning": false,
+  "predictions_rerun": false,
+  "human_gold": "FUTURE_WORK",
+  "limitations": [
+    "reused test",
+    "V3 internal feature coverage",
+    "proxy labels",
+    "different hardware/runtime scopes",
+    "human gold future work"
+  ],
+  "model_sources": {
+    "E03_tabpfn_v3_embedding": {
+      "kind": "kaggle_csv",
+      "directory": "artifacts/cloud_runs/tabpfn_full21k_20261024/tabpfn_v3_full21k",
+      "verification": "reports/tabpfn_kaggle_full21k_verification.json",
+      "status": "SUCCESS"
+    },
+    "E04_tabpfn_v35_embedding": {
+      "kind": "kaggle_csv",
+      "directory": "artifacts/cloud_runs/tabpfn_full21k_20261024/tabpfn_v35_full21k",
+      "verification": "reports/tabpfn_kaggle_full21k_verification.json",
+      "status": "SUCCESS"
+    }
+  },
+  "test_macro_f1_ranking_descriptive": [
+    "E05_transformer",
+    "E02_tabm_embedding",
+    "E01_xgboost_embedding",
+    "E04_tabpfn_v35_embedding",
+    "E03_tabpfn_v3_embedding",
+    "E00_majority"
+  ],
+  "historical_local_directory": "reports/history/tabpfn_before_kaggle_20261024",
+  "verification_report": "reports/tabpfn_kaggle_full21k_verification.json",
+  "error_analysis_report": "reports/p7_error_cause_analysis.md",
+  "error_analysis_status": "COMPLETE_CURRENT_SIX_MODELS",
+  "human_cause_attribution_status": "HUMAN_REVIEWED_DIAGNOSTIC_COMPLETE",
+  "independent_gold_status": "PENDING_NOT_CREATED",
+  "p7_status": "DONE",
+  "readiness": "READY FOR P8",
+  "human_diagnosis_report": "reports/p7_human_audit_results.json"
+}

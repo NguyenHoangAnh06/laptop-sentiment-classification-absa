@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "scientific_files_unchanged": 153,
+  "mismatches": [],
+  "legacy": {
+    "p5": {
+      "count": 27,
+      "mismatches": []
+    },
+    "p6": {
+      "count": 26,
+      "mismatches": []
+    }
+  },
+  "benchmark_csv_sha256": "260068014d210a8549d09156e79eadd4ae0b8546f0dda64b51e361b664753f54",
+  "manual_rows": 360,
+  "human_fields_nonempty": 0,
+  "annotation_file_sha256": "f0ebdbb864a102b52892f3bf2c7b122283522d064b3dda422074260eb0a5f563",
+  "private_sidecar_sha256": "157f4f43a0b2e53d7729ba05a2ca95d1947cdd936511692fbcb9a5cdc345498d"
+}

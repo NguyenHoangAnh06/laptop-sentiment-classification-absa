@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "scope": "local_proxy_benchmark",
+  "cloud_full_train_status": "PENDING",
+  "models": [
+    "E00_majority",
+    "E01_xgboost_embedding",
+    "E02_tabm_embedding",
+    "E03_tabpfn_v3_embedding",
+    "E04_tabpfn_v35_embedding",
+    "E05_transformer"
+  ],
+  "selected_by_validation": "E05_transformer",
+  "best_frozen_by_validation": "E02_tabm_embedding",
+  "test_tuning": false,
+  "predictions_rerun": false,
+  "human_gold": "FUTURE_WORK",
+  "limitations": [
+    "TabPFN SUBSAMPLED",
+    "E03 RSS WARNING",
+    "V3 internal feature coverage",
+    "proxy labels"
+  ]
+}

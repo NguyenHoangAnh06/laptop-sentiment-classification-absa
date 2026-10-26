@@ -1,0 +1,18 @@
+{
+  "seed": 43,
+  "interruption": "Process followup dừng theo turn interruption ở epoch5 trước validation/save",
+  "resume_from_completed_epoch": 4,
+  "resume_with_optimizer_scheduler_scaler_rng": false,
+  "identity_required_unchanged": true,
+  "test_reopened": false,
+  "primary_retrained": false,
+  "joint_rerun": false,
+  "bitwise_reproducibility": "NOT_MEASURED",
+  "resume_attempted": true,
+  "resume_succeeded": false,
+  "reason": "Resume bị từ chối tại load: checkpoint vocab128003 khác pretrained config128100; chưa restore optimizer/RNG hoặc train/test thêm",
+  "recovery": "Restart seed43 từ pretrained trong namespace _seed43_restart01; giữ checkpoint/logs cũ",
+  "resume_support_deberta": "NOT_SUPPORTED trong trainer hiện tại; CLI fresh-run vẫn hợp lệ",
+  "partial_epoch5_actual_total_seconds": "NOT_MEASURED",
+  "partial_epoch5_last_logged_seconds": 151.68146690027788
+}

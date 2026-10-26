@@ -1,0 +1,10 @@
+default: en
+languages:
+  en:
+    model_family: BERT
+    enabled: true
+    implementation_status: planned
+  vi:
+    model_family: PhoBERT
+    enabled: false
+    implementation_status: reserved
